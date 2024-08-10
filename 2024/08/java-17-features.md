@@ -22,8 +22,6 @@ switch (object) {
 }
 ```
 
- 
-
 ### **Sealed Classes**
 
 Sealed classes provide more control over class hierarchies. A sealed class restricts which other classes or interfaces may extend or implement it. This feature enhances code security and maintainability by limiting inheritance.
@@ -38,7 +36,6 @@ public final class Circle extends Shape {
 }
 ```
 
- 
 
 ### **New `java.util.random` Interface**
 
