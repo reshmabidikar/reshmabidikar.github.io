@@ -49,9 +49,6 @@ Java 11 includes the Epsilon garbage collector, which is designed for performanc
 
 With Java 11, you can now run a single Java source file directly using the `java` command. This feature makes it easier to quickly test small code snippets without the need to compile and manage separate class files.
 
-## Further Reading
-
- 
 
 ## Conclusion
 

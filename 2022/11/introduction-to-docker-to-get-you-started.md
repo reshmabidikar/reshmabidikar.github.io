@@ -30,13 +30,11 @@ DockerHub is a repository for Docker images. So, developers can push their Docke
 
 ### Docker Desktop
 
-Docker Desktop is a front-end application for Docker. Thus, it provides a user interface to manage images/containers.  It is available on all platforms, namely Windows, Linux, and MacOS.
+Docker Desktop is a front-end application for Docker. Thus, it provides a user interface to manage images/containers. It is available on all platforms, namely Windows, Linux, and MacOS.
 
 ### Dockerfile
 
 A Dockerfile is a simple text file that you can use to build a Docker image. Within the Dockerfile, you need to specify instructions for building the image.
-
- 
 
 ## Further Reading
 
