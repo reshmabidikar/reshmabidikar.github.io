@@ -22,8 +22,6 @@ The Spring Boot Maven plugin simplifies the process of building, packaging, and 
 
 ## How to use the Spring Boot Maven Plugin
 
- 
-
 In order to use the plugin, the following needs to be specified in the project pom file:
 
 ```
@@ -40,7 +38,7 @@ In order to use the plugin, the following needs to be specified in the project p
 
 ## Plugin Goals
 
-Once configured, you can use the various goals of the plugin to build, package, and run your Spring Boot application.
+Once configured, you can use the various goals of the plugin to build, package, and run your Spring Boot application.
 
 Here is a list of some of the important plugin goals:
 
@@ -55,7 +53,6 @@ Here is a list of some of the important plugin goals:
 - [Apache Maven - Beginner to Guru](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https://www.udemy.com/course/apache-maven-beginner-to-guru/)
 - [Master Spring Boot and Spring](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https://www.udemy.com/course/spring-boot-and-spring-framework-tutorial-for-beginners/)
 
- 
 
 ## Conclusion
 

@@ -10,13 +10,13 @@ In this article, we will learn how to create a JAR file from a Spring Boot appli
 
 ## Introduction
 
-The spring-boot-maven-plugin allows packaging a Spring Boot application as a JAR/WAR file. It needs to be specified in the project  `pom.xml` along with the type of packaging (`jar`/`war`).
+The spring-boot-maven-plugin allows packaging a Spring Boot application as a JAR/WAR file. It needs to be specified in the project `pom.xml` along with the type of packaging (`jar`/`war`).
 
 ## Project Creation and Setup
 
 Step 1 - Let us use an existing project as a starting point. Clone the code from this [Spring Boot Thymeleaf](https://github.com/reshmabidikar/learnjava-springbootthymeleaf-demo) project.
 
-Step 2 - Update the `pom.xml` to specify the packaging and the \`spring-boot-maven-plugin\` configuration. So the pom file should look as follows:
+Step 2 - Update the `pom.xml` to specify the packaging and the `spring-boot-maven-plugin` configuration. So the pom file should look as follows:
 
 ```
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -63,8 +63,6 @@ mvn clean package
 ```
 
 This creates the JAR file in the target directory of your project.
-
- 
 
 ## Further Reading
 

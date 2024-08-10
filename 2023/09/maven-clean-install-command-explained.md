@@ -10,30 +10,21 @@ Maven is a popular build automation and project management tool primarily used f
 
 Let us break down this command.
 
- 
-
 ## Clean
 
 This part of the command tells Maven to clean the project. Cleaning a project means removing all the build artifacts (compiled classes, libraries, generated files, etc.) from previous builds. This ensures that you start with a clean slate before building the project again. It's particularly useful to eliminate any potential issues caused by leftover artifacts from previous builds.
 
- 
 
 ## Install
 
- 
-
 This part of the command tells Maven to build and package the project and then install the resulting artifact(s) into the local Maven repository. The local repository is a local cache where Maven stores project dependencies and artifacts. When you use "install," the project's packaged artifact (e.g., a JAR or WAR file) is copied to the local repository. This allows other projects on your local machine to depend on and use the artifact without needing to publish it to a central repository.
-
- 
 
 ## Further Reading
 
- 
 
 - [Apache Maven Beginner to Guru](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fapache-maven-beginner-to-guru%2F)
 - [Maven Crash Course](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fmavencrashcourse%2F)
 
- 
 
 ## Summary
 

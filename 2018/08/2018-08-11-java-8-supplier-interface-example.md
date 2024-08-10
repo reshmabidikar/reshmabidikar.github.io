@@ -12,15 +12,13 @@ tags:
 
 In this blog post, I will be explaining how the Java 8 functional interface Supplier works. To know more about functional interfaces, you can refer [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
 
-\[table id=24 /\]
-
 The Supplier interface provides a method called get.  This method does not accept any arguments. It can return any data type.
 
 #### Supplier example with Integer return type.
 
 Consider the following code snippet:
 
-\[java\]
+```java
 
 public static void main(String\[\] args) {
 
@@ -28,7 +26,7 @@ Supplier<Integer> getRandom = () -> new Random().nextInt(100); System.out.printl
 
 }
 
-\[/java\]
+```
 
 Here, we have implemented the Supplier.get method using a lambda expression.  This get method simple returns a random integer less than 100. So when this code is executed, it will print the following output:
 
@@ -41,7 +39,7 @@ Random number 2 = 89
 
 Consider the following code snippet:
 
-\[java\]
+````java
 
 public class SupplierDemo {
 
@@ -51,7 +49,7 @@ Supplier<Date> dateGenerator = () -> new Date(); System.out.println("Date is "+d
 
 }
 
-\[/java\]
+````
 
 Again, we have implemented the Supplier.get method using a lambda expression.  This get method simple returns a date object. So when this code is executed, it will print the following output:
 
