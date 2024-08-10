@@ -7,6 +7,7 @@
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
 * [How to create a JAR file from a Spring Boot Application using Maven](2023/07/how-to-create-a-jar-file-from-a-spring-boot-application-using-maven.md)
+* [How to use logging in Spring Boot](2022/10/how-to-use-logging-in-springboot-with-code-samples.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)

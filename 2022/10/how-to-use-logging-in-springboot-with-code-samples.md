@@ -14,11 +14,9 @@ There are several Java logging frameworks like logback, log4j, and so on. Spring
 
 ## Step 1 - Create a New Maven Project
 
-Create a new Maven project. (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This will create a project in Eclipse as follows:
+Create a new Maven project. (Refer [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/)blog post). This will create a project in Eclipse as follows:
 
 [![](images/Project-creation-1-300x288.png)](https://learnjava.co.in/wp-content/uploads/2022/11/Project-creation-1.png)
-
- 
 
 Step 2 - Add the Spring Boot Dependencies
 
@@ -44,8 +42,6 @@ Add the `spring-boot-starter-web` dependency to the `pom.xml`. So, the `pom.xml`
 </project>
 ```
 
- 
-
 ## Step 3 - Write Code
 
 Create a `Main.java` class as follows:
@@ -68,8 +64,6 @@ public class Main {
 
 }
 ```
-
- 
 
 ## Step 4 - Run the Application
 
@@ -96,8 +90,6 @@ This prints the log statement on the console:
 2022-11-12 22:05:11.462  INFO 19352 --- [           main] c.learnjava.springboot.loggingdemo.Main  : Hello World
 ```
 
- 
-
 ## Step 5 - Customize logback
 
 Spring Boot allows specifying a logback configuration file that can help with customizing the logs. The logback configuration file is an XML file.
@@ -107,7 +99,7 @@ Create the following file in your **src/main/resources** directory:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-     ​<property name="LOGS_DIR" value="D:/Data/logs" />
+     <property name="LOGS_DIR" value="D:/Data/logs" />
     <appender name="MAIN"
         class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOGS_DIR}/mylog.log</file>
@@ -135,7 +127,7 @@ Create the following file in your **src/main/resources** directory:
 </configuration>
 ```
 
-The above configures logback to write the logs to an external log file instead of to the console.  So, when you rerun the application, the logs would be written to the **D:/Data/logs/mylogs.log** file as configured in this file.
+The above configures logback to write the logs to an external log file instead of to the console. So, when you rerun the application, the logs would be written to the **D:/Data/logs/mylogs.log** file as configured in this file.
 
 ## Source Code
 
