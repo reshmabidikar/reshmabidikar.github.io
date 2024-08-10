@@ -69,7 +69,7 @@ public class Main {
 
 Run `Main.java` as a Java application as follows:.
 
-[![](images/Run-main-300x254.png)](https://learnjava.co.in/wp-content/uploads/2022/11/Run-main.png)
+[![Run Main](images/Run-main-300x254.png)](images/Run-main-300x254.png)
 
 This prints the log statement on the console:
 
