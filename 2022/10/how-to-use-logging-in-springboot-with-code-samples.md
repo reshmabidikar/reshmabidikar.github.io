@@ -16,7 +16,7 @@ There are several Java logging frameworks like logback, log4j, and so on. Spring
 
 Create a new Maven project. (Refer [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/)blog post). This will create a project in Eclipse as follows:
 
-![](images/Project-creation-1-300x288.png)[images/Project-creation-1-300x288.png]
+![](images/Project-creation-1-300x288.png)[images/Project-creation-1.png]
 
 Step 2 - Add the Spring Boot Dependencies
 
@@ -69,7 +69,7 @@ public class Main {
 
 Run `Main.java` as a Java application as follows:.
 
-[![Run Main](images/Run-main-300x254.png)](images/Run-main-300x254.png)
+[![Run Main](images/Run-main-300x254.png)](images/Run-main.png)
 
 This prints the log statement on the console:
 
