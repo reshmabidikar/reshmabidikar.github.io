@@ -23,15 +23,15 @@ Let us first learn about the steps to install the wrapper.
 mvn -N io.takari:maven:wrapper
 ```
 
-3\. This command installs files related to the wrapper. So, you will see the following files/folders:
+3. This command installs files related to the wrapper. So, you will see the following files/folders:
 
 - .mvnw - This folder contains wrapper-specific files as follows:
-    -  maven-wrapper.jar - This is responsible for downloading Maven if it is not present.
+    - maven-wrapper.jar - This is responsible for downloading Maven if it is not present.
     - maven-wrapper.properties - This specifies the Maven version and the location from where to download Maven.
 - mvnw - This is the executable unix shell script and can be used to run the wrapper in a Unix environment
 - mvnw.cmd - This is a Windows batch file and can be used to run the wrapper in a Windows environment
 
-4\. If you would like to specify a different Maven version, you can run the following command while installing the wrapper:
+4. If you would like to specify a different Maven version, you can run the following command while installing the wrapper:
 
 ```
 mvn -N io.takari:maven:wrapper -Dmaven=3.8.1

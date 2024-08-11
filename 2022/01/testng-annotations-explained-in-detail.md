@@ -65,7 +65,7 @@ Can be used to specify code that needs to be executed after executing a particul
 
 ### @BeforeSuite
 
-Can be used to specify code that needs to be executed before executing a particular test suite.  (TestNG allows creating a test suite that is nothing but a list of tests. You can create a test suite via the TestNG XML configuration file). Thus, a method that has this annotation is executed before executing tests within the specified test suite.
+Can be used to specify code that needs to be executed before executing a particular test suite. (TestNG allows creating a test suite that is nothing but a list of tests. You can create a test suite via the TestNG XML configuration file). Thus, a method that has this annotation is executed before executing tests within the specified test suite.
 
 ### @AfterSuite
 
@@ -161,8 +161,6 @@ After test
 PASSED: test1
 PASSED: test2
 ```
-
- 
 
 ## Further Learning
 

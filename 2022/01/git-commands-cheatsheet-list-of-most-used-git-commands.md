@@ -12,7 +12,7 @@ In this article, I will be listing some of the important Git commands along with
 
 ### git init
 
-The git init command creates a local repository.  It creates a hidden .git folder that represents the [local repository](https://learnjava.co.in/some-git-terminologies/#Local_Repository).
+The git init command creates a local repository. It creates a hidden .git folder that represents the [local repository](https://learnjava.co.in/some-git-terminologies/#Local_Repository).
 
 **Syntax**
 
@@ -20,7 +20,7 @@ The git init command creates a local repository.  It creates a hidden .git fold
 
 **Examples**
 
-`git init      # Initializes the current directory as a git repository`
+`git init # Initializes the current directory as a git repository`
 
 `git init <path> # Initializes the specified directory as a git repository`
 
@@ -137,7 +137,7 @@ The git branch command executes branch-related actions like creating a new branc
 
 `git branch -m oldbranch newbranch # Renames oldbranch to newbranch`
 
-`git branch -d branch1  # Deletes branch1`
+`git branch -d branch1 # Deletes branch1`
 
 ### git merge
 
@@ -151,9 +151,9 @@ The git merge command can be used to merge a branch into the currently checked-o
 
 `git checkout master # switches to the master branch`
 
-`git merge b1 # Merges b1 into master` 
+`git merge b1 # Merges b1 into master`
 
-`git merge b1 --no-ff # Merges b1 into master by disabling fast forward merge` 
+`git merge b1 --no-ff # Merges b1 into master by disabling fast forward merge`
 
 ### git reset
 
@@ -183,7 +183,6 @@ Can be used to switch branches or restore files.
 
 `git checkout -b branch1 #creates branch branch1 and swtiches to it`
 
- 
 
 ## Further Learning
 
