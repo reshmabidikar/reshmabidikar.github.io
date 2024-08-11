@@ -20,8 +20,6 @@ Forking is the process of copying someone else’s repository into your own acco
 
 The following table lists the differences between a branch and a fork:
 
-\[table id=34 /\]
-
 ## Further Learning
 
 - [Git and Github Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fgit-and-github-masterclass%2F)
