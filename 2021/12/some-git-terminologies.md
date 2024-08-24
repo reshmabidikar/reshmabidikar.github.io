@@ -20,7 +20,7 @@ A staging area represents the files that are ready to be added to a repository. 
 
 ### Local Repository
 
-As explained in my [Git v/s Github](https://learnjava.co.in/git-and-github-differences-explained-in-short/) article, Git maintains a local repository where it keeps track of all the changes made to the project on the local system.
+As explained in my [Git v/s Github](2021/12/git-and-github-differences-explained-in-short.md) article, Git maintains a local repository where it keeps track of all the changes made to the project on the local system.
 
 ### Remote Repository
 

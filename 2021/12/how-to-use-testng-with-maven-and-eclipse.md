@@ -14,9 +14,9 @@ TestNG is a very powerful unit testing framework. Not only does it allow creatin
 
 ## Project Creation and Setup
 
- **Step 1 – Create a new Maven Project** (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This should create a project as shown below:
+**Step 1 – Create a new Maven Project**(Refer to[this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/)blog post). This should create a project as shown below:
 
-[![](images/TestNG-Maven-Project-in-Eclipse-300x197.png)](https://learnjava.co.in/wp-content/uploads/2021/12/TestNG-Maven-Project-in-Eclipse.png)
+[![](2021/12/images/TestNG-Maven-Project-in-Eclipse-300x197.png)](2021/12/images/TestNG-Maven-Project-in-Eclipse.png)
 
 **Step 2 – Add the TestNG dependencies** (You can refer to [this](https://learnjava.co.in/how-to-add-maven-dependencies-via-eclipse/) blog post). Alternatively, you can add the following to your **pom.xml** file:
 
@@ -32,7 +32,7 @@ TestNG is a very powerful unit testing framework. Not only does it allow creatin
 
 ## Writing and Running Code
 
-**Step 3 - Write code to be tested.**  Suppose, you have a class as follows:
+**Step 3 - Write code to be tested.** Suppose, you have a class as follows:
 
 ```
 public class Calculator {
@@ -76,25 +76,24 @@ assertEquals(-10, diff);
 }
 ```
 
-We have now created a `CalculatorTest` class.  The `testAdd` method tests the `Calculator.add` method while the `testSubtract` method tests the `Calculator.substract` method. Both methods have the `@Test` annotation specified. This annotation indicates that the method needs to be executed as a TestNG test. Both methods use the `assertEquals` method to verify the test result.
+We have now created a `CalculatorTest` class. The `testAdd` method tests the `Calculator.add` method while the `testSubtract` method tests the `Calculator.substract` method. Both methods have the `@Test` annotation specified. This annotation indicates that the method needs to be executed as a TestNG test. Both methods use the `assertEquals` method to verify the test result.
 
 **Step 5: Executing the test.** You can execute the test in Eclipse by right-clicking on the test method/test class and clicking on **Run As -> TestNG** **Test** as shown below:
 
- 
 
-[![](images/TestNG-Execute-Test-300x233.png)](https://learnjava.co.in/wp-content/uploads/2021/12/TestNG-Execute-Test.png)
+[![](2021/12/images/TestNG-Execute-Test-300x233.png)](2021/12/images/TestNG-Execute-Test.png)
 
 A successful test displays the following output:
 
-[![](images/TestNG-Successful-Test-300x69.png)](https://learnjava.co.in/wp-content/uploads/2021/12/TestNG-Successful-Test.png)
+[![](2021/12/images/TestNG-Successful-Test-300x69.png)](2021/12/images/TestNG-Successful-Test.png)
 
 A failed test displays the following output:
 
-[![](images/TestNG-Failed-Test-300x89.png)](https://learnjava.co.in/wp-content/uploads/2021/12/TestNG-Failed-Test.png)
+[![](2021/12/images/TestNG-Failed-Test-300x89.png)](2021/12/images/TestNG-Failed-Test.png)
 
 ## Refactoring the code
 
-TestNG includes several other annotations that help to optimize the test code. For example, in the code above, both the `testAdd` and t`estSubtract` methods create a `Calculator` object.  For a simple example like this, it does not matter much. However, sometimes object creation can be an expensive operation and you would want to create only one instance of the object and use it in all the tests. TestNG supports a `@BeforeClass` annotation. When specified on a method, the method is executed only once before all the tests.  So, the code above can be rewritten using the `@BeforeClass` annotation as follows:
+TestNG includes several other annotations that help to optimize the test code. For example, in the code above, both the `testAdd` and `testSubtract` methods create a `Calculator` object. For a simple example like this, it does not matter much. However, sometimes object creation can be an expensive operation and you would want to create only one instance of the object and use it in all the tests. TestNG supports a `@BeforeClass` annotation. When specified on a method, the method is executed only once before all the tests. So, the code above can be rewritten using the `@BeforeClass` annotation as follows:
 
 ```
 public class CalculatorTest {

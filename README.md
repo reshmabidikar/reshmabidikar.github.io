@@ -3,6 +3,7 @@
 ## Core Java
 * [Java 17 Features](2024/08/java-17-features.md)
 * [Java 11 Features](2023/05/new-features-in-java-11-explained-in-detail.md)
+* [How to add days to a Date in Java](2021/12/how-to-add-days-to-a-date-in-java-with-code-samples.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -22,7 +23,12 @@
 * [Git Branch and Fork Explained](2022/02/git-branch-and-fork-differences-explained.md)
 * [Git Commands CheatSheet](2022/01/git-commands-cheatsheet-list-of-most-used-git-commands.md)
 * [How to Create a Remote Repository in Github](2022/01/how-to-create-a-remote-github-repository.md)
+* [Some Git Terminologies](2021/12/some-git-terminologies.md)
+* [Git and Github Differences Explained](2021/12/git-and-github-differences-explained-in-short.md)
+* [How to Create a Local Repository in Git](2021/12/create-a-local-repository-in-git-with-step-by-step-commands.md)
+* 
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
+* [How to use TestNG with Maven and Eclipse](2021/12/how-to-use-testng-with-maven-and-eclipse.md)
 

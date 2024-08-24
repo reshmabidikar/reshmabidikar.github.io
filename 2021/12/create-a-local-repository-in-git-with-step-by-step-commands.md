@@ -21,8 +21,6 @@ Step 3: Add the files from the current directory to the local repository:
 git add .
 ```
 
- 
-
 Step 4: Commit files to your local repository:
 
 ```
