@@ -81,15 +81,15 @@ We have now created a `CalculatorTest` class. The `testAdd` method tests the `Ca
 **Step 5: Executing the test.** You can execute the test in Eclipse by right-clicking on the test method/test class and clicking on **Run As -> TestNG** **Test** as shown below:
 
 
-[![](2021/12/images/TestNG-Execute-Test-300x233.png)](2021/12/images/TestNG-Execute-Test.png)
+[![](images/TestNG-Execute-Test-300x233.png)](images/TestNG-Execute-Test.png)
 
 A successful test displays the following output:
 
-[![](2021/12/images/TestNG-Successful-Test-300x69.png)](2021/12/images/TestNG-Successful-Test.png)
+[![](images/TestNG-Successful-Test-300x69.png)](images/TestNG-Successful-Test.png)
 
 A failed test displays the following output:
 
-[![](2021/12/images/TestNG-Failed-Test-300x89.png)](2021/12/images/TestNG-Failed-Test.png)
+[![](images/TestNG-Failed-Test-300x89.png)](images/TestNG-Failed-Test.png)
 
 ## Refactoring the code
 
