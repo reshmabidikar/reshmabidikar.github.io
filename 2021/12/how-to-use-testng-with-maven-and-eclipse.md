@@ -16,7 +16,7 @@ TestNG is a very powerful unit testing framework. Not only does it allow creatin
 
 **Step 1 – Create a new Maven Project**(Refer to[this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/)blog post). This should create a project as shown below:
 
-[![](2021/12/images/TestNG-Maven-Project-in-Eclipse-300x197.png)](2021/12/images/TestNG-Maven-Project-in-Eclipse.png)
+[![](images/TestNG-Maven-Project-in-Eclipse-300x197.png)](images/TestNG-Maven-Project-in-Eclipse.png)
 
 **Step 2 – Add the TestNG dependencies** (You can refer to [this](https://learnjava.co.in/how-to-add-maven-dependencies-via-eclipse/) blog post). Alternatively, you can add the following to your **pom.xml** file:
 
