@@ -6,17 +6,13 @@ categories:
 coverImage: "springboot-xml-demo-scaled.jpg"
 ---
 
-In this article, I will be explaining how to create a [Spring Boot REST service](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Frest-api-with-java-spring-boot-spring-data-jpa-jparepository-swagger%2F) that produces an XML output. \[table id=25 /\]
-
- 
+In this article, I will be explaining how to create a Spring Boot REST service that produces an XML output. 
 
 ## Project Creation and Setup
 
- 
+**Step 1 – Create a new Maven Project** (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This should create a project as shown below:
 
-**Step 1 – Create a new Maven Project** (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This should create a project as shown below:
-
-[![maven-springboot-eclipse-project](images/Maven-project-300x163.png)](https://learnjava.co.in/wp-content/uploads/2021/02/Maven-project.png)
+[![maven-springboot-eclipse-project](images/Maven-project-300x163.png)](images/Maven-project.png)
 
 **Step 2 - Add the Spring Boot and Jackson dependency**. So, your the **pom.xml** file should be similar to the following:
 
@@ -68,7 +64,6 @@ public class Book {
 
 This class represents a Book. It has fields corresponding to id, name and author.
 
- 
 
 **Step 4 - Create a BookController class** as follows:
 
@@ -114,7 +109,7 @@ It includes the following methods:
 
 **getBook**
 
-- Like **getAllBooks**, this method has the [GetMapping](https://learnjava.co.in/important-spring-mvc-annotations/) annotation
+- Like **getAllBooks**, this method has the [GetMapping](https://learnjava.co.in/important-spring-mvc-annotations/) annotation
 - It returns a single **Book** object
 
 **Step 5 - Create a Main class** as follows:
@@ -137,19 +132,17 @@ public class Main {
 
 This is the starting point of our Spring Boot application as explained [here](https://learnjava.co.in/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven/).
 
-\[table id=26 /\]
-
 ## Running the application
 
 **Step 6 - Run Main.java as a Java application** as shown below:
 
-[![running-spring-boot-main](images/Running-application-289x300.png)](https://learnjava.co.in/wp-content/uploads/2021/03/Running-application.png)
+[![running-spring-boot-main](images/Running-application-289x300.png)](images/Running-application.png)
 
 Step 7 - Open a browser window. Type **http://localhost:8080/books/** . This displays the following XML output:
 
-[![xm-output](images/output-300x157.png)](https://learnjava.co.in/wp-content/uploads/2021/03/output.png)
+[![xm-output](images/output-300x157.png)](images/output.png)
 
-You can download the source code for this project via the Github repository [here](https://github.com/learnjavawithreshma/learnjava-springbootxmloutput-demo).
+You can download the source code for this project via the Github repository [here](https://github.com/learnjavawithreshma/learnjava-springbootxmloutput-demo).
 
 ## Conclusion
 

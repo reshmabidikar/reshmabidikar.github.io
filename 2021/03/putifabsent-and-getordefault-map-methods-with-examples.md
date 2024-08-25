@@ -6,7 +6,7 @@ categories:
 coverImage: "Map-putIfAbsent-getOrDefault-scaled.jpg"
 ---
 
-In my [earlier](https://learnjava.co.in/java-8-map-compute-map-computeifpresent-map-computeifabsent-method-examples/) article, I had explained the Map.compute, Map.computeIfPresent and Map.computeIfAbsent methods added by Java 8. In addition, Java 8 has added two other methods called **putIfAbsent** and **getOrDefault** to the Map interface.  In this article, I will be explaining the these methods. \[table id=24 /\]
+In my [earlier](https://learnjava.co.in/java-8-map-compute-map-computeifpresent-map-computeifabsent-method-examples/) article, I had explained the Map.compute, Map.computeIfPresent and Map.computeIfAbsent methods added by Java 8. In addition,Java 8 has added two other methods called **putIfAbsent** and **getOrDefault** to the Map interface. In this article, I will be explaining the these methods. 
 
 ## How putIfAbsent works
 

@@ -37,7 +37,7 @@ Hello Jane you have scored 97 marks!
 
 ## Keyword Arguments
 
-Keyword arguments are those in which a keyword corresponding to the parameter name is specified in the method call.  So, in the example above, you can invoke the **showMarks** function as follows:
+Keyword arguments are those in which a keyword corresponding to the parameter name is specified in the method call. So, in the example above, you can invoke the **showMarks** function as follows:
 
 ```
 showMarks(marks=97,name="Jane")
