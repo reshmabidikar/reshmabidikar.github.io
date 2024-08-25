@@ -5,6 +5,11 @@
 * [Java 11 Features](2023/05/new-features-in-java-11-explained-in-detail.md)
 * [How to add days to a Date in Java](2021/12/how-to-add-days-to-a-date-in-java-with-code-samples.md)
 * [How to read a file on the Classpath in Java](2021/07/how-to-read-a-file-on-the-classpath-in-java.md)
+* [Java Inheritance Interview Questions](java-inheritance-interview-questions-with-examples.md)
+
+## Java 8 New Features
+* [IntBinaryOperator](2021/04/intbinaryoperator.md)
+* [Java 8 Parallel Streams](2021/04/parallel-streams-in-java-with-code-samples.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -34,4 +39,7 @@
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
 * [How to use TestNG with Maven and Eclipse](2021/12/how-to-use-testng-with-maven-and-eclipse.md)
+
+## Python
+* [Python While Loop](2021/04/python-while-loop-with-code-samples.md)
 

@@ -6,15 +6,15 @@ categories:
 coverImage: "IntBinaryOperator-1-scaled.jpg"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface **IntBinaryOperator** works. To know more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface **IntBinaryOperator** works. To know more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
 
 ## What is IntBinaryOperator
 
 **IntBinaryOperator** is an in-built functional interface in the **java.util.Function** package. It accepts two **int** arguments, operates on it and produces a result of type **int**. It is a specialization of the [BinaryOperator](https://learnjava.co.in/java-8-binaryoperator-example/) interface. It has a **applyAsInt** method. It applies the logic in this method on the **int** arguments passed in and produces an **int** result.
 
-## IntBinaryOperator Code Sample
+## IntBinaryOperator Code Sample
 
-The following code demonstrates this interface:
+The following code demonstrates this interface:
 
 ```
 IntBinaryOperator intBinaryOp = (num1,num2) -> num1+num2;
@@ -45,8 +45,6 @@ System.out.println("result:"+result);
 
 - Line 1 declares a [BinaryOperator](https://learnjava.co.in/java-8-binaryoperator-example/) instance **binaryOp** and implements it via the same lambda expression as used above.
 - Line 3 then invokes the **apply** method on the values **14, 12**. Since the input value is a primitive type, Java uses **autoboxing** to convert the primitive **int** type to the wrapper type that is **Integer** before applying the lambda expression. This reduces the performance slightly. However, in the case of **IntBinaryOperator**, no such conversion is required since the **applyAsInt** method accept arguments of type **int** already. Thus the primitive specialization offers a slight performance advantage as it does away with the need of autoboxing.
-
-\[table id=29 /\]
 
 ## Conclusion
 
