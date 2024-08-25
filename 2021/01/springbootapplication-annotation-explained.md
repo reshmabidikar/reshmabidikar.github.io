@@ -41,7 +41,7 @@ public class Main {
 - The **Main** class has the **@SpringBootApplication** annotation
 - It simply invokes the **SpringApplication.run** method. This starts the Spring application as a standalone application, runs the embedded servers and loads the beans.
 - Normally, such a main class is placed in a root package above other packages. This enables component scanning to scan all the sub-packages for beans.
-- For a complete working example of a simple Spring Boot application you can refer to [this](2021/02/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md) article.
+- For a complete working example of a simple Spring Boot application you can refer to [this](../02/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md) article.
 
 ## Conclusion
 

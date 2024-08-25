@@ -77,7 +77,7 @@ public class Main {
 
 ```
 
-- The **Main** class has the [**@SpringBootApplication**](2021/01/springbootapplication-annotation-explained.md) annotation.
+- The **Main** class has the [**@SpringBootApplication**](springbootapplication-annotation-explained.md) annotation.
 - It simply invokes the **SpringApplication.run** method. This starts the Spring application as a standalone application, runs the embedded servers and loads the beans.
 
 **Step 4** - Create **HelloWorldController** in **demo.controller** package as follows:

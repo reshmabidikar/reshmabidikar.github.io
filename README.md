@@ -6,7 +6,7 @@
 * [How to add days to a Date in Java](2021/12/how-to-add-days-to-a-date-in-java-with-code-samples.md)
 * [How to read a file on the Classpath in Java](2021/07/how-to-read-a-file-on-the-classpath-in-java.md)
 * [Java Inheritance Interview Questions](java-inheritance-interview-questions-with-examples.md)
-* [Difference between local, instance and static variables in Java(2021/03/what-is-the-difference-between-a-local-instance-and-static-variable-in-java.md)
+* [Difference between local, instance and static variables in Java](2021/03/what-is-the-difference-between-a-local-instance-and-static-variable-in-java.md)
 
 ## Java 8 New Features
 * [IntBinaryOperator](2021/04/intbinaryoperator.md)
