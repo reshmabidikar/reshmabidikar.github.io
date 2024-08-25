@@ -12,6 +12,7 @@
 * [IntBinaryOperator](2021/04/intbinaryoperator.md)
 * [Java 8 Parallel Streams](2021/04/parallel-streams-in-java-with-code-samples.md)
 * [putIfAbsent and getOrDefault Methods explained](2021/03/putifabsent-and-getordefault-map-methods-with-examples.md)
+* [DoubleUnaryOperator in Java 8](2021/02/doubleunaryoperator-in-java-8-with-code-sample.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -20,6 +21,8 @@
 * [How to use Flyway with SpringBoot](2021/07/how-to-use-flyway-with-spring-boot-with-code-samples.md)
 * [How to create a SpringBoot Thymeleaf application](2021/03/how-to-create-a-spring-boot-thymeleaf-web-application.md)
 * [How to create a SpringBoot REST Service with XML output](2021/03/how-to-create-a-spring-boot-rest-service-with-xml-output.md)
+* [How to create a Hello World SpringBoot Application](2021/02/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md)
+* [SpringBoot Annotations Explained](2021/01/springbootapplication-annotation-explained.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
@@ -38,7 +41,10 @@
 * [Some Git Terminologies](2021/12/some-git-terminologies.md)
 * [Git and Github Differences Explained](2021/12/git-and-github-differences-explained-in-short.md)
 * [How to Create a Local Repository in Git](2021/12/create-a-local-repository-in-git-with-step-by-step-commands.md)
-* 
+
+## JPA, Hibernate and JDBC
+
+* [JPA Interfaces Explained](2021/02/jpa-interfaces-explained.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)

@@ -8,13 +8,11 @@ tags:
 coverImage: "spring-boot-hello-world-scaled.jpg"
 ---
 
-In this blog post, I will be explaining how you can create a Hello World [Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-5-with-spring-boot-2%2F) application in Eclipse using Maven.
-
-\[table id=25 /\]
+In this blog post, I will be explaining how you can create a Hello World Spring Boot application in Eclipse using Maven.
 
 ## What is Spring Boot?
 
-Spring boot sits on top of Spring. It automatically does the configuration of the application for you by assuming some defaults. These defaults are sufficient to get you started most of the times but you easily change these default values if required. This allows you to have a spring application up and running very quickly without having to bother with boiler plate stuff. All you have to do is tell Spring boot the type of application you are building. It provides Embedded HTTP servers like [Tomcat](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fapache-tomcat-for-beginners-and-advanced%2F), Jetty etc. which makes it easy to develop web applications. In order to know more about Spring Boot, you can refer to [this](https://learnjava.co.in/springboot-what-and-why/) blog post.
+Spring boot sits on top of Spring. It automatically does the configuration of the application for you by assuming some defaults. These defaults are sufficient to get you started most of the times but you easily change these default values if required. This allows you to have a spring application up and running very quickly without having to bother with boiler plate stuff. All you have to do is tell Spring boot the type of application you are building. It provides Embedded HTTP servers like Tomcat, Jetty etc. which makes it easy to develop web applications. In order to know more about Spring Boot, you can refer to [this](https://learnjava.co.in/springboot-what-and-why/) blog post.
 
 ## Creating Hello World Spring Boot Application
 
@@ -22,11 +20,9 @@ Let us now learn how to create a basic Hello World Spring Boot application in Ec
 
 ### Project Creating and setup
 
-**Step 1 – Create a new Maven Project** (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). Your project should look as follows:
+**Step 1 – Create a new Maven Project** (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). Your project should look as follows:
 
-[![maven project in eclipse](images/FinishedMavenProject-216x300.png)](https://learnjava.co.in/wp-content/uploads/2019/01/FinishedMavenProject.png)
-
- 
+[![maven project in eclipse](images/FinishedMavenProject-216x300.png)](images/FinishedMavenProject.png)
 
 **Step 2 - Add the Spring Boot dependencies to the POM file.** Your POM file should look similar to the following:
 
@@ -81,7 +77,7 @@ public class Main {
 
 ```
 
-- The **Main** class has the [**@SpringBootApplication**](https://learnjava.co.in/the-springbootapplication-annotation-explained/) annotation.
+- The **Main** class has the [**@SpringBootApplication**](2021/01/springbootapplication-annotation-explained.md) annotation.
 - It simply invokes the **SpringApplication.run** method. This starts the Spring application as a standalone application, runs the embedded servers and loads the beans.
 
 **Step 4** - Create **HelloWorldController** in **demo.controller** package as follows:
@@ -104,28 +100,22 @@ public class HelloWorldController {
 ```
 
 - The **HelloWorldController** class has the [@RestController](https://learnjava.co.in/important-spring-mvc-annotations/#RestController) annotation. This designates the class as a REST controller, i.e. a controller that handles REST requests.
-- It has a **home** method with the [@RequestMapping](https://learnjava.co.in/important-spring-mvc-annotations/#RequestMapping) annotation. This specifies that the **hello** method maps to the **/hello** path.  It simply returns the String **"Hello World!"**
-
-\[table id=26 /\]
+- It has a **home** method with the [@RequestMapping](https://learnjava.co.in/important-spring-mvc-annotations/#RequestMapping) annotation. This specifies that the **hello** method maps to the **/hello** path. It simply returns the String **"Hello World!"**
 
 ## Running the application
 
 **Step 5 - Run Main.java as a Java application** as shown below:
 
-[![Running the Spring Boot application](images/run-main-293x300.png)](https://learnjava.co.in/wp-content/uploads/2021/01/run-main.png)
-
- 
+[![Running the Spring Boot application](images/run-main-293x300.png)](images/run-main.png)
 
 This should display the console output as highlighted below:
 
-[![Console output in Spring Boot application](images/run-300x162.png)](https://learnjava.co.in/wp-content/uploads/2019/01/run.png)
+[![Console output in Spring Boot application](images/run-300x162.png)](images/run.png)
 
 Step 6 - Check in the browser. Open a browser window and type **http://localhost:8080/hello**
 
-[![hello world in browser](images/running-app-300x97.png)](https://learnjava.co.in/wp-content/uploads/2021/01/running-app.png)
+[![hello world in browser](images/running-app-300x97.png)](images/running-app.png)
 
 So you have your Spring Boot application up and running!
-
- 
 
 You can download the source code for this project from the GitHub repository [here](https://github.com/learnjavawithreshma/SpringBootDemo).

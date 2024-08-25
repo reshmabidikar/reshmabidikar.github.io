@@ -7,7 +7,7 @@ categories:
 coverImage: "doubleunaryoperator-scaled.jpg"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface **DoubleUnaryOperator** works. To know more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface **DoubleUnaryOperator** works. To know more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
 
 \[table id=24 /\]
 
@@ -17,7 +17,7 @@ In this blog post, I will be explaining how the Java 8 functional interface **D
 
 ## DoubleUnaryOperator Code Sample
 
-The following code demonstrates this interface:
+The following code demonstrates this interface:
 
 ```
 DoubleUnaryOperator doubleUnaryOp = num -> Math.sqrt(num);
@@ -46,9 +46,9 @@ double result = unaryOp.applyAsDouble(input);
 System.out.println("result:"+result);
 ```
 
-- Line 1 declares a [UnaryOperator](https://learnjava.co.in/java-8-unaryoperator-example/)  instance **unaryOp** and implements it via the same lambda expression as used above.
+- Line 1 declares a [UnaryOperator](https://learnjava.co.in/java-8-unaryoperator-example/) instance **unaryOp** and implements it via the same lambda expression as used above.
 - Line 3 then invokes the [applyAsDouble](https://learnjava.co.in/java-8-unaryoperator-example/) method on the value **9**. Since the input value is a primitive type, Java uses **autoboxing** to convert the primitive **double** type to the wrapper type that is **Double** before applying the lambda expression. This reduces the performance slightly. However, in the case of **DoubleUnaryOperator**, no such conversion is required since the **applyAsDouble** method accepts an argument of type **double** already. Thus the primitive specialization offers a slight performance advantage as it does away with the need of autoboxing.
 
 ## Conclusion
 
-So in this article, we took a look at the **DoubleUnaryOperator** interface. This interface is a specialization of the [UnaryOperator](https://learnjava.co.in/java-8-unaryoperator-example/) interface that accepts a **double** parameter and returns a **double** result.
+So in this article, we took a look at the **DoubleUnaryOperator** interface. This interface is a specialization of the [UnaryOperator](https://learnjava.co.in/java-8-unaryoperator-example/) interface that accepts a **double** parameter and returns a **double** result.

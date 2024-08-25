@@ -6,7 +6,7 @@ categories:
 coverImage: "database-scaled.jpg"
 ---
 
-In my [earlier](https://learnjava.co.in/how-to-create-a-standalone-jpa-application/) article, we had learnt how to create a basic JPA application.  In this article, I will be explaining the important JPA interfaces.
+In my [earlier](https://learnjava.co.in/how-to-create-a-standalone-jpa-application/) article, we had learnt how to create a basic JPA application. In this article, I will be explaining the important JPA interfaces.
 
 ## Persistence Unit
 
@@ -34,9 +34,7 @@ As seen [earlier](https://learnjava.co.in/how-to-create-a-standalone-jpa-applica
 </persistence>
 ```
 
- 
-
-The **persistence.xml** file specifies a **persistence unit**. A **persistence unit** encapsulates database details. So, it includes the JPA Provider, mapping information & database configuration details. The **persistence.xml** file above specifies a persistence unit **PERSISTENCE**. It specifies Hibernate as the persistence provider and includes various other database connection details.  JPA uses the information in the persistence unit to configure the database connection. If your application uses multiple databases, you need to create a separate persistence unit corresponding to each database.
+The **persistence.xml** file specifies a **persistence unit**. A **persistence unit** encapsulates database details. So, it includes the JPA Provider, mapping information & database configuration details. The **persistence.xml** file above specifies a persistence unit **PERSISTENCE**. It specifies Hibernate as the persistence provider and includes various other database connection details. JPA uses the information in the persistence unit to configure the database connection. If your application uses multiple databases, you need to create a separate persistence unit corresponding to each database.
 
 ## Entity
 
@@ -62,7 +60,7 @@ The **Fruit** class has the **@Entity** annotation. This designates the **Fruit*
 Just to [recap](https://learnjava.co.in/how-to-create-a-standalone-jpa-application/#Writing_JPA_Code), we had written the following JPA Code:
 
 ```
- @Test
+@Test
  public void testSave() {
   EntityManagerFactory emf = Persistence.createEntityManagerFactory("PERSISTENCE");
   EntityManager em = emf.createEntityManager();
@@ -98,15 +96,15 @@ Let us now break down this code.
 
 ### EntityManager
 
-**EntityManager** is also an in-built JPA interface. It can be created via an **EntityManagerFactory** instance. The code above creates an **EntityManager** instance **em** via the **EntityManagerFactory** instance **emf**.  An **EntityManager** represents a database connection.  You can use it to perform database operations like insert/update/delete or to query a table. The code above invokes the **persist** method to save a **Fruit** record into the **Fruit** table.
+**EntityManager** is also an in-built JPA interface. It can be created via an **EntityManagerFactory** instance. The code above creates an **EntityManager** instance **em** via the **EntityManagerFactory** instance **emf**. An **EntityManager** represents a database connection. You can use it to perform database operations like insert/update/delete or to query a table. The code above invokes the **persist** method to save a **Fruit** record into the **Fruit** table.
 
 ### EntityTransaction
 
-**EntityTransaction** is also an in-built JPA interface. It can be created via an **EntityManager**.  The code above creates an **EntityTransaction** instance **et** via the **EntityManager** instance **em**.  An **EntityTransaction** encapsulates a database transaction. A call to the **begin** method starts the transaction and a call to **commit** saves the changes in the database.
+**EntityTransaction** is also an in-built JPA interface. It can be created via an **EntityManager**. The code above creates an **EntityTransaction** instance **et** via the **EntityManager** instance **em**. An **EntityTransaction** encapsulates a database transaction. A call to the **begin** method starts the transaction and a call to **commit** saves the changes in the database.
 
 ### Query
 
-Query is also an in-built JPA interface. It can be created via an **EntityManager**.  The code above creates a **TypedQuery** (which is a sub-interface of **Query**) instance **query** via the **EntityManager** instance **em**.  You can use **Query** to execute a database query. The code above uses **query** to obtain all the **Fruit** records. The **Query** interface has methods that to retrieve the query execution results. The code above uses the **query.getResultList**. This returns a **List** of **Fruit** objects.
+Query is also an in-built JPA interface. It can be created via an **EntityManager**. The code above creates a **TypedQuery** (which is a sub-interface of **Query**) instance **query** via the **EntityManager** instance **em**. You can use **Query** to execute a database query. The code above uses **query** to obtain all the **Fruit** records. The **Query** interface has methods that to retrieve the query execution results. The code above uses the **query.getResultList**. This returns a **List** of **Fruit** objects.
 
 ## Further Learning
 
@@ -114,4 +112,4 @@ Query is also an in-built JPA interface. It can be created via an **EntityManage
 
 ## Conclusion
 
-So, in this class, we learnt about about persistence unit and entities. We also took a look at the important JPA interfaces like EntityManagerFactory, EntityManager, EntityTransaction and Query.
+So, in this class, we learnt about persistence unit and entities. We also took a look at the important JPA interfaces like EntityManagerFactory, EntityManager, EntityTransaction and Query.
