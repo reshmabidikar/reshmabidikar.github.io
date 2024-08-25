@@ -14,7 +14,7 @@ TestNG is a very powerful unit testing framework. Not only does it allow creatin
 
 ## Project Creation and Setup
 
-**Step 1 – Create a new Maven Project**(Refer to[this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/)blog post). This should create a project as shown below:
+**Step 1 – Create a new Maven Project**(Refer to[this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This should create a project as shown below:
 
 [![](images/TestNG-Maven-Project-in-Eclipse-300x197.png)](images/TestNG-Maven-Project-in-Eclipse.png)
 

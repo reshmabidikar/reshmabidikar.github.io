@@ -28,7 +28,7 @@ public class ReadFileFromClassPathDemo {
 }
 ```
 
-Java has an in-built class called `ClassLoader`.  It is used to dynamically load classes. It can also be used to load resources from the classpath. The code above first obtains a `ClassLoader`. It then invokes the `getResource` method on the `classLoader`. This loads the resource (in this case a file named **input.txt**) from the file system and returns an `URL` instance. The `URL` class has a `getFile` method that returns the fully qualified filename.  A `File` object is then created using the filename. Finally, the `Files.readAllBytes` method is used to then read the contents of the file into a String.
+Java has an in-built class called `ClassLoader`. It is used to dynamically load classes. It can also be used to load resources from the classpath. The code above first obtains a `ClassLoader`. It then invokes the `getResource` method on the `classLoader`. This loads the resource (in this case a file named **input.txt**) from the file system and returns an `URL` instance. The `URL` class has a `getFile` method that returns the fully qualified filename. A `File` object is then created using the filename. Finally, the `Files.readAllBytes` method is used to then read the contents of the file into a String.
 
 ## Running code in Eclipse
 
@@ -36,27 +36,27 @@ In case you need to test the code above from an IDE like Eclipse, you need to do
 
 Step 1 - Right-click on the class name and click **Run As > Run Configurations**:
 
-[![](images/1-run-as-300x248.png)](https://learnjava.co.in/wp-content/uploads/2021/07/1-run-as.png)
+[![](images/1-run-as-300x248.png)](images/1-run-as.png)
 
 Step 2 - Click on the **Dependencies** Tab:
 
-[![](images/2-dependencies-300x270.png)](https://learnjava.co.in/wp-content/uploads/2021/07/2-dependencies.png)
+[![](images/2-dependencies-300x270.png)](images/2-dependencies.png)
 
 Step 3 - Click on **Classpath entries**. Click on **Advanced > Add External Folder**:
 
-[![](images/3-advanced-300x271.png)](https://learnjava.co.in/wp-content/uploads/2021/07/3-advanced.png)
+[![](images/3-advanced-300x271.png)](images/3-advanced.png)
 
 Step 4 - Navigate to the file system and select the folder which contains the file to be read (**D:/Data/Temp** in my case):
 
-[![](images/4-filesection-300x228.png)](https://learnjava.co.in/wp-content/uploads/2021/07/4-filesection.png)
+[![](images/4-filesection-300x228.png)](images/4-filesection.png)
 
 Step 5 - Verify that the folder is added to the classpath. Click on **Apply** and **Run**:
 
-[![](images/5-apply-300x270.png)](https://learnjava.co.in/wp-content/uploads/2021/07/5-apply.png)
+[![](images/5-apply-300x270.png)](images/5-apply.png)
 
 Step 6 - Verify that the file is read and its contents are displayed on the console:
 
-[![](images/6-output-1-300x69.png)](https://learnjava.co.in/wp-content/uploads/2021/07/6-output-1.png)
+[![](images/6-output-1-300x69.png)](images/6-output-1.png)
 
 ## Maven project
 

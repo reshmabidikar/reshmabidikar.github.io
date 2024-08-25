@@ -16,11 +16,11 @@ Let us now understand how to use Flyway with Spring Boot and a MySQL database.
 
 ## Project Creation and Setup
 
- **Step 1 - Create a new Maven Project** (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This should create a project as shown below:
+**Step 1 - Create a new Maven Project**(Refer to[this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/)blog post). This should create a project as shown below:
 
-[![](images/springboot-flyway-project-300x186.png)](https://learnjava.co.in/wp-content/uploads/2021/07/springboot-flyway-project.png)
+[![](images/springboot-flyway-project-300x186.png)](images/springboot-flyway-project.png)
 
-**Step 2 – Add the Spring Boot, Flyway, and MySQL dependencies**. So, the **pom.xml** file should be similar to the following:
+**Step 2 – Add the Spring Boot, Flyway, and MySQL dependencies**. So, the **pom.xml** file should be similar to the following:
 
 ```
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -103,7 +103,7 @@ SpringApplication.run(Main.class, args);
 
 Step 6 - Run **Main.java** as a Java application as follows:
 
-[![](images/Run-main-298x300.png)](https://learnjava.co.in/wp-content/uploads/2021/07/Run-main.png)
+[![](images/Run-main-298x300.png)](images/Run-main.png)
 
 This will run the Spring Boot application and create a table called book within the springbootflywaydb. You can verify this in your database.
 
@@ -115,7 +115,7 @@ Step 7 - Add another file called **V1\_2\_\_insert\_data.sql** to the **src/main
 insert into BOOK (name,author) values ("Head First Java","Kathy Sierra");
 ```
 
-Note that this migration has a higher version (1\_2) than the migration created earlier.  So, this indicates to Flyway that this is a newer migration. So, Flyway applies this migration.
+Note that this migration has a higher version (1\_2) than the migration created earlier. So, this indicates to Flyway that this is a newer migration. So, Flyway applies this migration.
 
 Step 8 - Run your code again. This will result in a record being inserted into the Book table.
 

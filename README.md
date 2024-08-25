@@ -4,11 +4,13 @@
 * [Java 17 Features](2024/08/java-17-features.md)
 * [Java 11 Features](2023/05/new-features-in-java-11-explained-in-detail.md)
 * [How to add days to a Date in Java](2021/12/how-to-add-days-to-a-date-in-java-with-code-samples.md)
+* [How to read a file on the Classpath in Java](2021/07/how-to-read-a-file-on-the-classpath-in-java.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
 * [How to create a JAR file from a Spring Boot Application using Maven](2023/07/how-to-create-a-jar-file-from-a-spring-boot-application-using-maven.md)
 * [How to use logging in Spring Boot](2022/10/how-to-use-logging-in-springboot-with-code-samples.md)
+* [How to use Flyway with SpringBoot](how-to-use-flyway-with-spring-boot-with-code-samples.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
