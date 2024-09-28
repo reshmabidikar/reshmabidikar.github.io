@@ -7,8 +7,6 @@ categories:
 
 Java 8 has made many improvements to the Comparator interface. In this article, I will be explaining the Java 8 Comparator changes.
 
-\[table id=24 /\]
-
 ## Comparator.compare
 
 From Java 8 onwards, Comparator is designated as a [functional](http://localhost/learnjava/what-is-a-functional-interface/) interface. So, you can implement the **Comparator.compare** method via a [lambda expression](http://localhost/learnjava/java-8-lambda-expressions-explained/).

@@ -7,6 +7,7 @@
 * [How to read a file on the Classpath in Java](2021/07/how-to-read-a-file-on-the-classpath-in-java.md)
 * [Java Inheritance Interview Questions](java-inheritance-interview-questions-with-examples.md)
 * [Difference between local, instance and static variables in Java](2021/03/what-is-the-difference-between-a-local-instance-and-static-variable-in-java.md)
+* [Difference between Comparator and Comparable](2020/09/difference-between-comparator-and-comparable.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -50,6 +51,7 @@
 
 * [JPA Interfaces Explained](2021/02/jpa-interfaces-explained.md)
 * [How to create a Standalone JPA Application](2020/12/how-to-create-a-standalone-jpa-application)
+* [Introduction to JPA](2020/09/introduction-to-jpa-the-why-what-and-how-of-jpa.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
