@@ -13,6 +13,9 @@
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
 
+## Java 10
+[Java 10 time based release and versioning](2020/07/java-10-time-based-release-versioning.md)
+
 ## Java 8 New Features
 * [IntBinaryOperator](2021/04/intbinaryoperator.md)
 * [Java 8 Parallel Streams](2021/04/parallel-streams-in-java-with-code-samples.md)
@@ -20,6 +23,7 @@
 * [DoubleUnaryOperator in Java 8](2021/02/doubleunaryoperator-in-java-8-with-code-sample.md)
 * [Java 8 Comparator Changes](2020/12/java-8-comparator-changes.md)
 * [IntFunction in Java 8](2020/08/intfunction-in-java-8-with-code-sample.md)
+* [ToIntFunction in Java 8](2020/07/tointfunction-in-java-8-with-code-sample.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -30,6 +34,7 @@
 * [How to create a SpringBoot REST Service with XML output](2021/03/how-to-create-a-spring-boot-rest-service-with-xml-output.md)
 * [How to create a Hello World SpringBoot Application](2021/02/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md)
 * [SpringBoot Annotations Explained](2021/01/springbootapplication-annotation-explained.md)
+* [Spring Bean Scopes](2020/07/spring-bean-scopes.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
@@ -64,4 +69,5 @@
 * [Python Function Arguments Explained](2021/03/python-functions-arguments-with-examples.md)
 * [Python Functions Part 1](2020/12/python-functions-part-1-2.md)
 * [Reading User Input in Python](2020/08/reading-user-input-in-python-with-code-sample.md)
+* [Python Directory](2020/07/python-dictionary.md)
 

@@ -15,7 +15,7 @@ There are two main aspects to time based release versioning as follows:
 
 ## Feature Release
 
-Feature releases occur every 6 months.  All those features that are ready will be part of the release. The features that are not ready will be part of the next release. Support for these releases last only for 6 months, that is until the next release. The current version of Java is Java 14. It was released in March 2020 and it is a feature release.
+Feature releases occur every 6 months. All those features that are ready will be part of the release. The features that are not ready will be part of the next release. Support for these releases last only for 6 months, that is until the next release. The current version of Java is Java 14. It was released in March 2020 and it is a feature release.
 
 ## Long Term Release (LTS)
 
@@ -24,8 +24,6 @@ Long term releases occur once in every three years. Support for such release wou
 ## Update Release
 
 Update releases occur every quarter. Update releases are strictly limited to bug fixes. Each feature release has two update releases.
-
- 
 
 ## Conclusion
 

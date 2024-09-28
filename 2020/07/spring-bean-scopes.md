@@ -11,13 +11,10 @@ The Spring Framework![icon](https://ad.linksynergy.com/fs-bin/show?id=MnzIZAZNE5
 
 A Spring Bean scope specifies the lifetime of a Spring bean. So it specifies when the bean will be created and how long it will exist in the system.
 
-\[table id=27 /\]
-
 ## What are the different bean scopes?
 
 Spring supports the following bean scopes:
 
- 
 
 ### Singleton
 
@@ -29,11 +26,11 @@ As per this scope, a new instance of a bean is created each time the bean is req
 
 ### Request
 
-This bean scope is valid only for a web application. As per this bean scope, a new instance of the bean is created for each HTTP request. The bean stays alive until the HTTP request completes.  If you use this bean scope for a standalone application, your code will result in an error
+This bean scope is valid only for a web application. As per this bean scope, a new instance of the bean is created for each HTTP request. The bean stays alive until the HTTP request completes. If you use this bean scope for a standalone application, your code will result in an error
 
 ### Session
 
-This bean scope is also valid only for a web application. As per this bean scope, a new instance of the bean is created for each HTTP session. The bean stays alive as long as the session is alive.  If you use this bean scope for a standalone application, your code will result in an error
+This bean scope is also valid only for a web application. As per this bean scope, a new instance of the bean is created for each HTTP session. The bean stays alive as long as the session is alive. If you use this bean scope for a standalone application, your code will result in an error
 
 ### Global Session
 
@@ -42,8 +39,6 @@ This bean scope is only valid for a portlet application. As per this bean scope,
 ## How to define bean scopes?
 
 Spring supports a **@Scope** annotation. You can use it to specify a Spring bean scope. As mentioned earlier, the default scope is **singleton**. However, if you want to specify the **prototype** scope for a bean, you can do it as follows:
-
- 
 
 ```
 @Service

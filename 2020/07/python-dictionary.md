@@ -5,9 +5,7 @@ categories:
   - "python"
 ---
 
-In my [earlier](https://learnjava.co.in/python-tuples/) article, I had covered Python Tuples.  In this article, I will be covering Python dictionary.
-
- 
+In my[earlier](https://learnjava.co.in/python-tuples/) article, I had covered Python Tuples. In this article, I will be covering Python dictionary.
 
 ## What is a Python dictionary?
 
@@ -102,7 +100,7 @@ So, this empties the `employeeDict` dictionary but does not delete it. You can s
 
 ## Obtaining the length of a Python dictionary
 
-Python has a built-in function **len**. This returns the length of the object passed in. You can use this function to obtain the length of a dictionary. The following code demonstrates this:
+Python has a built-in function **len**. This returns the length of the object passed in. You can use this function to obtain the length of a dictionary. The following code demonstrates this:
 
 ```
 employeeDict1 = {'name':'John Doe','salary':5000.00,'department':'HR'}

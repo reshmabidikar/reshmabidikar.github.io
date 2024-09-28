@@ -6,17 +6,15 @@ categories:
   - "java8"
 ---
 
-Functional interfaces and lambda expressions are one of the major features in Java 8. Java provides a lot of in-built functioal interfaces in the java.util.function package. One of these is the **ToIntFunction.** In this blog post, I will be explaining how thisfunctional interface works. To know more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
-
-\[table id=24 /\]
+Functional interfaces and lambda expressions are one of the major features in Java 8. Java provides a lot of in-built functional interfaces in the java.util.function package. One of these is the **ToIntFunction.** In this blog post, I will be explaining how thisfunctional interface works. To know more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
 
 ## What is ToIntFunction
 
-**ToIntFunction** is an in-built functional interface in the **java.util.Function** package. It accepts an argument of any data type but returns a result of type **int**.
+**ToIntFunction** is an in-built functional interface in the **java.util.Function** package. It accepts an argument of any data type but returns a result of type **int**.
 
 It is a primitive specialization of the [Function](https://learnjava.co.in/java-8-function-interface-example/) interface that always returns a result of **int** type. So **IntFunction<T>** is similar to [**Function<T,Integer>**](https://learnjava.co.in/java-8-function-interface-example/)
 
-It has an **applyAsInt** method. It then applies the logic in this method on the argument passed in to produce the **int** result.
+It has an **applyAsInt**method. It then applies the logic in this method on the argument passed in to produce the **int** result.
 
 ## ToIntFunction Sample Code
 
@@ -30,7 +28,7 @@ int len = strLengthProducer.applyAsInt("Hello!");
 System.out.println("Length:"+len);
 ```
 
-Here, `strLengthProducer` accepts a String input.  The code uses a lambda expression that simply returns the length of the input String.
+Here, `strLengthProducer` accepts a String input. The code uses a lambda expression that simply returns the length of the input String.
 
 This code prints the following output:
 
@@ -46,4 +44,4 @@ There is another functional interface [IntFunction](https://learnjava.co.in/intf
 
 ## Conclusion
 
-So in this article, we took a look at the **ToIntFunction** interface. This interface is a specialization of the [Function](https://learnjava.co.in/java-8-function-interface-example/) interface. It accepts an argument of any data type and returns a result of **int** data type.
+So in this article, we took a look at the **ToIntFunction** interface. This interface is a specialization of the [Function](https://learnjava.co.in/java-8-function-interface-example/) interface. It accepts an argument of any data type and returns a result of **int** data type.
