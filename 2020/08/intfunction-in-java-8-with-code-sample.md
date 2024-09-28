@@ -8,8 +8,6 @@ categories:
 
 In this blog post, I will be explaining how the Java 8 functional interface **IntFunction** works. To know more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
 
-\[table id=24 /\]
-
 ## What is IntFunction
 
 **IntFunction** is an in-built functional interface in the java.util.Function package. It accepts an argument of **int** data type, operates on it and produces a result of any data type. It is a specialization of the [Function](https://learnjava.co.in/java-8-function-interface-example/) interface. It has an [apply](https://docs.oracle.com/javase/9/docs/api/java/util/function/IntFunction.html#apply-int-) method. It applies the logic in this method on the **int** argument passed in and produces a result of the specified data type.

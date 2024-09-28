@@ -8,6 +8,7 @@
 * [Java Inheritance Interview Questions](java-inheritance-interview-questions-with-examples.md)
 * [Difference between local, instance and static variables in Java](2021/03/what-is-the-difference-between-a-local-instance-and-static-variable-in-java.md)
 * [Difference between Comparator and Comparable](2020/09/difference-between-comparator-and-comparable.md)
+* [Difference between Module and Package](2020/08/what-is-the-difference-between-a-module-and-a-package.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -18,6 +19,7 @@
 * [putIfAbsent and getOrDefault Methods explained](2021/03/putifabsent-and-getordefault-map-methods-with-examples.md)
 * [DoubleUnaryOperator in Java 8](2021/02/doubleunaryoperator-in-java-8-with-code-sample.md)
 * [Java 8 Comparator Changes](2020/12/java-8-comparator-changes.md)
+* [IntFunction in Java 8](2020/08/intfunction-in-java-8-with-code-sample.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -61,4 +63,5 @@
 * [Python While Loop](2021/04/python-while-loop-with-code-samples.md)
 * [Python Function Arguments Explained](2021/03/python-functions-arguments-with-examples.md)
 * [Python Functions Part 1](2020/12/python-functions-part-1-2.md)
+* [Reading User Input in Python](2020/08/reading-user-input-in-python-with-code-sample.md)
 
