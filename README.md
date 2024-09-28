@@ -8,11 +8,15 @@
 * [Java Inheritance Interview Questions](java-inheritance-interview-questions-with-examples.md)
 * [Difference between local, instance and static variables in Java](2021/03/what-is-the-difference-between-a-local-instance-and-static-variable-in-java.md)
 
+## Java 11 New Features
+* [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
+
 ## Java 8 New Features
 * [IntBinaryOperator](2021/04/intbinaryoperator.md)
 * [Java 8 Parallel Streams](2021/04/parallel-streams-in-java-with-code-samples.md)
 * [putIfAbsent and getOrDefault Methods explained](2021/03/putifabsent-and-getordefault-map-methods-with-examples.md)
 * [DoubleUnaryOperator in Java 8](2021/02/doubleunaryoperator-in-java-8-with-code-sample.md)
+* [Java 8 Comparator Changes](2020/12/java-8-comparator-changes.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -45,6 +49,7 @@
 ## JPA, Hibernate and JDBC
 
 * [JPA Interfaces Explained](2021/02/jpa-interfaces-explained.md)
+* [How to create a Standalone JPA Application](2020/12/how-to-create-a-standalone-jpa-application)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
@@ -53,4 +58,5 @@
 ## Python
 * [Python While Loop](2021/04/python-while-loop-with-code-samples.md)
 * [Python Function Arguments Explained](2021/03/python-functions-arguments-with-examples.md)
+* [Python Functions Part 1](2020/12/python-functions-part-1-2.md)
 
