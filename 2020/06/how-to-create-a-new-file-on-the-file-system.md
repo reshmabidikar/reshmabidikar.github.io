@@ -23,9 +23,7 @@ private static void createNewFile(String filePath) {
   }
 ```
 
- 
-
-This code creates a file at the specified  filePath. The file path should include the file location as well as file name. The `createNewFile` method returns a boolean value which indicates whether file creation was successful or not.
+This code creates a file at the specified filePath. The file path should include the file location as well as file name. The `createNewFile` method returns a boolean value which indicates whether file creation was successful or not.
 
 # Using FileWriter.write
 
@@ -47,11 +45,11 @@ private static void createNewFileUsingFileWriter(String filePath) {
   }
 ```
 
-The code first creates a `FileWriter` object corresponding to `filePath`. It then uses the `fileWriter.write`  method to write the String "**Hello World**" at this path. So this will create the file as well as write the String value to this file.
+The code first creates a `FileWriter` object corresponding to `filePath`. It then uses the `fileWriter.write` method to write the String "**Hello World**" at this path. So this will create the file as well as write the String value to this file.
 
 # Using FileOutputStream.write
 
-Just like `java.io.FileWriter`, there is a `java.io.FileOutputStream` class that you can use to write to a file. So, it has a `write` method as well. However, the `FileOutputStream` can only write bytes.  So you can use this approach when you want to create a file and write some data to it. The following code demonstrates this:
+Just like `java.io.FileWriter`, there is a `java.io.FileOutputStream` class that you can use to write to a file. So, it has a `write` method as well. However, the `FileOutputStream` can only write bytes. So you can use this approach when you want to create a file and write some data to it. The following code demonstrates this:
 
 ```
 private static void createNewFileUsingFileOutputStream(String filePath) {

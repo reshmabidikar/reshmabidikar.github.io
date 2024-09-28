@@ -11,8 +11,6 @@ In my [earlier article](https://learnjava.co.in/spring-framework-what-and-why/),
 
 Just to [recap](https://learnjava.co.in/spring-framework-what-and-why/), the Spring framework consists of the Spring container. The Spring Container is responsible for creating the objects required in an application and providing them to the necessary classes.  It uses Inversion of Control via Dependency Injection to achieve this. Let us now see how exactly this happens.
 
-\[table id=27 /\]
-
 ## High Level Overview
 
 In order for Spring to be able to wire up the application, it requires developers to provide the following:
@@ -24,11 +22,9 @@ The Spring container is also known as the **Spring Application Context**. It is 
 
 [![How Spring works under the hood](images/Spring.png)](https://learnjava.co.in/wp-content/uploads/2020/03/Spring.png)
 
- 
-
 ## Beans
 
-As explained earlier, the beans in a Spring application are the actual objects that need to be configured. They are simple POJO classes. In order for Spring to be instantiate the beans, the POJO classes need to provide setter methods or constructors. The Spring container injects dependencies via the setter methods or constructors.  In other words, the Spring container invokes the setter methods or constructors to initialize the bean.
+As explained earlier, the beans in a Spring application are the actual objects that need to be configured. They are simple POJO classes. In order for Spring to be instantiate the beans, the POJO classes need to provide setter methods or constructors. The Spring container injects dependencies via the setter methods or constructors. In other words, the Spring container invokes the setter methods or constructors to initialize the bean.
 
 ### **Setter injection**
 
@@ -55,11 +51,7 @@ public class MessageService {
 }
 ```
 
- 
-
 Here, the `MessageService`bean uses the `MessageDAO`. It has a setter method for `MessageDAO`. So when creating the`MessageService`, the Spring container also initializes the `messageDAO`bean by invoking the setter method.
-
- 
 
 ### **Constructor injection**
 
@@ -85,7 +77,7 @@ Here, the `MessageService`bean has a constructor that initializes the `messageDA
 
 ## Configuration metadata
 
-In addition to creating beans with setter methods/constructors, an application needs to provide the configuration metadata.  Configuration metadata simply means information about the dependencies, that is the beans required by a particular bean.
+In addition to creating beans with setter methods/constructors, an application needs to provide the configuration metadata. Configuration metadata simply means information about the dependencies, that is the beans required by a particular bean.
 
 There are three ways in which the configuration metadata can be provided:
 

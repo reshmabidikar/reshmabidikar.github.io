@@ -9,7 +9,7 @@ One of the lesser known Collection interfaces in the java.util.Queue interface. 
 
 ## What is the Java Queue interface?
 
-The **java.util.Queue** interface extends the **java.util.Collection** interface. It provides a **First In First Out (FIFO)** behavior and you can use it to represent a Queue data structure.  It has several implementations in the Collection API. The **java.util.LinkedList** and **java.util.PriorityQueue** are the most common implementations
+The **java.util.Queue** interface extends the **java.util.Collection** interface. It provides a **First In First Out (FIFO)** behavior and you can use it to represent a Queue data structure. It has several implementations in the Collection API. The **java.util.LinkedList** and **java.util.PriorityQueue** are the most common implementations
 
 ## Java Queue Interface Operations
 
@@ -17,7 +17,7 @@ There are several methods available on the queue interface that help to perform 
 
 ### add
 
-The `add`method supports adding an element to the Queue. if for some reason the `add` method is unable to add the element, it throws an **Exception.**
+The `add`method supports adding an element to the Queue. if for some reason the `add` method is unable to add the element, it throws an **Exception.**
 
 **Sample Code (Without Exception)**
 
@@ -44,7 +44,7 @@ System.out.println(daysOfTheWeek);
 
 **Sample Code (With Exception)**
 
-As mentniod earlier, if the `add` method is unable to add the element, it throws an **Exception.** This behaviour is not evident when you use the **LinkedList** implementation of a Queue. However it is evident for the **ArrayBlockingQueue** implementation which has a capacity restriction.
+As mentniod earlier, if the `add` method is unable to add the element, it throws an **Exception.** This behaviour is not evident when you use the **LinkedList** implementation of a Queue. However it is evident for the **ArrayBlockingQueue** implementation which has a capacity restriction.
 
 ```
 	        Queue<String> daysOfTheWeek = new ArrayBlockingQueue<String>(1); 
@@ -55,8 +55,8 @@ As mentniod earlier, if the `add` method is unable to add the element, it throws
 ```
 
 - Line 1 creates a **daysOfTheWeek** queue. It uses the **ArrayBlockingQueue** implementation and specifies the size as 1
-- Line 2 uses the **add** method to add the value **Monday** which returns **true**
-- Line 4 uses the **add** method to add the value **Tuesday** 
+- Line 2 uses the **add** method to add the value **Monday** which returns **true**
+- Line 4 uses the **add** method to add the value **Tuesday** 
 - Since this is a Queue with size 1, Line 4 causes an exception.
 
 **Output:**
@@ -71,7 +71,7 @@ at demo.QueueDemo.main(QueueDemo.java:14)
 
 ### offer
 
-The `offer` method is similar to `add`.  So it adds an element at the head of the queue . The only difference is if for some reason the  `offer` method is unable to add an element to the queue, it returns a false.
+The `offer` method is similar to `add`. So it adds an element at the head of the queue . The only difference is if for some reason the `offer` method is unable to add an element to the queue, it returns a false.
 
 **Sample Code**
 
@@ -196,10 +196,10 @@ The `element`method returns the head of the queue but does not remove it from th
 
 - Line 1 creates a **daysOfTheWeek** queue. It uses the **LinkedList** implementation
 - Lines 2 uses the **add** method to add the value **Monday** to the queue
-- Line 3 uses the **element** method to retrieve the head of the queue, in this case **Monday.** It does not remove this value from the queue
+- Line 3 uses the **element** method to retrieve the head of the queue, in this case **Monday.** It does not remove this value from the queue
 - Line 5 again uses the **element** method again to retrieve the head of the queue. Since the call at Line 3 does not remove the value, this call also returns **Monday**
 - Line 8 initializes the **daysOfTheWeek** Queue to a new empty Queue
-- Line 9 uses the **element** method to retrieve the head of the queue
+- Line 9 uses the **element** method to retrieve the head of the queue
 - Since the queue is empty, this causes a **NoSuchElementException**
 
 **Output:**
@@ -233,9 +233,9 @@ System.out.println(day);
 
 - Line 1 creates a **daysOfTheWeek** queue. It uses the **LinkedList** implementation
 - Lines 2 uses the **add** method to add the value **Monday** to the queue
-- Line 4 uses the **peek** method to retrieve the head of the queue, in this case **Monday.** It does not remove this value from the queue
+- Line 4 uses the **peek** method to retrieve the head of the queue, in this case **Monday.** It does not remove this value from the queue
 - Line 7 initializes the **daysOfTheWeek** Queue to a new empty Queue
-- Line 9 uses the **element** method to retrieve the head of the queue
+- Line 9 uses the **element** method to retrieve the head of the queue
 - Since the queue is empty,it returns **null**
 
 **Output:**

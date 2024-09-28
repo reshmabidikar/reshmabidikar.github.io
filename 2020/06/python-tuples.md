@@ -5,15 +5,15 @@ categories:
   - "python"
 ---
 
-In my [earlier](https://learnjava.co.in/python-lists-and-list-operations/) article, I had covered Python Lists.  In this article, I will be covering Python tuples.
+In my [earlier](https://learnjava.co.in/python-lists-and-list-operations/) article, I had covered Python Lists. In this article, I will be covering Python tuples.
 
 ## What is a Tuple
 
-Just like a Python list, a tuple is a set of values.  Unlike a List, a tuple is **immutable**, so you cannot modify it after it is created. Also, the values in a **List** are **enclosed in square brackets**, a **tuple** on the other hand, **uses parentheses**.
+Just like a Python list, a tuple is a set of values. Unlike a List, a tuple is **immutable**, so you cannot modify it after it is created. Also, the values in a **List** are **enclosed in square brackets**, a **tuple** on the other hand, **uses parentheses**.
 
 ## Creating a Tuple
 
-You can create a tuple by specifying comma separated values directly or within parentheses.  The following code demonstrates this:
+You can create a tuple by specifying comma separated values directly or within parentheses. The following code demonstrates this:
 
 ```
 mytuple1 = (1,"two",2.5,"three")
@@ -24,9 +24,7 @@ print(mytuple1)
 print(mytuple2)
 ```
 
- 
-
-As you can see from the code above, a Python tuple can contain values of different data types. The above code creates a tuple `mytuple1` that has values of type Integer, Decimal and String. It also creates `mytuple2` using simple comma separated values. So this code prints the following output:
+As you can see from the code above, a Python tuple can contain values of different data types. The above code creates a tuple `mytuple1` that has values of type Integer, Decimal and String. It also creates `mytuple2` using simple comma separated values. So this code prints the following output:
 
 ```
 (1, 'two', 2.5, 'three')
@@ -35,7 +33,7 @@ As you can see from the code above, a Python tuple can contain values of differe
 
 ## Accessing values in a Tuple
 
-You can access the values in a tuple via the slice operator. It consists of **\[\]** or **\[:\]**. You can access Python tuples both in the **forward** as well as **backward** direction.  In the forward direction,tuples start from position **0** for the first element in the tuple. In the backward direction, tuples start at position **\-1** for the last value in the list.
+You can access the values in a tuple via the slice operator. It consists of **\[\]**or **\[:\]**. You can access Python tuples both in the **forward** as well as **backward** direction. In the forward direction,tuples start from position **0** for the first element in the tuple. In the backward direction, tuples start at position **\-1** for the last value in the list.
 
 The following code demonstrates this:
 
@@ -64,8 +62,6 @@ World
 
 As mentioned earlier, a tuple is **immutable**. So you cannot update a value from a tuple. If you try to update a value in a tuple, an error occurs. The following code demonstrates this:
 
- 
-
 ```
 mytuple = ("cat","dog","cow","monkey")
 mytuple[2] = "horse"
@@ -91,7 +87,7 @@ del mytuple
 print(mytuple)
 ```
 
-The above code deletes `mytuple` and then tries to print it. So it causes an exception as follows:
+The above code deletes `mytuple` and then tries to print it. So it causes an exception as follows:
 
 ```
 Traceback (most recent call last):
@@ -112,7 +108,7 @@ mytuple3 = mytuple1+mytuple2
 print(mytuple3)
 ```
 
-This code concatenates `mytuple1` and `mytuple2` and creates `mytuple3` . So it prints the following output:
+This code concatenates `mytuple1` and `mytuple2` and creates `mytuple3`. So it prints the following output:
 
 ```
 ('apple', 'orange', 'banana', 'mango', 'cherry')
@@ -136,7 +132,7 @@ This code creates a new tuple `mytuple3` which repeats the contents of `mytuple1
 
 ## Obtaining length of a tuple
 
-Python has a built-in function **len**. This returns the length of the object passed in. You can use this function to obtain the length of a tuple. The following code demonstrates this:
+Python has a built-in function **len**. This returns the length of the object passed in. You can use this function to obtain the length of a tuple. The following code demonstrates this:
 
 ```
 mytuple1 = ('apple','orange')

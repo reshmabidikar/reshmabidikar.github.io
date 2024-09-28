@@ -13,7 +13,7 @@ Sometimes, your entity may have a field which is a Collection of primitive types
 
 ## @ElementCollection annotation
 
-Just to recap my [earlier](https://learnjava.co.in/hibernate-collection-mapping/) article, Hibernate/JPA supports the @ElementCollection annotation.  You need to specify this annotation on the Collection that you want to persist to the database.
+Just to recap my [earlier](https://learnjava.co.in/hibernate-collection-mapping/) article, Hibernate/JPA supports the @ElementCollection annotation. You need to specify this annotation on the Collection that you want to persist to the database.
 
 Consider the following `Student`class:
 
@@ -42,7 +42,7 @@ public class Student {
 
 ## Saving an Entity with a Collection
 
-Once the field in the entity is marked with the `@ElementCollection`annotation,  you simply need to invoke the `save`method on the entity. This will cause a separate table to be created corresponding to the values in the Collection. The following code demonstrates this:
+Once the field in the entity is marked with the `@ElementCollection`annotation, you simply need to invoke the `save`method on the entity. This will cause a separate table to be created corresponding to the values in the Collection. The following code demonstrates this:
 
 ```
 public class Main {
@@ -70,8 +70,6 @@ public class Main {
 When you execute this code, it creates tables as follows:
 
 [![](images/CollectionMappingTable-1.png)](https://learnjava.co.in/wp-content/uploads/2020/06/CollectionMappingTable-1.png)
-
- 
 
 ## CollectionTable
 
@@ -108,4 +106,4 @@ So when you save a Student object, this code creates the following table:
 
 ## Conclusion
 
-So in conclusion, Hibernate/JPA supports the `@ElementCollection` annotation. You can use it to map a **Collection** to a database without having to use the `@OneToMany` annotation and creating a separate entity. In this article, we saw how you can use the `@ElementCollection` annotation to map a **List** of primitive values to a database table. In subsequent articles, I will be  demonstrating how you can use `@ElementCollection` annotation to map a Collection of non-primitive types.
+So in conclusion, Hibernate/JPA supports the `@ElementCollection` annotation. You can use it to map a **Collection** to a database without having to use the `@OneToMany` annotation and creating a separate entity. In this article, we saw how you can use the `@ElementCollection` annotation to map a **List** of primitive values to a database table. In subsequent articles, I will be demonstrating how you can use `@ElementCollection` annotation to map a Collection of non-primitive types.
