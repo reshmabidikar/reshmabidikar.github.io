@@ -5,7 +5,7 @@ categories:
   - "strings"
 ---
 
-Very often, you will come across programming scenarios where you will need to remove all white spaces from a String.  In this article, we will see how to remove whitespaces from a String in Java.
+Very often, you will come across programming scenarios where you will need to remove all white spaces from a String. In this article, we will see how to remove whitespaces from a String in Java.
 
 ## Using String.trim
 
@@ -20,7 +20,7 @@ System.out.println(str1.trim());
 This code creates a String str1 that has leading and trailing whitespaces. It then invokes the trim method. So this code prints the following output:
 
 ```
-     Hello World 
+Hello World 
 Hello World
 ```
 
@@ -42,7 +42,7 @@ HelloWorld
 
 ## Using String.replaceAll
 
-In addition to the replace method, there is also a replaceAll method on the String class. It accepts as parameters  a regular expression and a replacement value. It replaces each substring that matches the regular expression with the replacement value. The following code demonstrates this:
+In addition to the replace method, there is also a replaceAll method on the String class. It accepts as parameters a regular expression and a replacement value. It replaces each substring that matches the regular expression with the replacement value. The following code demonstrates this:
 
 ```
 String str1 = "   Hello World  ";
@@ -51,8 +51,6 @@ System.out.println(str2);
 ```
 
 This code invokes the str.replaceAll method. The first argument is a regular expression that matches white spaces.,The second argument is an empty String ("") , which is the replacement value. So this code prints the following output:
-
- 
 
 ```
 HelloWorld

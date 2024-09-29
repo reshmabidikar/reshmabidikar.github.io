@@ -12,12 +12,15 @@
 * [What is the difference between iterator and splititerator](2020/06/what-is-the-difference-between-iterator-and-splititerator.md)
 * [Java Queue Interface Explained](2020/06/java-queue-interface-explained.md)
 * [How to create a new file on the file system](2020/06/how-to-create-a-new-file-on-the-file-system.md)
+* [How to remove whitespaces from a String](2020/05/how-to-remove-white-spaces-from-a-string.md)
+* [Constructors in inheritance](2020/05/constructors-in-inheritance.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
 
 ## Java 10
 [Java 10 time based release and versioning](2020/07/java-10-time-based-release-versioning.md)
+[Java 10 Unmodifiable Collections](2020/05/java-10-unmodifiable-collections-changes.md)
 
 ## Java 9
 [Java 9 New Features](2020/06/java-9-new-features.md)
@@ -31,6 +34,7 @@
 * [IntFunction in Java 8](2020/08/intfunction-in-java-8-with-code-sample.md)
 * [ToIntFunction in Java 8](2020/07/tointfunction-in-java-8-with-code-sample.md)
 * [Java 8 DoubleToLongFunction Example](2020/06/java-8-doubletolongfunction-example.md)
+* [Java 8 DoubleToIntFunction Example](2020/05/java-8-doubletointfunction-example.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -43,6 +47,8 @@
 * [SpringBoot Annotations Explained](2021/01/springbootapplication-annotation-explained.md)
 * [Spring Bean Scopes](2020/07/spring-bean-scopes.md)
 * [How Spring Works](2020/06/how-spring-works-under-the-hood.md)
+* [SpringBoot Starter Dependencies](2020/05/spring-boot-starter-dependencies.md)
+* [Spring Annotation Configuration Example](2020/05/spring-annotation-configuration-example.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
@@ -68,6 +74,7 @@
 * [How to create a Standalone JPA Application](2020/12/how-to-create-a-standalone-jpa-application)
 * [Introduction to JPA](2020/09/introduction-to-jpa-the-why-what-and-how-of-jpa.md)
 * [Hibernate List Mapping](2020/06/hibernate-list-mapping.md)
+* [Hibernate Collection Mapping](2020/05/hibernate-collection-mapping.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
@@ -80,4 +87,5 @@
 * [Reading User Input in Python](2020/08/reading-user-input-in-python-with-code-sample.md)
 * [Python Directory](2020/07/python-dictionary.md)
 * [Python Tuples](2020/06/python-tuples.md)
+* [Python Lists and List Operations](2020/05/python-lists-and-list-operations.md)
 

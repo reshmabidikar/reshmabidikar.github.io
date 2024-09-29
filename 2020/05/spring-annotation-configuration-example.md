@@ -28,8 +28,6 @@ Step 2 - Add Spring dependencies to the maven pom file. You can add the followin
   </dependencies>
 ```
 
-\[table id=27 /\]
-
 # Creating Beans
 
 Create the following bean classes:
@@ -47,7 +45,7 @@ public class MessageDAO {
 }
 ```
 
-MessageDAO is a simple class that has only one method `getMessage()`This returns a String value.  It has the `@Repository`annotation. This extends from the `org.springframework.stereotype.Component`annotation. So it indicates that MessageDAO is a Spring component.
+MessageDAO is a simple class that has only one method `getMessage()`This returns a String value. It has the `@Repository`annotation. This extends from the `org.springframework.stereotype.Component`annotation. So it indicates that MessageDAO is a Spring component.
 
 **MessageService:**
 
@@ -73,13 +71,13 @@ public class MessageService {
 }
 ```
 
-MessageService has a method `printMessage`. It uses the `MessageDAO`to obtain the message and prints it. It has a private field corresponding to `MessageDAO`and getter/setter methods for it.It has the `@Service`annotation.  Like `@Repository`this also extends from the `org.springframework.stereotype.Component`annotation and indicates that MessageService is a Spring component.
+MessageService has a method `printMessage`. It uses the `MessageDAO`to obtain the message and prints it. It has a private field corresponding to `MessageDAO`and getter/setter methods for it.It has the `@Service`annotation. Like `@Repository`this also extends from the `org.springframework.stereotype.Component`annotation and indicates that MessageService is a Spring component.
 
-The`messageDAO`field has the `@Autowired`annotation.  This tell Spring that the container should configure this dependency. So Spring tried to find a bean of `MessageDAO`type. If it finds a matching bean, it injects it by invoking the setter method.
+The`messageDAO`field has the `@Autowired`annotation. This tell Spring that the container should configure this dependency. So Spring tried to find a bean of `MessageDAO`type. If it finds a matching bean, it injects it by invoking the setter method.
 
 # Configuration File
 
-Create a file **ApplicationContext.xml** in the **src/main/resources** folder as follows:
+Create a file **ApplicationContext.xml** in the **src/main/resources** folder as follows:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -95,11 +93,9 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 </beans>
 ```
 
- 
+This **ApplicationContext.xml** is the spring configuration file. Since we are using annotation based configuration, the configuration file does not contain any bean definitions as explained [here](https://learnjava.co.in/spring-xml-configuration-example/). Instead, it has the `<context:component-scan>`tag. So Spring automatically scans all the packages under the base-package, which in this case is the "**learnjava.demo**" package. It identifies all classes that have the `@Component`annotation and its derivatives. These are treated as beans and created by the Spring container. So since the `MessageDAO`
 
-This **ApplicationContext.xml** is the spring configuration file.  Since we are using annotation based configuration, the configuration file does not contain any bean definitions as explained [here](https://learnjava.co.in/spring-xml-configuration-example/).  Instead, it has the `<context:component-scan>`tag. So Spring automatically scans all the packages under the base-package, which in this case is the "**learnjava.demo**" package.  It identifies all classes that have the `@Component`annotation and its derivatives. These are treated as beans and created by the Spring container.  So since the `MessageDAO`
-
-has the `@Repository`annotation, Spring treats it as a bean and injects it into the `MessageService`class.  Similarly, the `MessageService`
+has the `@Repository`annotation, Spring treats it as a bean and injects it into the `MessageService`class. Similarly, the `MessageService`
 
 has the `@Service`annotation and so that is created as a bean as well.
 
@@ -114,7 +110,7 @@ messageService.printMessage();
 
 ```
 
-The `org.springframework.context..ApplicationContext`interface represents the Spring Container. This code first creates a `ClassPathXmlApplicationContext`instance which is an implementation of the `ApplicationContext`interface.  There are several other implementations too. The `ClassPathXmlApplicationContext`is used in case of an XML configuration.
+The `org.springframework.context..ApplicationContext`interface represents the Spring Container. This code first creates a `ClassPathXmlApplicationContext`instance which is an implementation of the `ApplicationContext`interface. There are several other implementations too. The `ClassPathXmlApplicationContext`is used in case of an XML configuration.
 
 `ApplicationContext`has a method `getBean`. The code invokes this method in order to obtain the`MessageService`. The code then invokes the `printMessage`method.
 

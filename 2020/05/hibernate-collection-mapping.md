@@ -21,7 +21,7 @@ In order to map a collection having primitive type of data, you just need to spe
 
 ### Mapping an Object Type
 
-Just like a primitive type collection, you need to specify the `@ElementCollection` annotation on the field corresponding to the collection in case the collection has objects. In addition, you also need to specify the `@Embeddable` annotation on the class whose objects are present in the Collection. When you try to persist the main entity, Hibernate will automatically persist the collection along with the main entity.  Hibernate creates a new table that has columns corresponding to all the fields in the `@Embeddable` class. It inserts records corresponding to the objects in the Collection. You can use this approach to map a List, Set or Map. I will be providing a detailed code sample in a separate article
+Just like a primitive type collection, you need to specify the `@ElementCollection` annotation on the field corresponding to the collection in case the collection has objects. In addition, you also need to specify the `@Embeddable` annotation on the class whose objects are present in the Collection. When you try to persist the main entity, Hibernate will automatically persist the collection along with the main entity. Hibernate creates a new table that has columns corresponding to all the fields in the `@Embeddable` class. It inserts records corresponding to the objects in the Collection. You can use this approach to map a List, Set or Map. I will be providing a detailed code sample in a separate article
 
 ## How Collection Mapping is different from association mapping
 

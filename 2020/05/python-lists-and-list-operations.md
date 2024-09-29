@@ -20,7 +20,7 @@ As you can see from the code above, a Python list can contain values of differen
 
 ## Accessing Values in Python Lists
 
-You can access the values in a List via the slice operator. It consists of **\[\]** or **\[:\]**. You can access Python lists both in the **forward** as well as **backward** direction.  In the forward direction,lists start from position **0** for the first element in the list. In the backward direction, lists start at position **\-1** for the last value in the list.
+You can access the values in a List via the slice operator. It consists of **\[\]** or **\[:\]**. You can access Python lists both in the **forward** as well as **backward** direction. In the forward direction,lists start from position **0** for the first element in the list. In the backward direction, lists start at position **\-1** for the last value in the list.
 
 The following code demonstrates this:
 
@@ -166,7 +166,7 @@ mylist.sort()
 print(mylist)
 ```
 
-This code sorts the list in ascending order.  So it prints the following output:
+This code sorts the list in ascending order. So it prints the following output:
 
 ```
 [1, 5, 8, 9, 12]
@@ -189,7 +189,7 @@ So this code prints the following output:
 
 ## Concatenating two Python lists
 
-The ‘**+**‘ operator acts as the **concatenation operator**. It helps in concatenating Lists. The following code demonstrates this:
+The ‘**+**‘ operator acts as the **concatenation operator**. It helps in concatenating Lists. The following code demonstrates this:
 
 ```
 mylist1 = ["cat","dog","cow","monkey"]

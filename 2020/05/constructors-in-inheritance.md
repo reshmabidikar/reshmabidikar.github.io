@@ -15,7 +15,7 @@ There are different scenarios in which the invocation differs slightly. Let's ex
 
 ## Scenario 1 - Base class has a constructor
 
-When the base-class has a constructor, creating an object of the sub-class results in automatic invocation of the base class constructor. Consider the following code snippet:
+When the base-class has a constructor, creating an object of the sub-class results in automatic invocation of the base class constructor.Consider the following code snippet:
 
 ```
 public class Animal{
@@ -33,7 +33,7 @@ System.out.println("In Cat constructor");
 }
 ```
 
-Here, The `Animal`class has  a constructor. `Cat` is a sub-class of `Animal` and has its own constructor.
+Here, The `Animal`class has a constructor. `Cat` is a sub-class of `Animal` and has its own constructor.
 
 Now consider the following code:
 
@@ -65,7 +65,7 @@ System.out.println("In cat constructor");
 }
 ```
 
-Here, The `Animal` class does not have  a constructor. `Cat` is a sub-class of `Animal` and has its own constructor.
+Here, The `Animal` class does not have a constructor. `Cat` is a sub-class of `Animal` and has its own constructor.
 
 Now consider the following code:
 
@@ -105,7 +105,7 @@ Cat(){ //this causes compilation error
 }
 ```
 
-Here, the `Animal` class has a constructor that accepts an argument. The `Cat` class has a no arguments constructor. However, a compilation error occurs in the `Cat` class. This is because there is no default no-arguments constructor in the `Animal` class.  Also, Java is unable to insert a default constructor since there is a constructor with arguments in the base class. You can fix this by explicitly adding a no arguments constructor in the `Animal` class or by invoking the `Animal` constructor from the `Cat` constructor explicitly
+Here, the `Animal` class has a constructor that accepts an argument. The `Cat` class has a no arguments constructor. However, a compilation error occurs in the `Cat` class. This is because there is no default no-arguments constructor in the `Animal` class. Also, Java is unable to insert a default constructor since there is a constructor with arguments in the base class. You can fix this by explicitly adding a no arguments constructor in the `Animal` class or by invoking the `Animal` constructor from the `Cat` constructor explicitly
 
 ## Conclusion
 
