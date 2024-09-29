@@ -14,6 +14,7 @@
 * [How to create a new file on the file system](2020/06/how-to-create-a-new-file-on-the-file-system.md)
 * [How to remove whitespaces from a String](2020/05/how-to-remove-white-spaces-from-a-string.md)
 * [Constructors in inheritance](2020/05/constructors-in-inheritance.md)
+* [How to check if a Date is before or after another Date](2020/04/how-to-check-if-a-date-is-before-or-after-another-date.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -21,6 +22,7 @@
 ## Java 10
 [Java 10 time based release and versioning](2020/07/java-10-time-based-release-versioning.md)
 [Java 10 Unmodifiable Collections](2020/05/java-10-unmodifiable-collections-changes.md)
+[Java 10 Type Inference](2020/04/java-10-type-inference.md)
 
 ## Java 9
 [Java 9 New Features](2020/06/java-9-new-features.md)
@@ -35,6 +37,7 @@
 * [ToIntFunction in Java 8](2020/07/tointfunction-in-java-8-with-code-sample.md)
 * [Java 8 DoubleToLongFunction Example](2020/06/java-8-doubletolongfunction-example.md)
 * [Java 8 DoubleToIntFunction Example](2020/05/java-8-doubletointfunction-example.md)
+* [Java 8 DoubleBinaryOperator Example](2020/04/java-8-doublebinaryoperator-example.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -49,6 +52,8 @@
 * [How Spring Works](2020/06/how-spring-works-under-the-hood.md)
 * [SpringBoot Starter Dependencies](2020/05/spring-boot-starter-dependencies.md)
 * [Spring Annotation Configuration Example](2020/05/spring-annotation-configuration-example.md)
+* [Spring Initializr Explained](2020/04/spring-initializr-explained.md)
+* [Spring Java Configuration Example](2020/04/spring-java-configuration-example.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
@@ -75,6 +80,7 @@
 * [Introduction to JPA](2020/09/introduction-to-jpa-the-why-what-and-how-of-jpa.md)
 * [Hibernate List Mapping](2020/06/hibernate-list-mapping.md)
 * [Hibernate Collection Mapping](2020/05/hibernate-collection-mapping.md)
+* [JPA Hibernate Inheritance Mapping Strategies](2020/04/jpa-hibernate-inheritance-mapping-strategies-explained.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
@@ -88,4 +94,8 @@
 * [Python Directory](2020/07/python-dictionary.md)
 * [Python Tuples](2020/06/python-tuples.md)
 * [Python Lists and List Operations](2020/05/python-lists-and-list-operations.md)
+* [Python String Operations](2020/04/python-string-operations.md)
+
+## Javascript
+* [Javascript Under the Hood](2020/04/javascript-under-the-hood.md)
 

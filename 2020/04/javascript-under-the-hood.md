@@ -13,7 +13,7 @@ Javascript was initially developed to add dynamic behavior to static web pages. 
 
 # Early usage of Javascript
 
-As mentioned earlier, Javascript was initially developed to add dynamic behavior to static web pages. The Javascript engine is shipped as part of the browser.  So it integrates with HTML and executes in the browser. It was primarily used for client side validations. So for example, if you have an HTML form that accepts a phone number, you can use client side Javascript that checks if the phone number is valid. So you can put some basic checks that validate if the entered value has only numbers and not letters or other symbols. Only if the client side validation is successful, the value can be sent to the server side for appropriate processing.
+As mentioned earlier, Javascript was initially developed to add dynamic behavior to static web pages. The Javascript engine is shipped as part of the browser. So it integrates with HTML and executes in the browser. It was primarily used for client side validations. So for example, if you have an HTML form that accepts a phone number, you can use client side Javascript that checks if the phone number is valid. So you can put some basic checks that validate if the entered value has only numbers and not letters or other symbols. Only if the client side validation is successful, the value can be sent to the server side for appropriate processing.
 
 # Current Javascript Ecosystem
 
@@ -23,11 +23,9 @@ In addition, it is also now possible to use Javascript on the server side via fr
 
 # How Server side Javascript works
 
-Traditionally, Javascript was used on the client side. The server side processing like database handling and other business logic was developed using other server side frameworks like PHP or JSP or ASP. However, the advent of Node.js changed all this. Node.js is open source. It allows running Javascript applications outside a browser. So it provides a runtime environment to run Javascript applications. In addition, it also provides several Javascript libraries.  This makes it possible to use Javascript to develop server side code as well.
+Traditionally, Javascript was used on the client side. The server side processing like database handling and other business logic was developed using other server side frameworks like PHP or JSP or ASP. However, the advent of Node.js changed all this. Node.js is open source. It allows running Javascript applications outside a browser. So it provides a runtime environment to run Javascript applications. In addition, it also provides several Javascript libraries. This makes it possible to use Javascript to develop server side code as well.
 
 The main advantage of Node.js over traditional server side libraries is that it is asynchronous. So once it receives the request, it does not wait for the request to be processed, it is ready to receive the next request.
-
-\[table id=30 /\]
 
 # Conclusion
 

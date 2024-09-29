@@ -26,7 +26,7 @@ For example consider the String "**Hello World**". In forward direction the char
 
 # Slice Operator
 
-The slice operator helps to create **substrings**.  It consists of **\[\]** or **\[:\]**.  In order to create sun-strings, you need to specify the position within the slice operator. The following code demonstrates this:
+The slice operator helps to create **substrings**. It consists of **\[\]** or **\[:\]**. In order to create sun-strings, you need to specify the position within the slice operator. The following code demonstrates this:
 
 ```
 str = 'This is a Java program'

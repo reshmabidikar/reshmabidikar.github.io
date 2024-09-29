@@ -42,7 +42,7 @@ isAfter:false
 
 ## Using CompareTo
 
-The `java.util.Date`class has a method `compareTo`. You can also use this to compare dates.  `compareTo`works as follows:
+The `java.util.Date`class has a method `compareTo`. You can also use this to compare dates. `compareTo`works as follows:
 
 - Returns 0 if both dates are equal
 - Returns a value less than 0 if the date on which it is invoked is before the date passed in
@@ -74,8 +74,8 @@ isAfter:false
 
 The `java.util.Calendar`also has methods `before()`and `after()`. You can use these methods to compare two dates.These methods work as follows:
 
-- The `before` method returns true if the Calendar instance on which is it invoked is before the specified Calendar instance, otherwise it returns false.
-- The `after` methods returns true if the Calendar instance on which is it invoked is after the specified Calendar instance, otherwise it returns false.
+- The `before` method returns true if the Calendar instance on which is it invoked is before the specified Calendar instance, otherwise it returns false.
+- The `after` methods returns true if the Calendar instance on which is it invoked is after the specified Calendar instance, otherwise it returns false.
 
 The following code demonstrates this:
 
@@ -97,11 +97,11 @@ isBefore:true
 isAfter:false
 ```
 
-Just like `java.util.Date`, there is a `compareTo` method on the **Calendar** class. You can also use this method to compare dates.
+Just like `java.util.Date`, there is a `compareTo` method on the **Calendar** class. You can also use this method to compare dates.
 
 # Using LocalDate
 
-[java.util.LocalDate](https://learnjava.co.in/java-8-localdate-class-explained/) is a new class added by Java 8. It makes Date manipulation/Date arithmetic very easy. It also has methods `isBefore`and `isAfter`.  These methods work as follows:
+[java.util.LocalDate](https://learnjava.co.in/java-8-localdate-class-explained/) is a new class added by Java 8. It makes Date manipulation/Date arithmetic very easy. It also has methods `isBefore`and `isAfter`. These methods work as follows:
 
 - The `isBefore`method returns true if the date on which is it invoked is before the specified date, otherwise it returns false.
 - The `isAfter`method returns true if the date on which is it invoked is after the specified date, otherwise it returns false.
@@ -126,9 +126,7 @@ isBefore:false
 isAfter:true
 ```
 
-Just like `java.util.Date`, there is a `compareTo` method on the **LocalDate** class. You can also use this method to compare dates.
-
-\[table id=30 /\]
+Just like `java.util.Date`, there is a `compareTo` method on the **LocalDate** class. You can also use this method to compare dates.
 
 # Conclusion
 

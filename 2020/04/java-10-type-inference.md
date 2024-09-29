@@ -55,7 +55,7 @@ for(var i = 0; i < numbers.size();i++) {
 }
 ```
 
-Here, the code uses **var** for the loop control variable **i** which iterates over the **numbers** list and prints each number.
+Here, the code uses **var** for the loop control variable **i** which iterates over the **numbers** list and prints each number.
 
 ### As a return value in a method
 
@@ -78,7 +78,7 @@ You can use **var** to assign the value returned by a method. The following code
 var value = doSomething();
 ```
 
-Here, the code uses **var** for the variable **value** which is  assigned the value returned by the method **doSomething**.
+Here, the code uses **var** for the variable **value** which is assigned the value returned by the method **doSomething**.
 
 ## Invalid Uses of Var
 
@@ -123,8 +123,6 @@ var myArray[] = {2,4,6,8,10};
 ```
 
 Here, the code uses **var** with **myArray** and initializes it to some values which is invalid.
-
-\[table id=30 /\]
 
 ## Conclusion
 

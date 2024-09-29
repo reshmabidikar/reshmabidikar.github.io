@@ -15,15 +15,14 @@ JPA/Hibernate support 4 inheritance strategies, **Single Table**, **Joined**, **
 
 Consider the following class diagram:
 
-\[caption id="attachment\_2022" align="alignnone" width="300"\][![Inheritance_strategies_class_diagram](images/Inheritance_strategies_class_diagram-300x222.png)](https://learnjava.co.in/wp-content/uploads/2020/04/Inheritance_strategies_class_diagram.png) Inheritance\_strategies\_class\_diagram\[/caption\]
+\[caption id="attachment\_2022" align="alignnone" width="300"\][![Inheritance_strategies_class_diagram](images/Inheritance_strategies_class_diagram-300x222.png)](images/Inheritance_strategies_class_diagram.png) Inheritance\_strategies\_class\_diagram\[/caption\]
 
- 
 
 Here _Person_ is a super class. It has two sub-classes, _Employee_ and _Customer_. Let us see how each of these strategies work for the above class hierarchy.
 
 ## Single Table
 
-This strategy is also known as **table per hierarchy**. In this strategy, JPA creates a **single table** corresponding to all the classes in the inheritance hierarchy. This table has columns corresponding to the fields in all the classes in the hierarchy.  So in this example, the table will have columns corresponding to the fields in _Person_, _Employee_ and Customer classes.
+This strategy is also known as **table per hierarchy**. In this strategy, JPA creates a **single table** corresponding to all the classes in the inheritance hierarchy. This table has columns corresponding to the fields in all the classes in the hierarchy. So in this example, the table will have columns corresponding to the fields in _Person_, _Employee_ and Customer classes.
 
 Each record uses only a subset of the columns corresponding to the underlying entity that it represents and sets a **null** value for the other columns. So an _Employee_ record will only use the columns _name_, _emailId_, _department_, _salary_. It will have null values for _customerType_ and _companyName_ fields_._
 
@@ -31,7 +30,7 @@ In addition, JPA adds an additional column to the table. This is known as the **
 
 So for the class structure above, JPA creates the following table:
 
-[![/Inheritancemapping-SingleTable](images/Inheritancemapping-SingleTable-300x85.png)](https://learnjava.co.in/wp-content/uploads/2020/04/Inheritancemapping-SingleTable.png)
+[![/Inheritancemapping-SingleTable](images/Inheritancemapping-SingleTable-300x85.png)](images/Inheritancemapping-SingleTable.png)
 
 ## Joined
 
@@ -43,7 +42,7 @@ For a base class record, JPA stores all the data in the base class table. For a 
 
 So for the class structure above, JPA creates the following table structure:
 
-[![Inheritancemapping-Joined](images/Inheritancemapping-Joined-269x300.png)](https://learnjava.co.in/wp-content/uploads/2020/04/Inheritancemapping-Joined.png)
+[![Inheritancemapping-Joined](images/Inheritancemapping-Joined-269x300.png)](images/Inheritancemapping-Joined.png)
 
 ## Table Per Sub-Class
 
@@ -57,7 +56,7 @@ For any entity, JPA stores data in the corresponding table.
 
 So for the class structure above, JPA creates the following table structure:
 
-[![Inheritancemapping-TablePerClass](images/Inheritancemapping-TablePerClass-300x204.png)](https://learnjava.co.in/wp-content/uploads/2020/04/Inheritancemapping-TablePerClass.png)
+[![Inheritancemapping-TablePerClass](images/Inheritancemapping-TablePerClass-300x204.png)](images/Inheritancemapping-TablePerClass.png)
 
 ## MappedSuperClass
 
@@ -69,13 +68,9 @@ The _Employee_ table has fields corresponding to _name_, _emailId,_ _department_
 
 So for the class structure above, JPA creates the following table structure:
 
-[![Inheritancemapping-MappedSuperClass](images/Inheritancemapping-MappedSuperClass-300x133.png)](https://learnjava.co.in/wp-content/uploads/2020/04/Inheritancemapping-MappedSuperClass.png)
-
- 
+[![Inheritancemapping-MappedSuperClass](images/Inheritancemapping-MappedSuperClass-300x133.png)](images/Inheritancemapping-MappedSuperClass.png)
 
 I will be demonstrating how to implement each of these strategies in subsequent articles.
-
-\[table id=30 /\]
 
 ## Further Learning
 

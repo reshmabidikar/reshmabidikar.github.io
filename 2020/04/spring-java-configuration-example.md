@@ -94,10 +94,7 @@ public class MyConfiguration {
 
 }
 ```
-
- 
-
-The `MyConfiguration`class has the `@Configuration`annotation. This indicates that this class contains the configuration metadata. This has two methods marked with the `@Bean`annotation.   The names of the method are the same as the bean names. Spring uses these methods to create the beans at startup.
+The `MyConfiguration`class has the `@Configuration`annotation. This indicates that this class contains the configuration metadata. This has two methods marked with the `@Bean`annotation. The names of the method are the same as the bean names. Spring uses these methods to create the beans at startup.
 
 ## Writing Main Code
 
@@ -114,7 +111,7 @@ Create a class **Main.java** with the following code:
 
 ```
 
-The `org.springframework.context..ApplicationContext`interface represents the Spring Container. This code first creates a `AnnotationConfigApplicationContext`instance which is an implementation of the `ApplicationContext`interface.  There are several other implementations too. The `AnnotationConfigApplicationContext` is used in case of Java/annotation configuration.
+The `org.springframework.context..ApplicationContext`interface represents the Spring Container. This code first creates a `AnnotationConfigApplicationContext`instance which is an implementation of the `ApplicationContext`interface. There are several other implementations too. The `AnnotationConfigApplicationContext` is used in case of Java/annotation configuration.
 
 `ApplicationContext`has a method `getBean`. The code invokes this method in order to obtain the`MessageService`. The code then invokes the `printMessage`method.
 
@@ -123,9 +120,6 @@ So on execution, this code prints the following output:
 ```
 Hello World
 ```
-
-\[table id=30 /\]
-
 ## Further Learning
 
 - [Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F)
