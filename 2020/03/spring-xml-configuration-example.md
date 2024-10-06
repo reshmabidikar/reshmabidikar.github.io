@@ -75,7 +75,7 @@ MessageService has a method `printMessage`. It uses the `MessageDAO`to obtain th
 
 # Configuration File (With Setter Injection)
 
-Create a file **ApplicationContext.xml** in the **src/main/resources** folder.  Add the following:
+Create a file **ApplicationContext.xml** in the **src/main/resources** folder.Add the following:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -93,7 +93,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 </beans>
 ```
 
-This **ApplicationContext.xml** is the spring configuration file.  It specifies each bean in the application via the "**bean**" tag. Since the `messageService`requires the `messageDAO`, it specifies this via a `property`tag.
+This **ApplicationContext.xml** is the spring configuration file. It specifies each bean in the application via the "**bean**" tag. Since the `messageService`requires the `messageDAO`, it specifies this via a `property`tag.
 
 # Writing Main Code
 
@@ -111,7 +111,7 @@ public class Main {
 
 ```
 
-The `org.springframework.context..ApplicationContext`interface represents the Spring Container. This code first creates a `ClassPathXmlApplicationContext`instance which is an implementation of the `ApplicationContext`interface.  There are several other implementations too. The `ClassPathXmlApplicationContext`is used in case of an XML configuration.
+The `org.springframework.context..ApplicationContext`interface represents the Spring Container. This code first creates a `ClassPathXmlApplicationContext`instance which is an implementation of the `ApplicationContext`interface. There are several other implementations too. The `ClassPathXmlApplicationContext`is used in case of an XML configuration.
 
 `ApplicationContext`has a method `getBean`. The code invokes this method in order to obtain the`MessageService`. The code then invokes the `printMessage`method.
 
@@ -170,8 +170,6 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 Here, instead of specifying the `property`tag for the `messageService`bean, the `constructor-arg`is specified.
 
 Rest of the code remains the same. So when you execute the code with these changes, it will print the same output as before.
-
-\[table id=29 /\]
 
 ## Further Learning
 

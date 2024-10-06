@@ -7,11 +7,9 @@ categories:
 
 HQL stands for Hibernate Query language. It is similar to SQL, but instead of the database table and column names, it uses the class and field names. So whenever we need to query the database, we write HQL queries in Hibernate. Based on the underlying database, Hibernate automatically converts **HQL** into equivalent SQLs statements. HQL has a very rich syntax and I will be covering the Hibernate HQL syntax in detail in this article.
 
- 
-
 ## From Clause
 
-The from clause consists of the from keyword followed by an entity name.  It specifies the entity from which Hibernate needs to retrieve data. So if we have a Person entity, we can specify the from clause as follows:
+The from clause consists of the from keyword followed by an entity name. It specifies the entity from which Hibernate needs to retrieve data. So if we have a Person entity, we can specify the from clause as follows:
 
 ```
 String queryStr = "from Person";
@@ -35,7 +33,7 @@ List<String> names = query.getResultList();
 
 ## As Clause
 
-Hibernate allows us to assign a name to a class in a query using the “AS” clause. Such a name given to a class is called an alias.  Aliases are specified just for ease of use and are optional although it is a good practice to use them. If you have long queries, using an alias makes the query more readable.
+Hibernate allows us to assign a name to a class in a query using the “AS” clause. Such a name given to a class is called an alias. Aliases are specified just for ease of use and are optional although it is a good practice to use them. If you have long queries, using an alias makes the query more readable.
 
 The following code demonstrates this:
 
@@ -67,11 +65,9 @@ The following code demonstrates this:
 
 ```
 String queryStr = "from Person order by age";
-Query<Person> query = session.createQuery(queryStr); 
-List<Person> books = query.getResultList();
+Query<Person> query = session.createQuery(queryStr);
+List<Person> books =query.getResultList();
 ```
-
-\[table id=29 /\]
 
 ## Further Learning
 

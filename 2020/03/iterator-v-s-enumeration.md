@@ -12,8 +12,6 @@ In this article, I will be comparing the Iterator and Enumeration interfaces. I 
 
 Both Iterator and Enumeration are interfaces defined in the Java Collection framework. You can use both to loop through the elements of a Collection. Let us first understand how they work
 
- 
-
 ### Iterator
 
 Iterator is an interface defined in the Java Collection framework. You can use it to loop through the elements of a collection. The following code demonstrates this:
@@ -34,7 +32,7 @@ This code uses an Iterator to loop through the elements in a List and print them
 
 ### Enumeration
 
-Enumeration is also an interface in the java.util.package. Just like Iterator, you can use it to loop through values. However, Enumeration  is a legacy interface you can only use it for legacy classes like Vector and HashTable, The following code demonstrates this:
+Enumeration is also an interface in the java.util.package. Just like Iterator, you can use it to loop through values. However, Enumeration is a legacy interface you can only use it for legacy classes like Vector and HashTable, The following code demonstrates this:
 
 ```
 Vector vector = new Vector();
@@ -61,7 +59,7 @@ As seen earlier, you can use Iterator to loop through any Collection. However yo
 
 ### Methods
 
-The methods in the Iterator and Eumeration interfaces differ slightly. While Iterator has methods `hasNext`and `next`, Enumeration has the methods `hasMoreElements`and `nextElement`
+The methods in the Iterator and Enumeration interfaces differ slightly. While Iterator has methods `hasNext`and `next`, Enumeration has the methods `hasMoreElements`and `nextElement`
 
 ### Direction of iteration
 
@@ -125,10 +123,13 @@ Enumeration on the other hand cannot modify the input collection, so you cannot 
 
 The following table summarizes the differences between Iterator and Enumeration:
 
-\[table id=19 /\]
-
-\[table id=29 /\]
+|Iterator|Enumeration  |
+|--|--|
+| Can be used on all collection classes | Can be used only on legacy collection classes like Vector and HashMap |
+| Uses methods hasNext() and next() |Uses methods hasMoreElements() and nextElement()  |
+| Can be used to navigate in both forward and backward direction | Can only be used to navigate in forward direction |
+| Can also be used to remove the elements in the collection | Cannot be used to remove elements, can only be used to retrieve elements |
 
 ## Conclusion
 
-So to summarize, you can use both Iterator and Enumeration to loop through the elements in a Collection. While you an use Iterator on any Collection, you can use Enumeration only for legacy collections. Iterator also supports features like navigating in both directions and modifying the input Collection, which are not supported by Enumeration.
+So to summarize, you can use both Iterator and Enumeration to loop through the elements in a Collection. While you can use Iterator on any Collection, you can use Enumeration only for legacy collections. Iterator also supports features like navigating in both directions and modifying the input Collection, which are not supported by Enumeration.

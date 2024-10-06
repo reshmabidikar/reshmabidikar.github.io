@@ -8,8 +8,6 @@ categories:
 
 In this article, I will be demonstrating how to add a number of days to a Date in Java
 
-\[table id=24 /\]
-
 # Before Java 8
 
 Prior to Java 8, the Date and Calendar classes were available for Date manipulation. They make operations like adding a number of days to a Date very difficult. The following code demonstrates adding days to a date using the Calendar class:
@@ -45,7 +43,5 @@ System.out.println("Date "+date+" plus 5 days is "+date2);
 So this code first creates a LocalDate object corresponding to the String date. It then invokes the plusDays method to add 5 days to the specified date.
 
 Not only days, the LocalDate class the several methods that allow you to add/subtract months, years from the LocalDate object.
-
-\[table id=29 /\]
 
 # Conclusion

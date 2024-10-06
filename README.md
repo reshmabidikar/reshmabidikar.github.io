@@ -15,6 +15,8 @@
 * [How to remove whitespaces from a String](2020/05/how-to-remove-white-spaces-from-a-string.md)
 * [Constructors in inheritance](2020/05/constructors-in-inheritance.md)
 * [How to check if a Date is before or after another Date](2020/04/how-to-check-if-a-date-is-before-or-after-another-date.md)
+* [How to add a number of days to a Date](2020/03/how-to-add-a-number-of-days-to-a-date-in-java.md)
+* [Iterator v/s Enumeration](2020/03/iterator-v-s-enumeration.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -25,7 +27,8 @@
 [Java 10 Type Inference](2020/04/java-10-type-inference.md)
 
 ## Java 9
-[Java 9 New Features](2020/06/java-9-new-features.md)
+* [Java 9 New Features](2020/06/java-9-new-features.md)
+* [Creating a Module](2020/03/creating-a-java-9-module.md)
 
 ## Java 8 New Features
 * [IntBinaryOperator](2021/04/intbinaryoperator.md)
@@ -54,6 +57,7 @@
 * [Spring Annotation Configuration Example](2020/05/spring-annotation-configuration-example.md)
 * [Spring Initializr Explained](2020/04/spring-initializr-explained.md)
 * [Spring Java Configuration Example](2020/04/spring-java-configuration-example.md)
+* [Spring XML Configuration Example](2020/03/spring-xml-configuration-example.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
@@ -81,6 +85,7 @@
 * [Hibernate List Mapping](2020/06/hibernate-list-mapping.md)
 * [Hibernate Collection Mapping](2020/05/hibernate-collection-mapping.md)
 * [JPA Hibernate Inheritance Mapping Strategies](2020/04/jpa-hibernate-inheritance-mapping-strategies-explained.md)
+* [Hibernate HQL Syntax](2020/03/hibernate-hql-syntax.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
@@ -95,6 +100,7 @@
 * [Python Tuples](2020/06/python-tuples.md)
 * [Python Lists and List Operations](2020/05/python-lists-and-list-operations.md)
 * [Python String Operations](2020/04/python-string-operations.md)
+* [Python numeric and String Variables](2020/03/python-numeric-and-string-variables.md)
 
 ## Javascript
 * [Javascript Under the Hood](2020/04/javascript-under-the-hood.md)
