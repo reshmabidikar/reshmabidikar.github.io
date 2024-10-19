@@ -34,8 +34,6 @@ a = 10
 b = 100.5
 ```
 
- 
-
 This code creates the variables '**a**', '**b**'
 
 The variable '**a**' is of **integer** type with the value '**10**'
@@ -73,11 +71,11 @@ f,g=1,'Hello'
 
 **c,d,e** are assigned the value **10.5**
 
-**f** is assigned the value **1** and **g** is assigned the value **Hello**
+**f** is assigned the value **1** and **g** is assigned the value **Hello**
 
 ## Changing Data Type
 
-You can change the data type even after assigning a value to it.  So you can do the following:
+You can change the data type even after assigning a value to it. So you can do the following:
 
 ```
 i=10
@@ -102,8 +100,6 @@ In addition, Python supports variables of the following types:
 - [Dictionary](https://learnjava.co.in/python-dictionary/)
 
 You can click the links above to understand more about these types.
-
-\[table id=29 /\]
 
 ## Further Learning
 

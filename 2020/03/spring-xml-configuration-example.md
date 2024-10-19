@@ -28,8 +28,6 @@ Step 2 - Add Spring dependencies to the maven pom file. You can add the followin
   </dependencies>
 ```
 
-\[table id=27 /\]
-
 # Creating Beans
 
 Create the following bean classes:

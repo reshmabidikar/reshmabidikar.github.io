@@ -16,7 +16,7 @@
 * [Constructors in inheritance](2020/05/constructors-in-inheritance.md)
 * [How to check if a Date is before or after another Date](2020/04/how-to-check-if-a-date-is-before-or-after-another-date.md)
 * [How to add a number of days to a Date](2020/03/how-to-add-a-number-of-days-to-a-date-in-java.md)
-* [Iterator v/s Enumeration](2020/03/iterator-v-s-enumeration.md)
+* [Iterator v/s Enumeration](2020/03/iterator-v-s-enumeration.md) 
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
