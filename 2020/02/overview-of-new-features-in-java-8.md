@@ -7,8 +7,6 @@ categories:
 
 Though I've covered many Java 8 new features, I've never really given an overview of all the new features as a whole. So I will be covering that in this article.
 
-\[table id=24 /\]
-
 ## Functional Interfaces
 
 **Functional interfaces** are simply interfaces with just one abstract method. Java 8 has introduced the `@FunctionalInterface`
@@ -37,7 +35,7 @@ Java 8 introduced a new operator called the **method reference operator**. It is
 
 ## Optional
 
-Java 8 has added a feature called **Optional**. Optional is simply a container that can hold a value. Many times methods return a null value. If the code that invokes the method expects a non-null value, this can result in a **NullPointerException**. To avoid this, you need to add explicit null checks in your code. Optionals help in **avoiding this boilerplate code** and help in writing clean code. You can read more about Java 8 optionals [here](https://learnjava.co.in/java-8-optional/).
+Java 8 has added a feature called **Optional**. Optional is simply a container that can hold a value. Many times methods return a null value. If the code that invokes the method expects a non-null value, this can result in a **NullPointerException**. To avoid this, you need to add explicit null checks in your code. Optionals help in **avoiding this boilerplate code** and help in writing clean code. You can read more about Java 8 optionals [here](https://learnjava.co.in/java-8-optional/).
 
 ## Conclusion
 

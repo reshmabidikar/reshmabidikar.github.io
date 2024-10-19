@@ -8,7 +8,7 @@ tags:
   - "java9modules"
 ---
 
-One of the new features added by Java 9 is the module system. This article is the second part in a  3 part article. In [Part 1](https://learnjava.co.in/java-9-modules-introduction/), I gave a high level introduction to modules and the advantages that they provide. In this part, I will dive more into the details of what exactly a module is, what it consists of and other module internals.
+One of the new features added by Java 9 is the module system. This article is the second part in a 3 part article. In [Part 1](https://learnjava.co.in/java-9-modules-introduction/), I gave a high level introduction to modules and the advantages that they provide. In this part, I will dive more into the details of what exactly a module is, what it consists of and other module internals.
 
 See also [Module Introduction](https://learnjava.co.in/java-9-modules-introduction/) and [Creating a Module](https://learnjava.co.in/creating-a-java-9-module/).
 

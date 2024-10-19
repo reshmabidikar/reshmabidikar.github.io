@@ -17,6 +17,8 @@
 * [How to check if a Date is before or after another Date](2020/04/how-to-check-if-a-date-is-before-or-after-another-date.md)
 * [How to add a number of days to a Date](2020/03/how-to-add-a-number-of-days-to-a-date-in-java.md)
 * [Iterator v/s Enumeration](2020/03/iterator-v-s-enumeration.md) 
+* [Java Method Overloading Explained](2020/02/java-method-overloading-explained.md)
+* [How to sort a list in descending order](2020/02/how-to-sort-a-list-in-descending-order.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -29,8 +31,11 @@
 ## Java 9
 * [Java 9 New Features](2020/06/java-9-new-features.md)
 * [Creating a Module](2020/03/creating-a-java-9-module.md)
+* [Java 9 Module Internals](2020/02/java-9-module-internals.md)
 
 ## Java 8 New Features
+* [Overview of new features in Java 8](2020/02/overview-of-new-features-in-java-8.md)
+* [Java 8 Optional](2020/02/java-8-optional.md)
 * [IntBinaryOperator](2021/04/intbinaryoperator.md)
 * [Java 8 Parallel Streams](2021/04/parallel-streams-in-java-with-code-samples.md)
 * [putIfAbsent and getOrDefault Methods explained](2021/03/putifabsent-and-getordefault-map-methods-with-examples.md)
@@ -90,6 +95,9 @@
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
 * [How to use TestNG with Maven and Eclipse](2021/12/how-to-use-testng-with-maven-and-eclipse.md)
+
+## Swagger
+* [Introduction to Swagger](2020/02/introduction-to-swagger.md)
 
 ## Python
 * [Python While Loop](2021/04/python-while-loop-with-code-samples.md)

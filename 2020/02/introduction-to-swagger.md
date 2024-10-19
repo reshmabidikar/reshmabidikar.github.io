@@ -23,7 +23,7 @@ OPEN API is a specification that developers can use to document REST services. I
 
 Open API specification files can be written in JSON, XML or YAML format.
 
-YAML stands for “YAML Ain’t Markup Language.” YAML is similar to JSON but unlike JSON. However, it does not have  curly brackets, square brackets, etc. and so it is more readable than JSON. YAML uses colons to denote an object’s properties and hyphens to denote an array. YAML is hierarchical and uses spaces to denote levels. Each level can store a key-value pair.
+YAML stands for “YAML Ain’t Markup Language.” YAML is similar to JSON but unlike JSON. However, it does not have curly brackets, square brackets, etc. and so it is more readable than JSON. YAML uses colons to denote an object’s properties and hyphens to denote an array. YAML is hierarchical and uses spaces to denote levels. Each level can store a key-value pair.
 
 # What is Swagger?
 
@@ -33,7 +33,7 @@ It includes a set of tools as follows:
 
 ## Swagger Editor
 
-Swagger editor is an online editor. Developers can use it to create the Open API specification file. It can create the Specification file in both YAML and JSON format.  The advantage of using the Swagger editor is that it automatically validates the document that you are creating. So you can quickly fix syntax errors if any. This is as against typing the resource file in a simple text editor, where there is no syntax checking and so it is more error prone. You can create the specification file in both JSON and YAML format in the swagger editor.
+Swagger editor is an online editor. Developers can use it to create the Open API specification file. It can create the Specification file in both YAML and JSON format. The advantage of using the Swagger editor is that it automatically validates the document that you are creating. So you can quickly fix syntax errors if any. This is as against typing the resource file in a simple text editor, where there is no syntax checking and so it is more error prone. You can create the specification file in both JSON and YAML format in the swagger editor.
 
 ## Swagger UI
 
