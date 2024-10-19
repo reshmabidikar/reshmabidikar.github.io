@@ -19,13 +19,18 @@ So basically, an object can move into the persistent state when any one of the f
 - When the code invokes session.save, session.persist or session.saveorUpdate
 - When the code invokes session.load or session.get
 
-Any changes to a persistent object are automatically saved to the database when the session in flushed. _Flushing_ is the process of synchronizing the underlying database with the objects in the session. There is a session.flush method available but you generally don’t need to invoke it explicitly. A session gets flushed when the transaction is commited. The process of automatically updating the database with the changes to the persistent object when the session is flushed is known as **automatic dirty checking**.
+Any changes to a persistent object are automatically saved to the database when the session in flushed. _Flushing_ is the process of synchronizing the underlying database with the objects in the session. There is a session.flush method available but you generally don’t need to invoke it explicitly. A session gets flushed when the transaction is commited. The process of automatically updating the database with the changes to the persistent object when the session is flushed is known as **automatic dirty checking**.
 
 ## An Example
 
 Suppose we have a database table **'Person'** which fields corresponding to 'id', 'name' and 'age'. Suppose it has some records as follows:
 
-\[table id=18 /\]
+| Id |Name  |Age |
+|--|--|--|
+|1  |Bill  |27|
+|2|Jane|31
+|3|Anna|29
+|4|Dave|34
 
 Now consider the following code:
 
@@ -40,7 +45,7 @@ session.close();
 HibernateUtil.closeSessionFactory();
 ```
 
-So this code invokes the **session.load** method to load the person object corresponding to the id '2'. So this moves the person record with id 2 to the persistent state.  It then invokes the **setAge** method and updates the value of the age field to 32.  Then the code directly invokes the **tx.commit** method without invoking the **session.save** or **session.update**. Since the person object is in the persistent state, the change to the age field will automatically get saved to the database.
+So this code invokes the **session.load** method to load the person object corresponding to the id '2'. So this moves the person record with id 2 to the persistent state. It then invokes the **setAge** method and updates the value of the age field to 32. Then the code directly invokes the **tx.commit** method without invoking the **session.save** or **session.update**. Since the person object is in the persistent state, the change to the age field will automatically get saved to the database.
 
 ## Further Learning
 

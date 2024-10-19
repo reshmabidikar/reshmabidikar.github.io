@@ -56,8 +56,6 @@ public class VarargDemo {
 }
 ```
 
- 
-
 This code has a method _calculate_ that accepts a parameter _num_ which is a vararg. It simple returns the num of the values specified in the vararg. It uses a for-each loop to iterate through the vararg. The main method then invokes this method with one, two and three arguments. So this code prints the following output:
 
 ```

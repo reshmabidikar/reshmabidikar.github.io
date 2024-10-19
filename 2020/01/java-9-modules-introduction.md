@@ -14,7 +14,7 @@ See also [Modules Internals](https://learnjava.co.in/java-9-module-internals/) a
 
 ## What are modules
 
-Modules are basically **groups of packages**. Just like you put a set of related classes into a package, you can put a set of related packages into a module. This helps to organize code better and to follow the Single Responsibility Principle (SRP).  So all the packages in a single module help to achieve a single functionality.
+Modules are basically **groups of packages**. Just like you put a set of related classes into a package, you can put a set of related packages into a module. This helps to organize code better and to follow the Single Responsibility Principle (SRP). So all the packages in a single module help to achieve a single functionality.
 
 ## Why they were added
 
@@ -24,13 +24,9 @@ Prior to Java 9, there was no concept of modules. So the core jar files related 
 
 Java 9 has made some fundamental changes which takes advantage of modules. Prior to Java 9, after installing the JDK a folder called **jre\\lib** was created with all the core jar files. When you installs Java 9, you will see a folder called **jmods**. This has all the Java 9 modules. So instead of having a big far rt.jar, JDK 9 has separate modules.
 
- 
-
 ## Benefits of Modules
 
 Modules offer several benefits.
-
- 
 
 ### Smaller size applications
 

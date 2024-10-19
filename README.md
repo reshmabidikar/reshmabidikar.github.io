@@ -19,6 +19,7 @@
 * [Iterator v/s Enumeration](2020/03/iterator-v-s-enumeration.md) 
 * [Java Method Overloading Explained](2020/02/java-method-overloading-explained.md)
 * [How to sort a list in descending order](2020/02/how-to-sort-a-list-in-descending-order.md)
+* [Java varargs explained](2020/01/java-varargs-explained.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -30,6 +31,7 @@
 
 ## Java 9
 * [Java 9 New Features](2020/06/java-9-new-features.md)
+* [Java 9 Modules Introduction](2020/01/java-9-modules-introduction.md)
 * [Creating a Module](2020/03/creating-a-java-9-module.md)
 * [Java 9 Module Internals](2020/02/java-9-module-internals.md)
 
@@ -46,6 +48,8 @@
 * [Java 8 DoubleToLongFunction Example](2020/06/java-8-doubletolongfunction-example.md)
 * [Java 8 DoubleToIntFunction Example](2020/05/java-8-doubletointfunction-example.md)
 * [Java 8 DoubleBinaryOperator Example](2020/04/java-8-doublebinaryoperator-example.md)
+* [Java 8 LocalDateTime Class](2020/01/java-8-localdatetime-class.md)
+* [Java 8 LongSupplier Example](2020/01/java-8-longsupplier-example.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -91,6 +95,7 @@
 * [Hibernate Collection Mapping](2020/05/hibernate-collection-mapping.md)
 * [JPA Hibernate Inheritance Mapping Strategies](2020/04/jpa-hibernate-inheritance-mapping-strategies-explained.md)
 * [Hibernate HQL Syntax](2020/03/hibernate-hql-syntax.md)
+* [Automatic Dirty Checking in Hibernate](2020/01/automatic-dirty-checking-in-hibernate.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
@@ -100,6 +105,7 @@
 * [Introduction to Swagger](2020/02/introduction-to-swagger.md)
 
 ## Python
+* [How to create a Python Program in Eclipse](2020/01/how-to-create-a-basic-python-program-in-eclipse-using-pydev.md)
 * [Python While Loop](2021/04/python-while-loop-with-code-samples.md)
 * [Python Function Arguments Explained](2021/03/python-functions-arguments-with-examples.md)
 * [Python Functions Part 1](2020/12/python-functions-part-1-2.md)
