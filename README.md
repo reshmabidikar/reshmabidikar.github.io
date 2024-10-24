@@ -38,6 +38,7 @@
 * [Creating a Module](2020/03/creating-a-java-9-module.md)
 * [Java 9 Module Internals](2020/02/java-9-module-internals.md)
 * [Java 9 ofnullable Stream Improvements](2019/12/java-9-ofnullable-stream-improvement.md)
+* * [Java 9 Stream API Iterate Method Example](2019/11/java-9-stream-api-iterate-method-example.md)
 
 ## Java 8 New Features
 * [Overview of new features in Java 8](2020/02/overview-of-new-features-in-java-8.md)
@@ -106,6 +107,7 @@
 * [JPA Hibernate Inheritance Mapping Strategies](2020/04/jpa-hibernate-inheritance-mapping-strategies-explained.md)
 * [Hibernate HQL Syntax](2020/03/hibernate-hql-syntax.md)
 * [Automatic Dirty Checking in Hibernate](2020/01/automatic-dirty-checking-in-hibernate.md)
+* [How Hibernate SessionFactory Works](2019/11/how-hibernate-sessionfactory-works.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)

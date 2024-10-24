@@ -22,14 +22,12 @@ session.close();
 sessionFactory.close();
 ```
 
- 
-
-- This code first creates a  **SessionFactory** object.  The sessionFactory contains all the data in the hibernate configuration file. The code uses the Configuration class to create the SessionFactory instance.
+- This code first creates a **SessionFactory** object. The sessionFactory contains all the data in the hibernate configuration file. The code uses the Configuration class to create the SessionFactory instance.
 - The **configuration.configure** method reads the hibernate.cfg.xml file and sets up the **Configuation** object using the properties in this file.
 - The **buildSessionFactory** method builds the sessionFactory object using this configuration data.
 - The **SessionFactory** object is usually created only once at the start of the application and kept for later use.
 - The **SessionFactory** corresponds to the database config file. So you will need different **SessionFactory** instances if your application connects to different databases.
-- You can then use the SessionFactory instance to obtain a **Session** and interact with the database
+- You can then use the SessionFactory instance to obtain a **Session** and interact with the database
 
 So I hope this blog post was useful to understand how the SessionFactory works internally. Happy learning!!
 
