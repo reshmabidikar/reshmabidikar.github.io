@@ -14,15 +14,11 @@ In this article, I will be covering the differences between JAX-RS/Jersey and Sp
 
 ## What is REST?
 
-[REST](https://learnjava.co.in/what-is-rest-api/) stands for Representational State Transfer.  It is an architectural style that can be used for web services. A REST server exposes functionality as REST endpoints which are simply URLs. A REST client simply uses the services exposed by the REST server by accessing the corresponding URL.
-
-\[table id=27 /\]
+[REST](https://learnjava.co.in/what-is-rest-api/) stands for Representational State Transfer. It is an architectural style that can be used for web services. A REST server exposes functionality as REST endpoints which are simply URLs. A REST client simply uses the services exposed by the REST server by accessing the corresponding URL.
 
 ## What is JAX-RS
 
-JAX-RS stands for Java API for RESTful Web Services (JAX-RS). It is the standard Java API for developing RESTful web services. The latest version of JAX-RS is JAX-RS 2.0.  It is part of Java EE 7, so it does not need to be included separately. It is just a specification, it does not provide an implementation. Jersey is the reference implementation of JAX-RS specification. There are other implementations of JAX-RS like RESTEasy, etc
-
- 
+JAX-RS stands for Java API for RESTful Web Services (JAX-RS). It is the standard Java API for developing RESTful web services. The latest version of JAX-RS is JAX-RS 2.0. It is part of Java EE 7, so it does not need to be included separately. It is just a specification, it does not provide an implementation. Jersey is the reference implementation of JAX-RS specification. There are other implementations of JAX-RS like RESTEasy, etc
 
 ## What is Spring REST
 
@@ -32,11 +28,26 @@ The Spring framework also provides REST support. The Spring MVC module can be us
 
 Although both JAX-RS and Spring REST can be used to create a RESTful service in Java, there are several differences between the two as follows:
 
-\[table id=16 /\]
+
+|Jax-rs|Spring REST  |
+|--|--|
+| JAX-RS is the standard Java specification for RESTful web services | Spring REST is an alternate way of writing REST services in Java, it does not implement JAX-RS |
+| JAX-RS is just a specification, you will need to include an implementation like Jersey in order to write REST services | Spring REST is the complete implementation for RESTful services by Spring. It can be used by itself. It does not implement JAX-RS |
+|JAX-RS uses standard annotations that are part of Java EE  |Spring REST uses its own custom annotations for REST|
+
+
 
 ## Some important annotations in JAX-RS and Spring REST
 
-\[table id=17 /\]
+
+| Jax-rs |Spring REST  |Use of Annotation |
+|--|--|--|
+| @Get |@RequestMapping, @GetMapping  | Used to specify that the method maps to an HTTP GET method|
+| @Post |@RequestMapping, @PostMapping  |Used to specify that the method maps to an HTTP POST method |
+| @Path | @RequestMapping | Used to specify The URI that the method or class maps to|
+|@QueryParam  | @RequestParam | Used to specify a query parameter|
+| @PathParam |@PathVariable  | Used to specify a path parameter|
+
 
 ## Further Learning
 

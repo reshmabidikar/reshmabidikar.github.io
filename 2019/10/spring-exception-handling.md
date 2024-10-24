@@ -5,7 +5,7 @@ categories:
   - "spring"
 ---
 
-Spring  In this article, I will be covering the various exception handling mechanisms in [Spring](https://learnjava.co.in/spring-framework-what-and-why/).
+Spring In this article, I will be covering the various exception handling mechanisms in [Spring](https://learnjava.co.in/spring-framework-what-and-why/).
 
 ## Using an ExceptionHandler
 
@@ -25,8 +25,6 @@ public void onRunTimeException(RuntimeException e){
 }
 }
 ```
-
-\[table id=27 /\]
 
 Here, the code specifies the @ExceptionHandler annotation on the onRuntimeException class. So this method is designated as an exception handling method. Whenever a RuntimeException occurs within any method in the PersonController, the code invokes this method.
 
@@ -61,15 +59,11 @@ public void onIllegaArgumentException(IllegalArgumentException npe){
 }
 ```
 
- 
-
 Here, the CustomExceptionHandler class has the @ControllerAdvice annotation. It has two exception handling methods, onNullPointerException and onIllegaArgumentException. Each method has the @ExceptionHandler annotation and the @ResponseStatus annotation. The @ExceptionHandler annotation specifies the exception that the method handles. The @ResponseStatus annotation specifies the HTTP response code that Spring should send to the client application when the particular exception occurs. So in the above code, when a NullPointerException occurs anywhere in the code, the Response code corresponding to Internal Server error will be sent to the client application.
 
 ## Using ResponseStatusException
 
 The third approach for Exception handling in Spring is using the ResponseStatusException. ResponseStatusException is a class that represents an exception. It is an alternative to use the @ResponseStatus annotation. Whenever an exception occurs in your code, you can create a ResponseStatusException with the appropriate HTTP error code and throw this exception. The following code demonstrates this:
-
- 
 
 ```
 @GetMapping(value = "/person")

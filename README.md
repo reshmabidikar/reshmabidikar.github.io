@@ -23,6 +23,7 @@
 * [Java Try With Explained](2019/12/java-try-with-explained.md)
 * [Java Callable Explained](2019/12/java-callable-explained.md)
 * [How to find the number of years between two Dates](2019/12/how-to-find-the-number-of-years-between-two-dates.md)
+* [How to find the day of the week represented by a date](2019/10/how-to-find-the-day-of-the-week-represented-by-a-particular-date.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -56,6 +57,8 @@
 * [Java 8 LocalDateTime Class](2020/01/java-8-localdatetime-class.md)
 * [Java 8 LongSupplier Example](2020/01/java-8-longsupplier-example.md)
 * [Java 8 Stream API Distinct Example](2019/12/java-8-stream-api-distinct-example.md)
+* [Java 8 Binary Operator Example](2019/10/java-8-binaryoperator-example.md)
+* [Java 8 Map Compute Method Examples](2019/10/java-8-map-compute-map-computeifpresent-map-computeifabsent-method-examples.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -75,9 +78,11 @@
 * [Spring XML Configuration Example](2020/03/spring-xml-configuration-example.md)
 * [Spring Framework What and Why](2019/12/spring-framework-what-and-why.md)
 * [Spring Modules Explained](2019/12/spring-modules-explained.md)
+* [Spring Exception Handling](2019/10/spring-exception-handling.md)
 
-## Jax-rs
+## Jax-rs and REST
 + [Jax-rs Exception Handling](2019/12/jax-rs-exception-handling.md)
++ [Jax-rs v/s Spring Rest](2019/10/jax-rs-vs-spring-rest.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
