@@ -13,8 +13,6 @@ tags:
 
 Prior to Java 8, you had to write complex logic to find the number of years between two dates. The DateTime API introduced from Java 8 onwards provides some methods that let you easily find the number of years between two dates.
 
-\[table id=24 /\]
-
 The following code demonstrates this:
 
 ```

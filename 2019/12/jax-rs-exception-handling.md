@@ -30,14 +30,11 @@ return Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
 }
 }
 ```
-
- 
-
 This is an Exception Mapper for a custom exception called MyException. It has the @Provider annotation. The MyExceptionMapper class implements the ExceptionMapper interface and overrides the toResponse method. In this method, you can place the correct HTTP status code. In this case, the code uses the HTTP status code for Internal Server Error i.e. code 500. So this code will be sent to the client when MyException occurs.
 
 ## Throwing a WebApplicationException
 
-Another way to handle exceptions using JAX-RS is to throw a WebApplicationException.  javax.ws.rs.WebApplicationException is an in-built checked exception provided by JAX-RS. Since this is an in-built exception, the application code does not need to provide an exception mapper. WebApplicationException includes a status code and Response object. The application code needs to initialize the WebApplicationException with an appropriate status code or Response object. Once the code throws the exception, JAX-RS catches the exception and uses the Response object and status code within the exception to send an appropriate HTTP response to the client. If there is no status code or Response object within the WebApplicationException, JAX-RS sends a status code of 500 which means "Internal Server Error" to the client.
+Another way to handle exceptions using JAX-RS is to throw a WebApplicationException. javax.ws.rs.WebApplicationException is an in-built checked exception provided by JAX-RS. Since this is an in-built exception, the application code does not need to provide an exception mapper. WebApplicationException includes a status code and Response object. The application code needs to initialize the WebApplicationException with an appropriate status code or Response object. Once the code throws the exception, JAX-RS catches the exception and uses the Response object and status code within the exception to send an appropriate HTTP response to the client. If there is no status code or Response object within the WebApplicationException, JAX-RS sends a status code of 500 which means "Internal Server Error" to the client.
 
 ## Further Learning
 

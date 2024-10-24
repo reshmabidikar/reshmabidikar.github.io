@@ -47,8 +47,6 @@ The try statement includes the resources that need to be closed automatically. I
 
 You can also specify more than one resource with the try/with statement. Java closes each of the specified resources. The following code demonstrates this:
 
- 
-
 ```
 public static void readAndWriteToFile(String inputFile, String outputFile) {
    try (BufferedReader bufferedReader = new BufferedReader(new FileReader(inputFile));BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFile))){

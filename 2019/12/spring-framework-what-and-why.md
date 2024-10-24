@@ -17,8 +17,6 @@ A typical Java application consists of many objects. For example if you are buil
 
 Java then introduced the EJB framework which eased this to some extent. The problem with EJB framework was that it was heavy and development using EJBs was not easy. Developers needed to create home and remote interfaces and write a lot of boilerplate code. Unit testing is also not easy with EJBs
 
-\[table id=27 /\]
-
 # What Spring is
 
 The [Spring framework](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) was developed as a solution to these problems. At its very core, Spring provides a wiring mechanism. It consists of the Spring container which uses **Inversion of Control** mechanism. Inversion of Control simply means the container is responsible for creating objects and not the application program. One of the ways to achieve Inversion of Control is **Dependency Injection**. Spring uses Dependency Injection. In **Dependency Injection**, the objects are injected into other objects through **setter** methods or **constructors**. So basically, Spring takes care of creating and setting the necessary dependencies. So the application code only needs to take care of the business logic.

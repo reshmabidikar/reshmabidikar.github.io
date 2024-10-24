@@ -8,9 +8,7 @@ categories:
 
 In this article, I will be demonstrating the distinct method provided by Java 8 Stream API.
 
-In order to understand the Stream API in detail, refer to [this](https://learnjava.co.in/java-8-streams/) blog post.
-
-\[table id=24 /\]
+In order to understand the Stream API in detail, refer to [this](https://learnjava.co.in/java-8-streams/) blog post.
 
 ## Introduction
 
@@ -63,12 +61,7 @@ public class Person {
   }
 }
 ```
-
- 
-
 The following code demonstrates adding some Person objects to a list and then eliminating duplicates from the List:
-
- 
 
 ```
 		List<Person> personList = new ArrayList<Person>();

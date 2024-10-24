@@ -20,6 +20,9 @@
 * [Java Method Overloading Explained](2020/02/java-method-overloading-explained.md)
 * [How to sort a list in descending order](2020/02/how-to-sort-a-list-in-descending-order.md)
 * [Java varargs explained](2020/01/java-varargs-explained.md)
+* [Java Try With Explained](2019/12/java-try-with-explained.md)
+* [Java Callable Explained](2019/12/java-callable-explained.md)
+* [How to find the number of years between two Dates](2019/12/how-to-find-the-number-of-years-between-two-dates.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -34,6 +37,7 @@
 * [Java 9 Modules Introduction](2020/01/java-9-modules-introduction.md)
 * [Creating a Module](2020/03/creating-a-java-9-module.md)
 * [Java 9 Module Internals](2020/02/java-9-module-internals.md)
+* [Java 9 ofnullable Stream Improvements](2019/12/java-9-ofnullable-stream-improvement.md)
 
 ## Java 8 New Features
 * [Overview of new features in Java 8](2020/02/overview-of-new-features-in-java-8.md)
@@ -50,6 +54,7 @@
 * [Java 8 DoubleBinaryOperator Example](2020/04/java-8-doublebinaryoperator-example.md)
 * [Java 8 LocalDateTime Class](2020/01/java-8-localdatetime-class.md)
 * [Java 8 LongSupplier Example](2020/01/java-8-longsupplier-example.md)
+* [Java 8 Stream API Distinct Example](2019/12/java-8-stream-api-distinct-example.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -67,6 +72,11 @@
 * [Spring Initializr Explained](2020/04/spring-initializr-explained.md)
 * [Spring Java Configuration Example](2020/04/spring-java-configuration-example.md)
 * [Spring XML Configuration Example](2020/03/spring-xml-configuration-example.md)
+* [Spring Framework What and Why](2019/12/spring-framework-what-and-why.md)
+* [Spring Modules Explained](2019/12/spring-modules-explained.md)
+
+## Jax-rs
++ [Jax-rs Exception Handling](2019/12/jax-rs-exception-handling.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
@@ -105,6 +115,7 @@
 * [Introduction to Swagger](2020/02/introduction-to-swagger.md)
 
 ## Python
+* [How to setup Pydev with Eclipse](2019/12/how-to-setup-pydev-with-eclipse.md)
 * [How to create a Python Program in Eclipse](2020/01/how-to-create-a-basic-python-program-in-eclipse-using-pydev.md)
 * [Python While Loop](2021/04/python-while-loop-with-code-samples.md)
 * [Python Function Arguments Explained](2021/03/python-functions-arguments-with-examples.md)

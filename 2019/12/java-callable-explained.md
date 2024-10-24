@@ -12,7 +12,7 @@ In this article, I will be explaining the Callable interface in Java. I will be 
 
 ## Runnable Interface
 
-Right from the start, the Runnable interface has been associated with multi-threaded programming.  The Runnable interface provides a run method that executes code in a separate thread. The following code demonstrates this:
+Right from the start, the Runnable interface has been associated with multi-threaded programming. The Runnable interface provides a run method that executes code in a separate thread. The following code demonstrates this:
 
 ```
 public class RunnableDemo {
@@ -29,7 +29,7 @@ public class RunnableDemo {
 }
 ```
 
-So this code first creates a new Runnable interface and uses a lambda expression to implement the run method.  The code then creates a new Thread and invokes the start method which spawns a new Thread and executes the code in the Runnable implementation.
+So this code first creates a new Runnable interface and uses a lambda expression to implement the run method. The code then creates a new Thread and invokes the start method which spawns a new Thread and executes the code in the Runnable implementation.
 
 The downside of this approach is that you have no way of knowing when the Thread completes. Also, there is no way of returning a value from the run method.
 
@@ -97,7 +97,7 @@ public class CallableWithExecutorDemo {
 
 As before, this code creates a Callable which returns a result of type String. The call method is implemented via a lambda expression that returns the String "Hello World".
 
-The code then creates a new ExecutorService. ExecutorService is part of the Executor framework, explaining it in detail here would be beyond the scope of this article. The code then invokes the ExecutorService.submit method with the Callable instance which spawns a new Thread. The ExecutorService.submit method returns a Future instance that holds the result of the computation. The Future interface has a method called get which waits for the thread to complete and then returns the result.  So this code prints the following output:
+The code then creates a new ExecutorService. ExecutorService is part of the Executor framework, explaining it in detail here would be beyond the scope of this article. The code then invokes the ExecutorService.submit method with the Callable instance which spawns a new Thread. The ExecutorService.submit method returns a Future instance that holds the result of the computation. The Future interface has a method called get which waits for the thread to complete and then returns the result. So this code prints the following output:
 
 ```
 Starting new Thread
@@ -105,8 +105,6 @@ Retrieving Result...
 In Thread
 Result=Hello World
 ```
-
- 
 
 ## Conclusion
 
