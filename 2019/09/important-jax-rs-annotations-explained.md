@@ -24,13 +24,11 @@ You need to specify these annotations on a JAX-RS method. These annotations indi
 
 ## @Path
 
-You can use the @Path annotation on any class or method in your code. It identifies the URI to which the class or method maps to. So you need to specify a URI with this annotation. If you specify the annotation at the class level, JAX-RS maps all the methods in the class to the same URI. If you specify the annotation at the method level, the method level annotation overrides the class-level annotation. You need to specify a relative URI with the Path annotation.  You can also specify an expression with the Path annotation which will be matched to the incoming URL.
+You can use the @Path annotation on any class or method in your code. It identifies the URI to which the class or method maps to. So you need to specify a URI with this annotation. If you specify the annotation at the class level, JAX-RS maps all the methods in the class to the same URI. If you specify the annotation at the method level, the method level annotation overrides the class-level annotation. You need to specify a relative URI with the Path annotation. You can also specify an expression with the Path annotation which will be matched to the incoming URL.
 
 ## @Produces and @Consumes
 
 You can specify the @Produces annotation on a JAX-RS service class or method. It defines the media type that a JAX-RS class or method is capable of producing. Similarly, you can use the @Consumes annotation to define the MIME type of the data that a JAX-RS service can accept. So it is basically used to narrow down the method that matches a client request. So when a client request comes in, JAX-RS compares the headers in the request to the metadata in these annotations. JAX-RS invokes the corresponding method only if there is a match. If you specify the annotations at the class level, the MIME type in the annotation is applicable to all the methods in the class. If you specify the annotations at the method level, the method level annotations override the class level annotations. Some of the MIME types that which you can specify with these annotations are text/plain, application/xml, application/json, etc.
-
- 
 
 ## Variable Extraction Annotations
 
@@ -42,7 +40,7 @@ The @PathParam annotation can be used to specify parameters that are specified a
 
 ### @QueryParam
 
-This annotation can be used to specify query parameters. So when this annotation is used, the client application needs to send parameters as query parameters in the URL. A Query parameter is of the form name=value and must be specified after a “?” symbol at the end of the URL.  Example is url?param1=value1&&param2=value2.
+This annotation can be used to specify query parameters. So when this annotation is used, the client application needs to send parameters as query parameters in the URL. A Query parameter is of the form name=value and must be specified after a “?” symbol at the end of the URL. Example is url?param1=value1&&param2=value2.
 
 ### @HeaderParam
 

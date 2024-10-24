@@ -24,6 +24,7 @@
 * [Java Callable Explained](2019/12/java-callable-explained.md)
 * [How to find the number of years between two Dates](2019/12/how-to-find-the-number-of-years-between-two-dates.md)
 * [How to find the day of the week represented by a date](2019/10/how-to-find-the-day-of-the-week-represented-by-a-particular-date.md)
+* [Java Final Keyword](2019/09/java-final-keyword.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -39,7 +40,8 @@
 * [Creating a Module](2020/03/creating-a-java-9-module.md)
 * [Java 9 Module Internals](2020/02/java-9-module-internals.md)
 * [Java 9 ofnullable Stream Improvements](2019/12/java-9-ofnullable-stream-improvement.md)
-* * [Java 9 Stream API Iterate Method Example](2019/11/java-9-stream-api-iterate-method-example.md)
+* [Java 9 Stream API Iterate Method Example](2019/11/java-9-stream-api-iterate-method-example.md)
+* [Java 9 Stream Dropwhile With Examples](2019/09/java-9-stream-dropwhile-method-with-examples.md)
 
 ## Java 8 New Features
 * [Overview of new features in Java 8](2020/02/overview-of-new-features-in-java-8.md)
@@ -59,6 +61,8 @@
 * [Java 8 Stream API Distinct Example](2019/12/java-8-stream-api-distinct-example.md)
 * [Java 8 Binary Operator Example](2019/10/java-8-binaryoperator-example.md)
 * [Java 8 Map Compute Method Examples](2019/10/java-8-map-compute-map-computeifpresent-map-computeifabsent-method-examples.md)
+* [Java 8 DoubleFunction Example](2019/09/java-8-doublefunction-example.md)
+* [Java 8 SplitIterator](2019/09/java-8-splititerator.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -83,6 +87,7 @@
 ## Jax-rs and REST
 + [Jax-rs Exception Handling](2019/12/jax-rs-exception-handling.md)
 + [Jax-rs v/s Spring Rest](2019/10/jax-rs-vs-spring-rest.md)
++ [Important Jax-rs annotations explained](2019/09/important-jax-rs-annotations-explained.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)

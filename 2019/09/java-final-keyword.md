@@ -49,15 +49,10 @@ public void show() {
 }
 ```
 
- 
-
- 
-
 - Class **Base** has a method **show** which is marked as **final**
 - **Sub** is a sub-class, it overrides **show**
 - There is a compilation error in **Sub** as the final method cannot be overridden
 
- 
 
 ## Final Field
 

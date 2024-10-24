@@ -8,8 +8,6 @@ categories:
 
 Another new feature in Java 8 is the SplitIterator interface. This article will explain what a SplitIterator is and how you can use it.
 
-\[table id=24 /\]
-
 ## What is a SplitIterator?
 
 Just like a normal Iterator, you can use a SplitIterator to iterate over the elements in a Collection. A new method called `splitIterator`has been added to all the Collection interfaces. This returns a SplitIterator instance. The following code demonstrates this:
@@ -64,9 +62,7 @@ public class SplitIteratorDemo {
 }
 ```
 
- 
-
-There is a method called trySplit available on the SplitIterator. This returns a SplitIterator with some of the elements in the original SplitIterator.  So when you execute the above code, it will print the following output:
+There is a method called trySplit available on the SplitIterator. This returns a SplitIterator with some of the elements in the original SplitIterator. So when you execute the above code, it will print the following output:
 
 ```
 SplitIterator 1:
