@@ -26,6 +26,8 @@
 * [How to find the day of the week represented by a date](2019/10/how-to-find-the-day-of-the-week-represented-by-a-particular-date.md)
 * [Java final Keyword](2019/09/java-final-keyword.md)
 * [Java protected Keyword](2019/08/java-protected-keyword-explained.md)
+* [Java Treeset v/s Hashset](2019/07/java-treeset-v-s-hashset.md)
+* [Java super Keyword Explained](2019/07/java-super-keyword-explained.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -70,6 +72,9 @@
 * [Java 8 DoubleSupplier Example](2019/08/java-8-doublesupplier-example.md)
 * [Java 8 LocalTime Class Explained](2019/08/java-8-localtime-class-explained.md)
 * [Java 8 Stream API allMatch Example](2019/08/stream-api-allmatch-example.md)
+* [Java 8 IntConsumer Interface](2019/07/java-8-intconsumer-interface.md)
+* [Java 8 LongConsumer Example](2019/07/java-8-longconsumer-example.md)
+* [Java 8 Stream API Map Operation Example](2019/07/stream-api-map-operation-example.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -92,17 +97,24 @@
 * [Spring Exception Handling](2019/10/spring-exception-handling.md)
 * [Spring REST Client Using RestTemplate](2019/08/spring-rest-client-using-resttemplate-in-eclipse-and-maven.md)
 * [Spring ExceptionHandler annotation explained](2019/08/spring-exceptionhandler-annotation-explained.md)
+* [Spring RequestMapping,GetMapping, PostMapping Annotations](2019/07/spring-requestmapping-getmapping-and-postmapping-annotations.md)
+* [Important Spring MVC Annotations](2019/07/important-spring-mvc-annotations.md)
 
 ## Jax-rs and REST
-+ [Jax-rs Exception Handling](2019/12/jax-rs-exception-handling.md)
-+ [Jax-rs v/s Spring Rest](2019/10/jax-rs-vs-spring-rest.md)
-+ [Important Jax-rs annotations explained](2019/09/important-jax-rs-annotations-explained.md)
+*[Jax-rs Exception Handling](2019/12/jax-rs-exception-handling.md)
+*[Jax-rs v/s Spring Rest](2019/10/jax-rs-vs-spring-rest.md)
+*[Important Jax-rs annotations explained](2019/09/important-jax-rs-annotations-explained.md)
+*[How to create a REST Service in Java using JAX-RS](2019/07/how-to-create-a-rest-service-in-java-using-jax-rs-and-eclipse.md)
+*[How to create a JAX-RS Jersey Client](2019/07/how-to-create-a-jax-rs-jersey-client-application-for-consuming-a-rest-service.md)
 
 ## Maven
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
 * [How to create a Maven Wen Project using Archetype Selection](2022/02/how-to-create-a-maven-web-project-using-archetype-selection.md)
 * [Maven Wrapper](2022/01/maven-wrapper-need-installation-and-benefits.md)
 * [Tomcat Maven Plugim](2021/06/tomcat-maven-plugin-with-code-sample.md)
+
+## Tomcat and Eclipse
+* [How to Deploy an Application in Tomcat in Eclipse](2019/07/how-to-deploy-an-application-on-tomcat-server-in-eclipse.md)
 
 ## Docker
 * [Docker Introduction](2022/11/introduction-to-docker-to-get-you-started.md)

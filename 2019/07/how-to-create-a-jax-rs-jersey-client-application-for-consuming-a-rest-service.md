@@ -13,7 +13,7 @@ In this blog post, I will be demonstrating how you can create a JAX-RS client ap
 
 # What is JAX-RS and Jersey Client API?
 
-JAX-RS is the Java specification for Restful web services. It is just a specification, it does not provide an implementation. Jersey is the reference implementation of JAX-RS specification. There are other implementations of JAX-RS like RESTEasy, etc  The first release of JAX-RS was JAX-RS 1.0. It did not provide a client API. So vendors like Jersey, RESTEasy provided their own client APIs. JAX-RS 2.0 (which is the latest release of JAX-RS) provides a client API. The latest release of Jersey (2.25.1) implements this client API. So in addition to its proprietary client API, Jersey also implements the JAX-RS client API.  While implementing a REST client that uses Jersey, it is better to use the JAX-RS specific client implementation and not Jersey's client API. So even if the JAX-RS vendor is changed from Jersey to something else like RESTEasy, the code will still work.
+JAX-RS is the Java specification for Restful web services. It is just a specification, it does not provide an implementation. Jersey is the reference implementation of JAX-RS specification. There are other implementations of JAX-RS like RESTEasy, etc. The first release of JAX-RS was JAX-RS 1.0. It did not provide a client API. So vendors like Jersey, RESTEasy provided their own client APIs. JAX-RS 2.0 (which is the latest release of JAX-RS) provides a client API. The latest release of Jersey (2.25.1) implements this client API. So in addition to its proprietary client API, Jersey also implements the JAX-RS client API. While implementing a REST client that uses Jersey, it is better to use the JAX-RS specific client implementation and not Jersey's client API. So even if the JAX-RS vendor is changed from Jersey to something else like RESTEasy, the code will still work.
 
 # How to create a JAX-RS client
 
@@ -25,19 +25,13 @@ Step 1 - Create a new Java Project in Eclipse (Refer to [this](https://learnjava
 
 Step 2 - Convert to a Maven project.
 
- 
-
 Step 2a - Right Click on Project --> Configure --> Convert to Maven Project
 
 ![](images/2-300x275.png)
 
- 
-
 Step 2b - Click on finish
 
 ![](images/3-300x228.png)
-
- 
 
 Step 3 - Add Maven dependencies to POM file.
 
@@ -80,8 +74,6 @@ public class JaxRsClientDemo {
   System.out.println("Server Response:"+responseStr);
 }
 ```
-
- 
 
 ## Test code
 

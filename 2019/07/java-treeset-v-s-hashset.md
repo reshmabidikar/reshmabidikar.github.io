@@ -11,7 +11,7 @@ tags:
   - "treeset"
 ---
 
-Java TreeSet and HashSet are implementations of the Set interface. Often you may have wondered, whether to choose HashSet or TreeSet and which is faster. In this article, I will be comparing the HashSet and TreeSet classes in Java.
+Java TreeSet and HashSet are implementations of the Set interface. Often you may have wondered whether to choose HashSet or TreeSet and which is faster. In this article, I will be comparing the HashSet and TreeSet classes in Java.
 
 ## HashSet and TreeSet Similarities
 
@@ -41,7 +41,7 @@ Number of elements in Hashset:1
 Number of elements in Treeset:1
 ```
 
-###  Not Thread-Safe
+### Not Thread-Safe
 
 Both HashSet and TreeSet are not synchronized and are not thread-safe. So you need to write code to explicitly synchronize them.
 
@@ -96,9 +96,6 @@ treeSet.add("Pear");
 
 treeSet.forEach(str -> System.out.println(str));
 ```
-
- 
-
 When you execute this code, it will print the following output:
 
 ```
@@ -121,8 +118,6 @@ hashSet.add(null);
 hashSet.forEach(str -> System.out.println(str));
 ```
 
- 
-
 The above code will not cause any issues. So when you execute this code, the following will be printed to the console:
 
 ```
@@ -131,7 +126,7 @@ Mango
 Banana
 ```
 
-However,  consider the following code:
+However, consider the following code:
 
 ```
 treeSet.add("Mango"); 

@@ -12,17 +12,15 @@ In this blog post, I will be explaining some of the important Spring MVC Annotat
 
 ## Controller
 
-You can use the Controller annotation to designate a Controller class in an MVC application. Normally in such scenarios, the code maps each method in the controller to a URL specified via the RequestMapping annotation. When the UI requests a particular URL, the code invokes the appropriate method. This executes the business logic and then redirects the user to the appropriate JSP page.
-
-\[table id=27 /\]
+You can use the Controller annotation to designate a Controller class in an MVC application. Normally in such scenarios, the code maps each method in the controller to a URL specified via the RequestMapping annotation. When the UI requests a particular URL, the code invokes the appropriate method. This executes the business logic and then redirects the user to the appropriate JSP page.
 
 ## RestController
 
-Spring 4.0 introduced the RestController annotation. So the RestController annotation is a specialization of the Controller annotation that can be used to designate a REST service. It combines the behavior of the  Controller and ResponseBody annotations. So when a method in a class is designated with this annotation, it returns the REST response directly to the client instead of redirecting the user to an HTML or JSP page
+Spring 4.0 introduced the RestController annotation. So the RestController annotation is a specialization of the Controller annotation that can be used to designate a REST service. It combines the behavior of the  Controller and ResponseBody annotations. So when a method in a class is designated with this annotation, it returns the REST response directly to the client instead of redirecting the user to an HTML or JSP page
 
 ## ResponseBody
 
-The ResponseBody annotation converts the Java object returned by a controller method into the appropriate type (XML or JSON). It uses the Content-Type specified in the HTTP request header and writes it to the Response stream. So basically, if your method returns an object, this object is converted into JSON or XML format and written to the output stream directly. It can be specified at the class level as well as the method level. It needs to be specified only if you are creating a REST service with the @Controller annotation. If you use the @RestController annotation, then the @ResponseBody annotation can be skipped since the @RestController annotation is a convenience controller which combines the behavior of the Controller and ResponseBody annotations.
+The ResponseBody annotation converts the Java object returned by a controller method into the appropriate type (XML or JSON). It uses the Content-Type specified in the HTTP request header and writes it to the Response stream. So basically, if your method returns an object, this object is converted into JSON or XML format and written to the output stream directly. It can be specified at the class level as well as the method level. It needs to be specified only if you are creating a REST service with the @Controller annotation. If you use the @RestController annotation, then the @ResponseBody annotation can be skipped since the @RestController annotation is a convenience controller which combines the behavior of the Controller and ResponseBody annotations.
 
 ## RequestBody
 

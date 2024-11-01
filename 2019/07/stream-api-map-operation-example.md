@@ -9,9 +9,7 @@ tags:
   - "stream-api"
 ---
 
-In this blog post, I will be demonstrating the Java 8 Stream API map method. In order to understand the Stream API in detail, refer to [this](https://learnjava.co.in/java-8-streams/) blog post.
-
-\[table id=24 /\]
+In this blog post, I will be demonstrating the Java 8 Stream API map method. In order to understand the Stream API in detail, refer to [this](https://learnjava.co.in/java-8-streams/) blog post.
 
 ## Introduction
 
@@ -113,4 +111,4 @@ Vehicle is of type:Bicycle
 
 ```
 
-I hope this post on the Java 8 Stream API Map example was useful to to to understand the map operation. You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).
+I hope this post on the Java 8 Stream API Map example was useful to to to understand the map operation. You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).

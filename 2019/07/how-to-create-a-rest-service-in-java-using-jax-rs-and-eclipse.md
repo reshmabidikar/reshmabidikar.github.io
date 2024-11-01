@@ -13,9 +13,9 @@ In this article, I will be demonstrating creating a REST service in Java using J
 
 ## Create a Project and And Maven Support
 
-Step 1 – Follow the steps in [this](https://learnjava.co.in/how-to-create-a-maven-web-project-in-eclipse/) article to create a web project in Eclipse with Maven Support. You should see a project as follows:
+Step 1 – Follow the steps in [this](https://learnjava.co.in/how-to-create-a-maven-web-project-in-eclipse/) article to create a web project in Eclipse with Maven Support. You should see a project as follows:
 
-[![](images/1-234x300.png)](https://learnjava.co.in/wp-content/uploads/2019/07/1.png)
+[![](images/1-234x300.png)](images/1.png)
 
 Step 2 - Add Maven dependencies for JAX-RS and Jersey as follows:
 
@@ -46,9 +46,6 @@ Step 2 - Add Maven dependencies for JAX-RS and Jersey as follows:
       <version>1.19.4</version>
     </dependency>
 ```
-
- 
-
 ## Modify web.xml
 
 In the WebContent/WEB-INF/web.xml file, add the following content:
@@ -103,7 +100,7 @@ http://localhost:8080/LearnJavaRestJAXRSJerseyDemo/learnjava/hello
 
 This will display the following page:
 
-[![](images/2-300x92.png)](https://learnjava.co.in/wp-content/uploads/2019/07/2.png)
+[![](images/2-300x92.png)](images/2.png)
 
 ## Conclusion
 

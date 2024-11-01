@@ -12,25 +12,24 @@ In this blog post, I will be demonstrating how to deploy an application to Tomca
 
 Step 1 - Setup Tomcat in Eclipse if not already setup. Refer to [this](https://learnjava.co.in/how-to-setup-tomcat-in-eclipse/) blog post for detailed steps
 
-[![](images/d1-295x300.png)](https://learnjava.co.in/wp-content/uploads/2019/06/d1.png)
+[![](images/d1-295x300.png)](images/d1.png)
 
 Step 2 - Right-click on "Tomcat Server" at the bottom and click Add/Remove:
 
-[![](images/d2-300x289.png)](https://learnjava.co.in/wp-content/uploads/2019/06/d2.png)
+[![](images/d2-300x289.png)](images/d2.png)
 
 Step 3 - Select Your project name and click "Add":
 
-[![](images/d3-300x272.png)](https://learnjava.co.in/wp-content/uploads/2019/06/d3.png)
+[![](images/d3-300x272.png)](images/d3.png)
 
 Step 4 - Click on Finish.
 
-[![](images/d4-300x276.png)](https://learnjava.co.in/wp-content/uploads/2019/06/d4.png)
+[![](images/d4-300x276.png)](images/d4.png)
 
 Step 5 - Start Tomcat by right-clicking and clicking on "Start". If the server starts successfully, you should see a message similar to the following in the console:
 
-[![](images/d5-300x110.png)](https://learnjava.co.in/wp-content/uploads/2019/06/d5.png)
+[![](images/d5-300x110.png)](images/d5.png)
 
- 
 
 **Further Reading**
 

@@ -79,7 +79,7 @@ public class RemoveIfStringDemo {
 }
 ```
 
-This code creates a String list input with some String values. It then invokes the **removeIf** method on **input** with a lambda expression that checks if a String ends with **"day"**.  Since there are no strings in the input list that match this condition, no values are removed from input and the removeIf method returns a false. So when you execute this code, it prints the following output:
+This code creates a String list input with some String values. It then invokes the **removeIf** method on **input** with a lambda expression that checks if a String ends with **"day"**. Since there are no strings in the input list that match this condition, no values are removed from input and the removeIf method returns a false. So when you execute this code, it prints the following output:
 
 ```
 Elements were not removed

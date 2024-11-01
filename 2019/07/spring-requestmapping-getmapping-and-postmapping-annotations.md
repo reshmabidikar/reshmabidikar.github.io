@@ -14,8 +14,6 @@ In this blog post, I will be explaining the RequestMapping, GetMapping and PostM
 
 You can use the RequestMapping, GetMapping and PostMapping annotations to map a URL to a particular Controller method. However, there are some differences between them. Let's check them out.
 
-\[table id=27 /\]
-
 ## RequestMapping
 
 The RequestMapping annotation can be used to map both GET and POST requests. Consider the following code:
