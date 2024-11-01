@@ -10,13 +10,11 @@ tags:
 coverImage: "collection-removeIf-scaled.jpg"
 ---
 
-Java 8 has added a new method called removeIf to the Collection interface. You can use this to remove an element from a Collection in Java. In this article, I will be explaining the how this method works.
-
-\[table id=24 /\]
+Java 8 has added a new method called removeIf to the Collection interface. You can use this to remove an element from a Collection in Java. In this article, I will be explaining how this method works.
 
 ## What does RemoveIf do?
 
-This method removes an element from the Collection that matches a particular condition. It returns a boolean value which indicates whether some values were removed or not.  The condition to be checked is specified via a [Predicate](https://learnjava.co.in/java-8-predicate-example/) instance. Predicate is an in-built [functional interfac](https://learnjava.co.in/what-is-a-functional-interface/)e that accepts an argument of any data type and returns a boolean.  You can implement it via a [lambda expression](https://learnjava.co.in/java-8-lambda-expressions-explained/).
+This method removes an element from the Collection that matches a particular condition. It returns a boolean value which indicates whether some values were removed or not. The condition to be checked is specified via a [Predicate](https://learnjava.co.in/java-8-predicate-example/) instance. Predicate is an in-built [functional interfac](https://learnjava.co.in/what-is-a-functional-interface/)e that accepts an argument of any data type and returns a boolean. You can implement it via a [lambda expression](https://learnjava.co.in/java-8-lambda-expressions-explained/).
 
 ## RemoveIf Integer Code Sample
 
@@ -46,7 +44,7 @@ public class RemoveIfDemo {
 }
 ```
 
-This code creates an Integer List **input** with some values. It then invokes the **removeIf** method on **input** with a lambda expression that checks if a number is even. So the code applies this lambda expression to each element in the list and the removes the even numbers.  So when you execute this code, it prints the following output to the console:
+This code creates an Integer List **input** with some values. It then invokes the **removeIf** method on **input** with a lambda expression that checks if a number is even. So the code applies this lambda expression to each element in the list and the removes the even numbers. So when you execute this code, it prints the following output to the console:
 
 ```
 Elements were removed

@@ -10,13 +10,11 @@ tags:
   - "springrestclient"
 ---
 
-In this article, I will be demonstrating how you can create a Spring [REST](https://learnjava.co.in/rest/) client using RestTemplate. In order to see how you can create a simple Spring **REST** service, you can refer to [this](https://learnjava.co.in/how-to-create-a-spring-rest-application-via-maven-and-eclipse) blog post.
+In this article, I will be demonstrating how you can create a Spring [REST](https://learnjava.co.in/rest/) client using RestTemplate. In order to see how you can create a simple Spring **REST** service, you can refer to [this](https://learnjava.co.in/how-to-create-a-spring-rest-application-via-maven-and-eclipse) blog post.
 
 ## What is Spring RESTTemplate?
 
-Spring provides a class called **RestTemplate**. This is the starting point in creating a REST client application.  It uses the URI and the HTTP method to invoke in order to connect to a REST service. It has several methods that allow you to invoke the HTTP methods on the specified URI
-
-\[table id=27 /\]
+Spring provides a class called **RestTemplate**. This is the starting point in creating a REST client application. It uses the URI and the HTTP method to invoke in order to connect to a REST service. It has several methods that allow you to invoke the HTTP methods on the specified URI
 
 ## Project Creation
 
@@ -24,7 +22,6 @@ Step 1 - Create a **Maven** Project in **Eclipse**. You can refer to [this](http
 
 ![](images/SpringRestClientProjectCreation-269x300.png)
 
- 
 
 Step 2 - Add dependencies to POM file.
 
@@ -78,8 +75,6 @@ public class HelloWorldController {
 }
 ```
 
- 
-
 ### Writing Code
 
 Step 3 - Create a Java class as follows:
@@ -102,7 +97,7 @@ public class DemoClient {
 
 ### Code Explanation
 
-This code uses the `RestTemplate` class. It uses the `getForEntity`method.The `restTemplate.getForEntity` method accepts the **server URI** and a **class instance** of the data type that the server method returns. In this case, I'm using a `String.class`   since the service that is being invoked returns String data. It returns a `ResponseEntity`of the data type that the server application returns. We can then use the `responseEntity.getBody`method to retrieve the actual response body from the `ResponseEntity.`
+This code uses the `RestTemplate` class. It uses the `getForEntity`method.The `restTemplate.getForEntity` method accepts the **server URI** and a **class instance** of the data type that the server method returns. In this case, I'm using a `String.class`  since the service that is being invoked returns String data. It returns a `ResponseEntity`of the data type that the server application returns. We can then use the `responseEntity.getBody`method to retrieve the actual response body from the `ResponseEntity.`
 
 Just like the **getForEntity**, there are other methods available on the RestTemplate which you can use to execute the other HTTP methods like **postForEntity**, put, etc.
 
@@ -114,8 +109,6 @@ Step 5 - Run the code. The following output should be seen on the console.
 
 ```
 Response is Hello World
-
-
 ```
 
 ## Further Learning
@@ -126,4 +119,4 @@ Response is Hello World
 
 In this article, you saw how to create a Spring REST client using Eclipse and Maven. You saw how the Spring RESTTemplate example can be used to execute a GET Request.
 
-You can download the complete source code from the Github repository [here](https://github.com/learnjavawithreshma/SpringRestClient).
+You can download the complete source code from the Github repository [here](https://github.com/learnjavawithreshma/SpringRestClient).

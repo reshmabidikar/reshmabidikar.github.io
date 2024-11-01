@@ -9,7 +9,7 @@ tags:
   - "java9takewhile"
 ---
 
-[Java 8](https://learnjava.co.in/java-8/) introduced the Stream API which allows processing and applying some operations to the elements in a Collection.  [Java 9](https://learnjava.co.in/java-9-posts/) has made some improvements to the [Stream API](https://learnjava.co.in/java-8-stream-api/). One such improvement is the takeWhile method. In this article, I will be covering the Java 9 Stream takeWhile method in detail. I will also be writing some Java 9 takeWhile examples.
+[Java 8](https://learnjava.co.in/java-8/) introduced the Stream API which allows processing and applying some operations to the elements in a Collection. [Java 9](https://learnjava.co.in/java-9-posts/) has made some improvements to the [Stream API](https://learnjava.co.in/java-8-stream-api/). One such improvement is the takeWhile method. In this article, I will be covering the Java 9 Stream takeWhile method in detail. I will also be writing some Java 9 takeWhile examples.
 
 The takeWhile method operates on a Stream. It accepts a Predicate instance and applies the Predicate to all the elements in the input stream and produces an output stream. It behaves differently depending on whether the input Stream is ordered or unordered.
 
@@ -24,7 +24,7 @@ Stream<Integer> inputList = Stream.of(5, 8, 12, 19,41);
 inputList.takeWhile(num -> num < 10).forEach(num -> System.out.println(num));
 ```
 
-In this case, we have an input Stream of ordered Integers. The code uses takeWhile  to obtain a subset of elements that are less than 10. So when you execute this code, it will print the following output:
+In this case, we have an input Stream of ordered Integers. The code uses takeWhile to obtain a subset of elements that are less than 10. So when you execute this code, it will print the following output:
 
 ```
 5 8

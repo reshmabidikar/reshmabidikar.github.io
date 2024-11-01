@@ -14,42 +14,28 @@ In this article, I will be covering the Java Protected Keyword.
 
 Just like private and public, **protected** is an access specifier. When the protected access specifier is used for a field or method, it becomes accessible in all the subclasses of the class in which the field is defined. The protected access specifier also makes the member accessible in other classes which are in the same package as the class having the protected member.
 
- 
-
 ## Accessing a protected field from a sub-class
 
 The following code snippet demonstrates how you can access a protected field in a sub-class:
 
 ```
-package demo;
+package demo;
 
 public class Base {
-
-
-
 
 private int a;
 
 protected int b;
 
-
-
-
 }
 
 public class Sub extends Base {
-
-
-
 
 public void subMethod() {
 
 super.a=4; //this causes compilation error
 
 super.b=9;
-
-
-
 
 }
 
@@ -71,9 +57,6 @@ The following code snippet demonstrates how you can access a protected field fro
 package demo;
 
 public class AnotherClass {
-
-
-
 
 public void myMethod() {
 
@@ -129,9 +112,7 @@ The following code snippet demonstrates how you can access a protected field fro
 ```
 package demo2;
 
-
 import demo.Base;
-
 
 public class AnotherClass3 extends Base{
 
@@ -144,8 +125,6 @@ super.b=8;
 
 }
 ```
-
- 
 
 - **AnotherClass3** is defined in a different package i.e. **demo2** but is a sub-class of **Base**
 - In **myMethod**, the protected field **b** is assigned **8**

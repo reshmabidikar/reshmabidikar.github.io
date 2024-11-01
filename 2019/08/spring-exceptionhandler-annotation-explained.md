@@ -13,9 +13,8 @@ In this article, I will be explaining the Spring @ExceptionHandler annotation an
 
 ## Introduction
 
-You can specify the @ExceptionHandler annotation on a method in a controller class and mark the method as an exception handling method. Along with the annotation you need to specify the exceptions that the method handles. So when an exception of the specified type occurs, Spring uses the exception handler method to handle the exception.  Within the exception handler method, you can specify any exception handling code like returning an error code or redirecting to an error page, etc.
+You can specify the @ExceptionHandler annotation on a method in a controller class and mark the method as an exception handling method. Along with the annotation you need to specify the exceptions that the method handles. So when an exception of the specified type occurs, Spring uses the exception handler method to handle the exception. Within the exception handler method, you can specify any exception handling code like returning an error code or redirecting to an error page, etc.
 
-\[table id=27 /\]
 
 The following code sample demonstrates this:
 
@@ -49,7 +48,7 @@ An Exception handling method can have any type of arguments. So it can accept on
 
 ## ResponseStatus Annotation
 
-You can specify the @ResponseStatus annotation on an exception handling method. Within this annotation, you can specify the status code that you want to send to the client application whenever the particular exception occurs. In the code sample above,  the @ResponseStatus annotation is specified as follows:
+You can specify the @ResponseStatus annotation on an exception handling method. Within this annotation, you can specify the status code that you want to send to the client application whenever the particular exception occurs. In the code sample above, the @ResponseStatus annotation is specified as follows:
 
 `@ResponseStatus(HttpStatus.BAD_REQUEST)`
 
@@ -57,7 +56,7 @@ So when an exception occurs, the Http Status code corresponding to Bad Request i
 
 ## Limitations of @ExceptionHander annotation
 
-The @ExceptionHandler annotation can be applied to a method in a controller class and handles only exceptions that occur in the controller class where it is specified. The downside to this is that you will need separate exception handler methods in every controller and this may result in code duplication.  In order to avoid this, Spring provides an alternate approach where you can designate a class with the @ControllerAdvice annotation. Within this class, you can have methods that handle individual exceptions with the @ExceptionHandler annotation. So exceptions thrown from anywhere in your application will be handled by the methods in this class.
+The @ExceptionHandler annotation can be applied to a method in a controller class and handles only exceptions that occur in the controller class where it is specified. The downside to this is that you will need separate exception handler methods in every controller and this may result in code duplication. In order to avoid this, Spring provides an alternate approach where you can designate a class with the @ControllerAdvice annotation. Within this class, you can have methods that handle individual exceptions with the @ExceptionHandler annotation. So exceptions thrown from anywhere in your application will be handled by the methods in this class.
 
 ## Further Learning
 

@@ -24,7 +24,8 @@
 * [Java Callable Explained](2019/12/java-callable-explained.md)
 * [How to find the number of years between two Dates](2019/12/how-to-find-the-number-of-years-between-two-dates.md)
 * [How to find the day of the week represented by a date](2019/10/how-to-find-the-day-of-the-week-represented-by-a-particular-date.md)
-* [Java Final Keyword](2019/09/java-final-keyword.md)
+* [Java final Keyword](2019/09/java-final-keyword.md)
+* [Java protected Keyword](2019/08/java-protected-keyword-explained.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -42,6 +43,7 @@
 * [Java 9 ofnullable Stream Improvements](2019/12/java-9-ofnullable-stream-improvement.md)
 * [Java 9 Stream API Iterate Method Example](2019/11/java-9-stream-api-iterate-method-example.md)
 * [Java 9 Stream Dropwhile With Examples](2019/09/java-9-stream-dropwhile-method-with-examples.md)
+* [Java 9 Stream takeWhile With Examples](2019/08/java-9-stream-takewhile-with-examples.md)
 
 ## Java 8 New Features
 * [Overview of new features in Java 8](2020/02/overview-of-new-features-in-java-8.md)
@@ -63,6 +65,11 @@
 * [Java 8 Map Compute Method Examples](2019/10/java-8-map-compute-map-computeifpresent-map-computeifabsent-method-examples.md)
 * [Java 8 DoubleFunction Example](2019/09/java-8-doublefunction-example.md)
 * [Java 8 SplitIterator](2019/09/java-8-splititerator.md)
+* [Java 8 Collection Removeif Method](2019/08/java-8-collection-removeif-method.md)
+* [Java 8 Iterator foreachremaning Method](2019/08/java-8-iterator-foreachremaining.md)
+* [Java 8 DoubleSupplier Example](2019/08/java-8-doublesupplier-example.md)
+* [Java 8 LocalTime Class Explained](2019/08/java-8-localtime-class-explained.md)
+* [Java 8 Stream API allMatch Example](2019/08/stream-api-allmatch-example.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -83,6 +90,8 @@
 * [Spring Framework What and Why](2019/12/spring-framework-what-and-why.md)
 * [Spring Modules Explained](2019/12/spring-modules-explained.md)
 * [Spring Exception Handling](2019/10/spring-exception-handling.md)
+* [Spring REST Client Using RestTemplate](2019/08/spring-rest-client-using-resttemplate-in-eclipse-and-maven.md)
+* [Spring ExceptionHandler annotation explained](2019/08/spring-exceptionhandler-annotation-explained.md)
 
 ## Jax-rs and REST
 + [Jax-rs Exception Handling](2019/12/jax-rs-exception-handling.md)
