@@ -10,8 +10,6 @@ tags:
 
 In this blog post, I will be demonstrating the anyMatch method provided by Java 8 Stream API.
 
-\[table id=24 /\]
-
 In order to understand the Stream API in detail, refer to [this](https://learnjava.co.in/java-8-streams/) blog post.
 
 ## Code Sample with Integer
@@ -51,7 +49,7 @@ public static void main(String[] args) {
 }
 ```
 
-Here, the **anyMatch** method is used to determine if there is any **fruit** in the input list that starts with an "**S**".  So when you execute this code, it prints the following output:
+Here, the **anyMatch** method is used to determine if there is any **fruit** in the input list that starts with an "**S**". So when you execute this code, it prints the following output:
 
 ```
 Fruit starting with S present: false
@@ -103,4 +101,4 @@ This code uses the **anyMatch** method to determine if there is any **Animal** i
 Herbivore present=true
 ```
 
-You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).
+You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).

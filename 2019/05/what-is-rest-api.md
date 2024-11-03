@@ -27,15 +27,15 @@ For example, suppose we have a stock price application that returns the current 
 
 # What is special about a RESTful service
 
-The main thing that makes a RESTFul service different is it just returns the data. The data can be in  XML or JSON format. It is up to the client to use the data in whatever way they wish. So if it's a web application, it may simply put the data returned by the REST service in an HTML format and display it to a user. However, if a standalone application or as middle-tier application, it may simply use the data returned by the REST service for some other computations.
+The main thing that makes a RESTFul service different is it just returns the data. The data can be in XML or JSON format. It is up to the client to use the data in whatever way they wish. So if it's a web application, it may simply put the data returned by the REST service in an HTML format and display it to a user. However, if a standalone application or as middle-tier application, it may simply use the data returned by the REST service for some other computations.
 
-A RESTFul service is also independent of technology. So a REST service can be implemented in Java/Node.js/PHP or some other technology.  So also, the REST client can be implemented in any technology. It can be a web application implemented via JSP/Servlets or Angular JS or it can be a mobile application implemented via Andriod or iOS.
+A RESTFul service is also independent of technology. So a REST service can be implemented in Java/Node.js/PHP or some other technology. So also, the REST client can be implemented in any technology. It can be a web application implemented via JSP/Servlets or Angular JS or it can be a mobile application implemented via Andriod or iOS.
 
 # REST Architecture
 
 The following diagram explains the REST architecture:
 
-[![](images/REST-300x206.jpg)](https://learnjava.co.in/wp-content/uploads/2019/05/REST.jpg)
+[![](images/REST-300x206.jpg)](images/REST.jpg)
 
 # How to implement a RESTful service in Java
 

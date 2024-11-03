@@ -8,11 +8,9 @@ categories:
 
 You Java 8 introduced a new feature called lambda expressions. In this blog post, I will be explaining lambda expressions in detail.
 
-\[table id=24 /\]
-
 ## What are lambda expressions
 
-Lambda expressions are used to define anonymous functions, that is a function without a name.  Lambda expressions and functional interfaces together help in writing clean code. A functional interface is nothing but an interface with a single method. In order to understand more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post. Lambda expressions can be used to implement functional interfaces.
+Lambda expressions are used to define anonymous functions, that is a function without a name. Lambda expressions and functional interfaces together help in writing clean code. A functional interface is nothing but an interface with a single method. In order to understand more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post. Lambda expressions can be used to implement functional interfaces.
 
 ## Lambda expression syntax
 
@@ -22,9 +20,7 @@ The general syntax of a lambda expression is as follows:
 
 ### Parameters
 
-Parameters specify the parameters to be passed to the lambda expression. You can pass one or more parameters. You need to enclose the parameters in parentheses. If there is only one parameter, you can skip the parentheses. Also, parameters are optional. If the lambda expression does not accept any parameters, you need to specify empty parantheses.
-
- 
+Parameters specify the parameters to be passed to the lambda expression. You can pass one or more parameters. You need to enclose the parameters in parentheses. If there is only one parameter, you can skip the parentheses. Also, parameters are optional. If the lambda expression does not accept any parameters, you need to specify empty parentheses.
 
 ### Lambda Operator
 
@@ -38,7 +34,7 @@ You need to follow the lambda operator with the body of the lambda expression. Y
 
 Lambda expressions are used to implement functional interfaces. Consider the following code snippet:
 
-\[java\]
+````
 
 @FunctionalInterface public interface DemoInterface {
 
@@ -46,11 +42,11 @@ public void aMethod();
 
 }
 
-\[/java\]
+````
 
 You can implement his interface using a Lambda expression as follows:
 
-\[java\]
+````
 
 public class DemoClass {
 
@@ -62,9 +58,9 @@ DemoInterface demoInterface = () -> System.out.println("Demo Interface"); demoIn
 
 }
 
-\[/java\]
+````
 
-Here, we are assigning the lambda expression () -> System.out.println("Demo Interface"); to an instance of the DemoInterface. The lambda expression provides the implementation for the method aMethod in the interface. So when the code invokes this method, the code within the lambda expression is executed.  In this case, it simply has a Sysout statement. So when you execute this code, it will print the following output:
+Here, we are assigning the lambda expression () -> System.out.println("Demo Interface"); to an instance of the DemoInterface. The lambda expression provides the implementation for the method aMethod in the interface. So when the code invokes this method, the code within the lambda expression is executed. In this case, it simply has a Sysout statement. So when you execute this code, it will print the following output:
 
 ```
 Demo Interface
@@ -76,7 +72,7 @@ Demo Interface
 
 Lambda expressions help to keep the code concise. Prior to Java 8, we would need to write code similar to the following in order to implement a functional interface:
 
-\[java\]
+````
 
 public class DemoClass implements DemoInterface{
 
@@ -90,7 +86,7 @@ public void aMethod(){ System.out.println("Demo Interface"); }
 
 }
 
-\[/java\]
+````
 
 So basically, we need to create a class that implements the interface, provide an implementation for the method in the interface and invoke this method. When you compare this code to the code written earlier using lambda expressions it is much cleaner. You just need to write one line of code
 
@@ -98,7 +94,7 @@ So basically, we need to create a class that implements the interface, provide a
 
 Lamda expressions are anonymous functions. They allow you to pass code as method arguments. So consider the following code snippet:
 
-\[java\]
+````
 
 public interface Shape {
 
@@ -116,7 +112,7 @@ public static void drawShape(Shape shape){ shape.draw(); }
 
 }
 
-\[/java\]
+````
 
 This code defines a functional interface Shape with a method draw. The ShapeDemo class has a method drawShape that accepts a Shape object. It invokes the draw method. Instead of passing a Shape implementation for each Shape (i.e. Rectangle, Circle and Triangle), the main method passes a lambda expression corresponding to the implementation for each Shape.
 

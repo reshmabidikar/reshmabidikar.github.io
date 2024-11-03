@@ -11,13 +11,11 @@ tags:
 
 In this blog post, I will be demonstrating how you can insert records and query a database table via [Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-5-with-spring-boot-2%2F) and [JPA](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) using Eclipse and Maven
 
-\[table id=25 /\]
-
 ## Step 1 - Create a New Maven Project
 
 Create a new Maven project. (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This will create a project in Eclipse as follows:
 
-[![](images/SpringBootJPA1-300x270.png)](https://learnjava.co.in/wp-content/uploads/2019/05/SpringBootJPA1.png)
+[![](images/SpringBootJPA1-300x270.png)](images/SpringBootJPA1.png)
 
 ## Step 2 - Add Spring Boot JPA dependencies to the pom file
 
@@ -54,7 +52,7 @@ Add the following text to the pom.xml file:
 
 So the pom file will look as follows:
 
-[![](images/SpringBootJPA2-300x274.png)](https://learnjava.co.in/wp-content/uploads/2019/05/SpringBootJPA2.png)
+[![](images/SpringBootJPA2-300x274.png)](images/SpringBootJPA2.png)
 
 ## Step 3 - Create config file
 
@@ -73,16 +71,11 @@ spring.jpa.generate-ddl=true
 spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto = create
 ```
-
- 
-
 So the properties file specifies values for database properties like username, password, database driver, dialect, etc.
 
 It will look as follows in Eclipse:
 
 [![](images/SpringBootJPA3-300x274.png)](https://learnjava.co.in/wp-content/uploads/2019/05/SpringBootJPA3.png)
-
-\[table id=26 /\]
 
 ## Step 4 - Create Entity class
 
@@ -123,7 +116,7 @@ public class Person {
 
 ## Step 5 - Create Repository class
 
-Spring Data JPA requires a Repository interface per Entity class. This interface should extend the JPARepository interface. The JPARepository interface already has certain methods for performing the CRUD operations, so these methods become available to the code.  So in our example, we will need to create a Repository interface as follows:
+Spring Data JPA requires a Repository interface per Entity class. This interface should extend the JPARepository interface. The JPARepository interface already has certain methods for performing the CRUD operations, so these methods become available to the code. So in our example, we will need to create a Repository interface as follows:
 
 ```
 package learnjava.demo;
@@ -176,8 +169,6 @@ public class Application implements CommandLineRunner {
 
 }
 ```
-
- 
 
 This code creates 2 Person records. It invokes the personRepo.save method which in turn invokes the JPARepository.save and saves the record into the Person table. Next, it invokes the personRepo.findAll method which in turn invokes the JPARepository.findAll method. This returns all the records from the database.
 

@@ -40,9 +40,7 @@ public class CountVowelsAndConsonantsDemo {
 }
 ```
 
- 
-
-The code declares and initalizes a list 'vowels' with all the vowels in lowercase and uppercase. It then iterates through the characters in the input String. It checks if each character is present in the vowels list, if so it increments the vowels counter, otherwise it increments the consonants counter.
+The code declares and initializes a list 'vowels' with all the vowels in lowercase and uppercase. It then iterates through the characters in the input String. It checks if each character is present in the vowels list, if so it increments the vowels counter, otherwise it increments the consonants counter.
 
 When you run this code, it will print the following output:
 

@@ -9,13 +9,11 @@ In this blog post, I will be explaining JSON Syntax and benefits. We will be tak
 
 ## What is JSON
 
-JSON stands for JavaScript Object Notation. It is a lightweight transfer protocol. It is based on the JavaScript language. JSON is used primarily in web services to transfer data.  Data sent via JSON is concise and easy to read.
+JSON stands for JavaScript Object Notation. It is a lightweight transfer protocol. It is based on the JavaScript language. JSON is used primarily in web services to transfer data. Data sent via JSON is concise and easy to read.
 
 ## Why was JSON required?
 
 Prior to JSON, XML was used to transfer data between web services. The downside of using XML is that it is very verbose. For example, suppose you have a Person class as follows:
-
- 
 
 ```
 public class Person { 

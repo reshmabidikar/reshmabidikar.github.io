@@ -29,6 +29,9 @@
 * [Java Treeset v/s Hashset](2019/07/java-treeset-v-s-hashset.md)
 * [Java super Keyword Explained](2019/07/java-super-keyword-explained.md)
 * [Java Arrays Explained](2019/06/java-arrays-explained.md)
+* [Java if-else](2019/05/java-if-else.md)
+* [How to count the number of vowels and consonants in a String](2019/05/how-to-count-the-number-of-vowels-and-consonants-in-a-string.md)
+* [How to find the number of digits in a String](2019/05/how-to-find-the-number-of-digits-in-a-number.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -47,6 +50,7 @@
 * [Java 9 Stream API Iterate Method Example](2019/11/java-9-stream-api-iterate-method-example.md)
 * [Java 9 Stream Dropwhile With Examples](2019/09/java-9-stream-dropwhile-method-with-examples.md)
 * [Java 9 Stream takeWhile With Examples](2019/08/java-9-stream-takewhile-with-examples.md)
+* [Java 9 Private Interface Methods](2019/05/java-9-private-interface-methods.md)
 
 ## Java 8 New Features
 * [Overview of new features in Java 8](2020/02/overview-of-new-features-in-java-8.md)
@@ -80,6 +84,11 @@
 * [Java 8 DoubleConsumer Example](2019/06/java-8-doubleconsumer-example.md)
 * [Stream API filter example](2019/06/stream-api-filter-example.md)
 * [Java 8 BiFunction Example](2019/06/java-8-bifunction-example.md)
+* [Java 8 UnaryOperator Example](2019/05/java-8-unaryoperator-example.md)
+* [Java 8 Stream API](2019/05/java-8-stream-api.md)
+* [Java 8 Method Reference Operator Example](2019/05/java-8-method-reference-operator-explained.md)
+* [Java 8 Stream API anyMatch Example](2019/05/stream-api-anymatch-example.md)
+* [Java 8 Lambda Expressions Explained](2019/05/java-8-lambda-expressions-explained.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -107,16 +116,21 @@
 * [How to Create a Spring REST Application](2019/06/how-to-create-a-spring-rest-application-via-maven-and-eclipse.md)
 * [Controller vs RestController in Spring](2019/06/controller-vs-restcontroller-annotation-in-spring.md)
 * [How to create a HelloWorld Spring MVC Application](2019/06/how-to-create-helloworld-spring-mvc-web-application-using-maven-and-eclipse.md)
+* [How to create a SpringBoot REST Service and test it via Postman](2019/05/how-to-create-springboot-rest-service-and-test-it-via-postman.md)
+* [SpringBoot JPA Example](2019/05/springboot-jpa-example-with-eclipse-and-maven.md)
 
 
 ## Jax-rs and REST
-*[Jax-rs Exception Handling](2019/12/jax-rs-exception-handling.md)
-*[Jax-rs v/s Spring Rest](2019/10/jax-rs-vs-spring-rest.md)
-*[Important Jax-rs annotations explained](2019/09/important-jax-rs-annotations-explained.md)
-*[How to create a REST Service in Java using JAX-RS](2019/07/how-to-create-a-rest-service-in-java-using-jax-rs-and-eclipse.md)
-*[How to create a JAX-RS Jersey Client](2019/07/how-to-create-a-jax-rs-jersey-client-application-for-consuming-a-rest-service.md)
+* [What is REST API](2019/05/what-is-rest-api.md)
+* [JSON Syntax and Benefits](2019/05/json-syntax-and-benefits.md)
+* [Jax-rs Exception Handling](2019/12/jax-rs-exception-handling.md)
+* [Jax-rs v/s Spring Rest](2019/10/jax-rs-vs-spring-rest.md)
+* [Important Jax-rs annotations explained](2019/09/important-jax-rs-annotations-explained.md)
+* [How to create a REST Service in Java using JAX-RS](2019/07/how-to-create-a-rest-service-in-java-using-jax-rs-and-eclipse.md)
+* [How to create a JAX-RS Jersey Client](2019/07/how-to-create-a-jax-rs-jersey-client-application-for-consuming-a-rest-service.md)
 
 ## Maven, Tomcat and Eclipse
+* [How to setup Tomcat in Eclipse](2019/05/how-to-setup-tomcat-in-eclipse.md)
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
 * [How to create a Maven Wen Project using Archetype Selection](2022/02/how-to-create-a-maven-web-project-using-archetype-selection.md)
 * [Maven Wrapper](2022/01/maven-wrapper-need-installation-and-benefits.md)
@@ -149,6 +163,8 @@
 * [Automatic Dirty Checking in Hibernate](2020/01/automatic-dirty-checking-in-hibernate.md)
 * [How Hibernate SessionFactory Works](2019/11/how-hibernate-sessionfactory-works.md)
 * [Hibernate Association Mappings](2019/06/hibernate-association-mappings.md)
+* [Hibernate Interfaces Explained](2019/05/hibernate-interfaces-explained.md)
+* [Hibernate Caching Explained](2019/05/hibernate-caching-explained.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)

@@ -13,15 +13,12 @@ tags:
 
 In this blog post, I will be explaining how you can create a [Spring Boot REST](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-boot-tutorial-for-beginners%2F) service.  If you would like to see how to create a basic HelloWorld Spring Boot application refer to [this](https://learnjava.co.in/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven/) blog post.
 
-\[table id=25 /\]
-
 ## Project Creation and Setup
 
 **Step 1 - Create a new [Maven](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fmavencrashcourse%2F) Project** (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post)
 
-[![](images/1-300x238.png)](https://learnjava.co.in/wp-content/uploads/2019/05/1.png)
+[![](images/1-300x238.png)](images/1.png)
 
- 
 
 **Step 2 - Add the following Spring Boot dependencies to the POM file and save.**
 
@@ -38,8 +35,6 @@ In this blog post, I will be explaining how you can create a [Spring Boot REST](
 </dependency>
 </dependencies>
 ```
-
-\[table id=26 /\]
 
 ## Writing Code
 
@@ -154,11 +149,11 @@ This is specified at the class level. This designates the class as a REST contro
 
 **@GetMapping Annotation**
 
-This annotation specifies the URL that this method maps to and also specifies that it is an HTTP GET Request. It is a composite annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.GET). This is specified for the getAllPersons and getPersonWithId methods.
+This annotation specifies the URL that this method maps to and also specifies that it is an HTTP GET Request. It is a composite annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.GET). This is specified for the getAllPersons and getPersonWithId methods.
 
 **@PostMapping Annotation**
 
-This annotation specifies the URL that this method maps to and also specifies that it is an HTTP POST Request. It is a  composite annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.POST). This is specified on the addPerson method
+This annotation specifies the URL that this method maps to and also specifies that it is an HTTP POST Request. It is a composite annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.POST). This is specified on the addPerson method
 
 **@RequestBody Annotation**
 
@@ -193,11 +188,11 @@ This is the starting point of the application.
 
 **Step 6 - Run Main.java as a Java application as follows:**
 
-[![](images/3-300x195.png)](https://learnjava.co.in/wp-content/uploads/2019/05/3.png)
+[![](images/3-300x195.png)](images/3.png)
 
 This will display the following on the console:
 
-[![](images/4-300x110.png)](https://learnjava.co.in/wp-content/uploads/2019/05/4.png)
+[![](images/4-300x110.png)](images/4.png)
 
 ## Testing Via Browser
 
@@ -209,7 +204,7 @@ http://localhost:8080/person/
 
 This will display the following:
 
-[![](images/5-300x114.png)](https://learnjava.co.in/wp-content/uploads/2019/05/5.png)
+[![](images/5-300x114.png)](images/5.png)
 
 ### Get Person By Id
 
@@ -219,7 +214,7 @@ http://localhost:8080/person/3
 
 This will display the following:
 
-[![](images/6-300x106.png)](https://learnjava.co.in/wp-content/uploads/2019/05/6.png)
+[![](images/6-300x106.png)](images/6.png)
 
 ### Add Person
 
@@ -236,7 +231,7 @@ Postman is a client-side application that allows you to test REST services easil
 3. Click on "Send".
 4. This will show the "JSON" response sent by the server in the body below as follows:
 
-[![](images/7-300x163.png)](https://learnjava.co.in/wp-content/uploads/2019/05/7.png)
+[![](images/7-300x163.png)](images/7.png)
 
 ### Get Person By Id
 
@@ -245,7 +240,7 @@ Postman is a client-side application that allows you to test REST services easil
 3. Click on "Send".
 4. This will show the "JSON" response sent by the server in the body below as follows:
 
-[![](images/8-300x141.png)](https://learnjava.co.in/wp-content/uploads/2019/05/8.png)
+[![](images/8-300x141.png)](images/8.png)
 
 ### Add Person
 
@@ -258,6 +253,6 @@ Postman is a client-side application that allows you to test REST services easil
 7. Click on "Send".
 8. This will show the HTTP Status 200 sent by the server.
 
-[![](images/9-300x157.png)](https://learnjava.co.in/wp-content/uploads/2019/05/9.png)
+[![](images/9-300x157.png)](images/9.png)
 
 You can download the source code for this project via the Github repository [here](https://github.com/learnjavawithreshma/SpringBootRestDemo).

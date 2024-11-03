@@ -11,7 +11,7 @@ In this blog post, I will be explaining Java 9 private interface methods. This i
 
 ## Introduction
 
-Java 8 introduced default and static methods in interfaces. Default methods are nothing but methods with some method bodies. Such methods have the keyword "**Default**" specified. Private interface methods allow code reuse in default methods.  So if there is some common code across two or more default methods, this code can be placed in a private method
+Java 8 introduced default and static methods in interfaces. Default methods are nothing but methods with some method bodies. Such methods have the keyword "**Default**" specified. Private interface methods allow code reuse in default methods. So if there is some common code across two or more default methods, this code can be placed in a private method
 
 ## Code Sample
 
