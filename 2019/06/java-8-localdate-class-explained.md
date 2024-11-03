@@ -11,8 +11,6 @@ tags:
 
 Another new feature by Java 8 is the DateTime API. Some of the important classes in the DateTime API are the LocalDate, [LocalTime](https://learnjava.co.in/java-8-localtime-class-explained/) and [LocalDateTime](https://learnjava.co.in/java-8-localdatetime-class/). In this article, I will be explaining the Java 8 LocalDate class in detail.
 
-\[table id=24 /\]
-
 ## Introduction
 
 The LocalDate class represents a date. It is present in the java.time package. It has several methods that allow you to perform date manipulation easily.
@@ -125,7 +123,7 @@ DayOfWeek=MONDAY
 
 - The LocalDate.getDayOfYear returns the **day of the year** that the date corresponds to
 - The LocalDate.getDayOfMonth returns the **day of the month** that the date corresponds to
-- The LocalDate.getMonth returns an enum Month that specifies the **name of the month** 
+- The LocalDate.getMonth returns an enum Month that specifies the **name of the month**
 - The LocalDate.getDayOfWeek returns an enum DayOfWeek that specifies the name of the **day of the week**
 
 In addition to these methods, there are several methods that allow you to easily extract the information you need from the **LocalDate** object. You can refer to the API documentation

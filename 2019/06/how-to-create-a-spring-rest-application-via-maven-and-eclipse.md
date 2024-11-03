@@ -17,9 +17,7 @@ In this article, I will be demonstrating how to create a REST application via Sp
 
 Step 1 - Follow the steps in [this](https://learnjava.co.in/how-to-create-a-maven-web-project-in-eclipse/) article to create a web project in Eclipse with Maven Support. You should see a project as follows:
 
-[![](images/project-205x300.png)](https://learnjava.co.in/wp-content/uploads/2019/06/project.png)
-
-\[table id=27 /\]
+[![](images/project-205x300.png)](images/project.png)
 
 Step 2 - Add the Maven Dependencies for Spring to the pom file as follows:
 
@@ -161,15 +159,15 @@ public class HelloWorldController {
 
 Step 1 - Right Click on Project --> Run As --> Maven Build
 
-[![](images/c1-300x298.png)](https://learnjava.co.in/wp-content/uploads/2019/06/c1.png)
+[![](images/c1-300x298.png)](images/c1.png)
 
 Step 2 - If prompted, enter the goals as Clean --> Install
 
-[![](images/c2-300x248.png)](https://learnjava.co.in/wp-content/uploads/2019/06/c2.png)
+[![](images/c2-300x248.png)](images/c2.png)
 
 This will display a build success message as follows:
 
-[![](images/c3-300x110.png)](https://learnjava.co.in/wp-content/uploads/2019/06/c3.png)
+[![](images/c3-300x110.png)](images/c3.png)
 
 ## Deploy
 
@@ -187,13 +185,11 @@ http://localhost:8080/SpringRestDemo/hello
 
 This will display the following:
 
-[![](images/t1-1-300x264.png)](https://learnjava.co.in/wp-content/uploads/2019/06/t1-1.png)
+[![](images/t1-1-300x264.png)](images/t1-1.png)
 
 ### Testing Via Postman
 
 Postman is a client-side application that allows you to test REST services easily. You can download Postman from the Postman website [here](https://www.getpostman.com/downloads/). Once download is complete, you can click the desktop shortcut to launch Postman.
-
- 
 
 Start Postman. Click on "GET" request. Create a new Request.
 
@@ -202,9 +198,8 @@ Start Postman. Click on "GET" request. Create a new Request.
 3. Click on "Send".
 4. This will show the "JSON" response sent by the server in the body below as follows
 
-[![](images/p3-300x156.png)](https://learnjava.co.in/wp-content/uploads/2019/06/p3.png)
-
-You can download the source code for this project via the Github repository [here](https://github.com/learnjavawithreshma/SpringRestDemo).
+[![](images/p3-300x156.png)](images/p3.png)
+You can download the source code for this project via the Github repository [here](https://github.com/learnjavawithreshma/SpringRestDemo).
 
 ## Further Learning
 

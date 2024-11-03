@@ -37,7 +37,7 @@ You can use a Many To Many association mapping to represent a many-to-many relat
 
 ## Direction of Associations
 
-An association can be unidirectional or bidirectional.  This specifies the direction in which navigation can occur in the classes corresponding to the tables. So association mappings can be Unidirectional or Bidirectional
+An association can be unidirectional or bidirectional. This specifies the direction in which navigation can occur in the classes corresponding to the tables. So association mappings can be Unidirectional or Bidirectional
 
 ### Unidirectional Association
 
@@ -49,7 +49,7 @@ In a Bidirectional association, navigation access is in both directions. So the 
 
 ## Implementing Association Mappings in Hibernate
 
-Finally, associations can be implemented via annotations as well as mapping files. If you use annotations, you need to specify annotations in your entity classes corresponding to the mapping that you want to implement. Hibernate supports annotations like **@OneToOne, @ManyToOne**,**@OneToMany, and @ManyToMany** for this.
+Finally, associations can be implemented via annotations as well as mapping files. If you use annotations, you need to specify annotations in your entity classes corresponding to the mapping that you want to implement. Hibernate supports annotations like **@OneToOne, @ManyToOne**,**@OneToMany, and @ManyToMany** for this.
 
 You can also specify the associations in the mapping file. Hibernate provides mapping XML elements like **OnetoOne, ManyToOne, OneToMany, and ManyToMany** for this.
 

@@ -28,6 +28,7 @@
 * [Java protected Keyword](2019/08/java-protected-keyword-explained.md)
 * [Java Treeset v/s Hashset](2019/07/java-treeset-v-s-hashset.md)
 * [Java super Keyword Explained](2019/07/java-super-keyword-explained.md)
+* [Java Arrays Explained](2019/06/java-arrays-explained.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -75,6 +76,10 @@
 * [Java 8 IntConsumer Interface](2019/07/java-8-intconsumer-interface.md)
 * [Java 8 LongConsumer Example](2019/07/java-8-longconsumer-example.md)
 * [Java 8 Stream API Map Operation Example](2019/07/stream-api-map-operation-example.md)
+* * [Java 8 LocalDate Explained](2019/06/java-8-localdate-class-explained.md)
+* [Java 8 DoubleConsumer Example](2019/06/java-8-doubleconsumer-example.md)
+* [Stream API filter example](2019/06/stream-api-filter-example.md)
+* [Java 8 BiFunction Example](2019/06/java-8-bifunction-example.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -99,6 +104,10 @@
 * [Spring ExceptionHandler annotation explained](2019/08/spring-exceptionhandler-annotation-explained.md)
 * [Spring RequestMapping,GetMapping, PostMapping Annotations](2019/07/spring-requestmapping-getmapping-and-postmapping-annotations.md)
 * [Important Spring MVC Annotations](2019/07/important-spring-mvc-annotations.md)
+* [How to Create a Spring REST Application](2019/06/how-to-create-a-spring-rest-application-via-maven-and-eclipse.md)
+* [Controller vs RestController in Spring](2019/06/controller-vs-restcontroller-annotation-in-spring.md)
+* [How to create a HelloWorld Spring MVC Application](2019/06/how-to-create-helloworld-spring-mvc-web-application-using-maven-and-eclipse.md)
+
 
 ## Jax-rs and REST
 *[Jax-rs Exception Handling](2019/12/jax-rs-exception-handling.md)
@@ -107,14 +116,14 @@
 *[How to create a REST Service in Java using JAX-RS](2019/07/how-to-create-a-rest-service-in-java-using-jax-rs-and-eclipse.md)
 *[How to create a JAX-RS Jersey Client](2019/07/how-to-create-a-jax-rs-jersey-client-application-for-consuming-a-rest-service.md)
 
-## Maven
+## Maven, Tomcat and Eclipse
 * [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
 * [How to create a Maven Wen Project using Archetype Selection](2022/02/how-to-create-a-maven-web-project-using-archetype-selection.md)
 * [Maven Wrapper](2022/01/maven-wrapper-need-installation-and-benefits.md)
-* [Tomcat Maven Plugim](2021/06/tomcat-maven-plugin-with-code-sample.md)
-
-## Tomcat and Eclipse
+* [Tomcat Maven Plugin](2021/06/tomcat-maven-plugin-with-code-sample.md)
 * [How to Deploy an Application in Tomcat in Eclipse](2019/07/how-to-deploy-an-application-on-tomcat-server-in-eclipse.md)
+* [How to create a Maven web project in Eclipse](2019/06/how-to-create-a-maven-web-project-in-eclipse.md)
+
 
 ## Docker
 * [Docker Introduction](2022/11/introduction-to-docker-to-get-you-started.md)
@@ -139,6 +148,7 @@
 * [Hibernate HQL Syntax](2020/03/hibernate-hql-syntax.md)
 * [Automatic Dirty Checking in Hibernate](2020/01/automatic-dirty-checking-in-hibernate.md)
 * [How Hibernate SessionFactory Works](2019/11/how-hibernate-sessionfactory-works.md)
+* [Hibernate Association Mappings](2019/06/hibernate-association-mappings.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
