@@ -32,6 +32,11 @@
 * [Java if-else](2019/05/java-if-else.md)
 * [How to count the number of vowels and consonants in a String](2019/05/how-to-count-the-number-of-vowels-and-consonants-in-a-string.md)
 * [How to find the number of digits in a String](2019/05/how-to-find-the-number-of-digits-in-a-number.md)
+* [How to obtain a list of files in a folder](2019/04/how-to-obtain-list-of-files-in-a-folder.md)
+* [How to sort a List of Objects using a Comparator](2019/04/how-to-sort-a-list-on-objects-in-java-using-a-compator.md)
+* [How to find the largest number in an array](2019/04/how-to-find-the-largest-number-in-an-array.md)
+* [Compile-time Polymorphism v/s Runtime Polymorphism](2019/04/compile-time-polymorphism-vs-runtime-polymorphism.md)
+* [Why is Java Platform-independent](2019/04/why-is-java-platform-independent.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -51,6 +56,7 @@
 * [Java 9 Stream Dropwhile With Examples](2019/09/java-9-stream-dropwhile-method-with-examples.md)
 * [Java 9 Stream takeWhile With Examples](2019/08/java-9-stream-takewhile-with-examples.md)
 * [Java 9 Private Interface Methods](2019/05/java-9-private-interface-methods.md)
+* [JShell in Java 9](2019/04/jshell-in-java-9.md)
 
 ## Java 8 New Features
 * [Overview of new features in Java 8](2020/02/overview-of-new-features-in-java-8.md)
@@ -89,6 +95,10 @@
 * [Java 8 Method Reference Operator Example](2019/05/java-8-method-reference-operator-explained.md)
 * [Java 8 Stream API anyMatch Example](2019/05/stream-api-anymatch-example.md)
 * [Java 8 Lambda Expressions Explained](2019/05/java-8-lambda-expressions-explained.md)
+* [Java 8 BiPredicate Example](2019/04/java-8-bipredicate-example.md)
+* [Java 8 For-each](2019/04/java-8-foreach.md)
+* [Java 8 Functional Interface](2019/04/java-8-functional-interface-example.md)
+* [Java 8 Biconsumer Interface Example](2019/04/java-8-biconsumer-interface-example.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -118,6 +128,7 @@
 * [How to create a HelloWorld Spring MVC Application](2019/06/how-to-create-helloworld-spring-mvc-web-application-using-maven-and-eclipse.md)
 * [How to create a SpringBoot REST Service and test it via Postman](2019/05/how-to-create-springboot-rest-service-and-test-it-via-postman.md)
 * [SpringBoot JPA Example](2019/05/springboot-jpa-example-with-eclipse-and-maven.md)
+* [SpringBoot What and Why](2019/04/springboot-what-and-why.md)
 
 
 ## Jax-rs and REST
@@ -165,6 +176,7 @@
 * [Hibernate Association Mappings](2019/06/hibernate-association-mappings.md)
 * [Hibernate Interfaces Explained](2019/05/hibernate-interfaces-explained.md)
 * [Hibernate Caching Explained](2019/05/hibernate-caching-explained.md)
+* [Hibernate Persistence Life Cycle](2019/04/hibernate-persistence-life-cycle.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)

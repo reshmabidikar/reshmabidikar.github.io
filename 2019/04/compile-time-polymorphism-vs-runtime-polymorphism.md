@@ -12,15 +12,13 @@ tags:
 
 Polymorphism is the process where the same action can be performed in a number of different ways. Java supports 2 types of polymorphism – Compile time and runtime.
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=IN&amp;source=ac&amp;ref=qf_sp_asin_til&amp;ad_type=product_link&amp;tracking_id=learnjava0d-21&amp;marketplace=amazon&amp;region=IN&amp;placement=9390491622&amp;asins=9390491622&amp;linkId=fd93ec30bf91424ed803ca0809ccf5ee&amp;show_border=false&amp;link_opens_in_new_window=false&amp;price_color=333333&amp;title_color=0066c0&amp;bg_color=ffffff"></iframe>
-
 # Compile time polymorphism
 
 Java supports compile-time polymorphism via method overloading.Method overloading allows us to define two or more methods with the same name within a class but with different parameter declarations.
 
 Consider the following code snippet:
 
-\[java\]
+````
 
 public class AdditionService {
 
@@ -34,7 +32,7 @@ double add(double i,double j) { return i+j; }
 
 }
 
-\[/java\]
+````
 
 This class has 4 methods with the name add. All four add methods differ in the parameters, so there is no compilation error. 1st add method does not have any parameters, the 2nd add method takes two integer parameters, the 3rd add method takes one integer parameter and the 4th add method takes two double parameters. So the add method is said to be “overloaded” four times.
 
@@ -46,33 +44,53 @@ Java achieves Runtime polymorphism via method overriding. In a class hierarchy, 
 
 Consider the following code:
 
-\[java\] public class Vehicle { public void printVehicleType() { System.out.println("This is a vehicle"); } }
+````
 
-public class Car extends Vehicle { public void printVehicleType() { System.out.println("This is a car"); } }
+public class Vehicle { 
+public void printVehicleType() { 
+System.out.println("This is a vehicle"); 
+} 
+}
+
+public class Car extends Vehicle { 
+public void printVehicleType() { 
+System.out.println("This is a car"); 
+} 
+}
 
 public class Bicycle extends Vehicle {
 
-public void printVehicleType() { System.out.println("This is a bicyle"); }
+public void printVehicleType() { 
+System.out.println("This is a bicyle"); 
+}
 
-} \[/java\]
-
- 
+} 
+````
 
 Car and Bicycle are both sub classes of Vehicle. Both have a method called printVehicleType.
 
 Now consider the following code:
 
-\[java\] public class VehiclesDemo {
+````
 
-public static void main(String\[\] args) {
+public class VehiclesDemo {
 
-Vehicle vehicle = new Vehicle(); Car car = new Car(); vehicle = car; System.out.println("Invoking method with car object:"); vehicle.printVehicleType();
+public static void main(String[] args) {
 
-Bicycle bike = new Bicycle(); vehicle=bike; System.out.println("Invoking method with bicycle object:"); vehicle.printVehicleType();
+Vehicle vehicle = new Vehicle(); 
+Car car = new Car(); vehicle = car; 
+System.out.println("Invoking method with car object:"); 
+vehicle.printVehicleType();
+
+Bicycle bike = new Bicycle(); 
+vehicle=bike; 
+System.out.println("Invoking method with bicycle object:"); 
+vehicle.printVehicleType();
 
 }
 
-} \[/java\]
+} 
+````
 
 First, we are creating a vehicle object. We are then creating a car object and assigning it to vehicle. We are then invoking the printVehicleType method using the vehicle variable. This will invoke the method in the car class.
 
@@ -84,4 +102,7 @@ This is how Java achieves runtime polymorphism. Since the same method call i.e. 
 
 The following table summarises the differences between compile-time polymorphism and runtime polymorphism.
 
-\[table id=14 /\]
+|Compile-time Polymorphism  | Runtime Polymorphism |
+|--|--|
+| Achieved using method overloading | Achieved using method overridding |
+| Known as compile time since the version of the overloaded method that will be invoked is determined at compile time | Known as runtime since the version of the overridden method to be invoked is determined at runtime based on the type of object |

@@ -33,8 +33,6 @@ The following diagram demonstrates the Persistence Life Cycle:
 
 ![](images/PLC-300x186.png)
 
- 
-
 So as you can see, when you create a new object, it is in the transient state. Invoking session.save() moves the object to the persistent state. When you close the session via the session.close, the object is moved to the detached state.
 
-This is a simplified diagram of the persistence life cycle. In reality, there are several other methods too that can change an entity from one state to the other.
+This is a simplified diagram of the persistence life cycle. In reality, there are several other methods too, that can change an entity from one state to the other.

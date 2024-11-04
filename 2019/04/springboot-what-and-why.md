@@ -7,13 +7,11 @@ categories:
 
 Recently, everyone is talking about how [Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-5-with-spring-boot-2%2F) is much better compared to [Spring](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) and how it is modular and easy to set up. So in this blog post, I will explain a bit about what Spring Boot is and how it works
 
-\[table id=25 /\]
-
 ## What is Spring Boot?
 
 As per the definition on the Spring.io site, "**Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run**"
 
-SpringBoot sits on top of Spring. It helps you to get started with a Spring application quickly without having to write a lot of boilerplate code.  In addition, it provides embedded servers like Tomcat, Jetty etc. So even if you are creating a web application, you can just create a standalone application and deploy it in the embedded server.
+SpringBoot sits on top of Spring. It helps you to get started with a Spring application quickly without having to write a lot of boilerplate code. In addition, it provides embedded servers like Tomcat, Jetty etc. So even if you are creating a web application, you can just create a standalone application and deploy it in the embedded server.
 
 So you don't need to waste any time writing boilerplate code, doing XML configuration, adding Jar files or bothering about deploying on a server. You can just focus on writing your code, Spring Boot will do the rest.
 
@@ -21,15 +19,13 @@ So you don't need to waste any time writing boilerplate code, doing XML configur
 
 ### Problems with Spring
 
-If you have ever written a Spring application, you will know that it needs a lot of configuration. So suppose you are creating a web-based application via Spring that also accesses a database. You will need to use Spring MVC and Spring Data JPA.  So in order to create such an application via Maven, you will typically need to do the following:
+If you have ever written a Spring application, you will know that it needs a lot of configuration. So suppose you are creating a web-based application via Spring that also accesses a database. You will need to use Spring MVC and Spring Data JPA. So in order to create such an application via Maven, you will typically need to do the following:
 
-1. Create a Maven project and add all the dependencies for  the necessary components like Spring MVC, Spring Data JPA, etc within the pom file
-2. Do configuration for MVC support like setting up ViewResolver, DispatcherServlet, component scan
+1. Create a Maven project and add all the dependencies for the necessary components like Spring MVC, Spring Data JPA, etc. within the pom file
+2. Do configuration for MVC support like setting up ViewResolver, DispatcherServlet, component scan
 3. Do configuration for database support like setting up DataSource, TransactionManager, EntityManager, etc
-4. Add all the properties like Database URL, etc within the properties file
+4. Add all the properties like Database URL, etc. within the properties file
 5. Finally, write the code
-
- 
 
 So you can see that you need to do a lot of configuration in order to set up an application via Spring.
 
@@ -53,7 +49,12 @@ SpringBoot consists of 3 main components:
 
 This is a special starter that provides common configuration. In order to add this starter, you need to add the following dependency to your Maven pom file:
 
-\[xml\] <parent> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> <version>2.1.4.RELEASE</version> </parent> \[/xml\]
+````
+<parent> 
+<groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> 
+<version>2.1.4.RELEASE</version> 
+</parent>
+````
 
 ### Starter packages
 
@@ -63,7 +64,11 @@ SpringBoot provides some starter packages that need to be added to your Maven fi
 
 This starter helps you get started with a web application. In order to add this starter, you need to add the following dependency to your Maven pom file:
 
-\[xml\] <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-web</artifactId> </dependency> \[/xml\]
+````
+<dependency> 
+<groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-web</artifactId> 
+</dependency>
+````
 
 This tells SpringBoot that you are developing a web application, so it will add the necessary jar files. It will also include the embedded Tomcat server by default.
 
@@ -71,9 +76,11 @@ This tells SpringBoot that you are developing a web application, so it will add 
 
 This starter helps you get started with a database application using JPA. n order to add this starter, you need to add the following dependency to your Maven pom file:
 
-\[xml\]
-
-<dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-jpa</artifactId> </dependency> \[/xml\]
+````
+<dependency> 
+<groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-jpa</artifactId> 
+</dependency>
+````
 
 This tells SpringBoot that you are developing a database application, so it will add the necessary jar files.
 
@@ -81,13 +88,12 @@ This tells SpringBoot that you are developing a database application, so it will
 
 This starter tells SpringBoot that you need all the dependencies for testing. So when this starter is added, SpringBoot automatically adds Jar files related to JUnit, etc. In order to add this starter, you need to add the following dependency to your Maven pom file:
 
-\[xml\]
-
-<dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-test</artifactId> </dependency>
-
-\[/xml\]
-
-\[table id=26 /\]
+````
+<dependency> 
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-test</artifactId> 
+</dependency>
+````
 
 ### Auto-configuration
 
@@ -100,8 +106,6 @@ Normally, in order to deploy a web application, you need to have a web server li
 ## SpringBoot example
 
 In order to see how you create a simple Hello World SpringBoot application, you can refer to [this](https://learnjava.co.in/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven/) blog post.
-
- 
 
 ## Conclusion
 
