@@ -20,8 +20,6 @@ inputList.add("Ten");
 inputList.add("Twenty");
 ```
 
- 
-
 The above code snippet involves invoking the [List.add](https://docs.oracle.com/javase/8/docs/api/java/util/List.html#add-E-) method **several times** and does not look very clean. **Java 9** introduced a new method that allows directly adding a list of elements into a Collection without having to invoke the [add](https://docs.oracle.com/javase/8/docs/api/java/util/List.html#add-E-) method several times.
 
 ## Java 9 way
@@ -33,8 +31,6 @@ For example, suppose you want to create a List of String values. You can write c
 ```
 List<String> inputList = List.of("One","Five","Ten","Twenty");
 ```
-
- 
 
 This code is **much cleaner** than repeatedly adding the elements in the **List** via the [add](https://docs.oracle.com/javase/8/docs/api/java/util/List.html#add-E-) method. You can create the **List** in a single line of code.
 

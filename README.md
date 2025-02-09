@@ -37,6 +37,11 @@
 * [How to find the largest number in an array](2019/04/how-to-find-the-largest-number-in-an-array.md)
 * [Compile-time Polymorphism v/s Runtime Polymorphism](2019/04/compile-time-polymorphism-vs-runtime-polymorphism.md)
 * [Why is Java Platform-independent](2019/04/why-is-java-platform-independent.md)
+* [How to check if a number id even or odd](2019/03/how-to-check-if-a-number-is-even-or-odd.md)
+* [How to convert a Java List to an Array](2019/03/how-to-convert-a-java-list-to-an-array.md)
+* [How to reverse a set or List](2019/03/how-to-reverse-a-set-or-list.md)
+* [Java Autoboxing Explained](2019/03/java-autoboxing-explained.md)
+* [Java Nested Classes Explained](2019/03/nested-classes-explained.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -57,6 +62,7 @@
 * [Java 9 Stream takeWhile With Examples](2019/08/java-9-stream-takewhile-with-examples.md)
 * [Java 9 Private Interface Methods](2019/05/java-9-private-interface-methods.md)
 * [JShell in Java 9](2019/04/jshell-in-java-9.md)
+* [Collection Factory Methods in Java 9](2019/03/collection-factory-methods-in-java-9-explained.md)
 
 ## Java 8 New Features
 * [Overview of new features in Java 8](2020/02/overview-of-new-features-in-java-8.md)
@@ -99,6 +105,11 @@
 * [Java 8 For-each](2019/04/java-8-foreach.md)
 * [Java 8 Functional Interface](2019/04/java-8-functional-interface-example.md)
 * [Java 8 Biconsumer Interface Example](2019/04/java-8-biconsumer-interface-example.md)
+* [Java 8 Consumer Interface Example](2019/04/java-8-consumer-interface-example.md)
+* [Java 9 Default Methods in Interface Explained](2019/04/java-8-default-method-in-interface-explained.md)
+* [Java 8 Functional Interface](2019/03/java-8-functional-interface.md)
+* [Java 8 Static Interface Methods](2019/03/java-8-static-interface-methods.md)
+
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
@@ -177,6 +188,7 @@
 * [Hibernate Interfaces Explained](2019/05/hibernate-interfaces-explained.md)
 * [Hibernate Caching Explained](2019/05/hibernate-caching-explained.md)
 * [Hibernate Persistence Life Cycle](2019/04/hibernate-persistence-life-cycle.md)
+* [Hibernate Save v/s saveorUpdate](2019/03/hibernate-save-vs-saveorupdate.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)

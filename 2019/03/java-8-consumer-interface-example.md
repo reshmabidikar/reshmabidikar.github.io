@@ -11,23 +11,25 @@ tags:
 
 In this blog post, I will be explaining how the Java 8 functional interface Consumer works. To know more about functional interfaces, you can refer [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
 
-\[table id=24 /\]
-
 The Consumer interface provides a method called accept. It accepts a single parameter of any data type. It does not return anything, it returns a void. So it operates via side effects i.e. it modifies the parameter passed in.
 
 #### Consumer example with Integer parameter
 
 Consider the following code snippet:
 
-\[java\] public class ConsumerDemo {
+````
+public class ConsumerDemo {
 
-public static void main(String args\[\]){ Consumer<Integer> squareGenerator = (input) -> System.out.println("Square of "+input +" is "+(input\*input)); squareGenerator.accept(6); }
+public static void main(String args[]){ 
+Consumer<Integer> squareGenerator = (input) -> System.out.println("Square of "+input +" is "+(input\*input)); 
+squareGenerator.accept(6); 
+}
 
 } }
 
-\[/java\]
+````
 
-Here, we have implemented the Consumer.accept method using a lambda expression.  This accept method accepts an Integer argument. It squares it and prints the result to the console. So when this code is executed, it will print the following output:
+Here, we have implemented the Consumer.accept method using a lambda expression. This accept method accepts an Integer argument. It squares it and prints the result to the console. So when this code is executed, it will print the following output:
 
 ```
 Square of 6 is 36
@@ -37,11 +39,16 @@ Square of 6 is 36
 
 Consider the following code snippet:
 
-\[java\]
+````
 
-public class ConsumerDemo { public static void main(String args\[\]){ Consumer<String> subStringGenerator = (str) -> System.out.println(str.substring(0, 5)); String input = "Hello World"; subStringGenerator.accept(input); } }
+public class ConsumerDemo { 
+public static void main(String args[]){ 
+Consumer<String> subStringGenerator = (str) -> System.out.println(str.substring(0, 5));
+String input = "Hello World"; subStringGenerator.accept(input); 
+} 
+}
 
-\[/java\]
+````
 
 Again, we have implemented the Consumer.accept method using a lambda expression.  This accept method accepts a String value. It prints its sub string consisting of the first 5 characters in the String. So when you execute this code, it will print the following output:
 
