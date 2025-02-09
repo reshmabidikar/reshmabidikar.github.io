@@ -13,15 +13,15 @@ Often, we come across the terms JPA and Hibernate. Quite often, they are used in
 
 #### What is Hibernate?
 
-Hibernate is an ORM tool. ORM is nothing but a programming technique that allows you to map Java objects to database tables and vice versa. In addition to Hibernate, there are several other ORM tools.
+Hibernate is an ORM tool. ORM is nothing but a programming technique that allows you to map Java objects to database tables and vice versa. In addition to Hibernate, there are several other ORM tools.
 
-Before Hibernate came into existence, JDBC was widely used to access a relational database from Java code. The downside of JDBC is that it is not very object oriented.  It is very hard to map database tables to the code. Hibernate allows you to directly map your database tables to Java classes. So compared to JDBC, Hibernate provides a much cleaner approach.
+Before Hibernate came into existence, JDBC was widely used to access a relational database from Java code. The downside of JDBC is that it is not very object oriented. It is very hard to map database tables to the code. Hibernate allows you to directly map your database tables to Java classes. So compared to JDBC, Hibernate provides a much cleaner approach.
 
 However, there is a disadvantage to using a proprietary framework like Hibernate. It makes switching to a different framework difficult. Since all the code is specific to Hibernate, if you want to switch to a different framework it would involve changing your code totally.
 
 #### What is JPA?
 
-JPA stands for Java Persistence API. The JPA specification was developed by Java as a standard way to map objects to relational tables. JPA just provides the specification, it does not provide the implementation. So you cannot use JPA by itself, you will need to use a JPA provider that implements the JPA framework. EclipseLink and TopLink are some frameworks that implement the JPA specification, that is they are JPA providers. The advantage of using a framework that implements the JPA specification is that you can easily switch the framework. So for example if your code uses TopLink, you can easily change your framework to EclipseLink without having to change your code.
+JPA stands for Java Persistence API.The JPA specification was developed by Java as a standard way to map objects to relational tables. JPA just provides the specification, it does not provide the implementation. So you cannot use JPA by itself, you will need to use a JPA provider that implements the JPA framework. EclipseLink and TopLink are some frameworks that implement the JPA specification, that is they are JPA providers. The advantage of using a framework that implements the JPA specification is that you can easily switch the framework. So for example if your code uses TopLink,you can easily change your framework to EclipseLink without having to change your code.
 
 #### Hibernate was made JPA compatible
 

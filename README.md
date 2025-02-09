@@ -42,6 +42,14 @@
 * [How to reverse a set or List](2019/03/how-to-reverse-a-set-or-list.md)
 * [Java Autoboxing Explained](2019/03/java-autoboxing-explained.md)
 * [Java Nested Classes Explained](2019/03/nested-classes-explained.md)
+* [ArrayList v/s LinkedList](2019/02/arraylist-vs-linkedlist.md)
+* [How to calculate the sum of numbers in an array](2019/02/how-to-calculate-the-sum-of-the-numbers-in-an-array.md)
+* [How to check if an input character is a vowel](2019/02/how-to-check-if-an-input-character-is-a-vowel.md)
+* [How to create a List without using list.add](2019/02/how-to-create-a-list-with-data-without-using-list-add-multiple-times.md)
+* [How to find if two lists are exactly the same](2019/02/how-to-find-if-two-lists-are-exactly-the-same.md)
+* [How to Reverse a Sentence via Java](2019/02/how-to-reverse-a-sentence-via-java.md)
+* [How to Sort a List via Java](2019/02/how-to-sort-a-list-via-java.md)
+* [NullPointerException Explained](2019/02/nullpointerexception-explained.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -189,6 +197,10 @@
 * [Hibernate Caching Explained](2019/05/hibernate-caching-explained.md)
 * [Hibernate Persistence Life Cycle](2019/04/hibernate-persistence-life-cycle.md)
 * [Hibernate Save v/s saveorUpdate](2019/03/hibernate-save-vs-saveorupdate.md)
+* [How to query a table via JDBC](2019/02/how-to-query-a-database-table-via-jdbc.md)
+* [JPA vs Hibernate](2019/02/jpa-vs-hibernate.md)
+* [Statement vs PreparedStatement](2019/02/statement-vs-preparedstatement.md)
+* [What is Hibernate Criteria API](2019/02/what-is-hibernate-criteria-api.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
