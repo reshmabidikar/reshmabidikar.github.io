@@ -11,15 +11,20 @@ tags:
 
 In this blog post, I will be explaining how you can check if a file exists at a specified path. Consider the following code snippet:
 
-\[java\]
+````
 
 public class FileExists {
 
-public static void main(String args\[\]){ String fileName = "C:/Test.txt"; File file = new File(fileName); if(file.exists()){ System.out.println("File is present"); } else System.out.println("File is missing"); } }
-
-\[/java\]
-
- 
+public static void main(String args[]){ 
+    String fileName = "C:/Test.txt"; 
+    File file = new File(fileName); 
+    if(file.exists()){ 
+        System.out.println("File is present"); 
+    } else 
+        System.out.println("File is missing"); 
+    } 
+}
+````
 
 Here the [File.exists](https://docs.oracle.com/javase/8/docs/api/java/io/File.html#exists--) method is used. This returns a true if a file with the specified name exists at the path specified, otherwise it returns a false.
 

@@ -50,6 +50,24 @@
 * [How to Reverse a Sentence via Java](2019/02/how-to-reverse-a-sentence-via-java.md)
 * [How to Sort a List via Java](2019/02/how-to-sort-a-list-via-java.md)
 * [NullPointerException Explained](2019/02/nullpointerexception-explained.md)
+* [How to check if a file exists at the specified path](2019/01/how-to-check-if-a-file-exists-at-the-specified-path.md)
+* [How to check if a number is a prime number](2019/01/how-to-check-if-a-number-is-a-prime-number.md)
+* [How to check if a String has digits in Java](2019/01/how-to-check-if-a-string-has-digits-in-java.md)
+* [How to check if a String is a substring of another String](2019/01/how-to-check-if-a-string-is-a-substring-of-another-string)
+* [How to convert a String to lowercase](2019/01/how-to-convert-a-string-to-lowercase-in-java.md)
+* [How to create a directory in Java](2019/01/how-to-create-a-directory-in-java.md)
+* [How to create a new file in Java](2019/01/how-to-create-a-new-file-using-java.md)
+* [How to delete a file in Java](2019/01/how-to-delete-a-file.md)
+* [How to delete a folder in Java](2019/01/how-to-delete-a-folder-in-java.md)
+* [How to find the count of each character in a String](2019/01/how-to-find-the-count-of-each-character-in-a-string-in-java)
+* [How to find the free space in a drive in Java](2019/01/how-to-find-the-free-space-in-a-drive-via-java.md)
+* [How to find the total space in a drive in Java](2019/01/how-to-find-the-total-space-in-a-drive-in-java.md)
+* [How to make a file read only in Java](2019/01/how-to-make-a-file-read-only-in-java.md)
+* [How to read a CSV file in Java](2019/01/how-to-read-a-csv-file-via-java.md)
+* [How to remove a character from a String in Java](2019/01/how-to-remove-a-character-from-a-string-via-java.md)
+* [How to rename a file in Java](2019/01/how-to-rename-a-file.md)
+* [How to replace a String with another String](2019/01/how-to-replace-a-string-with-another-string-in-java.md)
+* [How to split a String via Java](2019/01/how-to-split-a-string-via-java.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -167,6 +185,7 @@
 * [Tomcat Maven Plugin](2021/06/tomcat-maven-plugin-with-code-sample.md)
 * [How to Deploy an Application in Tomcat in Eclipse](2019/07/how-to-deploy-an-application-on-tomcat-server-in-eclipse.md)
 * [How to create a Maven web project in Eclipse](2019/06/how-to-create-a-maven-web-project-in-eclipse.md)
+* [How to add Maven Dependencies via Eclipse](2019/01/how-to-add-maven-dependencies-via-eclipse.md)
 
 
 ## Docker
@@ -201,6 +220,9 @@
 * [JPA vs Hibernate](2019/02/jpa-vs-hibernate.md)
 * [Statement vs PreparedStatement](2019/02/statement-vs-preparedstatement.md)
 * [What is Hibernate Criteria API](2019/02/what-is-hibernate-criteria-api.md)
+* [Difference Between save and persist in Hibernate](2019/01/difference-between-save-and-persist-in-hibernate.md)
+* [JDBC vs Hibernate](2019/01/jdbc-versus-hibernate.md)
+* [Update vs Merge in Hibiernate](2019/01/update-vs-merge-in-hibernate.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
