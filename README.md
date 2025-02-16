@@ -68,6 +68,13 @@
 * [How to rename a file in Java](2019/01/how-to-rename-a-file.md)
 * [How to replace a String with another String](2019/01/how-to-replace-a-string-with-another-string-in-java.md)
 * [How to split a String via Java](2019/01/how-to-split-a-string-via-java.md)
+* [Checked vs Unchecked Exceptions](2018/12/checked-vs-unchecked-exceptions.md)
+* [How are Java Strings Immutable](2018/12/how-are-java-strings-immutable.md)
+* [How to convert a String to uppercase](2018/12/how-to-convert-a-string-to-uppercase.md)
+* [Java Constructors Explained](2018/12/java-constructors-explained.md)
+* [Java Enumerations Explained](2018/12/java-enumerations-explained.md)
+* [Java Interfaces Explained](2018/12/java-interfaces-explained.md)
+* [String vs StringBuffer vs StringBuilder](2018/12/string-vs-stringbuffer-vs-stringbuilder.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -118,7 +125,7 @@
 * [Java 8 IntConsumer Interface](2019/07/java-8-intconsumer-interface.md)
 * [Java 8 LongConsumer Example](2019/07/java-8-longconsumer-example.md)
 * [Java 8 Stream API Map Operation Example](2019/07/stream-api-map-operation-example.md)
-* * [Java 8 LocalDate Explained](2019/06/java-8-localdate-class-explained.md)
+* [Java 8 LocalDate Explained](2019/06/java-8-localdate-class-explained.md)
 * [Java 8 DoubleConsumer Example](2019/06/java-8-doubleconsumer-example.md)
 * [Stream API filter example](2019/06/stream-api-filter-example.md)
 * [Java 8 BiFunction Example](2019/06/java-8-bifunction-example.md)
@@ -129,12 +136,14 @@
 * [Java 8 Lambda Expressions Explained](2019/05/java-8-lambda-expressions-explained.md)
 * [Java 8 BiPredicate Example](2019/04/java-8-bipredicate-example.md)
 * [Java 8 For-each](2019/04/java-8-foreach.md)
-* [Java 8 Functional Interface](2019/04/java-8-functional-interface-example.md)
+* [Java 8 Functional Interface Example](2019/04/java-8-functional-interface-example.md)
 * [Java 8 Biconsumer Interface Example](2019/04/java-8-biconsumer-interface-example.md)
 * [Java 8 Consumer Interface Example](2019/04/java-8-consumer-interface-example.md)
 * [Java 9 Default Methods in Interface Explained](2019/04/java-8-default-method-in-interface-explained.md)
 * [Java 8 Functional Interface](2019/03/java-8-functional-interface.md)
 * [Java 8 Static Interface Methods](2019/03/java-8-static-interface-methods.md)
+* [Java 8 IntSupplier Interface Example](2018/12/java-8-intsupplier-interface-example.md)
+* [Java 8 LongPredicate Interface Example](2018/12/java-8-longpredicate-interface-example.md)
 
 
 ## Spring and Spring Boot
@@ -223,6 +232,7 @@
 * [Difference Between save and persist in Hibernate](2019/01/difference-between-save-and-persist-in-hibernate.md)
 * [JDBC vs Hibernate](2019/01/jdbc-versus-hibernate.md)
 * [Update vs Merge in Hibiernate](2019/01/update-vs-merge-in-hibernate.md)
+* [Difference between Get and Load in Hibernate](2018/12/difference-between-get-and-load-in-hibernate.md)
 
 ## Unit Testing
 * [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)

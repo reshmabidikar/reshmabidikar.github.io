@@ -16,19 +16,16 @@ An enumerated type is a type whose values consist of a fixed set of constants. C
 
 In Java, you can define an enumerated type by using the **enum** keyword. The syntax is as follows:
 
-\[java\]
-
+````
 enum NameOfEnum {value1,value2,value3.......,valuen}
-
-\[/java\]
+````
 
 You can have as many values as you wish. For example, you can define an enum for the days of the week as follows:
 
-\[java\]
+````
 
 enum Days {Sunday,Monday, Tuesday,Wednesday,Thursday,Friday,Saturday}
-
-\[/java\]
+````
 
 The values Sunday,Monday, etc are called enumeration constants. For the **enum** Days, these are the only values that are allowed.
 
@@ -40,19 +37,15 @@ The values of an **enum** are static values and you can retrieve them using the 
 
 An **enum** is a datatype. So the way you require an int variable to store an int value, you require an **enum** of type Days to store a value of **Enum** days. So for example, to retrieve and store the value "Saturday" from the **enum** Days, you need to declare a variable of type Days as:
 
-\[java\]
-
+````
 Days today = Days.Saturday;
-
-\[/java\]
+````
 
 To be specific, you cannot assign an **enum** variable of one type with a value of another type, it will result in a compilation error. So if you declare another **enum** called Colors and try to write something like this:
 
-\[java\]
-
+````
 Days today = Colors.BLUE;
-
-\[/java\]
+````
 
 This will result in a compilation error because the left side **enum** is Days while the right side is Colors.
 
@@ -60,8 +53,6 @@ This will result in a compilation error because the left side **enum** is Days w
 
 The **enum** internally stores the enumeration constant as numerical values. So in the Days example above, the **enum** Days will have the values 0,1,2,3,4,5,6 internally. However, while using the enumeration constants, they are output as descriptive values.
 
- 
-
 #### Enum declaration scope
 
-You cannot declare an **enum**  in any method of a class. So you need to declare an enum outside the main method.
+You cannot declare an **enum** in any method of a class. So you need to declare an enum outside the main method.

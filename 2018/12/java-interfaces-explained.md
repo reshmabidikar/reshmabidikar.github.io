@@ -16,37 +16,27 @@ An interface is a java construct that is used to specify a behavior that classes
 
 For example, consider the following code snippet:
 
-\[java\]
-
+````
 public interface Animal {
 
-public void speak();
-
+    public void speak();
 }
+````
 
-\[/java\]
-
-This interface keyword specifies that this is an interface. Instead of the class keyword, the interface keyword is used, otherwise its body is very similar to a class. There is a speak method within this interface. There is no code in the speak method. Methods specified in an interface have no method bodies.  Code is not allowed in a method in an interface since the basic concept of an interface is to use it to specify what should be done but leave a class to decide how to do it. So in this case, this Animal interface specifies that it has a speak method, but it does not specify how the animal should speak. . We can write other classes like Dog, Cat, etc which implement this interface and provide code in the speak method.
-
- 
+This interface keyword specifies that this is an interface. Instead of the class keyword, the interface keyword is used, otherwise its body is very similar to a class. There is a speak method within this interface. There is no code in the speak method. Methods specified in an interface have no method bodies. Code is not allowed in a method in an interface since the basic concept of an interface is to use it to specify what should be done but leave a class to decide how to do it. So in this case, this Animal interface specifies that it has a speak method, but it does not specify how the animal should speak. . We can write other classes like Dog, Cat, etc which implement this interface and provide code in the speak method.
 
 #### How does a class implement an interface?
 
 Consider the following code snippet:
 
-\[java\]
-
+````
 public class Dog implements Animal{
 
-public void speak(){
-
-System.out.println("Woof Woof!");
-
+    public void speak(){
+        System.out.println("Woof Woof!");
+    }
 }
-
-}
-
-\[/java\]
+````
 
 Here, the class declaration is followed by this implements keyword and the interface name. This specifies that the Dog class implements the Animal interface.
 
