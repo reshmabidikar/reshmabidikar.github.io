@@ -4,10 +4,10 @@
 
 ## Navigation
 
-- [Home](https://learnjava.co.in/)
-- [Testimonials](https://learnjava.co.in/testimonials)
+- [Home](https://reshmabidikar.github.io/)
+- [Testimonials](testimonials.md)
 - [Services](https://learnjava.co.in/services)
-- [Blog](https://learnjava.co.in/blog)
+- [Blog](blog.md)
     - [Java Tutorial](https://learnjava.co.in/java-tutorial)
     - [Java 8](https://learnjava.co.in/java-8)
     - [Java 9](https://learnjava.co.in/java-9)
@@ -44,9 +44,3 @@ Hi, I’m **Reshma Bidikar**. I'm a Java/Python Technical Writer/Trainer with ov
 - **Python**
 - **Web Services/REST API**
 - **JDBC/Hibernate/JPA**
-
-![Java Technologies](https://learnjava.co.in/path-to-image.jpg)
-![Development Tools](https://learnjava.co.in/path-to-image.jpg)
-![Database Systems](https://learnjava.co.in/path-to-image.jpg)
-
----
