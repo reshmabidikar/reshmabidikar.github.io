@@ -6,10 +6,10 @@
 
 - [Home](https://reshmabidikar.github.io/)
 - [Testimonials](testimonials.md)
-- [Services](https://learnjava.co.in/services)
+- [Services](services.md)
 - [Blog](blog.md)
     - [Java Tutorial](https://learnjava.co.in/java-tutorial)
-    - [Java 8](https://learnjava.co.in/java-8)
+    - [Java 8](blog.md#java-8-new-features)
     - [Java 9](https://learnjava.co.in/java-9)
     - [Java 10](https://learnjava.co.in/java-10)
     - [Java Examples](https://learnjava.co.in/java-examples)
