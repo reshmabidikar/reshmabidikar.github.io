@@ -75,6 +75,13 @@
 * [Java Enumerations Explained](2018/12/java-enumerations-explained.md)
 * [Java Interfaces Explained](2018/12/java-interfaces-explained.md)
 * [String vs StringBuffer vs StringBuilder](2018/12/string-vs-stringbuffer-vs-stringbuilder.md)
+* [How to convert a String to a Date](2018/11/how-to-convert-a-string-to-a-date.md)
+* [How to shuffle the elements in a list](2018/11/how-to-shuffle-the-elements-in-a-list.md)
+* [Java Classes and Objects Explained](2028/11/java-classes-and-objects-explained.md)
+* [Java Iterators Explained](2018/11/java-iterators-explained.md)
+* [Java Path and Classpath Explained](2018/11/java-path-and-classpath-explained.md)
+* [Java Prefix and Postfix Notation Explained](2018/11/java-prefix-and-postfix-notation-explained.md)
+* [public static void main explained](public-static-void-main-explained.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -144,6 +151,8 @@
 * [Java 8 Static Interface Methods](2019/03/java-8-static-interface-methods.md)
 * [Java 8 IntSupplier Interface Example](2018/12/java-8-intsupplier-interface-example.md)
 * [Java 8 LongPredicate Interface Example](2018/12/java-8-longpredicate-interface-example.md)
+* [Java 8 BooleanSupplierExample](2018/12/java-8-booleansupplier-example.md)
+* [Java 8 IntPredicateExample](2018/12/java-8-intpredicate-interface-example.md)
 
 
 ## Spring and Spring Boot
