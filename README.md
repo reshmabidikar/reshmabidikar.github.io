@@ -2,26 +2,25 @@
 
 **Your one-stop for all Java-related resources**
 
-## Navigation
+## Navigation Reshma
 
 - [Home](https://reshmabidikar.github.io/)
 - [Testimonials](testimonials.md)
 - [Services](services.md)
 - [Blog](blog.md)
-    - [Java Tutorial](https://learnjava.co.in/java-tutorial)
+    - [Java Tutorial](blog.md#core-java)
     - [Java 8](blog.md#java-8-new-features)
-    - [Java 9](https://learnjava.co.in/java-9)
-    - [Java 10](https://learnjava.co.in/java-10)
-    - [Java Examples](https://learnjava.co.in/java-examples)
-    - [Java Interview Questions](https://learnjava.co.in/java-interview-questions)
-    - [Spring and SpringBoot](https://learnjava.co.in/spring-and-springboot)
-    - [JPA, Hibernate and JDBC](https://learnjava.co.in/jpa-hibernate-jdbc)
-    - [REST](https://learnjava.co.in/rest)
-    - [Unit Testing](https://learnjava.co.in/unit-testing)
-    - [Tomcat, Eclipse and Maven](https://learnjava.co.in/tomcat-eclipse-maven)
-    - [Git and GitHub](https://learnjava.co.in/git-github)
-    - [Python](https://learnjava.co.in/python)
-- [Courses](https://learnjava.co.in/courses)
+    - [Java 9](blog.md#java-9)
+    - [Java 10](blog.md#java-10)
+    - [Java Examples](blog.md#core-java)
+    - [Java Interview Questions](blog.md#core-java)
+    - [Spring and SpringBoot](blog.md#spring-and-spring-boot)
+    - [JPA, Hibernate and JDBC](blog.md#jpa-hibernate-and-jdbc)
+    - [Jax-rs and REST](blog.md#jax-rs-and-rest)
+    - [Unit Testing](blog.md#unit-testing)
+    - [Tomcat, Eclipse and Maven](blog.md#maven-tomcat-and-eclipse)
+    - [Git and GitHub](blog.md#git-and-github)
+    - [Python](blog.md#python)
 - [Contact](https://learnjava.co.in/contact)
 
 ## Welcome to LearnJava
