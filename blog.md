@@ -82,6 +82,12 @@
 * [Java Path and Classpath Explained](2018/11/java-path-and-classpath-explained.md)
 * [Java Prefix and Postfix Notation Explained](2018/11/java-prefix-and-postfix-notation-explained.md)
 * [public static void main explained](public-static-void-main-explained.md)
+* [How to convert a List to a Set](2018/10/how-to-convert-a-list-to-a-set.md)
+* [How to find the maximum and minimum number in a list](2018/10/how-to-find-the-maximum-and-minimum-number-in-a-list.md)
+* [How to print the current Date and Time](2018/10/how-to-print-the-current-date-and-time.md)
+* [Java Loops Examples](2018/10/java-loops-examples.md)
+* [Java This Keyword Explained](2018/10/java-this-keyword-explained.md)
+* [What is a marker interface in Java](2018/10/what-is-a-marker-interface-is-java.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -153,6 +159,8 @@
 * [Java 8 LongPredicate Interface Example](2018/12/java-8-longpredicate-interface-example.md)
 * [Java 8 BooleanSupplierExample](2018/12/java-8-booleansupplier-example.md)
 * [Java 8 IntPredicateExample](2018/12/java-8-intpredicate-interface-example.md)
+* [Java 8 DoublePredicate Example](2018/10/doublepredicate-interface-example.md)
+* [Java 8 Predicate Example](2018/10/java-8-predicate-example.md)
 
 
 ## Spring and Spring Boot
@@ -204,6 +212,8 @@
 * [How to Deploy an Application in Tomcat in Eclipse](2019/07/how-to-deploy-an-application-on-tomcat-server-in-eclipse.md)
 * [How to create a Maven web project in Eclipse](2019/06/how-to-create-a-maven-web-project-in-eclipse.md)
 * [How to add Maven Dependencies via Eclipse](2019/01/how-to-add-maven-dependencies-via-eclipse.md)
+* [How to create a basic Java Project in Eclipse](2018/10/creating-a-basic-java-project-in-eclipse.md)
+* [How to create a Maven Project in Eclipse](2018/10/how-to-create-a-maven-project-in-eclipse.md)
 
 
 ## Docker
