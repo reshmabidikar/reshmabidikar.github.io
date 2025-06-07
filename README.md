@@ -2,7 +2,7 @@
 
 **Your one-stop for all Java-related resources**
 
-## Navigation reshma
+## Navigation
 
 - [Home](https://reshmabidikar.github.io/)
 - [Testimonials](testimonials.md)
