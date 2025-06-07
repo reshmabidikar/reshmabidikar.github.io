@@ -53,8 +53,3 @@ I provide the following services:
 ## Let's Work Together!
 
 Need quality technical content or training material? Contact me to discuss your requirements.
-
----
-
-© 2025 LearnJava  
-Theme by [Adazing](https://www.adazing.com)
