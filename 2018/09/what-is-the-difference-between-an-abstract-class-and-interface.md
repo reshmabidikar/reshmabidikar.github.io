@@ -26,7 +26,7 @@ An interface is a java construct that specifies methods without any method bodie
 
 #### Why is an interface useful?
 
-Using  an interface, you can specify what a class must do, but not how it does it.   So you can use it to specify a behavior that classes must implement.
+Using an interface, you can specify what a class must do, but not how it does it. So you can use it to specify a behavior that classes must implement.
 
 #### So what are the similarities between abstract class and interface?
 
@@ -35,7 +35,13 @@ Using  an interface, you can specify what a class must do, but not how it does 
 
 #### How are they different?
 
-\[table id=3 /\]
+|Abstract Class|Interface  |
+|--|--|
+| An abstract class can have non-abstract methods i.e. methods with method bodies |All methods within the interface are abstract so it cannot have methods with method bodies.  |
+| Only one class can extend an abstract class | An interface can be implemented by several classes |
+|An abstract class can have protected and public abstract methods  | An interface can have only have public abstract methods |
+| Can have instance variables |Cannot have instance variables, all variables are implicitly static and final since an interface cannot be instanitated  |
+|Can have a constructor  | Cannot have constructors |
 
 #### When to use which?
 

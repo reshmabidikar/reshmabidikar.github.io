@@ -9,19 +9,24 @@ tags:
 
 This blog posts shows how to add two numbers in Java:
 
- 
-
-\[java\]
+```java
 
 public class Demo {
 
-public static void main(String args\[\]){ int a = 10; int b = 20; int result = add(a,b); System.out.println("Result is "+result); }
+    public static void main(String args[]){ 
+        int a = 10; 
+        int b = 20; 
+        int result = add(a,b); 
+        System.out.println("Result is "+result); 
+    }
 
-private static int add(int a,int b){ int result = a+b; return result; } }
+    private static int add(int a,int b){ 
+        int result = a+b; 
+        return result; 
+    } 
+}
 
-\[/java\]
-
- 
+```
 
 Here, we are using the method add to add two numbers. It accepts 2 integer values, adds them and returns the result. You can change the data type/ return value to anything else like long,short, float, double, etc.
 

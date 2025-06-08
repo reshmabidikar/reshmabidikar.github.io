@@ -19,11 +19,14 @@ A break statement is used to terminate a loop. So the moment a break statement i
 
 Consider the following code snippet:
 
-\[java\]
-
-for(int i = 0; i < 50;i++){ if(i == 10) break; System.out.println("i="+i); } System.out.println("Outside loop");
-
-\[/java\]
+```java
+for(int i = 0; i < 50;i++) { 
+    if(i == 10) 
+        break; 
+    System.out.println("i="+i); 
+} 
+System.out.println("Outside loop");
+```
 
 This will print the following output:
 
@@ -47,19 +50,19 @@ In addition a break statement is also used in a switch block to skip further cas
 
 #### What is a continue statement?
 
-Continue statement is used when you want to stop processing the remaining code in the body of a loop for a particular iteration but continue the loop for the next iteration.
+Continue statement is used when you want to stop processing the remaining code in the body of a loop for a particular iteration but continue the loop for the next iteration.
 
 Consider the following code snippet:
 
-\[java\]
+```java
 
 for(int i = 0; i < 10;i++){ if(i % 2 == 0) continue; System.out.println("i="+i);
 
 } System.out.println("Outside loop");
 
-\[/java\]
+```
 
-This code snippet prints only the odd numbers from 1 to 10.  So it will print the following output:
+This code snippet prints only the odd numbers from 1 to 10. So it will print the following output:
 
 ```
 i=1
