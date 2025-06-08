@@ -8,7 +8,7 @@ tags:
   - "java8optional"
 ---
 
-[Java 8](https://learnjava.co.in/java-8/) has introduced a bunch of new features. The Optional feature introduced by Java 8 helps in avoiding unexpected exceptions. In this article, I will be covering this feature in detail.
+[Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) has introduced a bunch of new features. The Optional feature introduced by Java 8 helps in avoiding unexpected exceptions. In this article, I will be covering this feature in detail.
 
 ## Optional Introduction
 
