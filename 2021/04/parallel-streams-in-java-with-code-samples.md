@@ -6,7 +6,7 @@ categories:
 coverImage: "java_parallel_streams-scaled.jpg"
 ---
 
-In my [earlier](https://learnjava.co.in/java-8-stream-api/) article, I had covered the Stream API in depth. In this article, we will be taking a look at parallel streams. Simply speaking, a parallel stream is a stream that operates on its elements in parallel.
+In my [earlier](https://reshmabidikar.github.io/2019/05/java-8-stream-api.html) article, I had covered the Stream API in depth. In this article, we will be taking a look at parallel streams. Simply speaking, a parallel stream is a stream that operates on its elements in parallel.
 
 ## How to obtain a parallel stream
 
@@ -45,7 +45,7 @@ List<Integer> marks2 = marks.parallelStream().filter(m -> m > 80).collect(Collec
 System.out.println(marks2);
 ```
 
-This code first creates an Integer List `marks` using some values. It then obtains a parallel stream on `marks` and invokes the [filter](https://learnjava.co.in/stream-api-filter-example/) method on the stream. The `parallelStream` method creates multiple smaller streams. The `filter` operation is performed on each stream by a separate thread. Finally, the result of performing the filter operation are combined before performing the `collect` operation.
+This code first creates an Integer List `marks` using some values. It then obtains a parallel stream on `marks` and invokes the [filter](https://reshmabidikar.github.io/2019/06/stream-api-filter-example.html) method on the stream. The `parallelStream` method creates multiple smaller streams. The `filter` operation is performed on each stream by a separate thread. Finally, the result of performing the filter operation are combined before performing the `collect` operation.
 
 This code produces the following output:
 
