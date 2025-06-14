@@ -10,7 +10,7 @@ You Java 8 introduced a new feature called lambda expressions. In this blog post
 
 ## What are lambda expressions
 
-Lambda expressions are used to define anonymous functions, that is a function without a name. Lambda expressions and functional interfaces together help in writing clean code. A functional interface is nothing but an interface with a single method. In order to understand more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post. Lambda expressions can be used to implement functional interfaces.
+Lambda expressions are used to define anonymous functions, that is a function without a name. Lambda expressions and functional interfaces together help in writing clean code. A functional interface is nothing but an interface with a single method. In order to understand more about functional interfaces, you can refer to [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post. Lambda expressions can be used to implement functional interfaces.
 
 ## Lambda expression syntax
 
@@ -24,7 +24,7 @@ Parameters specify the parameters to be passed to the lambda expression. You can
 
 ### Lambda Operator
 
-\-> specifies the lambda operator.
+`->` specifies the lambda operator.
 
 ### Lambda expression body
 
@@ -74,15 +74,16 @@ Lambda expressions help to keep the code concise. Prior to Java 8, we would need
 
 ````
 
-public class DemoClass implements DemoInterface{
+public class DemoClass implements DemoInterface {
 
-public static void main(String args\[\]){
-
-DemoInterface demoInterface = new DemoClass(); demoInterface.aMethod();
-
+public static void main(String args[]) {
+    DemoInterface demoInterface = new DemoClass(); 
+    demoInterface.aMethod();
 }
 
-public void aMethod(){ System.out.println("Demo Interface"); }
+    public void aMethod() { 
+        System.out.println("Demo Interface"); 
+   }
 
 }
 
@@ -92,7 +93,7 @@ So basically, we need to create a class that implements the interface, provide a
 
 ### Passing around code as arguments
 
-Lamda expressions are anonymous functions. They allow you to pass code as method arguments. So consider the following code snippet:
+Lambda expressions are anonymous functions. They allow you to pass code as method arguments. So consider the following code snippet:
 
 ````
 
@@ -104,11 +105,15 @@ public void draw();
 
 public class ShapeDemo {
 
-public static void main(String\[\] args) { drawShape(() -> System.out.println("Drawing Rectangle")); drawShape(() -> System.out.println("Drawing Circle")); drawShape(() -> System.out.println("Drawing Triangle"));
-
+public static void main(String[] args) { 
+    drawShape(() -> System.out.println("Drawing Rectangle"));
+    drawShape(() -> System.out.println("Drawing Circle")); 
+    drawShape(() -> System.out.println("Drawing Triangle"));
 }
 
-public static void drawShape(Shape shape){ shape.draw(); }
+public static void drawShape(Shape shape){ 
+    shape.draw(); 
+}
 
 }
 

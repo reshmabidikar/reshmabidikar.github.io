@@ -8,7 +8,7 @@ tags:
   - "localdatetime"
 ---
 
-Just like the [LocalDate](https://learnjava.co.in/java-8-localdate-class-explained/) and [LocalTime](https://learnjava.co.in/java-8-localtime-class-explained/) classes, Java 8 has also introduced the LocalDateTime class. In this article, I will be covering this class.
+Just like the [LocalDate](https://reshmabidikar.github.io/2019/06/java-8-localdate-class-explained.html) and [LocalTime](https://reshmabidikar.github.io/2019/08/java-8-localtime-class-explained.html) classes, Java 8 has also introduced the LocalDateTime class. In this article, I will be covering this class.
 
 ## What is LocalDateTime class?
 
@@ -85,7 +85,7 @@ In addition to these methods, there are several more methods on the LocalDateTim
 The LocalDateTime class allows you to easily extract information from the LocalDateTime object. The following code demonstrates this:
 
 ```
-LocalDateTime dateTime1 =  LocalDateTime.of(2017,05,17,5,25);
+LocalDateTime dateTime1 = LocalDateTime.of(2017,05,17,5,25);
 
 int day = dateTime1.getDayOfYear();
 System.out.println("DayOfYear="+day);
@@ -147,4 +147,4 @@ Is Equal:true
 
 ## Conclusion
 
-In this blog post, we saw what is Java 8 LocalDateTime. We also saw a Java 8 LocalDateTimeexample, with code for time creation, datetime extraction, time arithmetic, and time comparison.
+In this blog post, we saw what is Java 8 LocalDateTime. We also saw a Java 8 LocalDateTime example, with code for time creation, datetime extraction, time arithmetic, and time comparison.

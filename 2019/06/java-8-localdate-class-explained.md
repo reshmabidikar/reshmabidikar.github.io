@@ -9,7 +9,7 @@ tags:
   - "java8localdate"
 ---
 
-Another new feature by Java 8 is the DateTime API. Some of the important classes in the DateTime API are the LocalDate, [LocalTime](https://learnjava.co.in/java-8-localtime-class-explained/) and [LocalDateTime](https://learnjava.co.in/java-8-localdatetime-class/). In this article, I will be explaining the Java 8 LocalDate class in detail.
+Another new feature by Java 8 is the DateTime API. Some of the important classes in the DateTime API are the LocalDate, [LocalTime](https://reshmabidikar.github.io/2019/08/java-8-localtime-class-explained.html) and [LocalDateTime](https://reshmabidikar.github.io/2019/08/java-8-localtime-class-explained.html). In this article, I will be explaining the Java 8 LocalDate class in detail.
 
 ## Introduction
 
