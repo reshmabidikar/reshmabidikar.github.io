@@ -10,7 +10,7 @@ tags:
   - "static"
 ---
 
-Just like [default methods](https://learnjava.co.in/java-8-default-method-in-interface-explained/), Java 8 also supports static methods in interfaces. In this blog post, I will be explaining Java 8 static interface methods in detail. I will be covering what static methods are, how they work and why they were added.
+Just like [default methods](https://reshmabidikar.github.io/2019/04/java-8-default-method-in-interface-explained.html), Java 8 also supports static methods in interfaces. In this blog post, I will be explaining Java 8 static interface methods in detail. I will be covering what static methods are, how they work and why they were added.
 
 #### What are static interface methods?
 
@@ -20,8 +20,7 @@ Static interface methods are methods with the static keyword are with a method b
 
 Consider the following code snippet:
 
-````
-
+````java
 public interface MyInterface {
 
   static public void staticMethod() { 
@@ -49,30 +48,31 @@ As seen earlier, instead of the default keyword, they have the static keyword.
 
 Another difference is that unlike default methods, static methods cannot be overridden.So consider the following code:
 
-````
+````java
 
 public interface MyInterface {
 
-default public void defaultMethod() { 
-  System.out.println("In defaultMethod of interface"); 
-}
+    default public void defaultMethod(){ 
+        System.out.println("In defaultMethod of interface"); 
+    }
 
-static public void staticMethod() { 
-  System.out.println("In staticMethod of interface"); } } 
+    static public void staticMethod() { 
+        System.out.println("In staticMethod of interface"); 
+    } 
+} 
   
-  public class MyClass implements MyInterface { 
+public class MyClass implements MyInterface { 
   
-  @Override 
-  public void defaultMethod() { 
-    System.out.println("In defaultMethod of class"); 
-  } 
+    @Override 
+    public void defaultMethod() { 
+        System.out.println("In defaultMethod of class"); 
+    } 
     
-  @Override 
-  static public void staticMethod(){ 
-    System.out.println("In staticMethod of class"); 
-  } 
+    @Override 
+    static public void staticMethod() { 
+        System.out.println("In staticMethod of class"); 
+    } 
 }
-
 ````
 
 The above code causes a compilation error. This is because of the @Overrides annotation on the staticMethod which is a static method in the MyInterface. If this annotation is removed, the compilation error goes away.
@@ -81,37 +81,32 @@ The above code causes a compilation error. This is because of the @Overrides ann
 
 Consider the following code snippet:
 
-````
-
+````java
 public interface MyInterface {
 
-default public void defaultMethod() { 
-  System.out.println("In defaultMethod of interface"); 
-}
+    default public void defaultMethod() { 
+        System.out.println("In defaultMethod of interface"); 
+    }
 
-static public void staticMethod() { 
-  System.out.println("In staticMethod of interface"); 
-} 
+    static public void staticMethod() { 
+        System.out.println("In staticMethod of interface"); 
+    } 
 }
 
 public class MyClass implements MyInterface {
 
-public static void main(String args[]){ 
-  MyClass obj = new MyClass(); 
-  obj.defaultMethod(); 
-  obj.staticMethod(); //this line causes a compilation error 
- }
-
+    public static void main(String args[]){ 
+        MyClass obj = new MyClass(); 
+        obj.defaultMethod(); 
+        obj.staticMethod(); //this line causes a compilation error 
+    }
 }
-
 ````
 
 The above code causes a compilation error. This is because of the staticMethod being invoked using the MyClass reference object i.e. obj.The static interface method can only be invoked using the MyInterface reference as follows:
 
-````
-
+````java
 MyInterface.staticMethod();
-
 ````
 
 #### How are static interface methods useful?

@@ -6,13 +6,13 @@ categories:
 coverImage: "Map-putIfAbsent-getOrDefault-scaled.jpg"
 ---
 
-In my [earlier](https://learnjava.co.in/java-8-map-compute-map-computeifpresent-map-computeifabsent-method-examples/) article, I had explained the Map.compute, Map.computeIfPresent and Map.computeIfAbsent methods added by Java 8. In addition,Java 8 has added two other methods called **putIfAbsent** and **getOrDefault** to the Map interface. In this article, I will be explaining the these methods. 
+In my [earlier](https://reshmabidikar.github.io/2019/10/java-8-map-compute-map-computeifpresent-map-computeifabsent-method-examples.html) article, I had explained the `Map.compute`, `Map.computeIfPresent` and `Map.computeIfAbsent` methods added by Java 8. In addition,Java 8 has added two other methods called **putIfAbsent** and **getOrDefault** to the Map interface. In this article, I will be explaining the these methods. 
 
 ## How putIfAbsent works
 
 Prior to Java 8, the Map interface had a **put** method. This method accepts a key and a value as a parameter and adds the key-value pair to the Map. If the key passed to this method is present in the Map, its value gets overwritten with the new value. However, sometimes, we may wish to add the key-value pair only if the key is absent from the Map. The **putIfAbsent** method caters to such situations. Thus, it accepts a key and a value as a parameter and adds the key-value pair to the Map only if the specified key is not present in the Map. If the key is present in the Map, it does not do anything. The following code demonstrates the **put** and **putIfAbsent** methods:
 
-```
+```java
 Map<Integer,String> shapesMap = new HashMap<>();
 shapesMap.put(1, "circle");
 shapesMap.put(2, "square");
@@ -43,7 +43,7 @@ Value for key 4:pentagon
 
 Prior to Java 8, the Map interface had a **get** method. This method accepts a key as a parameter and returns the value corresponding to the key. If the key passed to this method is not present in the Map, its returns a **null**. However, sometimes, we may wish to return a default value if the specified key is not present in the Map. The **getOrDefault** method caters to such situations. Thus, it accepts a key and a default value as a parameter. It returns the value corresponding to the key only if the key is present in the map. If the key is not present in the Map, it returns the specified default value. The following code demonstrates the **get** and **getOrDefault** methods:
 
-```
+```java
 Map<Integer,String> shapesMap = new HashMap<>();
 shapesMap.put(1, "circle");
 shapesMap.put(2, "square");

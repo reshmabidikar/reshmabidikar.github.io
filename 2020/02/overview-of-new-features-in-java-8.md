@@ -23,7 +23,7 @@ The **Stream API** is useful in performing **bulk operations on collections**. F
 
 ## Static and Default interface methods
 
-Prior to Java 8, interfaces could only have public and abstract methods. Starting with Java 8, they can also have **static and default methods**. Static and default methods are methods with a **method body**. Default methods help to keep code **backwards compatible** when new methods are added to an interface. Static methods allow having **utility code** within interfaces. You can read more about the Static methods [here](https://reshmabidikar.github.io/2019/03/java-8-static-interface-methods.html) and Default methods [here](https://reshmabidikar.github.io/2019/04/java-8-default-method-in-interface-explained.md).
+Prior to Java 8, interfaces could only have public and abstract methods. Starting with Java 8, they can also have **static and default methods**. Static and default methods are methods with a **method body**. Default methods help to keep code **backwards compatible** when new methods are added to an interface. Static methods allow having **utility code** within interfaces. You can read more about the Static methods [here](https://reshmabidikar.github.io/2019/03/java-8-static-interface-methods.html) and Default methods [here](https://reshmabidikar.github.io/2019/03/java-8-default-method-in-interface-explained.html).
 
 ## DateTime API
 

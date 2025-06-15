@@ -14,13 +14,13 @@ Java 8 introduced a lot of new features like functional interfaces, lambda expre
 
 #### What is forEach
 
-Java 8 added a new method called forEach to all the Collection interfaces via the [Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) interface. You can use this method to iterate through a Collection internally without the need for an explicit for loop.
+Java 8 added a new method called `forEach` to all the Collection interfaces via the [Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) interface. You can use this method to iterate through a Collection internally without the need for an explicit for loop.
 
 #### Before Java 8
 
 Prior to Java 8, if we wanted to iterate through a Collection like a [List](https://docs.oracle.com/javase/8/docs/api/java/util/List.html), we had to write code similar to the following:
 
-````
+````java
 
 public class ForEachDemo { 
   public static void main(String args[]) { 
@@ -38,7 +38,7 @@ So you need to write a for loop to iterate through the elements in the List. In 
 
 Starting with Java 8, you can iterate through a Collection using the forEach method. So you can write code similar to the following:
 
-````
+````java
 
 public class ForEachDemo { 
   public static void main(String args[]) { 
@@ -54,9 +54,9 @@ So here, we are invoking the [forEach](https://docs.oracle.com/javase/8/docs/api
 
 Java 8 has added a new method called [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) on the [Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) Interface. The [Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html) interface extends this interface and so this method is automatically available in all the Collection interfaces like [Set](https://docs.oracle.com/javase/8/docs/api/java/util/Set.html) and [List](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)
 
-The [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) method accepts a single argument which is a [Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html) instance. [Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html) is a functional interface. Refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post to understand more about functional interfaces. [Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html) has a single method called [accept](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html#accept-T-) which accepts input of any data type.
+The [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) method accepts a single argument which is a [Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html) instance. [Consumer](https://reshmabidikar.github.io/2019/03/java-8-consumer-interface-example.html) is a functional interface. Refer to [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post to understand more about functional interfaces. [Consumer](https://reshmabidikar.github.io/2019/03/java-8-consumer-interface-example.html) has a single method called `accept` which accepts input of any data type.
 
-The [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) method is given a default implementation within the [Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) interface. Refer to [this](https://learnjava.co.in/java-8-default-method-in-interface-explained/) blog post to understand default interface methods introduced by Java 8. This is just to avoid making changes to the code for all the [Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html) classes to provide an implementation for this method. If the default implementation was not provided, Java would have to provide an implementation for the [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) method in each of the [Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html) classes like [ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html), [HashSet](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html). etc.
+The [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) method is given a default implementation within the [Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) interface. Refer to [this](https://reshmabidikar.github.io/2019/03/java-8-default-method-in-interface-explained.html) blog post to understand default interface methods introduced by Java 8. This is just to avoid making changes to the code for all the [Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html) classes to provide an implementation for this method. If the default implementation was not provided, Java would have to provide an implementation for the [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) method in each of the [Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html) classes like [ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html), [HashSet](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html). etc.
 
 The default implementation of the [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) method iterates through all the elements of the [Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html) on which it is invoked and invokes the accept method with the specified lambda expression. Here we are using a lambda expression that simply prints the input number. So the [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) method invokes the accept method with this expression and prints each number in the input list.
 
