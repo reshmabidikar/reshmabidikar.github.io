@@ -167,7 +167,7 @@
 * [Java 8 Supplier Interface Example](2018/08/java-8-supplier-interface-example.md)
 * [Java 8 IntSupplier Interface Example](2018/12/java-8-intsupplier-interface-example.md)
 * [Java 8 DoubleSupplier Example](2019/08/java-8-doublesupplier-example.md)
-* [Java 8 BooleanSupplierExample](2018/12/java-8-booleansupplier-example.md)
+* [Java 8 BooleanSupplierExample](2018/11/java-8-booleansupplier-example.md)
 * [Java 8 LongSupplier Example](2020/01/java-8-longsupplier-example.md)
 
 * [Java 8 Predicate Example](2018/10/java-8-predicate-example.md)

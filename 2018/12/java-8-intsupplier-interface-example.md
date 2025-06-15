@@ -13,8 +13,7 @@ The IntSupplier interface provides a method called getAsInt This method does not
 
 Consider the following code snippet:
 
-````
-
+````java
 public class IntSupplierDemo {
 
     public static void main(String[] args) { 
@@ -25,7 +24,7 @@ public class IntSupplierDemo {
 }
 ````
 
-Here, we have implemented the IntSupplier.getAsInt method using a lambda expression. This getAsInt method simple returns a random integer less than 100. So when this code is executed, it will print the following output:
+Here, we have implemented the `IntSupplier`.getAsInt method using a lambda expression. This getAsInt method simple returns a random integer less than 100. So when this code is executed, it will print the following output:
 
 ```
 Random number 1 = 98 
