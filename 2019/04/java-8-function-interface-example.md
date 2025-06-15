@@ -4,12 +4,12 @@ date: "2019-04-09"
 categories: 
   - "java-8-examples"
 tags: 
-  - "functional-interface"
+  - "function-interface"
   - "interfaces"
   - "java8"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface Function works. To know more about functional interfaces, you can refer[this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface Function works. To know more about functional interfaces, you can refer[this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
 
 The [Function](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html) interface provides a method called apply. It accepts a single parameter of any data type and returns a result of any data type. So it basically applies the logic in the apply method to the input parameter and returns the result.
 
@@ -17,7 +17,7 @@ The [Function](https://docs.oracle.com/javase/8/docs/api/java/util/function/Func
 
 Consider the following code snippet:
 
-````
+````java
 public class FunctionDemo { 
   public static void main(String[] args) { 
     Function<String,Integer> lengthChecker = (str) -> {return str.length();}; 
@@ -40,8 +40,7 @@ Function Interface Example with Object input and String output
 
 Suppose there is a Book class as follows:
 
-````
-
+````java
 public class Book {
 
   private String bookName; 
@@ -60,7 +59,7 @@ public class Book {
 
 And consider the following code snippet:
 
-````
+````java
 public class FunctionDemoWithBook {
 
 public static void main(String[] args) { 
@@ -87,4 +86,4 @@ We are then using the _bookNameRetriever_ to generate a List of _Book_ names. So
 Book names are:[Book1, Book2, Book3]
 ```
 
-You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).
+You can get the source code for this example along with the code for other Java 8 examples at the GitHub repository [here](https://github.com/reshmabidikar/Java8Demo).

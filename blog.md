@@ -138,7 +138,7 @@
 * [Java 8 Static Interface Methods](2019/03/java-8-static-interface-methods.md)
 * [putIfAbsent and getOrDefault Methods explained](2021/03/putifabsent-and-getordefault-map-methods-with-examples.md)
 * [Java 8 For-each](2019/04/java-8-foreach.md)
-* [Java 8 Functional Interface Example](2019/04/java-8-functional-interface-example.md)
+* [Java 8 Function Interface Example](2019/04/java-8-function-interface-example.md)
 * [Java 8 Comparator Changes](2020/12/java-8-comparator-changes.md)
 * [Java 8 SplitIterator](2019/09/java-8-splititerator.md)
 * [Java 8 Collection Removeif Method](2019/08/java-8-collection-removeif-method.md)
