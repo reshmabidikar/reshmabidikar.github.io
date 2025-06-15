@@ -7,19 +7,17 @@ categories:
 coverImage: "doubleunaryoperator-scaled.jpg"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface **DoubleUnaryOperator** works. To know more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
-
-\[table id=24 /\]
+In this blog post, I will be explaining how the Java 8 functional interface **DoubleUnaryOperator** works. To know more about functional interfaces, you can refer to [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
 
 ## What is DoubleUnaryOperator
 
-**DoubleUnaryOperator** is an in-built functional interface in the **java.util.Function** package. It accepts an argument of **double** data type, operates on it and produces a result of type **double**. It is a specialization of the [UnaryOperator](https://learnjava.co.in/java-8-unaryoperator-example/) interface. It has an [applyAsDouble](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble\(double\)) method. It applies the logic in this method on the **double** argument passed in and produces a **double** result.
+**DoubleUnaryOperator** is an in-built functional interface in the **java.util.Function** package. It accepts an argument of **double** data type, operates on it and produces a result of type **double**. It is a specialization of the [UnaryOperator](https://reshmabidikar.github.io/2019/05/java-8-unaryoperator-example.html) interface. `applyAsDouble` method. It applies the logic in this method on the **double** argument passed in and produces a **double** result.
 
 ## DoubleUnaryOperator Code Sample
 
 The following code demonstrates this interface:
 
-```
+```java
 DoubleUnaryOperator doubleUnaryOp = num -> Math.sqrt(num);
 double input = 9;
 double result = doubleUnaryOp.applyAsDouble(input);
@@ -37,9 +35,9 @@ result:3.0
 
 ## Why DoubleUnaryOperator
 
-The **DoubleUnaryOperator** interface is a non-generic primitive specialization of the [UnaryOperator](https://learnjava.co.in/java-8-unaryoperator-example/) interface. The other functional interfaces like [Supplier](https://learnjava.co.in/java-8-supplier-interface-example/), [Predicate](https://learnjava.co.in/java-8-predicate-example/),[Consumer](https://learnjava.co.in/java-8-consumer-interface-example/) also have primitive specializations like [IntSupplier](https://learnjava.co.in/java-8-intsupplier-interface-example/), [LongPredicate](https://learnjava.co.in/java-8-long-predicate-interface-example/), [IntConsumer](https://learnjava.co.in/java-8-intconsumer-interface/), etc. The primitive specializations help to improve performance when the input parameters are of primitive types. For example, in the above example, we can also use a [UnaryOperator](https://learnjava.co.in/java-8-unaryoperator-example/) interface as follows:
+The **DoubleUnaryOperator** interface is a non-generic primitive specialization of the [UnaryOperator](https://reshmabidikar.github.io/2019/05/java-8-unaryoperator-example.html) interface. The other functional interfaces like [Supplier](https://reshmabidikar.github.io/2018/08/java-8-supplier-interface-example.html), [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html),[Consumer](https://reshmabidikar.github.io/2019/04/java-8-consumer-interface-example.md) also have primitive specializations like [IntSupplier](https://reshmabidikar.github.io/2018/12/java-8-intsupplier-interface-example.html), [LongPredicate](https://reshmabidikar.github.io/2018/12/java-8-longpredicate-interface-example.html), [IntConsumer](https://reshmabidikar.github.io/2019/07/java-8-intconsumer-interface.html), etc. The primitive specializations help to improve performance when the input parameters are of primitive types. For example, in the above example, we can also use a [UnaryOperator](https://learnjava.co.in/java-8-unaryoperator-example/) interface as follows:
 
-```
+```java
 UnaryOperator<Double> unaryOp = num -> Math.sqrt(num);
 double input = 9;
 double result = unaryOp.applyAsDouble(input);
@@ -51,4 +49,4 @@ System.out.println("result:"+result);
 
 ## Conclusion
 
-So in this article, we took a look at the **DoubleUnaryOperator** interface. This interface is a specialization of the [UnaryOperator](https://learnjava.co.in/java-8-unaryoperator-example/) interface that accepts a **double** parameter and returns a **double** result.
+So in this article, we took a look at the **DoubleUnaryOperator** interface. This interface is a specialization of the [UnaryOperator](https://reshmabidikar.github.io/2019/05/java-8-unaryoperator-example.html) interface that accepts a **double** parameter and returns a **double** result.

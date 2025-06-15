@@ -34,9 +34,9 @@ result:26
 
 ## Why IntBinaryOperator
 
-The **IntBinaryOperator** interface is a non-generic primitive specialization of the [BinaryOperator](https://reshmabidikar.github.io/2019/10/java-8-binaryoperator-example.html) interface. The other functional interfaces like [Supplier](https://learnjava.co.in/java-8-supplier-interface-example/), [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html),[Consumer](https://reshmabidikar.github.io/2019/04/java-8-consumer-interface-example.md) also have primitive specializations like [IntSupplier](https://reshmabidikar.github.io/2018/12/java-8-intsupplier-interface-example.html), [LongPredicate](https://reshmabidikar.github.io/2018/12/java-8-longpredicate-interface-example.html), [IntConsumer](https://reshmabidikar.github.io/2019/07/java-8-intconsumer-interface.html), etc. The primitive specializations help to improve performance when the input parameters are of primitive types. For example, in the above example, we can also use a [BinaryOperator](https://reshmabidikar.github.io/2019/10/java-8-binaryoperator-example.html) interface as follows:
+The **IntBinaryOperator** interface is a non-generic primitive specialization of the [BinaryOperator](https://reshmabidikar.github.io/2019/10/java-8-binaryoperator-example.html) interface. The other functional interfaces like [Supplier](https://reshmabidikar.github.io/2018/08/java-8-supplier-interface-example.html), [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html),[Consumer](https://reshmabidikar.github.io/2019/04/java-8-consumer-interface-example.md) also have primitive specializations like [IntSupplier](https://reshmabidikar.github.io/2018/12/java-8-intsupplier-interface-example.html), [LongPredicate](https://reshmabidikar.github.io/2018/12/java-8-longpredicate-interface-example.html), [IntConsumer](https://reshmabidikar.github.io/2019/07/java-8-intconsumer-interface.html), etc. The primitive specializations help to improve performance when the input parameters are of primitive types. For example, in the above example, we can also use a [BinaryOperator](https://reshmabidikar.github.io/2019/10/java-8-binaryoperator-example.html) interface as follows:
 
-```
+```java
 BinaryOperator<Integer> binaryOp = (num1,num2) -> num1+num2;
 int input1=14,input2=12;
 int result = binaryOp.apply(input1, input2);
