@@ -12,7 +12,7 @@ Another new feature in Java 8 is the SplitIterator interface. This article will 
 
 Just like a normal Iterator, you can use a SplitIterator to iterate over the elements in a Collection. A new method called `splitIterator`has been added to all the Collection interfaces. This returns a SplitIterator instance. The following code demonstrates this:
 
-```
+```java
 public class SplitIteratorDemo {
 
   public static void main(String[] args) {
@@ -42,7 +42,7 @@ The above code obtains a SplitIterator over the input list. Just like the Iterat
 
 The additional benefit that SplitIterator provides over Iterator is that it can be used for parallel iteration. It does this by splitting the iteration into two parts. The following code demonstrates this:
 
-```
+```java
 public class SplitIteratorDemo {
 
   public static void main(String[] args) {
@@ -58,7 +58,6 @@ public class SplitIteratorDemo {
     sitr2.forEachRemaining(num -> System.out.println(num));
 
   }
-
 }
 ```
 
@@ -83,7 +82,7 @@ Although SplitIterator supports parallel execution, you can also use it for sequ
 
 In addition, SplitIterator has several other methods. The following code demonstrates these methods:
 
-```
+```java
 List<Integer> input = Arrays.asList(5, 3, 21, 15, 9, 2, 12, 11);
 
 Spliterator<Integer> sitr1 = input.spliterator();

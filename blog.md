@@ -101,6 +101,18 @@
 * [System.out.println Explained](2018/09/system-out-println-explained.md)
 * [Difference between abstract class and interface](2018/09/what-is-the-difference-between-an-abstract-class-and-interface.md)
 * [What is the final keyword in Java](2018/09/what-is-the-final-keyword-in-java.md)
+* [Difference between set and list in Java](2018/08/difference-between-a-set-and-list.md)
+* [How to check if a String has only Alphabets](2018/08/how-to-check-if-a-string-has-only-alphabets.md)
+* [How to convert an array to a List](2018/08/how-to-convert-an-array-to-a-list.md)
+* [How to find the factorial of a Number](2018/08/how-to-find-the-factorial-of-a-number.md)
+* [How to find the largest number in an Array](2018/08/how-to-find-the-largest-number-in-an-array.md)
+* [How to find the number of days between two dates](2018/08/how-to-find-the-number-of-days-between-two-dates.md)
+* [How to find the number of words in a sentence](2018/08/how-to-find-the-number-of-words-in-a-sentence.md)
+* [How to replace the character in a string with another character](2018/08/how-to-replace-a-character-in-a-string-with-another-character.md)
+* [How to reverse a String in Java](2018/08/how-to-reverse-a-string-in-java.md)
+* [Java Exception Handling Explained](2018/08/java-exception-handling-explained.md)
+* [Object Oriented Principles n Java](2018/08/object-oriented-principles-in-java.md)
+* [Write to a file in Java](2018/08/write-to-a-file-using-java.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
@@ -174,7 +186,7 @@
 * [Java 8 IntPredicateExample](2018/12/java-8-intpredicate-interface-example.md)
 * [Java 8 DoublePredicate Example](2018/10/doublepredicate-interface-example.md)
 * [Java 8 Predicate Example](2018/10/java-8-predicate-example.md)
-
+* [Java 8 Supplier Interface Example](2018/08/java-8-supplier-interface-example.md)
 
 ## Spring and Spring Boot
 * [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)

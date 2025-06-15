@@ -6,7 +6,7 @@ categories:
 coverImage: "IntBinaryOperator-1-scaled.jpg"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface **IntBinaryOperator** works. To know more about functional interfaces, you can refer to [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface **IntBinaryOperator** works. To know more about functional interfaces, you can refer to [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
 
 ## What is IntBinaryOperator
 
@@ -16,7 +16,7 @@ In this blog post, I will be explaining how the Java 8 functional interface **In
 
 The following code demonstrates this interface:
 
-```
+```java
 IntBinaryOperator intBinaryOp = (num1,num2) -> num1+num2;
 int input1=14,input2=12;
 int result = intBinaryOp.applyAsInt(input1, input2);

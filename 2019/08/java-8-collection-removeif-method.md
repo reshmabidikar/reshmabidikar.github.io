@@ -14,13 +14,13 @@ Java 8 has added a new method called removeIf to the Collection interface. You c
 
 ## What does RemoveIf do?
 
-This method removes an element from the Collection that matches a particular condition. It returns a boolean value which indicates whether some values were removed or not. The condition to be checked is specified via a [Predicate](https://learnjava.co.in/java-8-predicate-example/) instance. Predicate is an in-built [functional interfac](https://learnjava.co.in/what-is-a-functional-interface/)e that accepts an argument of any data type and returns a boolean. You can implement it via a [lambda expression](https://learnjava.co.in/java-8-lambda-expressions-explained/).
+This method removes an element from the Collection that matches a particular condition. It returns a boolean value which indicates whether some values were removed or not. The condition to be checked is specified via a [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html) instance. Predicate is an in-built [functional interface](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) that accepts an argument of any data type and returns a boolean. You can implement it via a [lambda expression](https://reshmabidikar.github.io/2019/05/java-8-lambda-expressions-explained.html).
 
 ## RemoveIf Integer Code Sample
 
 The following code demonstrates this method on an Integer List:
 
-```
+```java
 public class RemoveIfDemo {
 
   public static void main(String[] args) {
@@ -57,7 +57,7 @@ Elements were removed
 
 The following code demonstrates this method on a String List:
 
-```
+```java
 public class RemoveIfStringDemo {
 
   public static void main(String[] args) {
