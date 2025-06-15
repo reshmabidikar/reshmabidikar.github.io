@@ -6,7 +6,7 @@ categories:
   - "java-interview-questions"
 ---
 
-Java 8 introduced an operator represented by a double colon(::), known as the "Method Reference" operator. In this blog post, I will be explaining this operator. A basic understanding of [lambda expessions](https://learnjava.co.in/java-8-lambda-expressions-explained/) is required in order to understand method references.
+Java 8 introduced an operator represented by a double colon(::), known as the "Method Reference" operator. In this blog post, I will be explaining this operator. A basic understanding of [lambda expessions](https://reshmabidikar.github.io/2019/05/java-8-lambda-expressions-explained.html) is required in order to understand method references.
 
 # What is the Method Reference operator?
 
@@ -16,7 +16,7 @@ The method reference operator can be used to refer to a method. Normally, you ca
 
 Consider the following code:
 
-```
+```java
 @FunctionalInterface
 public interface Shape {
   public void draw();
@@ -28,31 +28,27 @@ This is a functional interface called Shape. It has a single method called "draw
 
 Now consider the following code for a class **ShapeDrawingDemo**
 
-```
+```java
 public class ShapeDrawingDemo {
-
 
   public static void main(String[] args) {
     Shape rectangle = () -> System.out.println("Drawing Rectangle");
     rectangle.draw();
   }
-
 }
-
 ```
 
 ShapeDrawingDemo has the main method. It creates a `Shape`called `rectangle`and implements it via a lambda expression that simply executes a Sysout statement.
 
 Now suppose your code already has a method as follows:
 
-```
+```java
 public class ShapeDrawingDemo {
   
   public static void drawingRectangle(){
     System.out.println("Drawing Rectangle");
   }
   
-
   public static void main(String[] args) {
     Shape rectangle = () -> System.out.println("Drawing Rectangle");
     rectangle.draw();
@@ -60,9 +56,9 @@ public class ShapeDrawingDemo {
 }
 ```
 
-So the ShapeDrawingDemo class already has a method called `drawingRectangle` that does the same thing as the lambda expression i.e. it prints a Sysout statement. So the main method can be re-written using a method reference as follows:
+So the `ShapeDrawingDemo` class already has a method called `drawingRectangle` that does the same thing as the lambda expression i.e. it prints a Sysout statement. So the main method can be re-written using a method reference as follows:
 
-```
+```java
 public static void main(String[] args) {
   Shape rectangle = ShapeDrawingDemo::drawingRectangle;
   rectangle.draw();
@@ -91,7 +87,7 @@ Instance method reference occurs when the code references an instance method of 
 
 Consider the following code:
 
-```
+```java
 public class ShapeDrawingDemo {
   
   public void drawingTriangle(){
@@ -107,7 +103,6 @@ public class ShapeDrawingDemo {
     triangle.draw();
 
   }
-
 }
 ```
 
@@ -123,14 +118,13 @@ This occurs when the code references an instance method of a class but not on an
 
 Consider the following code snippet:
 
-```
+```java
 public class MethodRefDemo {
 
   public static void main(String[] args) {
     List<String> strList = Arrays.asList("Apple","Orange","Mango","Banana");
-  strList.forEach(String::toUpperCase);
+    strList.forEach(String::toUpperCase);
   }
-
 }
 ```
 
@@ -146,7 +140,7 @@ Constructor reference occurs when the code references a constructor of a class v
 
 Consider the following code:
 
-```
+```java
 public class Person {
   
   private String name;
@@ -162,11 +156,11 @@ public class Person {
 }
 ```
 
-This is a Person class with 2 fields, name and age.
+This is a `Person` class with 2 fields, `name` and `age`.
 
 Now consider the following PersonSupplier interface:
 
-```
+```java
 @FunctionalInterface
 public interface PersonSupplier {
   public Person createPerson(String name,int age);
@@ -177,13 +171,13 @@ This is a functional interface. It has a method createPerson, that accepts value
 
 Using a lambda expression, you can implement the PersonSupplier interface as follows:
 
-```
+```java
 PersonSupplier personSupplier = (name,age) -> new Person(name,age);
 ```
 
 You can re-write the above code using a constructor reference as follows:
 
-```
+```java
 public class ConstructorRefDemo {
   
     public static void main(String[] args) {
@@ -197,4 +191,4 @@ public class ConstructorRefDemo {
 
 Instead of using a lambda expression, the code uses a constructor reference.
 
-You can get the source code for this example along with other code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).
+You can get the source code for this example along with other code for other Java 8 examples at the GitHub repository [here](https://github.com/reshmabidikar/Java8Demo).

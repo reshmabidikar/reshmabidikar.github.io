@@ -133,7 +133,7 @@
 * [Java 8 LocalDateTime Class](2020/01/java-8-localdatetime-class.md)
 * [Java 8 Stream API](2019/05/java-8-stream-api.md)
 * [Java 8 Method Reference Operator Example](2019/05/java-8-method-reference-operator-explained.md)
-* [Java 8 Default Methods in Interface Explained](2019/04/java-8-default-method-in-interface-explained.md)
+* [Java 8 Default Methods in Interface Explained](2019/03/java-8-default-method-in-interface-explained.md)
 * [Java 8 Functional Interface](2019/03/java-8-functional-interface.md)
 * [Java 8 Static Interface Methods](2019/03/java-8-static-interface-methods.md)
 * [putIfAbsent and getOrDefault Methods explained](2021/03/putifabsent-and-getordefault-map-methods-with-examples.md)

@@ -21,7 +21,7 @@ Default methods are methods in an interface that have method bodies, They are sp
 
 Prior to Java 8, interfaces could not have method bodies. So consider the following code snippet:
 
-````
+````java
 public interface MyInterface { 
     public void methodA();
 
@@ -35,7 +35,7 @@ public interface MyInterface {
 
 This code causes a compilation error. This is because **methodB** has a method body. However, if you are using Java 8, you can change the code as follows:
 
-````
+````java
 public interface MyInterface { 
 
     public void methodA();
@@ -48,8 +48,7 @@ public interface MyInterface {
 
 So now, the default keyword is added for methodB. So in Java 8, you can have methods with method bodies within an interface as long with the **default** keyword. Any class that implements this interface need not provide a method body for the **methodB**. So consider the following code:
 
-````
-
+````java
 public class MyClass implements MyInterface {
 
     @Override public void methodA() { 
@@ -73,8 +72,8 @@ In methodB
 
 You can also provide an implementation for a default method in the class that implements the interface. So you can provide an implementation for **methodB** in **MyClass** as follows:
 
-````
-public void methodB(){ 
+````java
+public void methodB() { 
     System.out.println("In MyClass.methodB"); 
 }
 ````
