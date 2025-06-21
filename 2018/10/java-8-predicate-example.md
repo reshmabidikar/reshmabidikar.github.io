@@ -9,9 +9,9 @@ tags:
   - "predicate"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface Predicate works. To know more about functional interfaces, you can refer [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface Predicate works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
 
-The Predicate interface provides a method called test. This method accepts a parameter of any data type and returns a boolean.
+The `Predicate` interface provides a method called test. This method accepts a parameter of any data type and returns a boolean.
 
 #### Predicate method with Integer argument
 
@@ -57,11 +57,11 @@ public static void main(String[] args) {
 
 ```
 
-Here, the Predicate.test method checks if the input String starts with the String "Hello". So when the above code is executed, it will print the following output:
+Here, the `Predicate.test` method checks if the input String starts with the String "Hello". So when the above code is executed, it will print the following output:
 
 ```
 Hello World starts with Hello = true 
 Test String starts with Hello = false
 ```
 
-You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).
+You can get the source code for this example along with the code for other Java 8 examples at the GitHub repository [here](https://github.com/reshmabidikar/Java8Demo).

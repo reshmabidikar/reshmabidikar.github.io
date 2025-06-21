@@ -163,7 +163,6 @@
 * [Java 8 ToIntFunction](2020/07/tointfunction-in-java-8-with-code-sample.md)
 * [Java 8 DoubleToLongFunction Example](2020/06/java-8-doubletolongfunction-example.md)
 * [Java 8 DoubleToIntFunction Example](2020/05/java-8-doubletointfunction-example.md)
-
 * [Java 8 Supplier Interface Example](2018/08/java-8-supplier-interface-example.md)
 * [Java 8 IntSupplier Interface Example](2018/12/java-8-intsupplier-interface-example.md)
 * [Java 8 DoubleSupplier Example](2019/08/java-8-doublesupplier-example.md)
@@ -173,7 +172,7 @@
 * [Java 8 Predicate Example](2018/10/java-8-predicate-example.md)
 * [Java 8 BiPredicate Example](2019/04/java-8-bipredicate-example.md)
 * [Java 8 LongPredicate Interface Example](2018/12/java-8-longpredicate-interface-example.md)
-* [Java 8 IntPredicateExample](2018/12/java-8-intpredicate-interface-example.md)
+* [Java 8 IntPredicateExample](2018/11/java-8-intpredicate-interface-example.md)
 * [Java 8 DoublePredicate Example](2018/10/doublepredicate-interface-example.md)
 
 * [Java 8 Consumer Interface Example](2019/03/java-8-consumer-interface-example.md)

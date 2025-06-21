@@ -13,7 +13,7 @@ The LongPredicate interface provides a method called test. This method accepts a
 
 Consider the following code snippet:
 
-````
+````java
 public class LongPredicateDemo {
 
     public static void main(String[] args) { 

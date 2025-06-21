@@ -5,9 +5,9 @@ categories:
   - "java-8-examples"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface DoublePredicate works. To know more about functional interfaces, you can refer [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface DoublePredicate works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
 
-The DoublePredicate interface provides a method called test. This method accepts a parameter of Double data type and returns a boolean. The DoublePredicate interface is a specialization of the Predicate interface. While the Predicate interface accepts any data type, the DoublePredicate interface accepts a Double value. To see an example of the Predicate interface, refer to [this](https://learnjava.co.in/java-8-predicate-example/) blog post.
+The `DoublePredicate` interface provides a method called `test`. This method accepts a parameter of Double data type and returns a boolean. The `DoublePredicate` interface is a specialization of the `Predicate` interface. While the `Predicate` interface accepts any data type, the `DoublePredicate` interface accepts a Double value. To see an example of the `Predicate` interface, refer to [this](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html) blog post.
 
 #### DoublePredicate Example
 
@@ -33,4 +33,4 @@ Here, the `DoublePredicate.Test` method checks if the input number is greater th
 1.12 is greater than 0 = true
 ```
 
-You can get the source code for this example along with other code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).
+You can get the source code for this example along with other code for other Java 8 examples at the Github repository [here](https://github.com/reshmabidikar/Java8Demo).
