@@ -8,7 +8,7 @@ categories:
 
 In this article, I will be demonstrating the distinct method provided by Java 8 Stream API.
 
-In order to understand the Stream API in detail, refer to [this](https://learnjava.co.in/java-8-streams/) blog post.
+In order to understand the Stream API in detail, refer to [this](https://reshmabidikar.github.io/2019/05/java-8-stream-api.html) blog post.
 
 ## Introduction
 
@@ -16,9 +16,9 @@ The Stream interface has a method called distinct. You can use this method to el
 
 ## Using Stream.distinct with Integers
 
-The following code sample demonstrates using the Stream.distinct with an Integer List:
+The following code sample demonstrates using the `Stream.distinct` with an Integer List:
 
-```
+```java
 List<Integer> input = Arrays.asList(3,12,11,45,12,5,3,9,20,11,3);
 System.out.print("Input:");
 input.forEach(num -> System.out.print(num+" "));
@@ -29,7 +29,7 @@ distinctInput.forEach(num -> System.out.print(num+" "));
 
 ```
 
-So first, the code invokes the stream method on the input List. Then, the code invokes the distinct method to obtain unique elements in the Stream. Finally, the code invokes the collect method to convert the Stream back to a List. So this code prints the following output:
+So first, the code invokes the `stream` method on the input List. Then, the code invokes the distinct method to obtain unique elements in the Stream. Finally, the code invokes the collect method to convert the Stream back to a List. So this code prints the following output:
 
 ```
 Input:3 12 11 45 12 5 3 9 20 11 3 
@@ -40,7 +40,7 @@ Output:3 12 11 45 5 9 20
 
 In addition to primitive types, you can also use the Stream.distinct method with object types. Suppose you have a Person class as follows:
 
-```
+```java
 public class Person {
   
   private String name;
@@ -63,21 +63,25 @@ public class Person {
 ```
 The following code demonstrates adding some Person objects to a list and then eliminating duplicates from the List:
 
-```
-		List<Person> personList = new ArrayList<Person>();
-		Person jane = new Person("Jane",32);
-		personList.add(jane);
-		Person bill = new Person("Bill",28);
-		personList.add(bill);
-		Person joe = new Person("Joe",36);
-		personList.add(joe);
-		personList.add(jane);
-		System.out.print("Input:");
-		personList.forEach(person -> System.out.print(person+" "));
-		List<Person> output = personList.stream().distinct().collect(Collectors.toList());
-		System.out.println();
-		System.out.print("Output:");
-		output.forEach(person -> System.out.print(person+" "));
+```java
+List<Person> personList = new ArrayList<Person>();
+Person jane = new Person("Jane",32);
+personList.add(jane);
+
+Person bill = new Person("Bill",28);
+personList.add(bill);
+
+Person joe = new Person("Joe",36);
+personList.add(joe);
+personList.add(jane);
+
+System.out.print("Input:");
+personList.forEach(person -> System.out.print(person+" "));
+List<Person> output = personList.stream().distinct().collect(Collectors.toList());
+
+System.out.println();
+System.out.print("Output:");
+output.forEach(person -> System.out.print(person+" "));
 ```
 
 So here, the code creates 3 person objects. The code adds the person object "jane" twice to the input List. The code then invokes the Stream.distinct method to eliminate duplicates and finally converts the Stream to a List. So this code prints the following output:
@@ -85,8 +89,6 @@ So here, the code creates 3 person objects. The code adds the person object "jan
 ```
 Input:Jane Bill Joe Jane 
 Output:Jane Bill Joe
-
-
 ```
 
 ## Further Learning

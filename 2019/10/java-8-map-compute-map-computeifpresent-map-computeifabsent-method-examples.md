@@ -9,7 +9,7 @@ tags:
   - "java8mapcompute"
 ---
 
-In this article, I will be covering the [Java 8](https://learnjava.co.in/java-8/) Map compute methods.Java 8 has introduced the **Map.compute, Map.computeIfPresent example, and Map.computeIfAbsent** methods.
+In this article, I will be covering the [Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) Map compute methods.Java 8 has introduced the **Map.compute, Map.computeIfPresent example, and Map.computeIfAbsent** methods.
 
 ## compute
 
@@ -17,7 +17,7 @@ The `compute`method computes a new value for a particular key and updates the **
 
 The following code demonstrates this:
 
-```
+```java
 Map <Integer,String> students = new HashMap<Integer,String>();
 students.put(100, "Swati Shashtri");
 students.put(101, "Gina George");
@@ -41,7 +41,7 @@ Gina George,Bangalore
 
 The `computeIfPresent`method is similar to the `compute`method, but it computes a value for the specified key only if the key is present in the map. `Compute`on the other hand computes a value for the specified key even if it is not present in the map and adds it to the map. The following code demonstrates this:
 
-```
+```java
 Map <Integer,String> students = new HashMap<Integer,String>();
 students.put(100, "Swati Shashtri");
 students.put(101, "Gina George");
@@ -66,7 +66,7 @@ null
 
 The `computeIfAbsent`method computes a value for a key if it is not present in the map. The following code demonstrates this:
 
-```
+```java
 Map<String, Integer> fruitsLengthMap = new HashMap<String, Integer>();
 fruitsLengthMap.put("apple", 5);
 fruitsLengthMap.put("strawberry", 10);

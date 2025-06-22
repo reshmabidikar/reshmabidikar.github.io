@@ -9,19 +9,19 @@ tags:
   - "stream-api"
 ---
 
-In this blog post, I will be demonstrating the Java 8 Stream API map method. In order to understand the Stream API in detail, refer to [this](https://learnjava.co.in/java-8-streams/) blog post.
+In this blog post, I will be demonstrating the Java 8 Stream API map method. In order to understand the Stream API in detail, refer to [this](https://reshmabidikar.github.io/2019/05/java-8-stream-api.html) blog post.
 
 ## Introduction
 
 The **map** method in the Stream API can be applied on an existing Stream. It applies some logic to each element in the input stream and produces an output stream. For example, if there is an integer stream, you can you the map operation to multiply each element by 5. Or if you have a Stream of String values, you can use the map operation to convert each element in the Stream to uppercase.
 
-The map operation accepts a Function instance which is an in-built functional interface. Refer [this](https://learnjava.co.in/java-8-function-interface-example/) blog post for a detailed Function example.
+The map operation accepts a `Function` instance which is an in-built functional interface. Refer [this](https://learnjava.co.in/java-8-function-interface-example/) blog post for a detailed Function example.
 
 ## Code Sample with Integer
 
 Consider the following code sample:
 
-```
+```java
 public class MapIntegerDemo {
 
   public static void main(String[] args) {
@@ -31,9 +31,7 @@ public class MapIntegerDemo {
     System.out.println("Squared list:");
     input.stream().map(num -> num*num).forEach(num -> System.out.println(num));
     
-
   }
-
 }
 ```
 
@@ -64,7 +62,7 @@ Squared list:
 
 The map operation can be used to convert an object of one type to an object of a different type. Consider the following code:
 
-```
+```java
 public class Vehicle {
   
   private String type;
@@ -80,14 +78,13 @@ public class Vehicle {
 //getters and setters
 
 }
-
 ```
 
 Here, the **Vehicle** class has fields corresponding to type, make and model. It also has a constructor that accepts the type as a String.
 
 Now consider the following code:
 
-```
+```java
 public class MapVehicleDemo {
 
   public static void main(String[] args) {
@@ -111,4 +108,4 @@ Vehicle is of type:Bicycle
 
 ```
 
-I hope this post on the Java 8 Stream API Map example was useful to to to understand the map operation. You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).
+I hope this post on the Java 8 Stream API Map example was useful to to to understand the map operation. You can get the source code for this example along with the code for other Java 8 examples at the GitHub repository [here](https://github.com/reshmabidikar/Java8Demo).

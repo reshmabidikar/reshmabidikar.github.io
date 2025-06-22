@@ -10,7 +10,7 @@ tags:
 
 In this blog post, I will be demonstrating the anyMatch method provided by Java 8 Stream API.
 
-In order to understand the Stream API in detail, refer to [this](https://learnjava.co.in/java-8-streams/) blog post.
+In order to understand the Stream API in detail, refer to [this](https://reshmabidikar.github.io/2019/05/java-8-stream-api.html) blog post.
 
 ## Code Sample with Integer
 
@@ -18,7 +18,7 @@ You can use the [anyMatch](https://docs.oracle.com/javase/8/docs/api/java/util/s
 
 Consider the following code snippet:
 
-```
+```java
 public class AnyMatchDemo {
   public static void main(String[] args) {
     List<Integer> input = Arrays.asList(5, 3, 11, 15, 9, 2, 5, 11);
@@ -28,7 +28,7 @@ public class AnyMatchDemo {
 }
 ```
 
-This code checks if there is any number in the input collection that is **greater than 9**. First, the code obtains a [Stream](https://docs.oracle.com/javase/8/docs/api/?java/util/stream/Stream.html) on the input ArrayList using the [stream()](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#stream--) method. Then the code invokes the [anyMatch](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#anyMatch-java.util.function.Predicate-) method on the stream instance. This method accepts a [Predicate](https://learnjava.co.in/java-8-predicate-example/) instance. [Predicate](https://learnjava.co.in/java-8-predicate-example/) is an in-built functional interface.  Refer [this](https://learnjava.co.in/java-8-predicate-example/) blog post for a detailed [Predicate](https://learnjava.co.in/java-8-predicate-example/) example. It has a method called [test](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html#test-T-). This method accepts an argument of any data type and returns a boolean. The above code implements the [Predicate](https://learnjava.co.in/java-8-predicate-example/) via a lambda expression. So the code passes each element in the input list to the [Predicate](https://learnjava.co.in/java-8-predicate-example/), checks if the number is greater than 9 and if so returns a boolean value accordingly.
+This code checks if there is any number in the input collection that is **greater than 9**. First, the code obtains a [Stream](https://docs.oracle.com/javase/8/docs/api/?java/util/stream/Stream.html) on the input ArrayList using the [stream()](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#stream--) method. Then the code invokes the [anyMatch](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#anyMatch-java.util.function.Predicate-) method on the stream instance. This method accepts a [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html) instance. It has a method called [test](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html#test-T-). This method accepts an argument of any data type and returns a boolean. The above code implements the [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html) via a lambda expression. So the code passes each element in the input list to the [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html), checks if the number is greater than 9 and if so returns a boolean value accordingly.
 
 So when you execute this code, it will print the following output:
 
@@ -40,7 +40,7 @@ number > 9 true
 
 The following code demonstrates the **anyMatch** method with a **String** **ArrayList** as input:
 
-```
+```java
 public static void main(String[] args) {
   List<String> strList = Arrays.asList("Apple","Orange","Mango","Banana");
   boolean anyMatch = strList.stream().anyMatch( str -> str.startsWith("S"));
@@ -59,7 +59,7 @@ Fruit starting with S present: false
 
 The following code demonstrates the **anyMatch** method with an **ArrayList** of a custom type called **Animal**.
 
-```
+```java
 public class Animal {
   
   private String name;
@@ -71,16 +71,15 @@ public class Animal {
     this.name = name;
     this.type = type;
   }
-        //getters and setters
+  
+  //getters and setters
 
 }
-
-
 ```
 
 This code defines a class **Animal** with two fields, "**name**" and "**type**". The name signifies the name of the **Animal** and type signifies whether the **Animal** is a **herbivore** or **carnivore**. Now consider the following code that creates a **List** of **Animals** and uses the **anyMatch** method:
 
-```
+```java
 public static void main(String[] args) {
     List<Animal> animals = new ArrayList<Animal>(); 
     animals.add(new Animal("cow","herbivore"));
@@ -101,4 +100,4 @@ This code uses the **anyMatch** method to determine if there is any **Animal** i
 Herbivore present=true
 ```
 
-You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).
+You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/reshmabidikar/Java8Demo).
