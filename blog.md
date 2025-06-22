@@ -123,17 +123,17 @@
 [Java 10 Type Inference](2020/04/java-10-type-inference.md)
 
 ## Java 9
-* [Java 9 New Features](2020/06/java-9-new-features.md)
-* [Java 9 Modules Introduction](2020/01/java-9-modules-introduction.md)
-* [Creating a Module](2020/03/creating-a-java-9-module.md)
-* [Java 9 Module Internals](2020/02/java-9-module-internals.md)
-* [Java 9 ofnullable Stream Improvements](2019/12/java-9-ofnullable-stream-improvement.md)
-* [Java 9 Stream API Iterate Method Example](2019/11/java-9-stream-api-iterate-method-example.md)
-* [Java 9 Stream Dropwhile With Examples](2019/09/java-9-stream-dropwhile-method-with-examples.md)
-* [Java 9 Stream takeWhile With Examples](2019/08/java-9-stream-takewhile-with-examples.md)
-* [Java 9 Private Interface Methods](2019/05/java-9-private-interface-methods.md)
-* [JShell in Java 9](2019/04/jshell-in-java-9.md)
-* [Collection Factory Methods in Java 9](2019/03/collection-factory-methods-in-java-9-explained.md)
+* [Java 9 New Features](java9/java-9-new-features.md)
+* [Java 9 Modules Introduction](java9/java-9-modules-introduction.md)
+* [Creating a Module](java9/creating-a-java-9-module.md)
+* [Java 9 Module Internals](java9/java-9-module-internals.md)
+* [Java 9 ofnullable Stream Improvements](java9/java-9-ofnullable-stream-improvement.md)
+* [Java 9 Stream API Iterate Method Example](java9/java-9-stream-api-iterate-method-example.md)
+* [Java 9 Stream Dropwhile With Examples](java9/java-9-stream-dropwhile-method-with-examples.md)
+* [Java 9 Stream takeWhile With Examples](java9/java-9-stream-takewhile-with-examples.md)
+* [Java 9 Private Interface Methods](java9/java-9-private-interface-methods.md)
+* [JShell in Java 9](java9/jshell-in-java-9.md)
+* [Collection Factory Methods in Java 9](java9/collection-factory-methods-in-java-9-explained.md)
 
 ## Java 8 New Features
 * [Overview of new features in Java 8](2020/02/overview-of-new-features-in-java-8.md)

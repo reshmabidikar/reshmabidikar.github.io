@@ -24,32 +24,32 @@ Step 1 - Make sure you have JDK 9 installed
 
 Step 2 -Open a Command prompt and navigate to the JDK\\bin folder
 
-[![](images/Jshell1-300x78.png)](images/Jshell1.png)
+[![](../2019/04/images/Jshell1-300x78.png)](../2019/04/images/Jshell1.png)
 
 Step 3 - Type JShell
 
-[![](images/jshell2-300x101.png)](images/jshell2.png)
+[![](../2019/04/images/jshell2-300x101.png)](../2019/04/images/jshell2.png)
 
 # How to Use JShell
 
 Type the code that you want to test. I have typed 4+5. Press Enter
 
-[![](images/jshell3-300x124.png)](images/jshell3.png)
+[![](../2019/04/images/jshell3-300x124.png)](../2019/04/images/jshell3.png)
 
 Step 5 - View the results
 
-![](images/Jshell4-300x154.png)
+![](../2019/04/images/Jshell4-300x154.png)
 
 Example 2 - Using a Sysout statement
 
-[![](images/jshell5-300x196.png)](images/jshell5.png)
+[![](../2019/04/images/jshell5-300x196.png)](../2019/04/images/jshell5.png)
 
 Example 3 - Assigning a value to a variable and using it
 
-[![](images/jshell6-300x182.png)](images/jshell6.png)
+[![](../2019/04/images/jshell6-300x182.png)](../2019/04/images/jshell6.png)
 
 # How to exit JShell
 
 Type /exit
 
-[![](images/jshell7-300x217.png)](images/jshell7.png)
+[![](../2019/04/images/jshell7-300x217.png)](../2019/04/images/jshell7.png)
