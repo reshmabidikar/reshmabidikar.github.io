@@ -5,15 +5,15 @@ categories:
   - "java-8-examples"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface BiConsumer works. To know more about functional interfaces, you can refer [this](https://learnjava.co.in/what-is-a-functional-interface/) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface BiConsumer works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
 
-The BiConsumer interface provides a method called accept. It accepts 2 parameters of any data type. It does not return anything, it returns a void. So it operates via side effects i.e. it modifies the parameters passed in. The BiConsumer interface is a specialization of the Consumer interface. To see an example of the Consumer interface, refer to [this](https://learnjava.co.in/java-8-consumer-interface-example/) blog post.
+The `BiConsumer` interface provides a method called `accept`. It accepts 2 parameters of any data type. It does not return anything, it returns a void. So it operates via side effects i.e. it modifies the parameters passed in. The BiConsumer interface is a specialization of the Consumer interface. To see an example of the `Consumer` interface, refer to [this](https://reshmabidikar.github.io/2019/03/java-8-consumer-interface-example.html) blog post.
 
 #### BiConsumer example with Two Integer parameter
 
 Consider the following code snippet:
 
-````
+````java
 public class BiConsumerDemo {
 
   public static void main(String args[]){ 
@@ -23,7 +23,7 @@ public class BiConsumerDemo {
 } 
 ````
 
-Here, we have implemented the BiConsumer.accept method using a lambda expression. This accept method accepts 2 Integer arguments. It adds them iand prints the result to the console. So when this code is executed, it will print the following output:
+Here, we have implemented the `BiConsumer.accept` method using a lambda expression. This `accept` method accepts 2 Integer arguments. It adds them iand prints the result to the console. So when this code is executed, it will print the following output:
 
 ```
 Sum of inputs is 12
@@ -33,7 +33,7 @@ Sum of inputs is 12
 
 Consider the following code snippet:
 
-````
+````java
 
 public class BiConsumerDemo {
 
@@ -43,10 +43,10 @@ public class BiConsumerDemo {
 }
 ````
 
-Again, we have implemented the BiConsumer.accept method using a lambda expression. This accept method accepts an Integer and a String value. It concatenates both the inputs using the + operator and prints the results. So when you execute this code, it will print the following output:
+Again, we have implemented the `BiConsumer.accept` method using a lambda expression. This `accept` method accepts an Integer and a String value. It concatenates both the inputs using the + operator and prints the results. So when you execute this code, it will print the following output:
 
 ```
 Result of concatenating the inputs is Hello World5
 ```
 
-You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/learnjavawithreshma/Java8Demo).
+You can get the source code for this example along with the code for other Java 8 examples at the GitHub repository [here](https://github.com/reshmabidikar/Java8Demo).
