@@ -45,7 +45,7 @@ System.out.println("result:"+result);
 ```
 
 - Line 1 declares a [UnaryOperator](https://learnjava.co.in/java-8-unaryoperator-example/) instance **unaryOp** and implements it via the same lambda expression as used above.
-- Line 3 then invokes the [applyAsDouble](https://learnjava.co.in/java-8-unaryoperator-example/) method on the value **9**. Since the input value is a primitive type, Java uses **autoboxing** to convert the primitive **double** type to the wrapper type that is **Double** before applying the lambda expression. This reduces the performance slightly. However, in the case of **DoubleUnaryOperator**, no such conversion is required since the **applyAsDouble** method accepts an argument of type **double** already. Thus the primitive specialization offers a slight performance advantage as it does away with the need of autoboxing.
+- Line 3 then invokes the [applyAsDouble](https://learnjava.co.in/java-8-unaryoperator-example/) method on the value **9**. Since the input value is a primitive type, Java uses **autoboxing** to convert the primitive **double** type to the wrapper type that is **Double** before applying the lambda expression. This reduces the performance slightly. However, in the case of **DoubleUnaryOperator**, no such conversion is required since the **applyAsDouble** method accepts an argument of type **double** already. Thus, the primitive specialization offers a slight performance advantage as it does away with the need of autoboxing.
 
 ## Conclusion
 
