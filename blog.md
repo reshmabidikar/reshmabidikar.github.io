@@ -115,12 +115,12 @@
 * [Write to a file in Java](2018/08/write-to-a-file-using-java.md)
 
 ## Java 11 New Features
-* [Java 11 String Enhancements](2020/12/java-11-string-enhancements-with-examples.md)
+* [Java 11 String Enhancements](java11/java-11-string-enhancements-with-examples.md)
 
 ## Java 10
-[Java 10 time based release and versioning](2020/07/java-10-time-based-release-versioning.md)
-[Java 10 Unmodifiable Collections](2020/05/java-10-unmodifiable-collections-changes.md)
-[Java 10 Type Inference](2020/04/java-10-type-inference.md)
+* [Java 10 time based release and versioning](java10/java-10-time-based-release-versioning.md)
+* [Java 10 Unmodifiable Collections](java10/java-10-unmodifiable-collections-changes.md)
+* [Java 10 Type Inference](java10/java-10-type-inference.md)
 
 ## Java 9
 * [Java 9 New Features](java9/java-9-new-features.md)

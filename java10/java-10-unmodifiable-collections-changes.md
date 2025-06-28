@@ -19,7 +19,7 @@ Sometimes, you may need to create a read only copy of a Collection. Unmodifiable
 
 Java 10 has added a `copyOf`method to all the Collection interfaces. You can use this to create an unmodifiable Collection. The following code demonstrates this:
 
-```
+```java
 List<Integer> numberList = Arrays.asList(2,4,6,8,10);
 numberList.add(12); // Line 1 - no exception
     
@@ -39,7 +39,7 @@ The `Collections.unmodifiableList`method returns an unmodifiable view of the sou
 
 Java 10 has also added a `toUnmodifiable`method on the Collectors class. This helps to create an unmodifiable Collection from a Stream. The following code demonstrates this:
 
-```
+```java
 Stream<String> myStream = Stream.of("red","blue","green");
   List<String> colours = myStream.collect(Collectors.toUnmodifiableList());
 ```
