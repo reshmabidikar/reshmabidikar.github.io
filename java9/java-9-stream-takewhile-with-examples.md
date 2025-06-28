@@ -9,9 +9,9 @@ tags:
   - "java9takewhile"
 ---
 
-[Java 8](https://learnjava.co.in/java-8/) introduced the Stream API which allows processing and applying some operations to the elements in a Collection. [Java 9](https://learnjava.co.in/java-9-posts/) has made some improvements to the [Stream API](https://learnjava.co.in/java-8-stream-api/). One such improvement is the takeWhile method. In this article, I will be covering the Java 9 Stream takeWhile method in detail. I will also be writing some Java 9 takeWhile examples.
+[Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) introduced the Stream API which allows processing and applying some operations to the elements in a Collection. [Java 9](https://reshmabidikar.github.io/blog.html#java-9) has made some improvements to the [Stream API](https://reshmabidikar.github.io/2019/05/java-8-stream-api.html). One such improvement is the takeWhile method. In this article, I will be covering the Java 9 Stream takeWhile method in detail. I will also be writing some Java 9 takeWhile examples.
 
-The takeWhile method operates on a Stream. It accepts a Predicate instance and applies the Predicate to all the elements in the input stream and produces an output stream. It behaves differently depending on whether the input Stream is ordered or unordered.
+The `takeWhile` method operates on a Stream. It accepts a Predicate instance and applies the Predicate to all the elements in the input stream and produces an output stream. It behaves differently depending on whether the input Stream is ordered or unordered.
 
 ## takeWhile on Ordered Stream
 
@@ -19,7 +19,7 @@ As per the API documentation, when the takeWhile is applied on an ordered Stream
 
 The following code demonstrates this:
 
-```
+```java
 Stream<Integer> inputList = Stream.of(5, 8, 12, 19,41);
 inputList.takeWhile(num -> num < 10).forEach(num -> System.out.println(num));
 ```
@@ -34,7 +34,7 @@ In this case, we have an input Stream of ordered Integers. The code uses takeWhi
 
 As per the API documentation, when the takeWhile is applied on an unordered Stream, it can return any subset of matching elements, but the behavior is non-deterministic and so it may return a different result each time. So basically, what this means is that the takeWhile method may or may not return a subset of elements that match the specified Predicate. It may also return an empty subset. The following code demonstrates this:
 
-```
+```java
 Stream<Integer> inputList = Stream.of(5, 8, 12,4, 7,4,1,16);
 inputList.takeWhile(num -> num < 10).forEach(num -> System.out.println(num));
 ```
@@ -45,7 +45,7 @@ In this case, the input Stream is not ordered. So when you execute this code, it
 
 Irrespective of whether a Stream is ordered or unordered, the takeWhile method returns the entire input stream when all the elements in the Stream match the Predicate. The following code demonstrates this:
 
-```
+```java
 Stream<Integer> orderedInput = Stream.of(5, 8, 9,16);
 orderedInput.takeWhile(num -> num < 20).forEach(num -> System.out.print(num+" "));
 
@@ -61,7 +61,7 @@ In this case, all the elements in the input Stream match the condition, that is 
 
 Irrespective of whether a Stream is ordered or unordered, the takeWhile method returns an empty set when none of the elements in the Stream match the Predicate. The following code demonstrates this:
 
-```
+```java
 Stream<Integer> unorderedInput = Stream.of(5, 8, 12,4,6, 7,3,1,16);
 unorderedInput.takeWhile(num -> num < 2).forEach(num -> System.out.println(num));
 ```

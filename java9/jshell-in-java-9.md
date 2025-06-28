@@ -12,44 +12,44 @@ tags:
 
 One of the new features added by Java 9 is the JShell. In this blog post, I will be explaining how JShell works.
 
-# What is JShell ?
+## What is JShell ?
 
 JShell provides REPL capabilities to Java. REPL stands for Read Evaluate Print Loop. Many languages like Python also provide REPL capabilities.
 
 REPL allows you to write Java code and test it without the need to compile it.
 
-# How to launch JShell
+## How to launch JShell
 
 Step 1 - Make sure you have JDK 9 installed
 
 Step 2 -Open a Command prompt and navigate to the JDK\\bin folder
 
-[![](../2019/04/images/Jshell1-300x78.png)](../2019/04/images/Jshell1.png)
+[![](images/jshell/Jshell1-300x78.png)](images/jshell/Jshell1.png)
 
 Step 3 - Type JShell
 
-[![](../2019/04/images/jshell2-300x101.png)](../2019/04/images/jshell2.png)
+[![](images/jshell/jshell2-300x101.png)](images/jshell/jshell2.png)
 
 # How to Use JShell
 
 Type the code that you want to test. I have typed 4+5. Press Enter
 
-[![](../2019/04/images/jshell3-300x124.png)](../2019/04/images/jshell3.png)
+[![](images/jshell/jshell3-300x124.png)](images/jshell/jshell3.png)
 
 Step 5 - View the results
 
-![](../2019/04/images/Jshell4-300x154.png)
+![](images/jshell/Jshell4-300x154.png)
 
 Example 2 - Using a Sysout statement
 
-[![](../2019/04/images/jshell5-300x196.png)](../2019/04/images/jshell5.png)
+[![](images/jshell/jshell5-300x196.png)](images/jshell/jshell5.png)
 
 Example 3 - Assigning a value to a variable and using it
 
-[![](../2019/04/images/jshell6-300x182.png)](../2019/04/images/jshell6.png)
+[![](images/jshell/jshell6-300x182.png)](images/jshell/jshell6.png)
 
 # How to exit JShell
 
 Type /exit
 
-[![](../2019/04/images/jshell7-300x217.png)](../2019/04/images/jshell7.png)
+[![](images/jshell/jshell7-300x217.png)](images/jshell/jshell7.png)

@@ -20,14 +20,14 @@ Prior to Java 9, you could use the Stream.of method to create a Stream with valu
 
 The following code demonstrates this:
 
-```
+```java
 Stream<Integer> stream = Stream.of(10);
 System.out.println("Stream size:"+stream.count());
 ```
 
 So this creates a Stream with a single element. Now suppose you specify a null value in the Stream.of method as follows:
 
-```
+```java
 Stream<Integer> stream = Stream.of(null);
 System.out.println("Stream size:"+stream.count());
 ```
@@ -38,7 +38,7 @@ Using Java 9
 
 Java 9 Stream.ofNullable helps to avoid a NullPointerException. It basically creates a Stream with the specified value and is the value is null, it creates an empty Stream. The following code demonstrates this:
 
-```
+```java
 Stream<Integer> stream = Stream.ofNullable(null);
 System.out.println("Stream size:"+stream.count());
 ```

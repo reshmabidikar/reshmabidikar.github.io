@@ -12,7 +12,7 @@ One of the new features of **Java 9** is the **Java 9 Collection factory methods
 
 Suppose you want to create a **List** of **String** values. Prior to Java 9, you had to write code like the following:
 
-```
+```java
 List<String> inputList = new ArrayList<String>(); 
 inputList.add("One"); 
 inputList.add("Five"); 
@@ -28,7 +28,7 @@ The above code snippet involves invoking the [List.add](https://docs.oracle.com/
 
 For example, suppose you want to create a List of String values. You can write code similar to the following:
 
-```
+```java
 List<String> inputList = List.of("One","Five","Ten","Twenty");
 ```
 
@@ -40,7 +40,7 @@ Note only [List](https://docs.oracle.com/javase/9/docs/api/java/util/List.html),
 
 Consider the following code snippet:
 
-```
+```java
 Set<String> inputSet = Set.of("One","Five","Ten","Twenty");
 ```
 
@@ -48,7 +48,7 @@ So this returns a Set with the specified values.
 
 So also the following code snippet create a Map:
 
-```
+```java
 Map<String, String> map = Map.of("1","One", "5", "Five","10","Ten","20","Twenty");
 ```
 
@@ -56,7 +56,7 @@ Map<String, String> map = Map.of("1","One", "5", "Five","10","Ten","20","Twenty"
 
 Java also provides the [Arrays.asList](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#asList\(T...\)) method which can be used to **create a List** in a single line of code. So consider the following code snippet:
 
-```
+```java
 List<String> inputList = Arrays.asList("One","Five","Ten","Twenty");
 ```
 
@@ -64,7 +64,7 @@ So this code is quite similar to the one written using the **of** method. Also, 
 
 There are a couple of differences between the **Arrays.asList** and the **of** method.
 
-##### You can use the Of method to generate a Set or Map too
+### You can use the Of method to generate a Set or Map too
 
 As demonstrated above, you can use the [Arrays.asList](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#asList\(T...\)) method only if you want to generate a **List**. The **of** method on the other hand is present on the **Set and Map** interfaces as well. So in addition to **List**, you can use it to create a **Set or Map too.**
 
@@ -72,7 +72,7 @@ As demonstrated above, you can use the [Arrays.asList](https://docs.oracle.com/j
 
 Consider the following code snippet:
 
-```
+```java
 String array[] = {"One","Five","Ten","Twenty"}; 
 List<String> inputList = Arrays.asList(array); 
 array[2] = "Eight"; 
@@ -81,13 +81,13 @@ System.out.println("InputList is "+inputList);
 
 So here we are setting the element at **position 2** in the array to a new value. This also modifies the **List**. So this code will print the following output:
 
-```
+```java
 InputList is [One, Five, Eight, Twenty]
 ```
 
 However, this is not true about the [of](https://docs.oracle.com/javase/9/docs/api/java/util/List.html#of-E...-) method. So consider the following code snippet:
 
-```
+```java
 String array[] = {"One","Five","Ten","Twenty"}; 
 List<String> inputList = List.of(array); 
 array[2] = "Eight"; 
@@ -96,7 +96,7 @@ System.out.println("InputList is "+inputList);
 
 So this will print the following output:
 
-```
+```java
 InputList is [One, Five, Ten, Twenty]
 ```
 
@@ -106,27 +106,27 @@ So this means that the List is not affected when the array is changed.
 
 Consider the following code snippet:
 
-```
+```java
 List<String> inputList = Arrays.asList("One","Five",null,"Twenty"); 
 System.out.println("InputList is "+inputList);
 ```
 
 So here, a null value is specified in the Array.asList method. When you run this code, it prints the following output:
 
-```
+```java
 InputList is [One, Five, null, Twenty]
 ```
 
 The [List.of](https://docs.oracle.com/javase/9/docs/api/java/util/List.html#of-E...-) method, on the other hand, does not permit **null** values. So consider the following code snippet:
 
-```
+```java
 List<String> inputList = List.of("One","Five",null,"Twenty"); 
 System.out.println("InputList is "+inputList);
 ```
 
 When you run this code, a NullPointerException occurs as follows:
 
-```
+```java
 Exception in thread "main" java.lang.NullPointerException
 at java.base/java.util.Objects.requireNonNull(Unknown Source)
 at java.base/java.util.ImmutableCollections$ListN.<init>(Unknown Source)

@@ -15,7 +15,7 @@ Modules are basically **groups of packages**. Just like you put a set of related
 
 Java 9 has made several improvements on the Stream interface. These are as follows (You can click the article link for an in-depth explanation of each feature):
 
-- [Stream.ofNullable](java-9-ofnullable-stream-improvement) - Helps to create a Stream with a null value.
+- [Stream.ofNullable](java-9-ofnullable-stream-improvement.md) - Helps to create a Stream with a null value.
 - [Stream.iterate](java-9-stream-api-iterate-method-example.md) - Helps to create a new finite Stream. The Stream is terminated when the specified condition is true
 - [Stream.dropWhile](java-9-stream-dropwhile-method-with-examples.md) - Helps to filter a Stream. Drops the elements in the Stream that match the specified condition
 - [Strean.takeWhile](java-9-stream-takewhile-with-examples.md) - Helps to filter a Stream. Creates a new Stream with the elements in the Stream that match the specified condition

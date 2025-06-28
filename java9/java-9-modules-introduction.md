@@ -10,7 +10,7 @@ tags:
 
 Java 9 Modules are one of the new features added by Java 9. This is a 3 part article, in which I will be covering modules in detail. In part 1 of this article, I will be introducing you to modules.
 
-See also [Modules Internals](https://learnjava.co.in/java-9-module-internals/) and [Creating a Module](https://learnjava.co.in/creating-a-java-9-module/).
+See also [Modules Internals](java-9-module-internals.md) and [Creating a Module](creating-a-java-9-module.md).
 
 ## What are modules
 
@@ -47,4 +47,4 @@ Since a module contains only a subset of the packages in an application, testing
 
 ## Conclusion
 
-In this article, I have an introduction to modules as to what they are, why Java 9 added them and what benefits they provide. In the [next part](https://learnjava.co.in/java-9-module-internals/) of this article, I will be covering the internals of a module and in the [last part](https://learnjava.co.in/creating-a-java-9-module/) I will be explaining how to create a Java 9 module in Eclipse.
+In this article, I have an introduction to modules as to what they are, why Java 9 added them and what benefits they provide. In the [next part](java-9-module-internals.md) of this article, I will be covering the internals of a module and in the [last part](creating-a-java-9-module.md) I will be explaining how to create a Java 9 module in Eclipse.

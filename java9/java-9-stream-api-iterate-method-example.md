@@ -13,7 +13,7 @@ Another improvement made by Java 9 is adding a new Stream.iterate method. This i
 
 ## Java 8 Stream.iterate
 
-Prior to Java 9, The Stream Interface already had an iterate method. The Stream.iterate is a static method on the Stream interface. You can use it to create a new Stream. It accepts the following parameters:
+Prior to Java 9, The Stream Interface already had an iterate method. The `Stream.iterate` is a static method on the Stream interface. You can use it to create a new Stream. It accepts the following parameters:
 
 - Initial Value
 - UnaryOperator instance which is used to find subsequent values.
@@ -22,7 +22,7 @@ It returns a Stream instance.
 
 The following code demonstrates this method:
 
-```
+```java
 Stream<Integer> numberStream = Stream.iterate(2, num -> num+2).limit(10);
 numberStream.forEach(System.out::println);
 ```
@@ -46,11 +46,11 @@ Note that the Stream.iterate method returns an infinite Stream. So the code uses
 
 ## Java 9 Stream.iterate
 
-Java 9 has added an overloaded version of the Stream.iterate method. In addition to the initial value and UnaryOperator, this method also accepts a Predicate instance. This Predicate instance determines when the Stream must terminate.
+Java 9 has added an overloaded version of the `Stream.iterate` method. In addition to the initial value and UnaryOperator, this method also accepts a Predicate instance. This Predicate instance determines when the Stream must terminate.
 
 The following code demonstrates this:
 
-```
+```java
 Stream<Integer> numberStream2 = Stream.iterate(2,num -> num <= 20, num -> num+2);
     numberStream2.forEach(System.out::println);
 ```
@@ -59,4 +59,4 @@ This code accepts an initial value of 2 and a UnaryOperator operator instance th
 
 ## Conclusion
 
-So in this article, we have seen another Java 9 Stream API enhancement which is the Stream.iterate method. I hope you find this article and other articles in this [series](https://learnjava.co.in/java-9-posts/) useful to understand Java 9 new features.
+So in this article, we have seen another Java 9 Stream API enhancement which is the Stream.iterate method. I hope you find this article and other articles in this [series](java-9) useful to understand Java 9 new features.

@@ -8,9 +8,9 @@ tags:
   - "java9modules"
 ---
 
-One of the new features added by Java 9 is the module system. This article is the second part in a 3 part article. In [Part 1](https://learnjava.co.in/java-9-modules-introduction/), I gave a high level introduction to modules and the advantages that they provide. In this part, I will dive more into the details of what exactly a module is, what it consists of and other module internals.
+One of the new features added by Java 9 is the module system. This article is the second part in a 3 part article. In [Part 1](java-9-modules-introduction.md), I gave a high level introduction to modules and the advantages that they provide. In this part, I will dive more into the details of what exactly a module is, what it consists of and other module internals.
 
-See also [Module Introduction](https://learnjava.co.in/java-9-modules-introduction/) and [Creating a Module](https://learnjava.co.in/creating-a-java-9-module/).
+See also [Module Introduction](java-9-modules-introduction.md) and [Creating a Module](creating-a-java-9-module.md).
 
 ## What is a module
 
@@ -29,4 +29,4 @@ Along with very module, you need to provide a module descriptor. The module desc
 
 ## Conclusion
 
-So in this article, we examined modules in a bit more detail. We understood what is a module descriptor and the information that can be specified in a module descriptor. In the [last part](https://learnjava.co.in/creating-a-java-9-module/) of this article, we will see how to create a Java 9 module.
+So in this article, we examined modules in a bit more detail. We understood what is a module descriptor and the information that can be specified in a module descriptor. In the [last part](creating-a-java-9-module.md) of this article, we will see how to create a Java 9 module.

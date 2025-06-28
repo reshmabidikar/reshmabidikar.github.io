@@ -15,7 +15,7 @@ Java 8 introduced default and static methods in interfaces. Default methods are 
 
 ## Code Sample
 
-```
+```java
 public interface MyInterface {
   
   default void method1() {
