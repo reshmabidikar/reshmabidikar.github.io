@@ -8,23 +8,23 @@ coverImage: "remote-repo-2-scaled.jpg"
 
 * * *
 
-In this article, I will be listing down a few basic instructions to create a [remote](https://learnjava.co.in/some-git-terminologies/) repository in git. Creating a remote Git repository is a two-step process. First, you need to create a remote repository on your Git hosting system (Github) and then you can push your local changes to it. Let us now take a look at these steps.
+In this article, I will be listing down a few basic instructions to create a [remote](some-git-terminologies.md) repository in git. Creating a remote Git repository is a two-step process. First, you need to create a remote repository on your Git hosting system (GitHub) and then you can push your local changes to it. Let us now take a look at these steps.
 
 ## Creating a repository on Github
 
-Step 1: Go to Github.com. Sign in/Sign up
+Step 1: Go to GitHub.com. Sign in/Sign up
 
 Step 2: Click on the "+" sign in the top right and click New Repository:
 
-[![](images/Github-New-Repository-300x219.png)](images/Github-New-Repository.png)
+[![](images/create-remote-repo/Github-New-Repository-300x219.png)](images/create-remote-repo/Github-New-Repository.png)
 
 Step 3: In the new repository page, enter the name (`github-demo`). Click on the checkbox to "**Add a Readme**" file. Add a description if required. Click on **"Create Repository"**:
 
-[![Github New Repository](images/Github-New-Repository-300x238.jpeg)](images/Github-New-Repository.jpeg)
+[![Github New Repository](images/create-remote-repo/Github-New-Repository-300x238.jpeg)](images/create-remote-repo/Github-New-Repository.jpeg)
 
 This creates a repository as follows:
 
-[![](images/Github-repository-created-1-300x99.png)](images/Github-repository-created-1.png)
+[![](images/create-remote-repo/Github-repository-created-1-300x99.png)](images/create-remote-repo/Github-repository-created-1.png)
 
 ## Create a Local Repository
 
@@ -60,7 +60,7 @@ git push origin main
 
 In your browser window, refresh the page and verify that the newly added "Hello.txt" is shown on Github:
 
-[![](images/git_repository_added_file-300x82.png)](images/git_repository_added_file.png)
+[![](images/create-remote-repo/git_repository_added_file-300x82.png)](images/create-remote-repo/git_repository_added_file.png)
 
 You can similarly add your code changes to this repository as required.
 

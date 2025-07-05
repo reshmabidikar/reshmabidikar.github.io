@@ -6,7 +6,7 @@ categories:
 coverImage: "branch-vs-fork.jpg"
 ---
 
-In this article, we will learn about the differences between git fork and branch. To learn about some Git terms you can refer to [this](https://learnjava.co.in/some-git-terminologies/) blog post.
+In this article, we will learn about the differences between git fork and branch. To learn about some Git terms you can refer to [this](some-git-terminologies.md) blog post.
 
 ## What is a Git branch?
 

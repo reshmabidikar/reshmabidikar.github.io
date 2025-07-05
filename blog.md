@@ -3,6 +3,7 @@
 ## Core Java
 * [Java 17 Features](2024/08/java-17-features.md)
 * [Java 11 Features](2023/05/new-features-in-java-11-explained-in-detail.md)
+* [Record Class in Java](java16-17/record-class-in-java.md)
 * [How to add days to a Date in Java](2021/12/how-to-add-days-to-a-date-in-java-with-code-samples.md)
 * [How to read a file on the Classpath in Java](2021/07/how-to-read-a-file-on-the-classpath-in-java.md)
 * [Java Inheritance Interview Questions](java-inheritance-interview-questions-with-examples.md)
@@ -252,13 +253,14 @@
 * [Docker Introduction](2022/11/introduction-to-docker-to-get-you-started.md)
 
 
-## Git and Github
-* [Git Branch and Fork Explained](2022/02/git-branch-and-fork-differences-explained.md)
-* [Git Commands CheatSheet](2022/01/git-commands-cheatsheet-list-of-most-used-git-commands.md)
-* [How to Create a Remote Repository in Github](2022/01/how-to-create-a-remote-github-repository.md)
-* [Some Git Terminologies](2021/12/some-git-terminologies.md)
-* [Git and Github Differences Explained](2021/12/git-and-github-differences-explained-in-short.md)
-* [How to Create a Local Repository in Git](2021/12/create-a-local-repository-in-git-with-step-by-step-commands.md)
+## Git and GitHub
+* [Git Branch and Fork Explained](git/git-branch-and-fork-differences-explained.md)
+* [Git Commands CheatSheet](git/git-commands-cheatsheet-list-of-most-used-git-commands.md)
+* [How to Create a Remote Repository in GitHub](git/how-to-create-a-remote-github-repository.md)
+* [Some Git Terminologies](git/some-git-terminologies.md)
+* [Git and Github Differences Explained](git/git-and-github-differences-explained-in-short.md)
+* [Git Merge, Rebase, and Squash](git/git-merge-rebase-squash.md)
+* * [How to Create a Local Repository in Git](git/create-a-local-repository-in-git-with-step-by-step-commands.md)
 
 ## JPA, Hibernate and JDBC
 

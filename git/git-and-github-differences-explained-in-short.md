@@ -6,7 +6,7 @@ categories:
 coverImage: "git-vs-github.jpg"
 ---
 
-Often, the terms Git and Github are used interchangeably. Those new to Git and Github often find this confusing. In this post, I will try to clear some confusion.
+Often, the terms Git and GitHub are used interchangeably. Those new to Git and GitHub often find this confusing. In this post, I will try to clear some confusion.
 
 ## What is Git?
 
@@ -14,7 +14,7 @@ In very simple terms, Git is a local version control system. Unlike other versio
 
 ## What is GitHub?
 
-Github is a git repository hosting service. It can be used to share git repositories across teams. In addition to Github, there are other git repository hosting services like Gitlab, Bitbucket, etc.
+GitHub is a git repository hosting service. It can be used to share git repositories across teams. In addition to Github, there are other git repository hosting services like Gitlab, Bitbucket, etc.
 
 ## Git and GitHub Differences
 

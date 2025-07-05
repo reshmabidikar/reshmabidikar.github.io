@@ -12,7 +12,7 @@ In this article, I will be listing some of the important Git commands along with
 
 ### git init
 
-The git init command creates a local repository. It creates a hidden .git folder that represents the [local repository](https://learnjava.co.in/some-git-terminologies/#Local_Repository).
+The git init command creates a local repository. It creates a hidden .git folder that represents the [local repository](some-git-terminologies.md#Local_Repository).
 
 **Syntax**
 
@@ -26,7 +26,7 @@ The git init command creates a local repository. It creates a hidden .git folder
 
 ### git add
 
-The git add command adds files to the git [staging area](https://learnjava.co.in/some-git-terminologies/#Staging_Area)
+The git add command adds files to the git [staging area](some-git-terminologies.md#Staging_Area)
 
 **Syntax**
 
@@ -42,7 +42,7 @@ The git add command adds files to the git [staging area](https://learnjava.co.in
 
 ### git commit
 
-The git commit command adds files to the [local repository](https://learnjava.co.in/some-git-terminologies/#Local_Repository). You can use it to add a single file as well as a bunch of files.
+The git commit command adds files to the [local repository](some-git-terminologies.md#Local_Repository). You can use it to add a single file as well as a bunch of files.
 
 **Syntax**
 
@@ -56,7 +56,7 @@ The git commit command adds files to the [local repository](https://learnjava.co
 
 ### git push
 
-The git push command adds files from the [local Git repository](https://learnjava.co.in/some-git-terminologies/#Local_Repository) to the [remote repository](https://learnjava.co.in/some-git-terminologies/#Remote_Repository) on your Git hosting system like Github. Before executing this command, it is necessary for the remote repository to exist on the Git hosting platform.
+The git push command adds files from the [local Git repository](some-git-terminologies.md#Local_Repository) to the [remote repository](some-git-terminologies.md#Remote_Repository) on your Git hosting system like GitHub. Before executing this command, it is necessary for the remote repository to exist on the Git hosting platform.
 
 **Syntax**
 
@@ -70,7 +70,7 @@ The git push command adds files from the [local Git repository](https://learnjav
 
 ### git clone
 
-The git clone command obtains a copy of a [remote repository](https://learnjava.co.in/some-git-terminologies/#Remote_Repository) on the local system. This is known as cloning a repository.
+The git clone command obtains a copy of a [remote repository](some-git-terminologies.md#Remote_Repository) on the local system. This is known as cloning a repository.
 
 **Syntax**
 
@@ -157,7 +157,7 @@ The git merge command can be used to merge a branch into the currently checked-o
 
 ### git reset
 
-Removes a file from the [staging area](https://learnjava.co.in/some-git-terminologies/#Staging_Area).
+Removes a file from the [staging area](some-git-terminologies.md#Staging_Area).
 
 **Syntax**
 
