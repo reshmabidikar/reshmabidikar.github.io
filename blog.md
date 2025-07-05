@@ -114,6 +114,7 @@
 * [Java Exception Handling Explained](2018/08/java-exception-handling-explained.md)
 * [Object Oriented Principles n Java](2018/08/object-oriented-principles-in-java.md)
 * [Write to a file in Java](2018/08/write-to-a-file-using-java.md)
+* [Jackson ObjectMapper with Examples](jackson/jackson-object-mapper.md)
 
 ## Java 11 New Features
 * [Java 11 String Enhancements](java11/java-11-string-enhancements-with-examples.md)
@@ -250,7 +251,8 @@
 
 
 ## Docker
-* [Docker Introduction](2022/11/introduction-to-docker-to-get-you-started.md)
+* [Docker Introduction](docker/introduction-to-docker-to-get-you-started.md)
+* [How to containerize a Spring Boot application Using Docker](docker/how-to-containerize-a-spring-boot-application-using-docker.md)
 
 
 ## Git and GitHub
@@ -260,7 +262,7 @@
 * [Some Git Terminologies](git/some-git-terminologies.md)
 * [Git and Github Differences Explained](git/git-and-github-differences-explained-in-short.md)
 * [Git Merge, Rebase, and Squash](git/git-merge-rebase-squash.md)
-* * [How to Create a Local Repository in Git](git/create-a-local-repository-in-git-with-step-by-step-commands.md)
+* [How to Create a Local Repository in Git](git/create-a-local-repository-in-git-with-step-by-step-commands.md)
 
 ## JPA, Hibernate and JDBC
 
