@@ -12,7 +12,7 @@ In this blog post, I will be explaining how you can create a Hello World Spring 
 
 ## What is Spring Boot?
 
-Spring boot sits on top of Spring. It automatically does the configuration of the application for you by assuming some defaults. These defaults are sufficient to get you started most of the times but you easily change these default values if required. This allows you to have a spring application up and running very quickly without having to bother with boiler plate stuff. All you have to do is tell Spring boot the type of application you are building. It provides Embedded HTTP servers like Tomcat, Jetty etc. which makes it easy to develop web applications. In order to know more about Spring Boot, you can refer to [this](https://learnjava.co.in/springboot-what-and-why/) blog post.
+Spring boot sits on top of Spring. It automatically does the configuration of the application for you by assuming some defaults. These defaults are sufficient to get you started most of the times but you easily change these default values if required. This allows you to have a spring application up and running very quickly without having to bother with boiler plate stuff. All you have to do is tell Spring boot the type of application you are building. It provides Embedded HTTP servers like Tomcat, Jetty etc. which makes it easy to develop web applications. In order to know more about Spring Boot, you can refer to [this](springboot-what-and-why.md) blog post.
 
 ## Creating Hello World Spring Boot Application
 
@@ -20,13 +20,13 @@ Let us now learn how to create a basic Hello World Spring Boot application in Ec
 
 ### Project Creating and setup
 
-**Step 1 – Create a new Maven Project** (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). Your project should look as follows:
+**Step 1 – Create a new Maven Project** (Refer to [this](https://reshmabidikar.github.io/2019/06/how-to-create-a-maven-web-project-in-eclipse.html) blog post). Your project should look as follows:
 
-[![maven project in eclipse](images/FinishedMavenProject-216x300.png)](images/FinishedMavenProject.png)
+[![maven project in eclipse](images/spring-boot-hello-world/FinishedMavenProject-216x300.png)](images/spring-boot-hello-world/FinishedMavenProject.png)
 
 **Step 2 - Add the Spring Boot dependencies to the POM file.** Your POM file should look similar to the following:
 
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.learnjava</groupId>
@@ -52,13 +52,13 @@ Spring Boot provides a number of 'starters' that add the necessary jar files to 
 - **spring-boot-starter-parent** - This provides useful Maven defaults.
 - **spring-boot-starter-web** - This tells Spring Boot that we are developing a web application.
 
-In order to know more about Spring Boot starters, you can refer to [this](https://learnjava.co.in/springboot-what-and-why/#SpringBoot_components) blog post.
+In order to know more about Spring Boot starters, you can refer to [this](springboot-what-and-why.md#SpringBoot_components) blog post.
 
 ### Writing Code
 
 **Step 3** - Create **Main.java** in **demo** package as follows:
 
-```
+```java
 package demo;
 
 import org.springframework.boot.SpringApplication;
@@ -82,7 +82,7 @@ public class Main {
 
 **Step 4** - Create **HelloWorldController** in **demo.controller** package as follows:
 
-```
+```java
 package demo.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -106,15 +106,15 @@ public class HelloWorldController {
 
 **Step 5 - Run Main.java as a Java application** as shown below:
 
-[![Running the Spring Boot application](images/run-main-293x300.png)](images/run-main.png)
+[![Running the Spring Boot application](images/spring-boot-hello-world/run-main-293x300.png)](images/spring-boot-hello-world/run-main.png)
 
 This should display the console output as highlighted below:
 
-[![Console output in Spring Boot application](images/run-300x162.png)](images/run.png)
+[![Console output in Spring Boot application](images/spring-boot-hello-world/run-300x162.png)](images/spring-boot-hello-world/run.png)
 
 Step 6 - Check in the browser. Open a browser window and type **http://localhost:8080/hello**
 
-[![hello world in browser](images/running-app-300x97.png)](images/running-app.png)
+[![hello world in browser](images/spring-boot-hello-world/running-app-300x97.png)](images/spring-boot-hello-world/running-app.png)
 
 So you have your Spring Boot application up and running!
 

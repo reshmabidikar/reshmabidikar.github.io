@@ -5,7 +5,7 @@ categories:
   - "spring"
 ---
 
-In this article, I will be demonstrating how to configure a **standalone Spring application using annotation-based configuration**. I will be using [**Eclipse and Maven**.](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) In order to get a basic introduction to [Spring](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F), you can check out [this](https://learnjava.co.in/spring-framework-what-and-why/) article. In order to understand how to configure a standalone Spring application using XML configuration, you can refer to [this](https://learnjava.co.in/spring-xml-configuration-example/) article. In order to understand how to configure a standalone Spring application using Java configuration, you can refer to [this](https://learnjava.co.in/spring-java-configuration-example/) article.
+In this article, I will be demonstrating how to configure a **standalone Spring application using annotation-based configuration**. I will be using [**Eclipse and Maven**.](https://reshmabidikar.github.io/2019/06/how-to-create-a-maven-web-project-in-eclipse.html) In order to get a basic introduction to [Spring](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F), you can check out [this](spring-framework-what-and-why.md) article. In order to understand how to configure a standalone Spring application using XML configuration, you can refer to [this](https://learnjava.co.in/spring-xml-configuration-example/) article. In order to understand how to configure a standalone Spring application using Java configuration, you can refer to [this](https://learnjava.co.in/spring-java-configuration-example/) article.
 
 # Project Set-up
 
@@ -13,7 +13,7 @@ Step 1 - Create a new Maven Project in Eclipse. You can refer to [this](https://
 
 Step 2 - Add Spring dependencies to the maven pom file. You can add the following:
 
-```
+```xml
 <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -34,7 +34,7 @@ Create the following bean classes:
 
 **MessageDAO:**
 
-```
+```java
 @Repository
 public class MessageDAO {
   
@@ -49,7 +49,7 @@ MessageDAO is a simple class that has only one method `getMessage()`This returns
 
 **MessageService:**
 
-```
+```java
 @Service
 public class MessageService {
   
@@ -79,7 +79,7 @@ The`messageDAO`field has the `@Autowired`annotation. This tell Spring that the c
 
 Create a file **ApplicationContext.xml** in the **src/main/resources** folder as follows:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -103,7 +103,7 @@ has the `@Service`annotation and so that is created as a bean as well.
 
 Create a class **Main.java** with the following code:
 
-```
+```java
 ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 MessageService messageService = applicationContext.getBean("messageService", MessageService.class);
 messageService.printMessage();
@@ -122,7 +122,10 @@ Hello World
 
 ## Further Learning
 
-[Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
+* [Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) 
+* [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) 
+* [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) 
+* [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
 
 # Conclusion
 

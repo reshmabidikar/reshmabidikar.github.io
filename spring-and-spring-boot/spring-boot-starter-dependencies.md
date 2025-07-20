@@ -5,7 +5,7 @@ categories:
   - "spring-boot"
 ---
 
-In this article, I will be covering what [Spring Boot](https://learnjava.co.in/springboot-what-and-why/) starter dependencies are and how they greatly simplify building a Spring application.
+In this article, I will be covering what [Spring Boot](springboot-what-and-why.md) starter dependencies are and how they greatly simplify building a Spring application.
 
 ## Problems with dependencies
 

@@ -49,7 +49,7 @@ SpringBoot consists of 3 main components:
 
 This is a special starter that provides common configuration. In order to add this starter, you need to add the following dependency to your Maven pom file:
 
-````
+````xml
 <parent> 
 <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> 
 <version>2.1.4.RELEASE</version> 
@@ -64,7 +64,7 @@ SpringBoot provides some starter packages that need to be added to your Maven fi
 
 This starter helps you get started with a web application. In order to add this starter, you need to add the following dependency to your Maven pom file:
 
-````
+````xml
 <dependency> 
 <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-web</artifactId> 
 </dependency>
@@ -76,7 +76,7 @@ This tells SpringBoot that you are developing a web application, so it will add 
 
 This starter helps you get started with a database application using JPA. n order to add this starter, you need to add the following dependency to your Maven pom file:
 
-````
+````xml
 <dependency> 
 <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-jpa</artifactId> 
 </dependency>
@@ -88,7 +88,7 @@ This tells SpringBoot that you are developing a database application, so it will
 
 This starter tells SpringBoot that you need all the dependencies for testing. So when this starter is added, SpringBoot automatically adds Jar files related to JUnit, etc. In order to add this starter, you need to add the following dependency to your Maven pom file:
 
-````
+````xml
 <dependency> 
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-starter-test</artifactId> 
@@ -105,7 +105,7 @@ Normally, in order to deploy a web application, you need to have a web server li
 
 ## SpringBoot example
 
-In order to see how you create a simple Hello World SpringBoot application, you can refer to [this](https://learnjava.co.in/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven/) blog post.
+In order to see how you create a simple Hello World SpringBoot application, you can refer to [this](#how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md) blog post.
 
 ## Conclusion
 

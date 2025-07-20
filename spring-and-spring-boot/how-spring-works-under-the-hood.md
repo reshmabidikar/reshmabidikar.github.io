@@ -9,7 +9,7 @@ In my [earlier article](https://learnjava.co.in/spring-framework-what-and-why/),
 
 ## Introduction
 
-Just to [recap](https://learnjava.co.in/spring-framework-what-and-why/), the Spring framework consists of the Spring container. The Spring Container is responsible for creating the objects required in an application and providing them to the necessary classes.  It uses Inversion of Control via Dependency Injection to achieve this. Let us now see how exactly this happens.
+Just to [recap](https://learnjava.co.in/spring-framework-what-and-why/), the Spring framework consists of the Spring container. The Spring Container is responsible for creating the objects required in an application and providing them to the necessary classes. It uses Inversion of Control via Dependency Injection to achieve this. Let us now see how exactly this happens.
 
 ## High Level Overview
 
@@ -20,7 +20,7 @@ In order for Spring to be able to wire up the application, it requires developer
 
 The Spring container is also known as the **Spring Application Context**. It is responsible for creating and managing the objects in an application.The following diagram illustrates how the Application context uses the beans and the configuration metadata to create a ready to use application:
 
-[![How Spring works under the hood](images/Spring.png)](https://learnjava.co.in/wp-content/uploads/2020/03/Spring.png)
+[![How Spring works under the hood](images/how-spring-works-under-the-hood/Spring.png)](https://learnjava.co.in/wp-content/uploads/2020/03/Spring.png)
 
 ## Beans
 
@@ -30,7 +30,7 @@ As explained earlier, the beans in a Spring application are the actual objects t
 
 The following code demonstrates a bean having a setter method:
 
-```
+```java
 public class MessageService {
   
   private MessageDAO messageDAO;
@@ -57,7 +57,7 @@ Here, the `MessageService`bean uses the `MessageDAO`. It has a setter method for
 
 The following code demonstrates a bean having a constructor:
 
-```
+```java
 public class MessageService {
   
   private MessageDAO messageDAO;
@@ -89,7 +89,10 @@ There are three ways in which the configuration metadata can be provided:
 
 ## Further Learning
 
-[Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
+* [Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) 
+* [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) 
+* [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) 
+* [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
 
 ## Conclusion
 

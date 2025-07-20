@@ -12,7 +12,7 @@ In this article, I will be explaining the @SpringBootApplication annotation.
 
 The @SpringBootApplication annotation is a convenience annotation that combines the **@EnableAutoConfiguration**, **@Configuration** and the **@ComponentScan** annotations in a Spring Boot application. These annotations do the following:
 
-**@EnableAutoConfiguration** - This enables Spring Boot's [autoconfiguration mechanism](https://learnjava.co.in/springboot-what-and-why/#Autoconfiguration). Auto-configuration refers to creating beans automatically by scanning the classpath.
+**@EnableAutoConfiguration** - This enables Spring Boot's [autoconfiguration mechanism](springboot-what-and-why.md#Autoconfiguration). Auto-configuration refers to creating beans automatically by scanning the classpath.
 
 **@ComponentScan** - Typically, in a Spring application, annotations like @Component, @Configuration, @Service, @Repository are specified on classes to mark them as Spring beans. The @ComponentScan annotation basically tells Spring Boot to scan the current package and its sub-packages in order to identify annotated classes and configure them as Spring beans. Thus, it designates the current package as the root package for component scanning.
 
@@ -22,7 +22,7 @@ The @SpringBootApplication annotation is a convenience annotation that combines 
 
 In order to run a Spring Boot application, it needs to have a class with the @SpringBootApplication annotation. The following code demonstrates this:
 
-```
+```java
 package demo;
 
 import org.springframework.boot.SpringApplication;
@@ -41,7 +41,7 @@ public class Main {
 - The **Main** class has the **@SpringBootApplication** annotation
 - It simply invokes the **SpringApplication.run** method. This starts the Spring application as a standalone application, runs the embedded servers and loads the beans.
 - Normally, such a main class is placed in a root package above other packages. This enables component scanning to scan all the sub-packages for beans.
-- For a complete working example of a simple Spring Boot application you can refer to [this](../02/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md) article.
+- For a complete working example of a simple Spring Boot application you can refer to [this](how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md) article.
 
 ## Conclusion
 

@@ -204,12 +204,12 @@
 * [How to use Flyway with SpringBoot](spring-and-spring-boot/how-to-use-flyway-with-spring-boot-with-code-samples.md)
 * [How to create a SpringBoot Thymeleaf application](spring-and-spring-boot/how-to-create-a-spring-boot-thymeleaf-web-application.md)
 * [How to create a SpringBoot REST Service with XML output](spring-and-spring-boot/how-to-create-a-spring-boot-rest-service-with-xml-output.md)
-* [How to create a Hello World SpringBoot Application](2021/02/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md)
-* [SpringBoot Annotations Explained](2021/01/springbootapplication-annotation-explained.md)
-* [Spring Bean Scopes](2020/07/spring-bean-scopes.md)
-* [How Spring Works](2020/06/how-spring-works-under-the-hood.md)
-* [SpringBoot Starter Dependencies](2020/05/spring-boot-starter-dependencies.md)
-* [Spring Annotation Configuration Example](2020/05/spring-annotation-configuration-example.md)
+* [How to create a Hello World SpringBoot Application](spring-and-spring-boot/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md)
+* [SpringBoot Annotations Explained](spring-and-spring-boot/springbootapplication-annotation-explained.md)
+* [Spring Bean Scopes](spring-and-spring-boot/spring-bean-scopes.md)
+* [How Spring Works](spring-and-spring-boot/how-spring-works-under-the-hood.md)
+* [SpringBoot Starter Dependencies](spring-and-spring-boot/spring-boot-starter-dependencies.md)
+* [Spring Annotation Configuration Example](spring-and-spring-boot/spring-annotation-configuration-example.md)
 * [Spring Initializr Explained](2020/04/spring-initializr-explained.md)
 * [Spring Java Configuration Example](2020/04/spring-java-configuration-example.md)
 * [Spring XML Configuration Example](2020/03/spring-xml-configuration-example.md)
@@ -225,7 +225,7 @@
 * [How to create a HelloWorld Spring MVC Application](2019/06/how-to-create-helloworld-spring-mvc-web-application-using-maven-and-eclipse.md)
 * [How to create a SpringBoot REST Service and test it via Postman](2019/05/how-to-create-springboot-rest-service-and-test-it-via-postman.md)
 * [SpringBoot JPA Example](spring-and-spring-boot/springboot-jpa-example-with-eclipse-and-maven.md)
-* [SpringBoot What and Why](2019/04/springboot-what-and-why.md)
+* [SpringBoot What and Why](spring-and-spring-boot/springboot-what-and-why.md)
 
 
 ## Jax-rs and REST
