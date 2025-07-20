@@ -16,13 +16,13 @@ Let us now understand how to use Flyway with Spring Boot and a MySQL database.
 
 ## Project Creation and Setup
 
-**Step 1 - Create a new Maven Project**(Refer to[this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/)blog post). This should create a project as shown below:
+**Step 1 - Create a new Maven Project**(Refer to[this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html)blog post). This should create a project as shown below:
 
-[![](images/springboot-flyway-project-300x186.png)](images/springboot-flyway-project.png)
+[![](images/spring-boot-flyway/springboot-flyway-project-300x186.png)](images/spring-boot-flyway/springboot-flyway-project.png)
 
 **Step 2 – Add the Spring Boot, Flyway, and MySQL dependencies**. So, the **pom.xml** file should be similar to the following:
 
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -73,7 +73,7 @@ flyway.password = <password>
 
 Step 4 - Create a folder called **db/migration** within the **src/main/resources** folder. Add a file called **V1\_1\_\_create\_table.sql** with the following content:
 
-```
+```sql
 CREATE TABLE `book` (
 `id` int NOT NULL AUTO_INCREMENT,
 `name` varchar(255) DEFAULT NULL,
@@ -88,7 +88,7 @@ The migration name is significant. It needs to have the first character a V, fol
 
 Step 5 - Create an appropriate package in **src/main/java** and create **Main.java** as follows:
 
-```
+```java
 @SpringBootApplication
 public class Main {
 public static void main(String args[]){
@@ -98,12 +98,9 @@ SpringApplication.run(Main.class, args);
 
 }
 ```
-
- 
-
 Step 6 - Run **Main.java** as a Java application as follows:
 
-[![](images/Run-main-298x300.png)](images/Run-main.png)
+[![](images/spring-boot-flyway/Run-main-298x300.png)](images/spring-boot-flyway/Run-main.png)
 
 This will run the Spring Boot application and create a table called book within the springbootflywaydb. You can verify this in your database.
 
@@ -111,7 +108,7 @@ This will run the Spring Boot application and create a table called book within 
 
 Step 7 - Add another file called **V1\_2\_\_insert\_data.sql** to the **src/main/resources/db/migration** folder with the following contents:
 
-```
+```sql
 insert into BOOK (name,author) values ("Head First Java","Kathy Sierra");
 ```
 

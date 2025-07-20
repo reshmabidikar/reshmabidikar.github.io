@@ -13,15 +13,15 @@ In this blog post, I will be demonstrating how you can insert records and query 
 
 ## Step 1 - Create a New Maven Project
 
-Create a new Maven project. (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This will create a project in Eclipse as follows:
+Create a new Maven project. (Refer to [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) blog post). This will create a project in Eclipse as follows:
 
-[![](images/SpringBootJPA1-300x270.png)](images/SpringBootJPA1.png)
+[![](images/spring-boot-jpa/SpringBootJPA1-300x270.png)](images/spring-boot-jpa/SpringBootJPA1.png)
 
 ## Step 2 - Add Spring Boot JPA dependencies to the pom file
 
 Add the following text to the pom.xml file:
 
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.learnjava</groupId>
@@ -52,7 +52,7 @@ Add the following text to the pom.xml file:
 
 So the pom file will look as follows:
 
-[![](images/SpringBootJPA2-300x274.png)](images/SpringBootJPA2.png)
+[![](images/spring-boot-jpa/SpringBootJPA2-300x274.png)](images/spring-boot-jpa/SpringBootJPA2.png)
 
 ## Step 3 - Create config file
 
@@ -75,13 +75,13 @@ So the properties file specifies values for database properties like username, p
 
 It will look as follows in Eclipse:
 
-[![](images/SpringBootJPA3-300x274.png)](https://learnjava.co.in/wp-content/uploads/2019/05/SpringBootJPA3.png)
+[![](images/spring-boot-jpa/SpringBootJPA3-300x274.png)](https://learnjava.co.in/wp-content/uploads/2019/05/SpringBootJPA3.png)
 
 ## Step 4 - Create Entity class
 
 Create a class which corresponds to the database table. Here, we will be creating a class called Person with 2 fields, name and age. It also needs to have an id field. So consider the following code:
 
-```
+```java
 package learnjava.demo;
 
 import javax.persistence.Entity;
@@ -118,7 +118,7 @@ public class Person {
 
 Spring Data JPA requires a Repository interface per Entity class. This interface should extend the JPARepository interface. The JPARepository interface already has certain methods for performing the CRUD operations, so these methods become available to the code. So in our example, we will need to create a Repository interface as follows:
 
-```
+```java
 package learnjava.demo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -133,7 +133,7 @@ public interface PersonRepository extends JpaRepository<Person, Long>{
 
 Next, we will need to write the code that actually inserts data into the Person table and queries the table. Create a class called Application.java with the following code:
 
-```
+```java
 package learnjava.demo;
 
 import java.util.List;
@@ -170,7 +170,7 @@ public class Application implements CommandLineRunner {
 }
 ```
 
-This code creates 2 Person records. It invokes the personRepo.save method which in turn invokes the JPARepository.save and saves the record into the Person table. Next, it invokes the personRepo.findAll method which in turn invokes the JPARepository.findAll method. This returns all the records from the database.
+This code creates 2 Person records. It invokes the `personRepo.save` method which in turn invokes the `JPARepository.save` and saves the record into the Person table. Next, it invokes the personRepo.findAll method which in turn invokes the `JPARepository.findAll` method. This returns all the records from the database.
 
 ## Step 7 - Run code
 

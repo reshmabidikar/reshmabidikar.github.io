@@ -14,15 +14,15 @@ There are several Java logging frameworks like logback, log4j, and so on. Spring
 
 ## Step 1 - Create a New Maven Project
 
-Create a new Maven project. (Refer [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/)blog post). This will create a project in Eclipse as follows:
+Create a new Maven project. (Refer [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html)blog post). This will create a project in Eclipse as follows:
 
-[![](images/Project-creation-1-300x288.png)](images/Project-creation-1.png)
+[![](images/spring-boot-logging/Project-creation-1-300x288.png)](images/spring-boot-logging/Project-creation-1.png)
 
 Step 2 - Add the Spring Boot Dependencies
 
 Add the `spring-boot-starter-web` dependency to the `pom.xml`. So, the `pom.xml` should look as follows:
 
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.learnjava</groupId>
@@ -46,7 +46,7 @@ Add the `spring-boot-starter-web` dependency to the `pom.xml`. So, the `pom.xml`
 
 Create a `Main.java` class as follows:
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -69,7 +69,7 @@ public class Main {
 
 Run `Main.java` as a Java application as follows:.
 
-[![Run Main](images/Run-main-300x254.png)](images/Run-main.png)
+[![Run Main](images/spring-boot-logging/Run-main-300x254.png)](images/spring-boot-logging/Run-main.png)
 
 This prints the log statement on the console:
 
@@ -96,7 +96,7 @@ Spring Boot allows specifying a logback configuration file that can help with cu
 
 Create the following file in your **src/main/resources** directory:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
      <property name="LOGS_DIR" value="D:/Data/logs" />

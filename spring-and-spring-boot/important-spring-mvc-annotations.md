@@ -28,11 +28,11 @@ You should use the RequestBody annotation when the client application sends obje
 
 ## RequestMapping
 
-You can use the RequestMapping annotation to map a method in a Controller class to an appropriate HTTP method. It also specifies the URL that the method maps to. It can be specified at the class as well as method level. If specified at the class level, all methods in the class, map to the same URL specified with this annotation. If the annotation is specified at the method level, the method level annotation overrides the class-level annotation. To know more about the RequestMapping annotation, refer to [this](https://learnjava.co.in/spring-requestmapping-getmapping-and-postmapping-annotations/#RequestMapping) blog post.
+You can use the RequestMapping annotation to map a method in a Controller class to an appropriate HTTP method. It also specifies the URL that the method maps to. It can be specified at the class as well as method level. If specified at the class level, all methods in the class, map to the same URL specified with this annotation. If the annotation is specified at the method level, the method level annotation overrides the class-level annotation. To know more about the RequestMapping annotation, refer to [this](spring-requestmapping-getmapping-and-postmapping-annotations.md#RequestMapping) blog post.
 
 ## GetMapping
 
-The GetMapping is a specialization of the RequestMapping annotation that can be used to map to Get requests only. Just like the GetMapping, the PostMapping, the PutMapping and DeleteMapping are shortcut annotations corresponding to the HTTP POST, PUT and HTTP DELETE methods respectively. To know more about the GetMapping annotation, refer to [this](https://learnjava.co.in/spring-requestmapping-getmapping-and-postmapping-annotations/#GetMapping) blog post.
+The GetMapping is a specialization of the RequestMapping annotation that can be used to map to Get requests only. Just like the GetMapping, the PostMapping, the PutMapping and DeleteMapping are shortcut annotations corresponding to the HTTP POST, PUT and HTTP DELETE methods respectively. To know more about the GetMapping annotation, refer to [this](spring-requestmapping-getmapping-and-postmapping-annotations.md#GetMapping) blog post.
 
 ## PathVariable
 
@@ -40,8 +40,11 @@ You can use the PathVariable annotation to extract request parameters that are p
 
 ## RequestParam
 
-You can use the @RequestParam annotation to extract request parameters that are sent as query parameters. Query parameters are parameters specified using a "?" symbol after the main URL and are of the format parametername=parametervalue. So if such parameters are present in the client request, then the RequestParam annotation should be used in the method declaration.
+You can use the @RequestParam annotation to extract request parameters that are sent as query parameters. Query parameters are parameters specified using a "?" symbol after the main URL and are of the format `parametername=parametervalue`. So if such parameters are present in the client request, then the RequestParam annotation should be used in the method declaration.
 
 ## Further Learning
 
-[Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
+* [Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) 
+* [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) 
+* [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) 
+* [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)

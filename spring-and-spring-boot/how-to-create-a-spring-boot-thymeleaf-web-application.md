@@ -3,20 +3,19 @@ title: "How to create a Spring Boot Thymeleaf web application"
 date: "2021-03-26"
 categories: 
   - "spring-boot"
-coverImage: "spring-boot-thymeleaf-2-scaled.jpg"
 ---
 
 In this article, I will be demonstrating creating a Spring Boot Thymeleaf web application.
 
 ## Project Creation and Setup
 
-**Step 1 – Create a new Maven Project** (Refer to[this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This should create a project as shown below:
+**Step 1 – Create a new Maven Project** (Refer to[this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) blog post). This should create a project as shown below:
 
-[![](images/basic_project-300x187.png)](images/basic_project.png)
+[![](images/spring-boot-thymeleaf/basic_project-300x187.png)](images/spring-boot-thymeleaf/basic_project.png)
 
 **Step 2 – Add the Spring Boot and Thymeleaf dependency**. So, the **pom.xml** file should be similar to the following:
 
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -49,7 +48,7 @@ In this article, I will be demonstrating creating a Spring Boot Thymeleaf web ap
 
 Let us first create a simple controller that displays a static html page without any data:
 
-```
+```java
 package com.learnjava.springbootthymeleafdemo.welcome;
 
 import org.springframework.stereotype.Controller;
@@ -66,15 +65,15 @@ public class WelcomeController {
 }
 ```
 
-- The `WelcomeController` class has the [@Controller](https://learnjava.co.in/important-spring-mvc-annotations/#Controller) annotation. This designates the class as an MVC controller.
-- It has a `showHome`method. The [GetMapping](https://learnjava.co.in/important-spring-mvc-annotations/#GetMapping) annotation specifies that this maps to the **"/"** path.
+- The `WelcomeController` class has the [@Controller](important-spring-mvc-annotations.md#controller) annotation. This designates the class as an MVC controller.
+- It has a `showHome`method. The [GetMapping](important-spring-mvc-annotations.md#getmapping) annotation specifies that this maps to the **"/"** path.
 - It simply returns the String **hello**. This specifies the name of the Thymeleaf template (an html file) that needs to be displayed.
 
 **Step 4 - Creating the Thymeleaf template file**
 
 As seen earlier, the controller returns the name of the Thymeleaf template. An HTML file with this name needs to be present in a **templates** folder within the **src/main/resources** folder. So, we need to create **home.html** within the **src/main/resources/templates** folder as follows:
 
-```
+```html
 <!DOCTYPE html>
 <html>
    <head>
@@ -94,7 +93,7 @@ As seen earlier, the controller returns the name of the Thymeleaf template. An H
 
 The Thymeleaf template can optionally refer a CSS file as done above. In such cases, the specified CSS file needs to be present in a **static** folder within the **src/main/resources** folder. So, we need to create **style.css** within the **src/main/resources/static** folder as follows:
 
-```
+```css
 h2 {
    color: blue;
 }
@@ -106,11 +105,11 @@ h2 {
 
 **Step 6 – Run Main.java as a Java application** as shown below:
 
-[![](images/run_java_application-276x300.png)](images/run_java_application.png)
+[![](images/spring-boot-thymeleaf/run_java_application-276x300.png)](images/spring-boot-thymeleaf/run_java_application.png)
 
-**Step 7 – Open http://localhost:8080/ in browser**. This displays the following output:
+**Step 7 – Open `http://localhost:8080/` in browser**. This displays the following output:
 
-[![](images/Output-1-300x268.png)](images/Output-1.png)
+[![](images/spring-boot-thymeleaf/Output-1-300x268.png)](images/spring-boot-thymeleaf/Output-1.png)
 
 
 ## Some More Code
@@ -119,7 +118,7 @@ Most real-world applications require to do more complex things than display a si
 
 **Step 8 - Create a Book class as follows:**
 
-```
+```java
 public class Book {
 
   private int id;
@@ -135,7 +134,7 @@ public class Book {
 
 **Step 9 - Create a BookController class as follows:**
 
-```
+```java
 import java.util.ArrayList;
 import java.util.List;
 
@@ -166,11 +165,11 @@ public class BookController {
 ```
 
 - The `BookController` class has a `greeting`field. It has the `@Value` annotation with the value **$greeting.** This value can be set in the **application.properties** file as explained below.
-- The `BookController` class also has a `getAllBooks`method. This maps to the **"/books"** path as specified via the [GetMapping](https://learnjava.co.in/important-spring-mvc-annotations/#GetMapping) annotation.
+- The `BookController` class also has a `getAllBooks`method. This maps to the **"/books"** path as specified via the [GetMapping](important-spring-mvc-annotations.md#getmapping) annotation.
 - It accepts a Model object as a parameter. In [Spring](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F), A Model represents the data to be sent to the front-end.
-- Next, the `getAllBooks`method creates a List of `Book` objects and sets it as a Model attribute. In a typical Spring Boot application, data is retrieved via Spring Data JPA as demonstrated [here](https://learnjava.co.in/springboot-jpa-example-with-eclipse-and-maven/).
+- Next, the `getAllBooks`method creates a List of `Book` objects and sets it as a Model attribute. In a typical Spring Boot application, data is retrieved via Spring Data JPA as demonstrated [here](springboot-jpa-example-with-eclipse-and-maven.md).
 - Similarly, it also sets the `greeting` field as a Model attribute.
-- Thus, any data that needs to be sent to the HTML template, needs to be set as as model attribute like this.
+- Thus, any data that needs to be sent to the HTML template, needs to be set as a model attribute like this.
 - Finally, it returns the String **books**. This specifies the name of the Thymeleaf template.
 
 **Step 10 - Defining a greeting property**
@@ -185,7 +184,7 @@ greeting=Hello!
 
 Just like **home.html,** we need to create **books.html** within the **src/main/resources/templates** folder as follows:
 
-```
+```html
 <html>
 <head>
 <title>Book</title>
@@ -218,9 +217,9 @@ Just like **home.html,** we need to create **books.html** within the **src/main/
 
 **Step 12 - Run the application and type http://localhost:8080/books in a browser.** This displays the following output:
 
-[![](images/spring-boot-thymeleaf-Output2-300x277.png)](images/spring-boot-thymeleaf-Output2.png)
+[![](images/spring-boot-thymeleaf/spring-boot-thymeleaf-Output2-300x277.png)](images/spring-boot-thymeleaf/spring-boot-thymeleaf-Output2.png)
 
-You can download the complete source code from the GitHub Repository [here](images/learnjava-springbootthymeleaf-demo).
+You can download the complete source code from the GitHub Repository [here](https://github.com/reshmabidikar/learnjava-springbootthymeleaf-demo).
 
 ## Further Learning
 

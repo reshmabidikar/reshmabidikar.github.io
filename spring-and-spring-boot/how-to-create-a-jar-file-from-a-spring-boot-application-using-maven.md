@@ -18,7 +18,7 @@ Step 1 - Let us use an existing project as a starting point. Clone the code from
 
 Step 2 - Update the `pom.xml` to specify the packaging and the `spring-boot-maven-plugin` configuration. So the pom file should look as follows:
 
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">

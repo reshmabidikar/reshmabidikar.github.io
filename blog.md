@@ -198,12 +198,12 @@
 
 
 ## Spring and Spring Boot
-* [Spring Boot Maven Plugin Explained](2023/09/spring-boot-maven-plugin-explained-in-detail.md)
-* [How to create a JAR file from a Spring Boot Application using Maven](2023/07/how-to-create-a-jar-file-from-a-spring-boot-application-using-maven.md)
-* [How to use logging in Spring Boot](2022/10/how-to-use-logging-in-springboot-with-code-samples.md)
-* [How to use Flyway with SpringBoot](2021/07/how-to-use-flyway-with-spring-boot-with-code-samples.md)
-* [How to create a SpringBoot Thymeleaf application](2021/03/how-to-create-a-spring-boot-thymeleaf-web-application.md)
-* [How to create a SpringBoot REST Service with XML output](2021/03/how-to-create-a-spring-boot-rest-service-with-xml-output.md)
+* [Spring Boot Maven Plugin Explained](spring-and-spring-boot/spring-boot-maven-plugin-explained-in-detail.md)
+* [How to create a JAR file from a Spring Boot Application using Maven](spring-and-spring-boot/how-to-create-a-jar-file-from-a-spring-boot-application-using-maven.md)
+* [How to use logging in Spring Boot](spring-and-spring-boot/how-to-use-logging-in-springboot-with-code-samples.md)
+* [How to use Flyway with SpringBoot](spring-and-spring-boot/how-to-use-flyway-with-spring-boot-with-code-samples.md)
+* [How to create a SpringBoot Thymeleaf application](spring-and-spring-boot/how-to-create-a-spring-boot-thymeleaf-web-application.md)
+* [How to create a SpringBoot REST Service with XML output](spring-and-spring-boot/how-to-create-a-spring-boot-rest-service-with-xml-output.md)
 * [How to create a Hello World SpringBoot Application](2021/02/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md)
 * [SpringBoot Annotations Explained](2021/01/springbootapplication-annotation-explained.md)
 * [Spring Bean Scopes](2020/07/spring-bean-scopes.md)
@@ -218,13 +218,13 @@
 * [Spring Exception Handling](2019/10/spring-exception-handling.md)
 * [Spring REST Client Using RestTemplate](2019/08/spring-rest-client-using-resttemplate-in-eclipse-and-maven.md)
 * [Spring ExceptionHandler annotation explained](2019/08/spring-exceptionhandler-annotation-explained.md)
-* [Spring RequestMapping,GetMapping, PostMapping Annotations](2019/07/spring-requestmapping-getmapping-and-postmapping-annotations.md)
-* [Important Spring MVC Annotations](2019/07/important-spring-mvc-annotations.md)
+* [Spring RequestMapping,GetMapping, PostMapping Annotations](spring-and-spring-boot/spring-requestmapping-getmapping-and-postmapping-annotations.md)
+* [Important Spring MVC Annotations](spring-and-spring-boot/important-spring-mvc-annotations.md)
 * [How to Create a Spring REST Application](2019/06/how-to-create-a-spring-rest-application-via-maven-and-eclipse.md)
 * [Controller vs RestController in Spring](2019/06/controller-vs-restcontroller-annotation-in-spring.md)
 * [How to create a HelloWorld Spring MVC Application](2019/06/how-to-create-helloworld-spring-mvc-web-application-using-maven-and-eclipse.md)
 * [How to create a SpringBoot REST Service and test it via Postman](2019/05/how-to-create-springboot-rest-service-and-test-it-via-postman.md)
-* [SpringBoot JPA Example](2019/05/springboot-jpa-example-with-eclipse-and-maven.md)
+* [SpringBoot JPA Example](spring-and-spring-boot/springboot-jpa-example-with-eclipse-and-maven.md)
 * [SpringBoot What and Why](2019/04/springboot-what-and-why.md)
 
 

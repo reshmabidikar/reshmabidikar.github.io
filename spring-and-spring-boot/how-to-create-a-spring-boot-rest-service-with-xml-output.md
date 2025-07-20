@@ -10,13 +10,13 @@ In this article, I will be explaining how to create a Spring Boot REST service t
 
 ## Project Creation and Setup
 
-**Step 1 – Create a new Maven Project** (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This should create a project as shown below:
+**Step 1 – Create a new Maven Project** (Refer to [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) blog post). This should create a project as shown below:
 
-[![maven-springboot-eclipse-project](images/Maven-project-300x163.png)](images/Maven-project.png)
+[![maven-springboot-eclipse-project](images/spring-boot-rest-service-xml-output/Maven-project-300x163.png)](images/spring-boot-rest-service-xml-output/Maven-project.png)
 
 **Step 2 - Add the Spring Boot and Jackson dependency**. So, your the **pom.xml** file should be similar to the following:
 
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -49,7 +49,7 @@ In this article, I will be explaining how to create a Spring Boot REST service t
 
 **Step 3 - Create a Book class** as follows:
 
-```
+```java
 package com.learnjava.springbootxmldemo.book;
 
 public class Book {
@@ -67,7 +67,7 @@ This class represents a Book. It has fields corresponding to id, name and author
 
 **Step 4 - Create a BookController class** as follows:
 
-```
+```java
 package com.learnjava.springbootxmldemo.book;
 
 import java.util.ArrayList;
@@ -98,23 +98,23 @@ public class BookController {
 
 ```
 
-This is a Controller class and specifies the methods that handle client requests. . It has the [RestController](https://learnjava.co.in/important-spring-mvc-annotations/) annotation specified.
+This is a Controller class and specifies the methods that handle client requests. . It has the [RestController](important-spring-mvc-annotations.md) annotation specified.
 
 It includes the following methods:
 
 **getAllBooks**
 
-- The [GetMapping](https://learnjava.co.in/important-spring-mvc-annotations/) annotation is specified on this method. This specifies that this method maps to the **/book**s URL and that it produces an XML output
+- The [GetMapping](important-spring-mvc-annotations.md) annotation is specified on this method. This specifies that this method maps to the **/book**s URL and that it produces an XML output
 - The method simply creates a **List** of type **Book**, adds some **Book** objects to it and returns it. A real-world application will typically query a database and obtain Book objects.
 
 **getBook**
 
-- Like **getAllBooks**, this method has the [GetMapping](https://learnjava.co.in/important-spring-mvc-annotations/) annotation
+- Like **getAllBooks**, this method has the [GetMapping](important-spring-mvc-annotations.md) annotation
 - It returns a single **Book** object
 
 **Step 5 - Create a Main class** as follows:
 
-```
+```java
 package com.learnjava.springbootxmldemo;
 
 import org.springframework.boot.SpringApplication;
@@ -130,17 +130,17 @@ public class Main {
 }
 ```
 
-This is the starting point of our Spring Boot application as explained [here](https://learnjava.co.in/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven/).
+This is the starting point of our Spring Boot application as explained [here](how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md).
 
 ## Running the application
 
 **Step 6 - Run Main.java as a Java application** as shown below:
 
-[![running-spring-boot-main](images/Running-application-289x300.png)](images/Running-application.png)
+[![running-spring-boot-main](images/spring-boot-rest-service-xml-output/Running-application-289x300.png)](images/spring-boot-rest-service-xml-output/Running-application.png)
 
 Step 7 - Open a browser window. Type **http://localhost:8080/books/** . This displays the following XML output:
 
-[![xm-output](images/output-300x157.png)](images/output.png)
+[![xm-output](images/spring-boot-rest-service-xml-output/output.png)](images/spring-boot-rest-service-xml-output/output.png)
 
 You can download the source code for this project via the Github repository [here](https://github.com/learnjavawithreshma/learnjava-springbootxmloutput-demo).
 

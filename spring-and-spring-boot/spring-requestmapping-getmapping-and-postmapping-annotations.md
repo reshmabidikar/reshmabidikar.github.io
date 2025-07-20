@@ -10,7 +10,7 @@ tags:
   - "spring"
 ---
 
-In this blog post, I will be explaining the RequestMapping, GetMapping and PostMapping annotations in Spring. In order to know more about other Spring annotations, you can refer to [this](https://learnjava.co.in/important-spring-mvc-annotations/) article. In order to learn about the Spring framework from scratch, I recommend that you enroll in this [Spring masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F).
+In this blog post, I will be explaining the RequestMapping, GetMapping and PostMapping annotations in Spring. In order to know more about other Spring annotations, you can refer to [this](important-spring-mvc-annotations.md) article. In order to learn about the Spring framework from scratch, I recommend that you enroll in this [Spring masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F).
 
 You can use the RequestMapping, GetMapping and PostMapping annotations to map a URL to a particular Controller method. However, there are some differences between them. Let's check them out.
 
@@ -18,7 +18,7 @@ You can use the RequestMapping, GetMapping and PostMapping annotations to map a 
 
 The RequestMapping annotation can be used to map both GET and POST requests. Consider the following code:
 
-```
+```java
 @RequestMapping(value="/person/{personId}",method=RequestMethod.GET)
   public Person getPersonWithId(@PathVariable Integer personId){
   
@@ -31,7 +31,7 @@ URL. The method attribute is also specified. This indicates that this method map
 
 Now consider the following code:
 
-```
+```java
 @RequestMapping(value="/person/newperson",method=RequestMethod.POST)
 public void addPerson(@RequestBody Person person){
  
@@ -49,7 +49,7 @@ So basically, you can use the RequestMapping annotation for specifying both HTTP
 
 The GetMapping is a specialization of the RequestMapping annotation that can be used to map to Get requests only. So the above code can be re-written as follows:
 
-```
+```java
 @GetMapping("/person/{personId}")
 public Person getPersonWithId(@PathVariable Integer personId){ 
 }
@@ -61,7 +61,7 @@ So here, this code uses the GetMapping annotation instead of the RequestMapping 
 
 The PostMapping is a specialization of the RequestMapping annotation that can be used to map to POST requests only. So the above code can be re-written as follows:
 
-```
+```java
 @PostMapping("/person/newperson") 
 public void addPerson(@RequestBody Person person){ 
 }
@@ -75,4 +75,7 @@ Just like the GetMapping and PostMapping, the PutMapping and DeleteMapping are s
 
 ## Further Learning
 
-[Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
+* [Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) 
+* [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) 
+* [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) 
+* [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
