@@ -5,15 +5,15 @@ categories:
   - "spring"
 ---
 
-In this article, I will be demonstrating how to configure a **standalone Spring application using XML configuration**. I will be demonstrating both **setter and constructor injection**. I will be using **Eclipse and Maven**. In order to get a basic introduction to Spring, you can check out [this](https://learnjava.co.in/spring-framework-what-and-why/) article.
+In this article, I will be demonstrating how to configure a **standalone Spring application using XML configuration**. I will be demonstrating both **setter and constructor injection**. I will be using **Eclipse and Maven**. In order to get a basic introduction to Spring, you can check out [this](spring-framework-what-and-why.md) article.
 
 # Project Set-up
 
-Step 1 - Create a new Maven Project in Eclipse. You can refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) article on how to create a Maven project in Eclipse.
+Step 1 - Create a new Maven Project in Eclipse. You can refer to [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) article on how to create a Maven project in Eclipse.
 
 Step 2 - Add Spring dependencies to the maven pom file. You can add the following:
 
-```
+```xml
 <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -34,7 +34,7 @@ Create the following bean classes:
 
 **MessageDAO:**
 
-```
+```java
 public class MessageDAO {
   
   public String getMessage() {
@@ -48,7 +48,7 @@ MessageDAO is a simple class that has only one method `getMessage()`This returns
 
 **MessageService:**
 
-```
+```java
 public class MessageService {
   
   private MessageDAO messageDAO;
@@ -75,7 +75,7 @@ MessageService has a method `printMessage`. It uses the `MessageDAO`to obtain th
 
 Create a file **ApplicationContext.xml** in the **src/main/resources** folder.Add the following:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -97,7 +97,7 @@ This **ApplicationContext.xml** is the spring configuration file. It specifies e
 
 Create a class **Main.java** with the following code:
 
-```
+```java
 public class Main {
   public static void main(String[] args) {
     ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("ApplicationContext.xml");
@@ -127,7 +127,7 @@ In order to use constructor injection you need to make the following modificatio
 
 The MessageService bean needs to have a constructor instead of getter/setter methods as follows:
 
-```
+```java
 public class MessageService {
   
   private MessageDAO messageDAO;
@@ -149,7 +149,7 @@ public class MessageService {
 
 The configuration file needs to specify that constructor injection is being used as follows:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -171,7 +171,10 @@ Rest of the code remains the same. So when you execute the code with these chang
 
 ## Further Learning
 
-[Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
+- [Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) 
+- [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) 
+- [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) 
+- [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
 
 # Conclusion
 

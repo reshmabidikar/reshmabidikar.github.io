@@ -5,15 +5,15 @@ categories:
   - "others"
 ---
 
-In this article, I will be demonstrating how Spring Java-Based Configuration works. I will be using **Eclipse and Maven**. In order to get a basic introduction to Spring, you can check out [this](https://learnjava.co.in/spring-framework-what-and-why/) article. In order to understand how to configure a standalone Spring application using XML configuration, you can refer to [this](https://learnjava.co.in/spring-xml-configuration-example/) article.
+In this article, I will be demonstrating how Spring Java-Based Configuration works. I will be using **Eclipse and Maven**. In order to get a basic introduction to Spring, you can check out [this](spring-framework-what-and-why.md) article. In order to understand how to configure a standalone Spring application using XML configuration, you can refer to [this](spring-xml-configuration-example.md) article.
 
 ## Project Set-up
 
-Step 1 - Create a new Maven Project in Eclipse. You can refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) article on how to create a Maven project in Eclipse.
+Step 1 - Create a new Maven Project in Eclipse. You can refer to [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) article on how to create a Maven project in Eclipse.
 
 Step 2 - Add Spring dependencies to the maven pom file. You can add the following:
 
-```
+```xml
 <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -34,7 +34,7 @@ Create the following bean classes:
 
 **MessageDAO:**
 
-```
+```java
 public class MessageDAO {
   
   public String getMessage() {
@@ -48,7 +48,7 @@ MessageDAO is a simple class that has only one method `getMessage()`This returns
 
 **MessageService:**
 
-```
+```java
 public class MessageService {
   
   private MessageDAO messageDAO;
@@ -75,7 +75,7 @@ MessageService has a method `printMessage`. It uses the `MessageDAO`to obtain th
 
 Create a class called **MyConfiguration** as follows:
 
-```
+```java
 @Configuration
 public class MyConfiguration {
   @Bean
@@ -100,7 +100,7 @@ The `MyConfiguration`class has the `@Configuration`annotation. This indicates th
 
 Create a class **Main.java** with the following code:
 
-```
+```java
 	public static void main(String args[]) {
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(
 				MyConfiguration.class);

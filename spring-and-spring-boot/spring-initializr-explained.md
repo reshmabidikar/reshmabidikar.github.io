@@ -21,59 +21,59 @@ First, you need to select the appropriate values and create the project structur
 
 **Step 1** - Go to [https://start.spring.io/](https://start.spring.io/). You will see a screen as follows:
 
-[![How to use Spring Initializr](images/SpringInitilizr1-1-1024x525.png)](images/SpringInitilizr1-1.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr1-1-1024x525.png)](images/spring-initializr/SpringInitilizr1-1.png)
 
 **Step 2** - Select values for the type of project, programming language and Spring Boot version. Here, I will be creating a [Maven Project](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fapache-maven-beginner-to-guru%2F) in Java with 2.3.0 version of Spring Boot. So I will select the following:
 
-[![How to use Spring Initializr](images/SpringInitilizr2-1-1024x529.png)](images/SpringInitilizr2-1.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr2-1-1024x529.png)](images/spring-initializr/SpringInitilizr2-1.png)
 
 **Step 3** - Customize the project metadata. So I've set the values as follows: I've also selected "Java 8" as the Java version:
 
-[![How to use Spring Initializr](images/SpringInitilizr3-1-1024x527.png)](images/SpringInitilizr3-1.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr3-1-1024x527.png)](images/spring-initializr/SpringInitilizr3-1.png)
 
 **Step 4** - You can also add some dependencies if you want as follows.
 
 **Step 4a** - Click the add dependencies button as follows:
 
-[![How to use Spring Initializr](images/SpringInitilizr4a-1-1024x527.png)](images/SpringInitilizr4a-1.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr4a-1-1024x527.png)](images/spring-initializr/SpringInitilizr4a-1.png)
 
 **Step 4b** - This displays the following screen. Here you can click on the necessary dependencies:
 
-[![How to use Spring Initializr](images/SpringInitilizr4b-1-1024x541.png)](images/SpringInitilizr4b-1.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr4b-1-1024x541.png)](images/spring-initializr/SpringInitilizr4b-1.png)
 
 **Step 4c** - Once you click on the dependency, it will show the following screen. So here, I've selected the "**Spring-web**" dependency:
 
-[![How to use Spring Initializr](images/SpringInitilizr4c-1-1024x524.png)]images/SpringInitilizr4c-1.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr4c-1-1024x524.png)]images/SpringInitilizr4c-1.png)
 
 **Step 5** - Finally, click the "**Generate**" button. This will download the project structure for you:
 
-[![How to use Spring Initializr](images/SpringInitilizr4-1-1024x573.png)](images/SpringInitilizr4-1.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr4-1-1024x573.png)](images/spring-initializr/SpringInitilizr4-1.png)
 
 ### Using the Project Structure
 
 **Step 1** - Unzip the downloaded file into any folder. It will display the following project structure:
 
-[![How to use Spring Initializr](images/SpringInitilizr6-300x134.png)](images/SpringInitilizr6.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr6-300x134.png)](images/spring-initializr/SpringInitilizr6.png)
 
 **Step 2** - Import this as a Maven project in your IDE. I am using Eclipse. So this creates an Eclipse project as follows. The pom file has some default dependencies as well as the additionally selected dependencies:
 
-[![How to use Spring Initializr](images/SpringInitilizr7-1024x663.png)](images/SpringInitilizr7.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr7-1024x663.png)](images/spring-initializr/SpringInitilizr7.png)
 
 A demo application is also created for you as follows:
 
-[![How to use Spring Initializr](images/SpringInitilizr8-1024x824.png)](images/SpringInitilizr8.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr8-1024x824.png)](images/spring-initializr/SpringInitilizr8.png)
 
 **Step 3** - Add your code. Let's add a REST controller that returns "Hello World":
 
-[![How to use Spring Initializr](images/SpringInitilizr9-1024x542.png)](images/SpringInitilizr9.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr9-1024x542.png)](images/spring-initializr/SpringInitilizr9.png)
 
 **Step 4 -** Run the "HelloWorldDemoApplication" as a Java application:
 
-[![How to use Spring Initializr](images/SpringInitilizr10-1024x796.png)](images/SpringInitilizr10.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr10-1024x796.png)](images/spring-initializr/SpringInitilizr10.png)
 
 **Step 5** - Open a browser window and type "http://localhost:8080/hello". This displays the following:
 
-[![How to use Spring Initializr](images/SpringInitilizr11-300x195.png)](images/SpringInitilizr11.png)
+[![How to use Spring Initializr](images/spring-initializr/SpringInitilizr11-300x195.png)](images/spring-initializr/SpringInitilizr11.png)
 
 ## Conclusion
 
