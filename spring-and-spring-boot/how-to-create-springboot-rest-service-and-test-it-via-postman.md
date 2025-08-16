@@ -11,18 +11,18 @@ tags:
   - "springboot"
 ---
 
-In this blog post, I will be explaining how you can create a [Spring Boot REST](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-boot-tutorial-for-beginners%2F) service.  If you would like to see how to create a basic HelloWorld Spring Boot application refer to [this](https://learnjava.co.in/how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven/) blog post.
+In this blog post, I will be explaining how you can create a [Spring Boot REST](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-boot-tutorial-for-beginners%2F) service. If you would like to see how to create a basic HelloWorld Spring Boot application refer to [this](how-to-create-a-hello-world-spring-boot-web-application-in-eclipse-using-maven.md) blog post.
 
 ## Project Creation and Setup
 
-**Step 1 - Create a new [Maven](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fmavencrashcourse%2F) Project** (Refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post)
+**Step 1 - Create a new [Maven](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fmavencrashcourse%2F) Project** (Refer to [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) blog post)
 
-[![](images/1-300x238.png)](images/1.png)
+[![](images/spring-boot-rest-postman/1-300x238.png)](images/spring-boot-rest-postman/1.png)
 
 
 **Step 2 - Add the following Spring Boot dependencies to the POM file and save.**
 
-```
+```xml
 	<parent>
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot-starter-parent</artifactId>
@@ -40,7 +40,7 @@ In this blog post, I will be explaining how you can create a [Spring Boot REST](
 
 **Step 3 - Create Person class as follows**
 
-```
+```java
 package com.learnjava.model;
 
 public class Person {
@@ -76,7 +76,7 @@ This is the model class. It represents a Person. It has 3 fields, id, name and a
 
 **Step 4 - Create a PersonController class as follows:**
 
-```
+```java
 package com.learnjava.controller;
 
 import java.util.ArrayList;
@@ -161,7 +161,7 @@ This annotation needs to be specified when an object is passed to a method. It a
 
 **Step 5 - Finally, create a Main.java as follows:**
 
-```
+```java
 package com.learnjava;
 
 import org.springframework.boot.SpringApplication;
@@ -188,11 +188,11 @@ This is the starting point of the application.
 
 **Step 6 - Run Main.java as a Java application as follows:**
 
-[![](images/3-300x195.png)](images/3.png)
+[![](images/spring-boot-rest-postman/3-300x195.png)](images/spring-boot-rest-postman/3.png)
 
 This will display the following on the console:
 
-[![](images/4-300x110.png)](images/4.png)
+[![](images/spring-boot-rest-postman/4-300x110.png)](images/spring-boot-rest-postman/4.png)
 
 ## Testing Via Browser
 
@@ -204,7 +204,7 @@ http://localhost:8080/person/
 
 This will display the following:
 
-[![](images/5-300x114.png)](images/5.png)
+[![](images/spring-boot-rest-postman/5-300x114.png)](images/spring-boot-rest-postman/5.png)
 
 ### Get Person By Id
 
@@ -214,7 +214,7 @@ http://localhost:8080/person/3
 
 This will display the following:
 
-[![](images/6-300x106.png)](images/6.png)
+[![](images/spring-boot-rest-postman/6-300x106.png)](images/spring-boot-rest-postman/6.png)
 
 ### Add Person
 
@@ -231,7 +231,7 @@ Postman is a client-side application that allows you to test REST services easil
 3. Click on "Send".
 4. This will show the "JSON" response sent by the server in the body below as follows:
 
-[![](images/7-300x163.png)](images/7.png)
+[![](images/spring-boot-rest-postman/7-300x163.png)](images/spring-boot-rest-postman/7.png)
 
 ### Get Person By Id
 
@@ -240,7 +240,7 @@ Postman is a client-side application that allows you to test REST services easil
 3. Click on "Send".
 4. This will show the "JSON" response sent by the server in the body below as follows:
 
-[![](images/8-300x141.png)](images/8.png)
+[![](images/spring-boot-rest-postman/8-300x141.png)](images/spring-boot-rest-postman/8.png)
 
 ### Add Person
 
@@ -253,6 +253,6 @@ Postman is a client-side application that allows you to test REST services easil
 7. Click on "Send".
 8. This will show the HTTP Status 200 sent by the server.
 
-[![](images/9-300x157.png)](images/9.png)
+[![](images/spring-boot-rest-postman/9-300x157.png)](images/spring-boot-rest-postman/9.png)
 
 You can download the source code for this project via the Github repository [here](https://github.com/learnjavawithreshma/SpringBootRestDemo).
