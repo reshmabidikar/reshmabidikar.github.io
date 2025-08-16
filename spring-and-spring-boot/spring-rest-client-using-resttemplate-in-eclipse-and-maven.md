@@ -10,7 +10,7 @@ tags:
   - "springrestclient"
 ---
 
-In this article, I will be demonstrating how you can create a Spring [REST](https://learnjava.co.in/rest/) client using RestTemplate. In order to see how you can create a simple Spring **REST** service, you can refer to [this](https://learnjava.co.in/how-to-create-a-spring-rest-application-via-maven-and-eclipse) blog post.
+In this article, I will be demonstrating how you can create a Spring [REST](https://reshmabidikar.github.io/blog.html#jax-rs-and-rest) client using RestTemplate. In order to see how you can create a simple Spring **REST** service, you can refer to [this](how-to-create-a-spring-rest-application-via-maven-and-eclipse.md) blog post.
 
 ## What is Spring RESTTemplate?
 
@@ -18,16 +18,16 @@ Spring provides a class called **RestTemplate**. This is the starting point in c
 
 ## Project Creation
 
-Step 1 - Create a **Maven** Project in **Eclipse**. You can refer to [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post. You will get a project as follows:
+Step 1 - Create a **Maven** Project in **Eclipse**. You can refer to [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) blog post. You will get a project as follows:
 
-![](images/SpringRestClientProjectCreation-269x300.png)
+![](images/spring-rest-client/SpringRestClientProjectCreation-269x300.png)
 
 
 Step 2 - Add dependencies to POM file.
 
 Add the following to your pom.xml file:
 
-```
+```xml
 <properties>
     <spring.framework>5.1.3.RELEASE</spring.framework>
     <spring.web>5.1.3.RELEASE</spring.web>
@@ -62,7 +62,7 @@ Add the following to your pom.xml file:
 
 Before we write the client code, we need to have a REST service which the client will invoke. Refer to [this](https://learnjava.co.in/how-to-create-a-spring-rest-application-via-maven-and-eclipse) blog post in order to see how to create a simple REST service. Assume that we have a REST service as follows:
 
-```
+```java
 @RestController
 public class HelloWorldController {
   @RequestMapping("/hello")
@@ -79,7 +79,7 @@ public class HelloWorldController {
 
 Step 3 - Create a Java class as follows:
 
-```
+```java
 public class DemoClient {
   
   final static String ROOT_URI = "http://localhost:8080/SpringRestDemo/hello";
@@ -113,7 +113,10 @@ Response is Hello World
 
 ## Further Learning
 
-[Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
+- [Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) 
+- [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) 
+- [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) 
+- [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
 
 ## Conclusion
 
