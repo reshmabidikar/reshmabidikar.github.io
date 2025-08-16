@@ -15,13 +15,13 @@ In this article, I will be demonstrating how to create a REST application via Sp
 
 ## Create a Project and And Maven Support
 
-Step 1 - Follow the steps in [this](https://learnjava.co.in/how-to-create-a-maven-web-project-in-eclipse/) article to create a web project in Eclipse with Maven Support. You should see a project as follows:
+Step 1 - Follow the steps in [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) article to create a web project in Eclipse with Maven Support. You should see a project as follows:
 
-[![](images/project-205x300.png)](images/project.png)
+[![](images/spring-rest-application-maven-eclipse/project-205x300.png)](images/spring-rest-application-maven-eclipse/project.png)
 
 Step 2 - Add the Maven Dependencies for Spring to the pom file as follows:
 
-```
+```xml
 <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -77,7 +77,7 @@ Note that in addition to the Spring dependencies, you also need to add the Jacks
 
 Create a new file in WebContent/WEB-INF with the name as rest-servlet.xml. Add the following content:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -104,7 +104,7 @@ Create a new file in WebContent/WEB-INF with the name as rest-servlet.xml. Add t
 
 In the WebContent/WEB-INF/web.xml file, add the following content:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
   <display-name>SpringRestDemo</display-name>
@@ -134,7 +134,7 @@ In the WebContent/WEB-INF/web.xml file, add the following content:
 
 Create a new class in src called HelloWorldController. Add the following code:
 
-```
+```java
 package com.learnjava.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -159,21 +159,21 @@ public class HelloWorldController {
 
 Step 1 - Right Click on Project --> Run As --> Maven Build
 
-[![](../../spring-and-spring-boot/images/spring-mvc-hello-world/c1-300x298.png)](../../spring-and-spring-boot/images/spring-mvc-hello-world/c1.png)
+[![](images/spring-mvc-hello-world/c1-300x298.png)](images/spring-mvc-hello-world/c1.png)
 
 Step 2 - If prompted, enter the goals as Clean --> Install
 
-[![](../../spring-and-spring-boot/images/spring-mvc-hello-world/c2-300x248.png)](../../spring-and-spring-boot/images/spring-mvc-hello-world/c2.png)
+[![](images/spring-mvc-hello-world/c2-300x248.png)](images/spring-mvc-hello-world/c2.png)
 
 This will display a build success message as follows:
 
-[![](../../spring-and-spring-boot/images/spring-mvc-hello-world/c3-300x110.png)](../../spring-and-spring-boot/images/spring-mvc-hello-world/c3.png)
+[![](images/spring-mvc-hello-world/c3-300x110.png)](images/spring-mvc-hello-world/c3.png)
 
 ## Deploy
 
-Step 1 - Setup Tomcat in Eclipse if nor already setup. Refer to [this](https://learnjava.co.in/how-to-setup-tomcat-in-eclipse/) blog post for detailed steps
+Step 1 - Setup Tomcat in Eclipse if nor already setup. Refer to [this](https://reshmabidikar.github.io/2019/05/how-to-setup-tomcat-in-eclipse.html) blog post for detailed steps
 
-Step 2 - Deploy your application to Tomcat. Refer to [this](https://learnjava.co.in/how-to-deploy-an-application-on-tomcat-server-in-eclipse/) blog post for detailed steps.
+Step 2 - Deploy your application to Tomcat. Refer to [this](https://reshmabidikar.github.io/2019/07/how-to-deploy-an-application-on-tomcat-server-in-eclipse.html) blog post for detailed steps.
 
 ## Test
 
@@ -185,7 +185,7 @@ http://localhost:8080/SpringRestDemo/hello
 
 This will display the following:
 
-[![](../../spring-and-spring-boot/images/spring-mvc-hello-world/t1-1-300x264.png)](../../spring-and-spring-boot/images/spring-mvc-hello-world/t1-1.png)
+[![](images/spring-mvc-hello-world/t1-1-300x264.png)](images/spring-mvc-hello-world/t1-1.png)
 
 ### Testing Via Postman
 
@@ -198,12 +198,15 @@ Start Postman. Click on "GET" request. Create a new Request.
 3. Click on "Send".
 4. This will show the "JSON" response sent by the server in the body below as follows
 
-[![](images/p3-300x156.png)](images/p3.png)
+[![](../2019/06/images/p3-300x156.png)](../2019/06/images/p3.png)
 You can download the source code for this project via the Github repository [here](https://github.com/learnjavawithreshma/SpringRestDemo).
 
 ## Further Learning
 
-[Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
+- [Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) 
+- [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) 
+- [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) 
+- [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
 
 ## Conclusion
 

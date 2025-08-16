@@ -220,7 +220,7 @@
 * [Spring ExceptionHandler annotation explained](spring-and-spring-boot/spring-exceptionhandler-annotation-explained.md)
 * [Spring RequestMapping,GetMapping, PostMapping Annotations](spring-and-spring-boot/spring-requestmapping-getmapping-and-postmapping-annotations.md)
 * [Important Spring MVC Annotations](spring-and-spring-boot/important-spring-mvc-annotations.md)
-* [How to Create a Spring REST Application](2019/06/how-to-create-a-spring-rest-application-via-maven-and-eclipse.md)
+* [How to Create a Spring REST Application](spring-and-spring-boot/how-to-create-a-spring-rest-application-via-maven-and-eclipse.md)
 * [Controller vs RestController in Spring](2019/06/controller-vs-restcontroller-annotation-in-spring.md)
 * [How to create a HelloWorld Spring MVC Application](spring-and-spring-boot/how-to-create-helloworld-spring-mvc-web-application-using-maven-and-eclipse.md)
 * [How to create a SpringBoot REST Service and test it via Postman](spring-and-spring-boot/how-to-create-springboot-rest-service-and-test-it-via-postman.md)
