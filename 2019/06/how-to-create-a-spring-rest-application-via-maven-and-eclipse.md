@@ -159,15 +159,15 @@ public class HelloWorldController {
 
 Step 1 - Right Click on Project --> Run As --> Maven Build
 
-[![](images/c1-300x298.png)](images/c1.png)
+[![](../../spring-and-spring-boot/images/spring-mvc-hello-world/c1-300x298.png)](../../spring-and-spring-boot/images/spring-mvc-hello-world/c1.png)
 
 Step 2 - If prompted, enter the goals as Clean --> Install
 
-[![](images/c2-300x248.png)](images/c2.png)
+[![](../../spring-and-spring-boot/images/spring-mvc-hello-world/c2-300x248.png)](../../spring-and-spring-boot/images/spring-mvc-hello-world/c2.png)
 
 This will display a build success message as follows:
 
-[![](images/c3-300x110.png)](images/c3.png)
+[![](../../spring-and-spring-boot/images/spring-mvc-hello-world/c3-300x110.png)](../../spring-and-spring-boot/images/spring-mvc-hello-world/c3.png)
 
 ## Deploy
 
@@ -185,7 +185,7 @@ http://localhost:8080/SpringRestDemo/hello
 
 This will display the following:
 
-[![](images/t1-1-300x264.png)](images/t1-1.png)
+[![](../../spring-and-spring-boot/images/spring-mvc-hello-world/t1-1-300x264.png)](../../spring-and-spring-boot/images/spring-mvc-hello-world/t1-1.png)
 
 ### Testing Via Postman
 

@@ -13,13 +13,13 @@ In this blog post, I will be explaining how you can create a Spring MVC web appl
 
 # Create a Project and And Maven Support
 
-Step 1 - Follow the steps in [this](https://learnjava.co.in/how-to-create-a-maven-web-project-in-eclipse/) article to create a web project in Eclipse with Maven Support. You should see a project as follows:
+Step 1 - Follow the steps in [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) article to create a web project in Eclipse with Maven Support. You should see a project as follows:
 
-[![](images/project-1-171x300.png)](images/project-1.png)
+[![](images/spring-mvc-hello-world/project-1-171x300.png)](images/spring-mvc-hello-world/project-1.png)
 
 Step 2 - Add the Maven Dependencies for Spring to the pom file as follows:
 
-```
+```xml
 <dependencies>
   <dependency>
     <groupId>org.springframework</groupId>
@@ -71,19 +71,19 @@ Step 2 - Add the Maven Dependencies for Spring to the pom file as follows:
 
 Step 1 - Right-click on WebContent/WEB-INF -->New --> File
 
-[![](images/c1-255x300.png)](images/c1.png)
+[![](images/spring-mvc-hello-world/c1-255x300.png)](images/spring-mvc-hello-world/c1.png)
 
 Step 2 - Type some name. The name should be of the format <name>-servlet.xml. Here, I have used learnjava-servlet.xml
 
-[![](images/c2-300x157.png)](images/c2.png)
+[![](images/spring-mvc-hello-world/c2-300x157.png)](images/spring-mvc-hello-world/c2.png)
 
 Step 3 - Click "Finish". This will create a file as follows:
 
-[![](images/c3-248x300.png)](images/c3.png)
+[![](images/spring-mvc-hello-world/c3-248x300.png)](images/spring-mvc-hello-world/c3.png)
 
 Step 4 - Enter the following text and save:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -115,11 +115,11 @@ Step 4 - Enter the following text and save:
 
 # Modify web.xml
 
-Step 1 - Create web.xml (if it does not exist). Refer to [this](https://learnjava.co.in/how-to-create-a-maven-web-project-in-eclipse/) article
+Step 1 - Create web.xml (if it does not exist). Refer to [this](https://reshmabidikar.github.io/2019/06/how-to-create-a-maven-web-project-in-eclipse.html) article
 
 Step 2 - Update web.xml to include the Spring MVC Configuration. So add the following:
 
-```
+```xml
 <servlet>
       <servlet-name>learnjava</servlet-name>
       <servlet-class>
@@ -136,11 +136,11 @@ Step 2 - Update web.xml to include the Spring MVC Configuration. So add the foll
 
 Step 1 - Create a new controller class in src folder as follows:
 
-[![](images/o1-300x188.png)](images/o1.png)
+[![](images/spring-mvc-hello-world/o1-300x188.png)](images/spring-mvc-hello-world/o1.png)
 
 Step 2 - Add the following code:
 
-```
+```java
 package com.learnjava.controller;
 
 import org.springframework.stereotype.Controller;
@@ -165,19 +165,19 @@ public class HelloWorldController {
 
 Step 3 - Create the WEB-INF/jsp folder as follows:
 
-[![](images/o2-300x225.png)](images/o2.png)
+[![](images/spring-mvc-hello-world/o2-300x225.png)](images/spring-mvc-hello-world/o2.png)
 
 Step 3 - Enter folder name as "jsp"
 
-![](images/o3-300x219.png)
+![](images/spring-mvc-hello-world/o3-300x219.png)
 
 Step 4 - Create hello.jsp
 
-[![](images/o5-300x214.png)](images/o5.png)
+[![](images/spring-mvc-hello-world/o5-300x214.png)](images/spring-mvc-hello-world/o5.png)
 
 Step 5 - Add the following code:
 
-```
+```html
 <html>
 <head>LearnJava SpringMVC Example</title>
 
@@ -200,46 +200,49 @@ Step 5 - Add the following code:
 
 Step 1 - Right Click on Project --> Run As --> Maven Build
 
-[![](images/b1-300x277.png)](images/b1.png)
+[![](images/spring-mvc-hello-world/b1-300x277.png)](images/spring-mvc-hello-world/b1.png)
 
 Step 2 - If prompted, enter the goals as Clean --> Install
 
-[![](images/b2-300x170.png)](images/b2.png)
+[![](images/spring-mvc-hello-world/b2-300x170.png)](images/spring-mvc-hello-world/b2.png)
 
 This will display a build success message as follows:
 
-[![](images/b3-300x80.png)](images/b3.png)
+[![](images/spring-mvc-hello-world/b3-300x80.png)](images/spring-mvc-hello-world/b3.png)
 
 # Test
 
-You will need to have Tomcat setup in Eclipse. If you do not have Tomcat set up, refer to [this](https://learnjava.co.in/how-to-setup-tomcat-in-eclipse/) blog post.
+You will need to have Tomcat setup in Eclipse. If you do not have Tomcat set up, refer to [this](https://reshmabidikar.github.io/2019/05/how-to-setup-tomcat-in-eclipse.html) blog post.
 
 Step 1 - Right click on "Tomcat Server" at the bottom and click Add/Remove:
 
-[![](images/t1-300x213.png)](images/t1.png)
+[![](images/spring-mvc-hello-world/t1-300x213.png)](images/spring-mvc-hello-world/t1.png)
 
 Step 2 - Select SpringMVCJSPDemo project and click "Add":
 
-[![](images/t2-300x215.png)](images/t2.png)
+[![](images/spring-mvc-hello-world/t2-300x215.png)](images/spring-mvc-hello-world/t2.png)
 
 Step 3 - Click on Finish.
 
-[![](images/t3-300x205.png)](images/t3.png)
+[![](images/spring-mvc-hello-world/t3-300x205.png)](images/spring-mvc-hello-world/t3.png)
 
 Step 4 - Right click on "Tomcat" and click on "Start"
 
-[![](images/t4-300x188.png)](images/t4.png)
+[![](images/spring-mvc-hello-world/t4-300x188.png)](images/spring-mvc-hello-world/t4.png)
 
 If the server starts successfully, you should see a message similar to the following in the console:
 
-[![](images/t5-300x86.png)](images/t5.png)
+[![](images/spring-mvc-hello-world/t5-300x86.png)](images/spring-mvc-hello-world/t5.png)
 
 Step 5 - Open a browser and type http://localhost:8080/SpringMVCJSPDemo/hello. This will display the following:
 
-[![](images/t6-300x125.png)](images/t6.png)
+[![](images/spring-mvc-hello-world/t6-300x125.png)](images/spring-mvc-hello-world/t6.png)
 
 You can download the complete source code from the Github repository [here](https://github.com/learnjavawithreshma/SpringMVCJSPDemo).
 
 ## Further Learning
 
-[Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)
+- [Spring MasterClass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjava-spring-framework-masterclass%2F) 
+- [Spring Tutorial For Beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-tutorial-for-beginners%2F) 
+- [Step by Step Spring MVC Tutorial](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-mvc-tutorial-for-beginners-step-by-step%2F) 
+- [Spring Framework in Easy Steps](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspringframeworkineasysteps%2F)

@@ -222,7 +222,7 @@
 * [Important Spring MVC Annotations](spring-and-spring-boot/important-spring-mvc-annotations.md)
 * [How to Create a Spring REST Application](2019/06/how-to-create-a-spring-rest-application-via-maven-and-eclipse.md)
 * [Controller vs RestController in Spring](2019/06/controller-vs-restcontroller-annotation-in-spring.md)
-* [How to create a HelloWorld Spring MVC Application](2019/06/how-to-create-helloworld-spring-mvc-web-application-using-maven-and-eclipse.md)
+* [How to create a HelloWorld Spring MVC Application](spring-and-spring-boot/how-to-create-helloworld-spring-mvc-web-application-using-maven-and-eclipse.md)
 * [How to create a SpringBoot REST Service and test it via Postman](2019/05/how-to-create-springboot-rest-service-and-test-it-via-postman.md)
 * [SpringBoot JPA Example](spring-and-spring-boot/springboot-jpa-example-with-eclipse-and-maven.md)
 * [SpringBoot What and Why](spring-and-spring-boot/springboot-what-and-why.md)
