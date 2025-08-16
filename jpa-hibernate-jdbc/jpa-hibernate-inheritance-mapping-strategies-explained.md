@@ -15,10 +15,10 @@ JPA/Hibernate support 4 inheritance strategies, **Single Table**, **Joined**, **
 
 Consider the following class diagram:
 
-\[caption id="attachment\_2022" align="alignnone" width="300"\][![Inheritance_strategies_class_diagram](images/Inheritance_strategies_class_diagram-300x222.png)](images/Inheritance_strategies_class_diagram.png) Inheritance\_strategies\_class\_diagram\[/caption\]
+[![Inheritance_strategies_class_diagram](images/inheritance-mapping-strategies/Inheritance_strategies_class_diagram-300x222.png)](images/inheritance-mapping-strategies/Inheritance_strategies_class_diagram.png) 
 
 
-Here _Person_ is a super class. It has two sub-classes, _Employee_ and _Customer_. Let us see how each of these strategies work for the above class hierarchy.
+Here _Person_ is a super class. It has two subclasses, _Employee_ and _Customer_. Let us see how each of these strategies work for the above class hierarchy.
 
 ## Single Table
 
@@ -30,7 +30,7 @@ In addition, JPA adds an additional column to the table. This is known as the **
 
 So for the class structure above, JPA creates the following table:
 
-[![/Inheritancemapping-SingleTable](images/Inheritancemapping-SingleTable-300x85.png)](images/Inheritancemapping-SingleTable.png)
+[![/Inheritancemapping-SingleTable](images/inheritance-mapping-strategies/Inheritancemapping-SingleTable-300x85.png)](images/inheritance-mapping-strategies/Inheritancemapping-SingleTable.png)
 
 ## Joined
 
@@ -42,7 +42,7 @@ For a base class record, JPA stores all the data in the base class table. For a 
 
 So for the class structure above, JPA creates the following table structure:
 
-[![Inheritancemapping-Joined](images/Inheritancemapping-Joined-269x300.png)](images/Inheritancemapping-Joined.png)
+[![Inheritancemapping-Joined](images/inheritance-mapping-strategies/Inheritancemapping-Joined-269x300.png)](images/inheritance-mapping-strategies/Inheritancemapping-Joined.png)
 
 ## Table Per Sub-Class
 
@@ -56,7 +56,7 @@ For any entity, JPA stores data in the corresponding table.
 
 So for the class structure above, JPA creates the following table structure:
 
-[![Inheritancemapping-TablePerClass](images/Inheritancemapping-TablePerClass-300x204.png)](images/Inheritancemapping-TablePerClass.png)
+[![Inheritancemapping-TablePerClass](images/inheritance-mapping-strategies/Inheritancemapping-TablePerClass-300x204.png)](images/inheritance-mapping-strategies/Inheritancemapping-TablePerClass.png)
 
 ## MappedSuperClass
 
@@ -68,13 +68,15 @@ The _Employee_ table has fields corresponding to _name_, _emailId,_ _department_
 
 So for the class structure above, JPA creates the following table structure:
 
-[![Inheritancemapping-MappedSuperClass](images/Inheritancemapping-MappedSuperClass-300x133.png)](images/Inheritancemapping-MappedSuperClass.png)
+[![Inheritancemapping-MappedSuperClass](images/inheritance-mapping-strategies/Inheritancemapping-MappedSuperClass-300x133.png)](images/inheritance-mapping-strategies/Inheritancemapping-MappedSuperClass.png)
 
 I will be demonstrating how to implement each of these strategies in subsequent articles.
 
 ## Further Learning
 
-[Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
+- [Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) 
+- [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) 
+- [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
 
 ## Conclusion
 

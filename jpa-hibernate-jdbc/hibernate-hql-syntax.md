@@ -11,7 +11,7 @@ HQL stands for Hibernate Query language. It is similar to SQL, but instead of th
 
 The from clause consists of the from keyword followed by an entity name. It specifies the entity from which Hibernate needs to retrieve data. So if we have a Person entity, we can specify the from clause as follows:
 
-```
+```java
 String queryStr = "from Person";
 Query<Person> query = session.createQuery(queryStr);
 List<Person> books = query.getResultList();
@@ -24,7 +24,7 @@ The select clause can also be used to retrieve data from the database. The selec
 
 The following code demonstrates this:
 
-```
+```java
 String queryStr = "select name from Person";
 Query<String> query = session.createQuery(queryStr);
 List<String> names = query.getResultList();
@@ -37,7 +37,7 @@ Hibernate allows us to assign a name to a class in a query using the “AS” cl
 
 The following code demonstrates this:
 
-```
+```java
 String queryStr = "from Person as person"; 
 Query<Person> query = session.createQuery(queryStr);
 List<Person> books = query.getResultList();
@@ -50,7 +50,7 @@ The where clause is used to limit the results obtained in a query. It can be use
 
 The following code demonstrates this:
 
-```
+```java
 String queryStr = " from Person where age > 21
 Query<Person> query = session.createQuery(queryStr);
 List<Person> books = query.getResultList();
@@ -63,7 +63,7 @@ The Order by clause is used to sort the results obtained from a query. You can o
 
 The following code demonstrates this:
 
-```
+```java
 String queryStr = "from Person order by age";
 Query<Person> query = session.createQuery(queryStr);
 List<Person> books =query.getResultList();
@@ -71,7 +71,9 @@ List<Person> books =query.getResultList();
 
 ## Further Learning
 
-[Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
+- [Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) 
+- [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) 
+- [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
 
 ## Conclusion
 
