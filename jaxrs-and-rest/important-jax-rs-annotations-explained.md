@@ -14,7 +14,7 @@ In this article, I will be explaining some important annotations in JAX-RS
 
 # What is JAX-RS
 
-JAX-RS is a Java API that you can use for building a REST service. JAX-RS stands for Java API for RESTful Web Services (JAX-RS). It is part of the Java EE since Java 6. The latest version of JAX-RS is JAX-RS 2.0 and is part of Java EE 7. JAX-RS is just an API; it has some annotations that you can use to build a REST application.  JAX-RS does not include an implementation. Jersey framework is the reference implementation of JAX-RS specification and implements JAX-RS 2.0. There are other implementations of JAX-RS like RESTEasy, etc.
+JAX-RS is a Java API that you can use for building a REST service. JAX-RS stands for Java API for RESTful Web Services (JAX-RS). It is part of the Java EE since Java 6. The latest version of JAX-RS is JAX-RS 2.0 and is part of Java EE 7. JAX-RS is just an API; it has some annotations that you can use to build a REST application. JAX-RS does not include an implementation. Jersey framework is the reference implementation of JAX-RS specification and implements JAX-RS 2.0. There are other implementations of JAX-RS like RESTEasy, etc.
 
 # Important JAX-RS annotations
 

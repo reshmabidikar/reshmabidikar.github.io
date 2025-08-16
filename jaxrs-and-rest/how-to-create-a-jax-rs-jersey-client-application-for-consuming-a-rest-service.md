@@ -19,25 +19,25 @@ JAX-RS is the Java specification for Restful web services. It is just a specific
 
 ## Project creation and configuration
 
-Step 1 - Create a new Java Project in Eclipse (Refer to [this](https://learnjava.co.in/creating-a-basic-java-project-in-eclipse/) blog post). You should see a project as follows:
+Step 1 - Create a new Java Project in Eclipse (Refer to [this](https://reshmabidikar.github.io/2018/10/creating-a-basic-java-project-in-eclipse.html) blog post). You should see a project as follows:
 
-![](images/1-276x300.png)
+![](images/rest-service-with-jax-rs-and-eclipse/1-276x300.png)
 
 Step 2 - Convert to a Maven project.
 
 Step 2a - Right Click on Project --> Configure --> Convert to Maven Project
 
-![](images/2-300x275.png)
+![](images/rest-service-with-jax-rs-and-eclipse/2-300x275.png)
 
 Step 2b - Click on finish
 
-![](images/3-300x228.png)
+![](images/jaxrs-jersey-client/3-300x228.png)
 
 Step 3 - Add Maven dependencies to POM file.
 
 Add the following:
 
-```
+```xml
   <dependencies>
    <dependency>
     <groupId>javax.ws.rs</groupId>
@@ -54,13 +54,13 @@ Add the following:
 
 So your POM file will look as follows:
 
-![](images/4-300x257.png)
+![](images/jaxrs-jersey-client/4-300x257.png)
 
 ## Write Code
 
 Create a new Java class and write the following code:
 
-```
+```java
 public class JaxRsClientDemo {
   
   static String URI = "http://localhost:8080/RestJAXRSJerseyDemo/learnjava/myservice";
@@ -77,10 +77,10 @@ public class JaxRsClientDemo {
 
 ## Test code
 
-Step 1 - Ensure that a REST service is running. Refer to [this](https://learnjava.co.in/how-to-create-a-rest-service-in-java-using-jax-rs-and-eclipse/) blog post.
+Step 1 - Ensure that a REST service is running. Refer to [this](how-to-create-a-rest-service-in-java-using-jax-rs-and-eclipse.md) blog post.
 
 Step 2 - Run the JaxRsClientDemo as a java program. This will produce the following output on the console:
 
-![](images/5-300x135.png)
+![](images/jaxrs-jersey-client/5-300x135.png)
 
 You can download the source code for this at the GitHub repository [here](https://github.com/learnjavawithreshma/JerseyClientDemo).

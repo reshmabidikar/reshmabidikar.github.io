@@ -13,13 +13,13 @@ In this article, I will be demonstrating creating a REST service in Java using J
 
 ## Create a Project and And Maven Support
 
-Step 1 – Follow the steps in [this](https://learnjava.co.in/how-to-create-a-maven-web-project-in-eclipse/) article to create a web project in Eclipse with Maven Support. You should see a project as follows:
+Step 1 – Follow the steps in [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) article to create a web project in Eclipse with Maven Support. You should see a project as follows:
 
-[![](images/1-234x300.png)](images/1.png)
+[![](images/rest-service-with-jax-rs-and-eclipse/1-234x300.png)](images/rest-service-with-jax-rs-and-eclipse/1.png)
 
 Step 2 - Add Maven dependencies for JAX-RS and Jersey as follows:
 
-```
+```xml
 <dependency>
       <groupId>asm</groupId>
       <artifactId>asm</artifactId>
@@ -50,7 +50,7 @@ Step 2 - Add Maven dependencies for JAX-RS and Jersey as follows:
 
 In the WebContent/WEB-INF/web.xml file, add the following content:
 
-```
+```xml
 <servlet>
    <servlet-name>LearnJava JAX-RS Jersey Application</servlet-name>
    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
@@ -66,7 +66,7 @@ In the WebContent/WEB-INF/web.xml file, add the following content:
 
 Create a new class in src called HelloWorldService as follows:
 
-```
+```java
 @Path("/hello")
 public class HelloWorldService {
   
@@ -86,9 +86,9 @@ Step 2 – If prompted, enter the goals as Clean Install
 
 ## Deploy
 
-Step 1 - Setup Tomcat in Eclipse if nor already setup. Refer to [this](https://learnjava.co.in/how-to-setup-tomcat-in-eclipse/) blog post for detailed steps
+Step 1 - Setup Tomcat in Eclipse if nor already setup. Refer to [this](https://reshmabidikar.github.io/2019/05/how-to-setup-tomcat-in-eclipse.html) blog post for detailed steps
 
-Step 2 - Deploy your application to Tomcat. Refer to [this](https://learnjava.co.in/how-to-deploy-an-application-on-tomcat-server-in-eclipse/) blog post for detailed steps.
+Step 2 - Deploy your application to Tomcat. Refer to [this](https://reshmabidikar.github.io/2019/07/how-to-deploy-an-application-on-tomcat-server-in-eclipse.html) blog post for detailed steps.
 
 ## Test
 
@@ -100,7 +100,7 @@ http://localhost:8080/LearnJavaRestJAXRSJerseyDemo/learnjava/hello
 
 This will display the following page:
 
-[![](images/2-300x92.png)](images/2.png)
+[![](images/rest-service-with-jax-rs-and-eclipse/2-300x92.png)](images/rest-service-with-jax-rs-and-eclipse/2.png)
 
 ## Conclusion
 

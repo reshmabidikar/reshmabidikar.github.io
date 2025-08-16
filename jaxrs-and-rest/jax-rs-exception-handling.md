@@ -15,7 +15,7 @@ There are several ways to perform exception handling in a JAX-RS application. In
 
 One way to perform exception handling in a JAX-RS application is using a custom exception mapper. The following code demonstrates a custom exception mapper:
 
-```
+```java
 @Provider
 
 public class MyExceptionMapper implements ExceptionMapper<MyException>{

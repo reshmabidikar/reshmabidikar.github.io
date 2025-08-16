@@ -229,13 +229,13 @@
 
 
 ## Jax-rs and REST
-* [What is REST API](2019/05/what-is-rest-api.md)
-* [JSON Syntax and Benefits](2019/05/json-syntax-and-benefits.md)
-* [Jax-rs Exception Handling](2019/12/jax-rs-exception-handling.md)
-* [Jax-rs v/s Spring Rest](2019/10/jax-rs-vs-spring-rest.md)
-* [Important Jax-rs annotations explained](2019/09/important-jax-rs-annotations-explained.md)
-* [How to create a REST Service in Java using JAX-RS](2019/07/how-to-create-a-rest-service-in-java-using-jax-rs-and-eclipse.md)
-* [How to create a JAX-RS Jersey Client](2019/07/how-to-create-a-jax-rs-jersey-client-application-for-consuming-a-rest-service.md)
+* [What is REST API](jaxrs-and-rest/what-is-rest-api.md)
+* [JSON Syntax and Benefits](jaxrs-and-rest/json-syntax-and-benefits.md)
+* [Jax-rs Exception Handling](jaxrs-and-rest/jax-rs-exception-handling.md)
+* [Jax-rs v/s Spring Rest](jaxrs-and-rest/jax-rs-vs-spring-rest.md)
+* [Important Jax-rs annotations explained](jaxrs-and-rest/important-jax-rs-annotations-explained.md)
+* [How to create a REST Service in Java using JAX-RS](jaxrs-and-rest/how-to-create-a-rest-service-in-java-using-jax-rs-and-eclipse.md)
+* [How to create a JAX-RS Jersey Client](jaxrs-and-rest/how-to-create-a-jax-rs-jersey-client-application-for-consuming-a-rest-service.md)
 
 ## Maven, Tomcat and Eclipse
 * [How to setup Tomcat in Eclipse](2019/05/how-to-setup-tomcat-in-eclipse.md)

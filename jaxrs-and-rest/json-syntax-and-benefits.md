@@ -15,7 +15,7 @@ JSON stands for JavaScript Object Notation. It is a lightweight transfer protoco
 
 Prior to JSON, XML was used to transfer data between web services. The downside of using XML is that it is very verbose. For example, suppose you have a Person class as follows:
 
-```
+```java
 public class Person { 
 
 private String firstName; 
@@ -28,7 +28,7 @@ private int age;
 
 And suppose we create a Person list with 3 Person objects as follows:
 
-```
+```java
 List<Person> personList = new ArrayList<Person>(); 
 personList.add(new Person("Mickey","Mouse",35)); 
 personList.add(new Person("Donald","Duck",30)); 
@@ -37,7 +37,7 @@ personList.add(new Person("Peppa","Pig",10));
 
 In order to send this data via XML we will need to create an XML file as follows:
 
-```
+```xml
 <personlist> 
 <person> 
 <firstname>Mickey</firstname> 
@@ -65,7 +65,7 @@ So basically we need to do the following:
 
 The same information can be represented in JSON as follows:
 
-```
+```json
 { "personList":
 [ {"firstName":"Mickey", "lastName":"Mouse","age":"35"}, 
 {"firstName":"Donald", "lastName":"Duck","age":"30"}, 

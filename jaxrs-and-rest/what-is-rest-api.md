@@ -35,7 +35,7 @@ A RESTFul service is also independent of technology. So a REST service can be im
 
 The following diagram explains the REST architecture:
 
-[![](images/REST-300x206.jpg)](images/REST.jpg)
+[![](images/what-is-rest/REST-300x206.jpg)](images/what-is-rest/REST.jpg)
 
 # How to implement a RESTful service in Java
 
@@ -49,12 +49,12 @@ So if you want to create a RESTful service, you need to create a web application
 
 You then need to write the code for your RESTful service endpoint. Finally, you need to deploy your application as in your server. The client can then access the URL of the RESTful service.
 
-Refer to [this](https://learnjava.co.in/how-to-create-a-rest-service-in-java-using-jax-rs-and-eclipse/) post to see an example of how to create a REST service using JAX-RS and Jersey
+Refer to [this](how-to-create-a-rest-service-in-java-using-jax-rs-and-eclipse.md) post to see an example of how to create a REST service using JAX-RS and Jersey
 
 ## Spring
 
 Spring Framework also provides REST capabilities. It is not a JAX-RS implementation, but it is a Spring alternative to JAX-RS. The annotations provided by JAX-RS and Spring are also slightly different. Again, you need to create a Web application using Spring and write the code for your REST service.
 
-Refer to [this](https://learnjava.co.in/how-to-create-springboot-rest-service-and-test-it-via-postman/) post to see an example of how to create a SpringBoot REST service and test it via Postman.
+Refer to [this](../spring-and-spring-boot/how-to-create-springboot-rest-service-and-test-it-via-postman.md) post to see an example of how to create a SpringBoot REST service and test it via Postman.
 
-Refer to [this](https://learnjava.co.in/how-to-create-a-spring-rest-application-via-maven-and-eclipse/) post to see an example of how to create a Spring REST service and test it via Postman.
+Refer to [this](../spring-and-spring-boot/how-to-create-a-spring-rest-application-via-maven-and-eclipse.md) post to see an example of how to create a Spring REST service and test it via Postman.
