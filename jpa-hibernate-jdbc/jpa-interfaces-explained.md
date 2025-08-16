@@ -6,13 +6,13 @@ categories:
 coverImage: "database-scaled.jpg"
 ---
 
-In my [earlier](https://learnjava.co.in/how-to-create-a-standalone-jpa-application/) article, we had learnt how to create a basic JPA application. In this article, I will be explaining the important JPA interfaces.
+In my [earlier](how-to-create-a-standalone-jpa-application.md) article, we had learnt how to create a basic JPA application. In this article, I will be explaining the important JPA interfaces.
 
 ## Persistence Unit
 
-As seen [earlier](https://learnjava.co.in/how-to-create-a-standalone-jpa-application/#Creating_Configuration_File), we need to create a configuration file called **persistence.xml** that contains the database configuration details as follows:
+As seen [earlier](how-to-create-a-standalone-jpa-application.md#Creating_Configuration_File), we need to create a configuration file called **persistence.xml** that contains the database configuration details as follows:
 
-```
+```xml
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
@@ -40,7 +40,7 @@ The **persistence.xml** file specifies a **persistence unit**. A **persistence u
 
 An Entity is a simple POJO class that corresponds to a database table. It needs to have fields corresponding to the database table columns. [Earlier](https://learnjava.co.in/how-to-create-a-standalone-jpa-application/#Creating_POJO_class), we had created a **Fruit** entity class as follows:
 
-```
+```java
 @Entity
 public class Fruit {
  @Id
@@ -53,13 +53,13 @@ public class Fruit {
 }
 ```
 
-The **Fruit** class has the **@Entity** annotation. This designates the **Fruit** class as a JPA entity. So, this class corresponds to a **Fruit** table having columns corresponding to **name**, **colour** and **calories**.  Each object of the **Fruit** class corresponds to a record in the **Fruit** table.
+The **Fruit** class has the **@Entity** annotation. This designates the **Fruit** class as a JPA entity. So, this class corresponds to a **Fruit** table having columns corresponding to **name**, **colour** and **calories**. Each object of the **Fruit** class corresponds to a record in the **Fruit** table.
 
 ## JPA Interfaces
 
-Just to [recap](https://learnjava.co.in/how-to-create-a-standalone-jpa-application/#Writing_JPA_Code), we had written the following JPA Code:
+Just to [recap](how-to-create-a-standalone-jpa-application#Writing_JPA_Code), we had written the following JPA Code:
 
-```
+```java
 @Test
  public void testSave() {
   EntityManagerFactory emf = Persistence.createEntityManagerFactory("PERSISTENCE");
@@ -108,7 +108,9 @@ Query is also an in-built JPA interface. It can be created via an **EntityManage
 
 ## Further Learning
 
-[Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
+- [Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) 
+- [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) 
+- [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
 
 ## Conclusion
 

@@ -6,7 +6,7 @@ categories:
 coverImage: "database-scaled.jpg"
 ---
 
-In this article, I will be explaining how to create a standalone JPA application. that saves data to a database table and queries a table. JPA stands for the Java Persistence API. In order to know more about JPA and how it works, you can refer to [this](https://learnjava.co.in/introduction-to-jpa-the-why-what-and-how-of-jpa/) article.
+In this article, I will be explaining how to create a standalone JPA application. that saves data to a database table and queries a table. JPA stands for the Java Persistence API. In order to know more about JPA and how it works, you can refer to [this](introduction-to-jpa-the-why-what-and-how-of-jpa,md) article.
 
 I will be using Hibernate as the JPA provider and MySQL database, however you can use any other JPA Provider/database.
 
@@ -18,7 +18,7 @@ The first step would be to download and install MySQL. You can download MySQL fr
 
 Next, you need to create a database table. You can execute the following SQL code to create the sample database table called **Fruit**.
 
-```
+```java
 create database jpademo;
 use jpademo;
 create table fruit ( id int auto_increment, name varchar(20), colour varchar(20), calories int , primary key (id) );
@@ -30,13 +30,13 @@ If you are using MySQL, then open MySQLWorkBench, open a new query tab and just 
 
 ### Creating Eclipse Project
 
-In this example, I will be using Eclipse and Maven.  So you will need to create a new Maven project in Eclipse. You can refer [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) post in order to understand how to create a Maven project in Eclipse. The advantage of using a dependency management tool like Maven is that it automatically downloads the necessary jar files for you, you just need to add the appropriate dependency in the Maven pom file.
+In this example, I will be using Eclipse and Maven. So you will need to create a new Maven project in Eclipse. You can refer [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) post in order to understand how to create a Maven project in Eclipse. The advantage of using a dependency management tool like Maven is that it automatically downloads the necessary jar files for you, you just need to add the appropriate dependency in the Maven pom file.
 
 ### Adding Maven Dependencies
 
-In order to create our JPA application, you need to add the following dependencies to the POM file (This includes the dependencies for the MySQL driver as well as Hibernate). I will also be using [JUNIT](https://learnjava.co.in/how-to-use-junit-to-unit-test-code/) to test the code, so the [JUNIT](https://learnjava.co.in/how-to-use-junit-to-unit-test-code/) dependency is also included:
+In order to create our JPA application, you need to add the following dependencies to the POM file (This includes the dependencies for the MySQL driver as well as Hibernate). I will also be using [JUNIT](../junit/how-to-use-junit-to-unit-test-code.md) to test the code, so the [JUNIT](../junit/how-to-use-junit-to-unit-test-code.md) dependency is also included:
 
-```
+```xml
  <dependencies>
 <dependency>
 <groupId>mysql</groupId>
@@ -58,9 +58,9 @@ In order to create our JPA application, you need to add the following dependenci
 
 ### Creating Configuration File
 
-JPA requires a configuration file with all the database connection information.  So, you need to create a META-INF folder in your **src/main/resources** folder. In this you need to create **persistence.xml** as follows:
+JPA requires a configuration file with all the database connection information. So, you need to create a META-INF folder in your **src/main/resources** folder. In this you need to create **persistence.xml** as follows:
 
-```
+```xml
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
@@ -89,11 +89,9 @@ So, as you can see that the **persistence.xml** file includes information like t
 
 ### Creating POJO class
 
-Just to recap my [earlier](https://learnjava.co.in/introduction-to-jpa-the-why-what-and-how-of-jpa/) article, JPA requires a POJO class. Since we have created a **Fruit** table, we need to create a class corresponding to it as follows:
+Just to recap my [earlier](introduction-to-jpa-the-why-what-and-how-of-jpa.md) article, JPA requires a POJO class. Since we have created a **Fruit** table, we need to create a class corresponding to it as follows:
 
- 
-
-```
+```java
 @Entity
 public class Fruit {
 
@@ -114,9 +112,9 @@ So, you can see that this is an ordinary Java class. It has fields corresponding
 
 ### Writing JPA Code
 
-I will be writing the JPA code within a [JUNIT](https://learnjava.co.in/how-to-use-junit-to-unit-test-code/) test case so that it is easy to test. First, you will need to create a new Test class within the **src/test/java** folder. Within this class, you can write the following code:
+I will be writing the JPA code within a [JUNIT](junit/how-to-use-junit-to-unit-test-code.md) test case so that it is easy to test. First, you will need to create a new Test class within the **src/test/java** folder. Within this class, you can write the following code:
 
-```
+```java
 public class JPATest {
 
   @Test
@@ -158,7 +156,9 @@ You can download the complete source code for this application from my [Github r
 
 ## Further Learning
 
-[Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
+- [Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) 
+- [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) 
+- [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
 
 ## Conclusion
 

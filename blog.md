@@ -266,8 +266,8 @@
 
 ## JPA, Hibernate and JDBC
 
-* [JPA Interfaces Explained](2021/02/jpa-interfaces-explained.md)
-* [How to create a Standalone JPA Application](2020/12/how-to-create-a-standalone-jpa-application)
+* [JPA Interfaces Explained](jpa-hibernate-jdbc/jpa-interfaces-explained.md)
+* [How to create a Standalone JPA Application](jpa-hibernate-jdbc/how-to-create-a-standalone-jpa-application.md)
 * [Introduction to JPA](2020/09/introduction-to-jpa-the-why-what-and-how-of-jpa.md)
 * [Hibernate List Mapping](2020/06/hibernate-list-mapping.md)
 * [Hibernate Collection Mapping](2020/05/hibernate-collection-mapping.md)

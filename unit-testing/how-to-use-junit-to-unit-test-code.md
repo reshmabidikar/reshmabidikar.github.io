@@ -18,7 +18,7 @@ In this blog post, I will be explaining how you can run JUnit unit tests to test
 
 Consider the following code snippet:
 
-````
+````java
 package demo;
 
 public class MathDemo {
@@ -35,7 +35,7 @@ public class MathDemo {
 
 So this class has two methods, called **add** and **subtract**. The add method **adds** 2 numbers and returns the sum while the subtract methods returns the **difference** of the 2 input numbers. Now traditionally, if you want to test if this code works, you would write a main method like this:
 
-````
+````java
 public static void main(String args[]) { 
     MathDemo mathDemo = new MathDemo(); 
     int sum = mathDemo.add(5,4); 
@@ -53,7 +53,7 @@ There are a couple of ways to setup JUnit. You can [download](https://search.mav
 
 You can also set it up via Maven, you will need to add the following JUnit dependency to your pom file:
 
-````
+````xml
 <dependency> 
     <groupId>junit</groupId> 
     <artifactId>junit</artifactId> 
@@ -66,7 +66,7 @@ You can also set it up via Maven, you will need to add the following JUnit depen
 
 Consider the following JUnit code:
 
-````
+````java
 
 package demo;
 
@@ -115,7 +115,7 @@ In addition to these two methods, this class also has the following methods:
 
 If you are not using an IDE like Eclipse, you need to create a TestRunner code as follows to run the unit tests:
 
-````
+````java
 
 public class TestRunner {
 
@@ -138,7 +138,7 @@ true
 
 However, if we change the MathTest class as follows:
 
-````
+````java
 @Test public void testAdd() { 
     int result = mathDemo.add(5,3); 
     assertEquals(result,3); 
@@ -147,21 +147,21 @@ However, if we change the MathTest class as follows:
 
 If you run the **TestRunner** class now, the following output will be printed:
 
-```
+```java
 testAdd(demo.MathTest): expected:<8> but was:<3>
 false
 ```
 
 #### How to run JUnit tests in Eclipse?
 
-If you are using an IDE like Eclipse, you do not need the TestRunner class. You can directly right click on the test case class and run the JUnit test as follows:
+If you are using an IDE like Eclipse, you do not need the TestRunner class. You can directly right-click on the test case class and run the JUnit test as follows:
 
-[![](images/junit-274x300.png)](images/junit.png)
+[![](images/junit/junit-274x300.png)](images/junit/junit.png)
 
 This will print display a **JUnit console** as follows (In case the **tests** are **successful**):
 
-[![](images/junit2-300x214.png)](images/junit2.png)
+[![](images/junit/junit2-300x214.png)](images/junit/junit2.png)
 
 In case the tests **fail**, it will display a console as follows:
 
-[![](images/Junit3-300x212.png)](images/Junit3.png)
+[![](images/junit/Junit3-300x212.png)](images/junit/Junit3.png)
