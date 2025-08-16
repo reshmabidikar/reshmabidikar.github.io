@@ -213,7 +213,7 @@
 * [Spring Initializr Explained](spring-and-spring-boot/spring-initializr-explained.md)
 * [Spring Java Configuration Example](spring-and-spring-boot/spring-java-configuration-example.md)
 * [Spring XML Configuration Example](spring-and-spring-boot/spring-xml-configuration-example.md)
-* [Spring Framework What and Why](2019/12/spring-framework-what-and-why.md)
+* [Spring Framework What and Why](spring-and-spring-boot/spring-framework-what-and-why.md)
 * [Spring Modules Explained](2019/12/spring-modules-explained.md)
 * [Spring Exception Handling](2019/10/spring-exception-handling.md)
 * [Spring REST Client Using RestTemplate](2019/08/spring-rest-client-using-resttemplate-in-eclipse-and-maven.md)
