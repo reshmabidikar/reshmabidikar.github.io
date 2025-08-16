@@ -10,7 +10,7 @@ In this article, I will be explaining some of the important TestNG annotations.
 
 ## Introduction
 
-TestNG is a popular [unit testing](https://learnjava.co.in/unit-testing/) framework. It allows creating and running tests. Though largely inspired by JUNIT, it has many advanced features like generating HTML reports, running parametrized tests, and so on.
+TestNG is a popular [unit testing](https://reshmabidikar.github.io/blog.html#unit-testing) framework. It allows creating and running tests. Though largely inspired by JUNIT, it has many advanced features like generating HTML reports, running parametrized tests, and so on.
 
 One of the key features of TestNG is its ability to be configured via annotations. Annotations can be embedded within the TestNG code and help to control the flow of test execution.
 
@@ -75,7 +75,7 @@ Can be used to specify code that needs to be executed after executing a particul
 
 The following code demonstrates all the TestNG annotations:
 
-```
+```java
 public class Test1 {
   
   @BeforeSuite

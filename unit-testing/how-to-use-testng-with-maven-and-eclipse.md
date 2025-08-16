@@ -6,7 +6,7 @@ categories:
 coverImage: "learnjava-testng.jpg"
 ---
 
-Earlier, we had seen how to use [JUNIT](https://learnjava.co.in/how-to-use-junit-to-unit-test-code/) for unit testing. TestNG is another such unit testing framework. In this article, we will be learning how to use TestNG with Maven and Eclipse.
+Earlier, we had seen how to use [JUNIT](how-to-use-junit-to-unit-test-code.md) for unit testing. TestNG is another such unit testing framework. In this article, we will be learning how to use TestNG with Maven and Eclipse.
 
 ## TestNG Overview
 
@@ -14,13 +14,13 @@ TestNG is a very powerful unit testing framework. Not only does it allow creatin
 
 ## Project Creation and Setup
 
-**Step 1 – Create a new Maven Project**(Refer to[this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) blog post). This should create a project as shown below:
+**Step 1 – Create a new Maven Project**(Refer to[this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) blog post). This should create a project as shown below:
 
-[![](images/TestNG-Maven-Project-in-Eclipse-300x197.png)](images/TestNG-Maven-Project-in-Eclipse.png)
+[![](images/testng-maven-and-eclipse/TestNG-Maven-Project-in-Eclipse-300x197.png)](images/testng-maven-and-eclipse/TestNG-Maven-Project-in-Eclipse.png)
 
-**Step 2 – Add the TestNG dependencies** (You can refer to [this](https://learnjava.co.in/how-to-add-maven-dependencies-via-eclipse/) blog post). Alternatively, you can add the following to your **pom.xml** file:
+**Step 2 – Add the TestNG dependencies** (You can refer to [this](https://reshmabidikar.github.io/2019/01/how-to-add-maven-dependencies-via-eclipse.html) blog post). Alternatively, you can add the following to your **pom.xml** file:
 
-```
+```xml
 <dependency>
   <groupId>org.testng</groupId>
   <artifactId>testng</artifactId>
@@ -34,7 +34,7 @@ TestNG is a very powerful unit testing framework. Not only does it allow creatin
 
 **Step 3 - Write code to be tested.** Suppose, you have a class as follows:
 
-```
+```java
 public class Calculator {
   
   public int add(int num1,int num2) {
@@ -52,7 +52,7 @@ This is a simple Java class. It has two methods `add` and `subtract`.
 
 **Step 4: Write test class.** You can now create a Test class as follows:
 
-```
+```java
 public class CalculatorTest {
 
 @Test
@@ -81,21 +81,21 @@ We have now created a `CalculatorTest` class. The `testAdd` method tests the `Ca
 **Step 5: Executing the test.** You can execute the test in Eclipse by right-clicking on the test method/test class and clicking on **Run As -> TestNG** **Test** as shown below:
 
 
-[![](images/TestNG-Execute-Test-300x233.png)](images/TestNG-Execute-Test.png)
+[![](images/testng-maven-and-eclipse/TestNG-Execute-Test-300x233.png)](images/testng-maven-and-eclipse/TestNG-Execute-Test.png)
 
 A successful test displays the following output:
 
-[![](images/TestNG-Successful-Test-300x69.png)](images/TestNG-Successful-Test.png)
+[![](images/testng-maven-and-eclipse/TestNG-Successful-Test-300x69.png)](images/testng-maven-and-eclipse/TestNG-Successful-Test.png)
 
 A failed test displays the following output:
 
-[![](images/TestNG-Failed-Test-300x89.png)](images/TestNG-Failed-Test.png)
+[![](images/testng-maven-and-eclipse/TestNG-Failed-Test-300x89.png)](images/testng-maven-and-eclipse/TestNG-Failed-Test.png)
 
 ## Refactoring the code
 
 TestNG includes several other annotations that help to optimize the test code. For example, in the code above, both the `testAdd` and `testSubtract` methods create a `Calculator` object. For a simple example like this, it does not matter much. However, sometimes object creation can be an expensive operation and you would want to create only one instance of the object and use it in all the tests. TestNG supports a `@BeforeClass` annotation. When specified on a method, the method is executed only once before all the tests. So, the code above can be rewritten using the `@BeforeClass` annotation as follows:
 
-```
+```java
 public class CalculatorTest {
   
   private Calculator cal;

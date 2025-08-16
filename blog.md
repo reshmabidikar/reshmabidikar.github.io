@@ -290,8 +290,9 @@
 * [Difference between Get and Load in Hibernate](jpa-hibernate-jdbc/difference-between-get-and-load-in-hibernate.md)
 
 ## Unit Testing
-* [TestNG Annotation](2022/01/testng-annotations-explained-in-detail.md)
-* [How to use TestNG with Maven and Eclipse](2021/12/how-to-use-testng-with-maven-and-eclipse.md)
+* [TestNG Annotation](unit-testing/testng-annotations-explained-in-detail.md)
+* [How to use TestNG with Maven and Eclipse](unit-testing/how-to-use-testng-with-maven-and-eclipse.md)
+* [How to use JUNIT to unit test code](unit-testing/how-to-use-junit-to-unit-test-code.md)
 
 ## Swagger
 * [Introduction to Swagger](2020/02/introduction-to-swagger.md)
