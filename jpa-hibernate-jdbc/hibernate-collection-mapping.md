@@ -17,7 +17,7 @@ JPA provides an annotation called `@ElementCollection` in order to support colle
 
 ### Mapping a Primitive Type
 
-In order to map a collection having primitive type of data, you just need to specify the `@ElementCollection` annotation on the field corresponding to the collection. When you try to persist the main entity, Hibernate will automatically persist the collection along with the main entity.  Hibernate creates a new table that has the values in the Collection. You can use this approach to map a List, Set or Map. I will be providing a detailed code sample in a separate article
+In order to map a collection having primitive type of data, you just need to specify the `@ElementCollection` annotation on the field corresponding to the collection. When you try to persist the main entity, Hibernate will automatically persist the collection along with the main entity. Hibernate creates a new table that has the values in the Collection. You can use this approach to map a List, Set or Map. I will be providing a detailed code sample in a separate article
 
 ### Mapping an Object Type
 
@@ -33,7 +33,9 @@ Although collection mapping looks easy to use, it has some disadvantages. For on
 
 ## Further Learning
 
-[Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
+- [Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) 
+- [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) 
+- [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
 
 ## Conclusion
 

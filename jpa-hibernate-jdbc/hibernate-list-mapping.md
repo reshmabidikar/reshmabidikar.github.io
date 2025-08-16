@@ -5,7 +5,7 @@ categories:
   - "hibernate"
 ---
 
-In my [earlier](https://learnjava.co.in/hibernate-collection-mapping/) article, I gave an introduction to Hibernate Collection mapping. In this article, I will be covering how you can use this feature to map a List or Set to a database table.
+In my [earlier]hibernate-collection-mapping.md) article, I gave an introduction to Hibernate Collection mapping. In this article, I will be covering how you can use this feature to map a List or Set to a database table.
 
 ## When to use Collection Mapping
 
@@ -13,11 +13,11 @@ Sometimes, your entity may have a field which is a Collection of primitive types
 
 ## @ElementCollection annotation
 
-Just to recap my [earlier](https://learnjava.co.in/hibernate-collection-mapping/) article, Hibernate/JPA supports the @ElementCollection annotation. You need to specify this annotation on the Collection that you want to persist to the database.
+Just to recap my [earlier](hibernate-collection-mapping.md) article, Hibernate/JPA supports the @ElementCollection annotation. You need to specify this annotation on the Collection that you want to persist to the database.
 
 Consider the following `Student`class:
 
-```
+```java
 @Entity
 public class Student {
   
@@ -44,7 +44,7 @@ public class Student {
 
 Once the field in the entity is marked with the `@ElementCollection`annotation, you simply need to invoke the `save`method on the entity. This will cause a separate table to be created corresponding to the values in the Collection. The following code demonstrates this:
 
-```
+```java
 public class Main {
 
   public static void main(String args[]) {
@@ -69,13 +69,13 @@ public class Main {
 
 When you execute this code, it creates tables as follows:
 
-[![](images/CollectionMappingTable-1.png)](https://learnjava.co.in/wp-content/uploads/2020/06/CollectionMappingTable-1.png)
+[![](images/hibernate-list-mapping/CollectionMappingTable-1.png)](https://learnjava.co.in/wp-content/uploads/2020/06/CollectionMappingTable-1.png)
 
 ## CollectionTable
 
 You can customize the name of the table storing the Collection via the @CollectionTable annotation. You can also customize the name of the id column. The following code demonstrates this:
 
-```
+```java
 @Entity
 public class Student {
   
@@ -98,11 +98,13 @@ public class Student {
 
 So when you save a Student object, this code creates the following table:
 
-[![](images/CollectionMappingCollectionTable.png)](https://learnjava.co.in/wp-content/uploads/2020/06/CollectionMappingCollectionTable.png)
+[![](images/hibernate-list-mapping/CollectionMappingCollectionTable.png)](https://learnjava.co.in/wp-content/uploads/2020/06/CollectionMappingCollectionTable.png)
 
 ## Further Learning
 
-[Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
+- [Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) 
+- [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) 
+- [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
 
 ## Conclusion
 
