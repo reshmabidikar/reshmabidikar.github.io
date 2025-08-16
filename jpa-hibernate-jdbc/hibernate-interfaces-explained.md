@@ -11,8 +11,7 @@ In this blog post, I will be explaining some of the interfaces that are commonly
 
 Consider the following code that queries a table via Hibernate:
 
-````
-
+````java
 public class Main {
 
 public static void main(String[] args) { 
@@ -27,7 +26,6 @@ sessionFactory.close();
 }
 
 }
-
 ````
 
 # Configuration

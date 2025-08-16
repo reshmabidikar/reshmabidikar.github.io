@@ -9,7 +9,7 @@ tags:
   - "hibernate"
 ---
 
-[Hibernate](https://learnjava.co.in/hibernate/) supports associations that help you to model the relationship between database tables. In this article, I will be covering Hibernate association mappings.
+[Hibernate](https://reshmabidikar.github.io/blog.html#jpa-hibernate-and-jdbc) supports associations that help you to model the relationship between database tables. In this article, I will be covering Hibernate association mappings.
 
 ## Introduction
 

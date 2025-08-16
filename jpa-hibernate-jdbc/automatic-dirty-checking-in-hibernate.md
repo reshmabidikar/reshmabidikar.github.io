@@ -12,12 +12,12 @@ Hibernate provides as feature called Automatic Dirty checking whereby changes to
 
 ## Introduction
 
-Hibernate supports 3 entity states, transient, persistent and detached. In order to understand more about entity states, you can refer to [this](https://learnjava.co.in/hibernate-persistence-life-cycle/) article.
+Hibernate supports 3 entity states, transient, persistent and detached. In order to understand more about entity states, you can refer to [this](hibernate-persistence-life-cycle.md) article.
 
 So basically, an object can move into the persistent state when any one of the following happens:
 
-- When the code invokes session.save, session.persist or session.saveorUpdate
-- When the code invokes session.load or session.get
+- When the code invokes `session.save`, `session.persist` or `session.saveorUpdate`
+- When the code invokes `session.load` or `session.get`
 
 Any changes to a persistent object are automatically saved to the database when the session in flushed. _Flushing_ is the process of synchronizing the underlying database with the objects in the session. There is a session.flush method available but you generally don’t need to invoke it explicitly. A session gets flushed when the transaction is commited. The process of automatically updating the database with the changes to the persistent object when the session is flushed is known as **automatic dirty checking**.
 
@@ -34,7 +34,7 @@ Suppose we have a database table **'Person'** which fields corresponding to 'id'
 
 Now consider the following code:
 
-```
+```java
 SessionFactory  sessionFactory = HibernateUtil.getSessionFactory();
 Session session = sessionFactory.openSession();
 Transaction tx = session.beginTransaction();
@@ -49,7 +49,9 @@ So this code invokes the **session.load** method to load the person object corre
 
 ## Further Learning
 
-[Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
+- [Master JPA and Hibernate with Spring Boot](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-jpa-tutorial-for-beginners-in-100-steps%2F) 
+- [Spring Data JPA with Hibernate](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fspring-data-jpa-using-hibernate%2F) 
+- [Hibernate and JPA Fundamentals](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fhibernate-and-java-persistence-api-jpa-fundamentals%2F)
 
 ## Conclusion
 

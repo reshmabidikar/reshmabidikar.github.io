@@ -31,7 +31,7 @@ An object that has a database record but is not associated with a session is a d
 
 The following diagram demonstrates the Persistence Life Cycle:
 
-![](images/PLC-300x186.png)
+![](images/hibernate-persistence-life-cycle/PLC-300x186.png)
 
 So as you can see, when you create a new object, it is in the transient state. Invoking session.save() moves the object to the persistent state. When you close the session via the session.close, the object is moved to the detached state.
 
