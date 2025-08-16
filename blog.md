@@ -268,7 +268,7 @@
 
 * [JPA Interfaces Explained](jpa-hibernate-jdbc/jpa-interfaces-explained.md)
 * [How to create a Standalone JPA Application](jpa-hibernate-jdbc/how-to-create-a-standalone-jpa-application.md)
-* [Introduction to JPA](2020/09/introduction-to-jpa-the-why-what-and-how-of-jpa.md)
+* [Introduction to JPA](jpa-hibernate-jdbc/introduction-to-jpa-the-why-what-and-how-of-jpa.md)
 * [Hibernate List Mapping](2020/06/hibernate-list-mapping.md)
 * [Hibernate Collection Mapping](2020/05/hibernate-collection-mapping.md)
 * [JPA Hibernate Inheritance Mapping Strategies](2020/04/jpa-hibernate-inheritance-mapping-strategies-explained.md)

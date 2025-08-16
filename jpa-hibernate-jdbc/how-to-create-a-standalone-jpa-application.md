@@ -6,7 +6,7 @@ categories:
 coverImage: "database-scaled.jpg"
 ---
 
-In this article, I will be explaining how to create a standalone JPA application. that saves data to a database table and queries a table. JPA stands for the Java Persistence API. In order to know more about JPA and how it works, you can refer to [this](introduction-to-jpa-the-why-what-and-how-of-jpa,md) article.
+In this article, I will be explaining how to create a standalone JPA application. that saves data to a database table and queries a table. JPA stands for the Java Persistence API. In order to know more about JPA and how it works, you can refer to [this](introduction-to-jpa-the-why-what-and-how-of-jpa.md) article.
 
 I will be using Hibernate as the JPA provider and MySQL database, however you can use any other JPA Provider/database.
 
@@ -34,7 +34,7 @@ In this example, I will be using Eclipse and Maven. So you will need to create a
 
 ### Adding Maven Dependencies
 
-In order to create our JPA application, you need to add the following dependencies to the POM file (This includes the dependencies for the MySQL driver as well as Hibernate). I will also be using [JUNIT](../junit/how-to-use-junit-to-unit-test-code.md) to test the code, so the [JUNIT](../junit/how-to-use-junit-to-unit-test-code.md) dependency is also included:
+In order to create our JPA application, you need to add the following dependencies to the POM file (This includes the dependencies for the MySQL driver as well as Hibernate). I will also be using [JUNIT](../unit-testing/how-to-use-junit-to-unit-test-code.md) to test the code, so the [JUNIT](../unit-testing/how-to-use-junit-to-unit-test-code.md) dependency is also included:
 
 ```xml
  <dependencies>
@@ -112,7 +112,7 @@ So, you can see that this is an ordinary Java class. It has fields corresponding
 
 ### Writing JPA Code
 
-I will be writing the JPA code within a [JUNIT](junit/how-to-use-junit-to-unit-test-code.md) test case so that it is easy to test. First, you will need to create a new Test class within the **src/test/java** folder. Within this class, you can write the following code:
+I will be writing the JPA code within a [JUNIT](../unit-testing/how-to-use-junit-to-unit-test-code.md) test case so that it is easy to test. First, you will need to create a new Test class within the **src/test/java** folder. Within this class, you can write the following code:
 
 ```java
 public class JPATest {
