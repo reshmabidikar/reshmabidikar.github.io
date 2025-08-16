@@ -17,7 +17,7 @@ This step is optional, you need to follow this step only if you want to use a My
 
 We will first need to create a database table. We will also need to insert some test data into the table. The code that we are going to write will then query this via JDBC. You can execute the following SQL code to create the sample database and insert some data into it.
 
-````
+````java
 drop database if exists PersonDB; 
 create database PersonDB; use persondb;
 
@@ -38,7 +38,7 @@ If you are using MySQL, then open MySQLWorkBench, Open a new query tab and just 
 
 ##### Step 3 - Create a new Maven project in Eclipse
 
-In this example, I will be using Eclipse and Maven. So you will need to create a new Maven project in Eclipse. You can refer [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) post in order to understand how to create a Maven project in Eclipse.
+In this example, I will be using Eclipse and Maven. So you will need to create a new Maven project in Eclipse. You can refer [this](https://reshmabidikar.github.io/2018/10/how-to-create-a-maven-project-in-eclipse.html) post in order to understand how to create a Maven project in Eclipse.
 
 The advantage of using a dependency management tool like Maven is that it automatically downloads the necessary jar files for you, you just need to add the appropriate dependency in the Maven pom file.
 
@@ -48,7 +48,7 @@ As you might know, JDBC requires a database specific driver to communicate with 
 
 JDBC For this double click on the pom.xml and add the following:
 
-````
+````xml
 <dependency> 
     <groupId>mysql</groupId> 
     <artifactId>mysql-connector-java</artifactId> 
@@ -58,7 +58,7 @@ JDBC For this double click on the pom.xml and add the following:
 
 Your final pom file should look like this:
 
-[![pom](images/pom-300x130.png)](images/pom.png)
+[![pom](images/query-database-table-jdbc/pom-300x130.png)](images/query-database-table-jdbc/pom.png)
 
 So this will automatically download the MySQL driver and add it to the classpath. If you are using some other database, then you need to add the appropriate dependency for that database.
 
@@ -66,7 +66,7 @@ So this will automatically download the MySQL driver and add it to the classpath
 
 Create a new package called demo and create a new Class in this package called SelectDemo.
 
-[![JDBCDemo](images/JDBCDemo1-140x300.png)](images/JDBCDemo1.png)
+[![JDBCDemo](images/query-database-table-jdbc/JDBCDemo1-140x300.png)](images/query-database-table-jdbc/JDBCDemo1.png)
 
 #### Write and Run Code
 
@@ -74,8 +74,7 @@ Create a new package called demo and create a new Class in this package called S
 
 Add the following code to the SelectDemo class written earlier:
 
-````
-
+````java
 package demo; 
 import java.sql.Connection; 
 import java.sql.DriverManager; 
