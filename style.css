@@ -1,0 +1,37 @@
+:root {
+  --primary: #c62828; /* Red */
+  --text: #333;
+  --bg: #fafafa;
+  --shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  max-width: 900px;
+  padding: 2rem;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  display: block;
+  margin: 1rem auto;
+}
