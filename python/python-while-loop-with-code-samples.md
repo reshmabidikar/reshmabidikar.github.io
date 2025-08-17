@@ -12,7 +12,7 @@ Much like a Java while loop, you can use a Python while loop to repeatedly execu
 
 A while loop in Python has the following syntax:
 
-```
+```python
 while <condition>:
   loop body
 ```
@@ -23,7 +23,7 @@ The while keyword is followed by a condition. If the condition evaluates to true
 
 The following code demonstrates how you can use the while loop:
 
-```
+```python
 num=10
 counter=1
 total=0
@@ -47,7 +47,7 @@ The while loop can optionally be followed with an else statement. Within the els
 
 It has the following syntax:
 
-```
+```python
 while <condition>: 
  loop body
 else:
@@ -58,7 +58,7 @@ else:
 
 The following code demonstrates a while loop with else statement:
 
-```
+```python
 num=10
 counter=1
 total=0
@@ -93,7 +93,10 @@ sum of first 10 numbers is 55
 
 ## Further Learning
 
-[The Python Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-the-complete-python-developer-course%2F) [Everything you need to know about Python](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-python-bible%2F) [Python for beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-programming-projects%2F) [Python for finance](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-for-finance-investment-fundamentals-data-analytics%2F)
+- [The Python Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-the-complete-python-developer-course%2F) 
+- [Everything you need to know about Python](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-python-bible%2F) 
+- [Python for beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-programming-projects%2F) 
+- [Python for finance](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-for-finance-investment-fundamentals-data-analytics%2F)
 
 ## Conclusion
 

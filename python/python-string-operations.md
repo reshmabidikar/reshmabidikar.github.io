@@ -5,13 +5,13 @@ categories:
   - "python"
 ---
 
-In my [earlier](https://learnjava.co.in/python-numeric-and-string-variables/) article, I covered Python numeric and String variables. Python supports several String operations. In this article, I will be demonstrating the Python String operations
+In my [earlier](python-numeric-and-string-variables.md) article, I covered Python numeric and String variables. Python supports several String operations. In this article, I will be demonstrating the Python String operations
 
 # Introduction
 
 You can create String variables by simply assigning a String value to the variable name. The String variable can be enclosed either in single quotes or double quotes. The following code demonstrates this:
 
-```
+```python
 a = 'Hello'
 b = "world"
 ```
@@ -28,7 +28,7 @@ For example consider the String "**Hello World**". In forward direction the char
 
 The slice operator helps to create **substrings**. It consists of **\[\]** or **\[:\]**. In order to create sun-strings, you need to specify the position within the slice operator. The following code demonstrates this:
 
-```
+```python
 str = 'This is a Java program'
 
 print(str[0])
@@ -57,7 +57,7 @@ progra
 
 Just like in Java, the '**+**' operator acts as the **concatenation operator**. It helps in concatenating Strings. The following code demonstrates this:
 
-```
+```python
 str1='Hello'
 str2 = ' World'
 str3 = str1+str2
@@ -74,7 +74,7 @@ Hello World
 
 The **repetition operator(\*)** helps to repeat a String. You need to specify the String to be repeated, followed by the repetition operator, followed by the number of times the String should be repeated. The following code demonstrates this:
 
-```
+```python
 str1='Hello '
 str2 = str1*5
 print(str2)
@@ -86,11 +86,12 @@ This code repeats the String "**Hello** " **5** times. So this code prints the f
 Hello Hello Hello Hello Hello
 ```
 
-\[table id=30 /\]
-
 ## Further Learning
 
-[The Python Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-the-complete-python-developer-course%2F) [Everything you need to know about Python](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-python-bible%2F) [Python for beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-programming-projects%2F) [Python for finance](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-for-finance-investment-fundamentals-data-analytics%2F)
+- [The Python Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-the-complete-python-developer-course%2F) 
+- [Everything you need to know about Python](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-python-bible%2F) 
+- [Python for beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-programming-projects%2F) 
+- [Python for finance](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-for-finance-investment-fundamentals-data-analytics%2F)
 
 # Conclusion
 

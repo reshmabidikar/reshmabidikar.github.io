@@ -5,7 +5,7 @@ categories:
   - "python"
 ---
 
-In my[earlier](https://learnjava.co.in/python-tuples/) article, I had covered Python Tuples. In this article, I will be covering Python dictionary.
+In my[earlier](python-tuples.md) article, I had covered Python Tuples. In this article, I will be covering Python dictionary.
 
 ## What is a Python dictionary?
 
@@ -15,7 +15,7 @@ A Python dictionary stores a List of key-value pairs.
 
 You can create a dictionary by specifying key-value pairs in curly brackets separated by commas. The following code demonstrates this:
 
-```
+```python
 employeeDict = {'name':'John Doe','salary':5000.00,'department':'HR'}
 ```
 
@@ -25,7 +25,7 @@ This code creates a dictionary `employeeDict` with some key value pairs. The key
 
 You can access a value from a dictionary by specifying the key in square brackets. The following code demonstrates this:
 
-```
+```python
 employeeDict = {'name':'John Doe','salary':5000.00,'department':'HR'}
 
 print(employeeDict['name'])
@@ -35,7 +35,7 @@ print(employeeDict['name'])
 
 You can update the value for an existing key, add a new key-value pair or delete a key value pair.
 
-```
+```python
 employeeDict = {'name':'John Doe','salary':5000.00,'department':'HR'}
 employeeDict['department'] = 'Admin'
 print(employeeDict['department'])
@@ -45,7 +45,7 @@ print(employeeDict['department'])
 
 You can update the value of a key by specifying the key in square brackets and the value as shown below:
 
-```
+```python
 employeeDict = {'name':'John Doe','salary':5000.00,'department':'HR'}
 employeeDict['department'] = 'Admin'
 
@@ -57,7 +57,7 @@ This code updates the **department** key to the value **Admin**
 
 You can also add a new key-value pair to the dictionary as shown below:
 
-```
+```python
 employeeDict = {'name':'John Doe','salary':5000.00,'department':'HR'}
 employeeDict['manager'] = 'Sam Rocket'
 
@@ -69,7 +69,7 @@ This adds the key-value Manager:Sam Rocket to the dictionary.
 
 You can delete a key-value pair by using the **del** statement with the key name as shown below:
 
-```
+```python
 employeeDict = {'name':'John Doe','salary':5000.00,'department':'HR'}
 del employeeDict['department']
 ```
@@ -80,7 +80,7 @@ This deletes the key-value corresponding to **department**
 
 You can also delete the entire dictionary as shown below:
 
-```
+```python
 employeeDict = {'name':'John Doe','salary':5000.00,'department':'HR'}
 del employeeDict
 ```
@@ -91,7 +91,7 @@ This deletes the entire `employeeDict` .So any attempt to access `employeeDict` 
 
 You can clear a dictionary without deleting it by invoking the `clear`method as shown below:
 
-```
+```python
 employeeDict = {'name':'John Doe','salary':5000.00,'department':'HR'}
 employeeDict.clear()
 ```
@@ -102,7 +102,7 @@ So, this empties the `employeeDict` dictionary but does not delete it. You can s
 
 Python has a built-in function **len**. This returns the length of the object passed in. You can use this function to obtain the length of a dictionary. The following code demonstrates this:
 
-```
+```python
 employeeDict1 = {'name':'John Doe','salary':5000.00,'department':'HR'}
 print(len(employeeDict1))
 ```
@@ -111,7 +111,7 @@ print(len(employeeDict1))
 
 There are several dictionary methods that are useful. The following code demonstrates some of these methods:
 
-```
+```python
 employeeDict = {'name':'John Doe','salary':5000.00,'department':'HR'}
 print('Keys:')
 print(employeeDict.keys()); 
@@ -132,7 +132,7 @@ print(employeeDict.get('manager', 'Sam Rocket'))
 
 So, this code prints the following output:
 
-```
+```python
 Keys:
 dict_keys(['name', 'salary', 'department'])
 values:
@@ -145,7 +145,10 @@ Sam Rocket
 
 ## Further Learning
 
-[The Python Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-the-complete-python-developer-course%2F) [Everything you need to know about Python](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-python-bible%2F) [Python for beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-programming-projects%2F) [Python for finance](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-for-finance-investment-fundamentals-data-analytics%2F)
+- [The Python Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-the-complete-python-developer-course%2F) 
+- [Everything you need to know about Python](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-python-bible%2F) 
+- [Python for beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-programming-projects%2F) 
+- [Python for finance](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-for-finance-investment-fundamentals-data-analytics%2F)
 
 ## Conclusion
 

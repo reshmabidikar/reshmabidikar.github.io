@@ -5,13 +5,13 @@ categories:
   - "python"
 ---
 
-In my [earlier](https://learnjava.co.in/python-numeric-and-string-variables/) article, I had covered Python numeric and String data types. In this article, I will be covering Python Lists. As the name indicates, you can use a Python list to store a set of values.
+In my [earlier](python-numeric-and-string-variables.md) article, I had covered Python numeric and String data types. In this article, I will be covering Python Lists. As the name indicates, you can use a Python list to store a set of values.
 
 ## Creating a Python List
 
 You can create a list by specifying comma separated values within square brackets. The following code demonstrates this:
 
-```
+```python
 mylist = [2,4,'Hello',10.5,"World"]
 print (mylist)
 ```
@@ -24,7 +24,7 @@ You can access the values in a List via the slice operator. It consists of **\[\
 
 The following code demonstrates this:
 
-```
+```python
 mylist = [2,4,'Hello',10.5,"World"] 
 print (mylist) 
 print(mylist[2]) 
@@ -51,7 +51,7 @@ World
 
 You can update a value in a List. You just need to specify the list name, followed by its position in square brackets and assign it a new value. The following code demonstrates this:
 
-```
+```python
 mylist = ["cat","dog","cow","monkey"]
 mylist[2] = "horse"
 print(mylist)
@@ -71,7 +71,7 @@ There are several ways in which you can add a value to a List.
 
 The `append`method adds a value at the end of the list. The following code demonstrates this:
 
-```
+```python
 mylist = ["cat","dog","cow","monkey"]
 mylist.append("horse")
 print(mylist)
@@ -87,7 +87,7 @@ This code adds the value "_horse_" to the end of the list. So it prints the foll
 
 The `insert`method adds a value at the specified position. The following code demonstrates this:
 
-```
+```python
 mylist= ["cat","dog","cow","monkey"]
 mylist.insert(2, "horse")
 print(mylist)
@@ -107,7 +107,7 @@ There are several ways in which you can remove a value from a List.
 
 The `remove`method removes the specified element from the List. The following code demonstrates this:
 
-```
+```python
 mylist = ["cat","dog","cow","monkey"]
 mylist.remove("dog")
 print(mylist)
@@ -123,7 +123,7 @@ This code removes the value "_dog_" from the list. So it prints the following ou
 
 The `pop`method removes the element at the specified index or the last element if no index is specified. The following code demonstrates this:
 
-```
+```python
 mylist = ["cat","dog","cow","monkey"]
 mylist.pop(1)
 print(mylist)
@@ -144,7 +144,7 @@ The first code snippet removes the value at position _1_ which is _dog_. In the 
 
 The `clear`method empties a list. The following code demonstrates this:
 
-```
+```python
 mylist = ["cat","dog","cow","monkey"]
 mylist.clear();
 print(mylist)
@@ -160,7 +160,7 @@ So this code empties the list. So it prints the following output:
 
 The `sort`method sorts a list. The following code demonstrates this:
 
-```
+```python
 mylist = [5,1,8,12,9];
 mylist.sort()
 print(mylist)
@@ -176,7 +176,7 @@ This code sorts the list in ascending order. So it prints the following output:
 
 Python has a built-in function `len`. This returns the length of the object passed in. You can use this function to obtain the length of a list. The following code demonstrates this:
 
-```
+```python
 mylist = ["cat","dog","cow","monkey"]
 print(len(mylist))
 ```
@@ -191,7 +191,7 @@ So this code prints the following output:
 
 The ‘**+**‘ operator acts as the **concatenation operator**. It helps in concatenating Lists. The following code demonstrates this:
 
-```
+```python
 mylist1 = ["cat","dog","cow","monkey"]
 mylist2 = ["lion","tiger"]
 mylist3 = mylist1+mylist2
@@ -208,7 +208,10 @@ So this code appends the values in `myList1`and `myList2`and assigns the resulta
 
 ## Further Learning
 
-[The Python Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-the-complete-python-developer-course%2F) [Everything you need to know about Python](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-python-bible%2F) [Python for beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-programming-projects%2F) [Python for finance](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-for-finance-investment-fundamentals-data-analytics%2F)
+- [The Python Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-the-complete-python-developer-course%2F) 
+- [Everything you need to know about Python](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-python-bible%2F) 
+- [Python for beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-programming-projects%2F) 
+- [Python for finance](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-for-finance-investment-fundamentals-data-analytics%2F)
 
 ## Conclusion
 

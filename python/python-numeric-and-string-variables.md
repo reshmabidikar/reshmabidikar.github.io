@@ -17,7 +17,7 @@ In order to create a variable, you just need to specify the **variable name**, f
 
 The following code demonstrates this:
 
-```
+```python
 i=10
 ```
 
@@ -29,7 +29,7 @@ You can create numeric variables by simply assigning a number to the variable na
 
 The following code demonstrates this:
 
-```
+```python
 a = 10
 b = 100.5
 ```
@@ -44,7 +44,7 @@ The variable '**b**' is of **decimal** type with the value **100.5**
 
 You can create String variables by simply assigning a String value to the variable name. The String variable can be enclosed either in single quotes or double quotes. The following code demonstrates this:
 
-```
+```python
 c = 'Hello'
 d = "world"
 ```
@@ -61,7 +61,7 @@ Python also supports a number of String operations. You can check out my [Python
 
 Python allows you to assign multiple values to variables at once. The following code demonstrates this:
 
-```
+```python
 a,b=200
 c=d=e=10.5
 f,g=1,'Hello'
@@ -77,7 +77,7 @@ f,g=1,'Hello'
 
 You can change the data type even after assigning a value to it. So you can do the following:
 
-```
+```python
 i=10
 i='Hello'
 ```
@@ -95,15 +95,18 @@ Python variable names must follow the following rules:
 
 In addition, Python supports variables of the following types:
 
-- [Lists](https://learnjava.co.in/python-lists-and-list-operations/)
-- [Tuples](https://learnjava.co.in/python-tuples/)
-- [Dictionary](https://learnjava.co.in/python-dictionary/)
+- [Lists](python-lists-and-list-operations.md)
+- [Tuples](python-tuples.md)
+- [Dictionary](python-dictionary.md)
 
 You can click the links above to understand more about these types.
 
 ## Further Learning
 
-[The Python Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-the-complete-python-developer-course%2F) [Everything you need to know about Python](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-python-bible%2F) [Python for beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-programming-projects%2F) [Python for finance](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-for-finance-investment-fundamentals-data-analytics%2F)
+- [The Python Masterclass](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-the-complete-python-developer-course%2F) 
+- [Everything you need to know about Python](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-python-bible%2F) 
+- [Python for beginners](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-programming-projects%2F) 
+- [Python for finance](https://click.linksynergy.com/deeplink?id=MnzIZAZNE5Y&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-for-finance-investment-fundamentals-data-analytics%2F)
 
 ## Conclusion
 

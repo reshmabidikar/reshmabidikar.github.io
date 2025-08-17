@@ -299,16 +299,16 @@
 
 ## Python
 * [How to setup Pydev with Eclipse](python/how-to-setup-pydev-with-eclipse.md)
-* [How to create a Python Program in Eclipse](2020/01/how-to-create-a-basic-python-program-in-eclipse-using-pydev.md)
-* [Python While Loop](2021/04/python-while-loop-with-code-samples.md)
-* [Python Function Arguments Explained](2021/03/python-functions-arguments-with-examples.md)
-* [Python Functions Part 1](2020/12/python-functions-part-1-2.md)
-* [Reading User Input in Python](2020/08/reading-user-input-in-python-with-code-sample.md)
-* [Python Directory](2020/07/python-dictionary.md)
-* [Python Tuples](2020/06/python-tuples.md)
-* [Python Lists and List Operations](2020/05/python-lists-and-list-operations.md)
-* [Python String Operations](2020/04/python-string-operations.md)
-* [Python numeric and String Variables](2020/03/python-numeric-and-string-variables.md)
+* [How to create a Python Program in Eclipse](python/how-to-create-a-basic-python-program-in-eclipse-using-pydev.md)
+* [Python While Loop](python/python-while-loop-with-code-samples.md)
+* [Python Function Arguments Explained](python/python-functions-arguments-with-examples.md)
+* [Python Functions Part 1](python/python-functions-part-1-2.md)
+* [Reading User Input in Python](python/reading-user-input-in-python-with-code-sample.md)
+* [Python Directory](python/python-dictionary.md)
+* [Python Tuples](python/python-tuples.md)
+* [Python Lists and List Operations](python/python-lists-and-list-operations.md)
+* [Python String Operations](python/python-string-operations.md)
+* [Python numeric and String Variables](python/python-numeric-and-string-variables.md)
 
 ## Javascript
 * [Javascript Under the Hood](2020/04/javascript-under-the-hood.md)
