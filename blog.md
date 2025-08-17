@@ -298,7 +298,7 @@
 * [Introduction to Swagger](2020/02/introduction-to-swagger.md)
 
 ## Python
-* [How to setup Pydev with Eclipse](2019/12/how-to-setup-pydev-with-eclipse.md)
+* [How to setup Pydev with Eclipse](python/how-to-setup-pydev-with-eclipse.md)
 * [How to create a Python Program in Eclipse](2020/01/how-to-create-a-basic-python-program-in-eclipse-using-pydev.md)
 * [Python While Loop](2021/04/python-while-loop-with-code-samples.md)
 * [Python Function Arguments Explained](2021/03/python-functions-arguments-with-examples.md)
