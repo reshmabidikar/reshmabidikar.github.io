@@ -7,7 +7,7 @@ title: "Home - Reshma Bidikar"
 Hello 👋 I’m **Reshma Bidikar**.  
 I write about Java, programming, and software development.
 
-![My Photo](photo.jpg)
+![My Photo](images/photo.jpg)
 
 ## Navigation
 - [Home](index.md)
