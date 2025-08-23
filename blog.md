@@ -295,7 +295,7 @@
 * [How to use JUNIT to unit test code](unit-testing/how-to-use-junit-to-unit-test-code.md)
 
 ## Swagger
-* [Introduction to Swagger](2020/02/introduction-to-swagger.md)
+* [Introduction to Swagger](swagger/introduction-to-swagger.md)
 
 ## Python
 * [How to setup Pydev with Eclipse](python/how-to-setup-pydev-with-eclipse.md)

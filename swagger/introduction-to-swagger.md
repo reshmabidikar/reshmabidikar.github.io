@@ -11,7 +11,7 @@ Swagger is a tool that developers can use to document REST services. It is based
 
 # Challenges in documenting a REST application
 
-SOAP web services use a WSDL file for documenting the web service. However, when it comes to REST services, there are no established standards for documentation.  So developers need to create documents manually. This method is tedious and error prone.
+SOAP web services use a WSDL file for documenting the web service. However, when it comes to REST services, there are no established standards for documentation. So developers need to create documents manually. This method is tedious and error-prone.
 
 # Open API Specification
 
