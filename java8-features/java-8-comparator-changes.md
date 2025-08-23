@@ -5,11 +5,11 @@ categories:
   - "java8"
 ---
 
-Java 8 has made many improvements to the Comparator interface. In this article, I will be explaining the Java 8 Comparator changes.
+[Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) has made many improvements to the `Comparator` interface. In this article, I will be explaining the Java 8 Comparator changes.
 
 ## Comparator.compare
 
-From Java 8 onwards, Comparator is designated as a [functional](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) interface. So, you can implement the **Comparator.compare** method via a [lambda expression](https://reshmabidikar.github.io/2019/05/java-8-lambda-expressions-explained.html).
+From Java 8 onwards, Comparator is designated as a [functional](java-8-functional-interface.md) interface. So, you can implement the **Comparator.compare** method via a [lambda expression](java-8-lambda-expressions-explained.md).
 
 Consider the following `Book` class:
 
@@ -27,7 +27,7 @@ public class Book {
 }
 ```
 
-And suppose you have a List of Book objects which needs to be sorted on the basis of the `numPages` field. Prior to Java 8, you had to create a class that implements the `Comparator` interface and use it to sort the `Book` List.
+And suppose you have a `List` of `Book` objects which needs to be sorted on the basis of the `numPages` field. Prior to Java 8, you had to create a class that implements the `Comparator` interface and use it to sort the `Book` List.
 
 The following code demonstrates this:
 
@@ -61,7 +61,7 @@ So, this code uses the `List.sort` method and passes the `BookComparator` to it.
 
 This code is cumbersome since you need to create a class that implements the `Comparator` interface and then use it.
 
-The code above can be written using a [lambda expression](https://reshmabidikar.github.io/2019/05/java-8-lambda-expressions-explained.html) as follows:
+The code above can be written using a [lambda expression](java-8-lambda-expressions-explained.md) as follows:
 
 ```java
 public class ComparatorAfterJava8Demo {
@@ -89,7 +89,7 @@ So, there is no need to create a `BookComparator` class as done earlier. This co
 
 ## Comparator.comparing
 
-Java 8 has added a new [static](https://reshmabidikar.github.io/2019/03/java-8-static-interface-methods.html) method called `Comparator.comparing` to the Comparator interface. This accepts as parameter a [Function](https://reshmabidikar.github.io/2019/04/java-8-function-interface-example.html) that specifies the sort key and returns a Comparator that sorts on the specified key.
+Java 8 has added a new [static](java-8-static-interface-methods.md) method called `Comparator.comparing` to the ``Comparator` interface. This accepts as parameter a [Function](../java8-examples/java-8-function-interface-example.md) that specifies the sort key and returns a Comparator that sorts on the specified key.
 
 The following code demonstrates this method:
 
@@ -119,7 +119,7 @@ The Complete Reference,743
 
 ## Comparator.comparingInt
 
-The `Comparator.comparingInt` is another new static method on the Comparator interface. It is similar to the `Comparator.comparing` method. Instead of accepting a [Function](https://reshmabidikar.github.io/2019/04/java-8-function-interface-example.html) as a parameter, it accepts a[ToIntFunction](https://reshmabidikar.github.io/2020/07/tointfunction-in-java-8-with-code-sample.html) as a parameter. It returns a Comparator that sorts on the basis of an **int** key returned by the [ToIntFunction](https://reshmabidikar.github.io/2020/07/tointfunction-in-java-8-with-code-sample.html) . For example, in order to sort the `Book` objects on the basis of the `numPages` field, we can use this method as follows:
+The `Comparator.comparingInt` is another new [static](java-8-static-interface-methods.md) method on the Comparator interface. It is similar to the `Comparator.comparing` method. Instead of accepting a [Function](../java8-examples/java-8-function-interface-example.md) as a parameter, it accepts a[ToIntFunction](../java8-examples/tointfunction-in-java-8-with-code-sample.md) as a parameter. It returns a Comparator that sorts on the basis of an **int** key returned by the [ToIntFunction](../java8-examples/tointfunction-in-java-8-with-code-sample.md) . For example, in order to sort the `Book` objects on the basis of the `numPages` field, we can use this method as follows:
 
 ```java
 List<Book> books = new ArrayList<>();
@@ -148,7 +148,7 @@ Just like `comparingInt`, Java 8 has added static methods called `comparingLong`
 
 ## Comparator.naturalOrder
 
-`Comparator.naturalOrder` is another new [static](https://reshmabidikar.github.io/2019/03/java-8-static-interface-methods.html) method on the Comparator interface. It returns a Comparator that sorts in the natural order of the underlying Collection.
+`Comparator.naturalOrder` is another new [static](java-8-static-interface-methods.md) method on the Comparator interface. It returns a Comparator that sorts in the natural order of the underlying Collection.
 
 ```java
 List<String> fruits = Arrays.asList("StrawBerry", "Apple", "Cherry", "Banana");
@@ -172,7 +172,7 @@ StrawBerry
 
 ## Comparator.reversed
 
-Comparator.reversed is a [default](https://reshmabidikar.github.io/2019/03/java-8-default-method-in-interface-explained.html) method on the Comparator interface. It returns a Comparator that sorts in the reverse order of the Comparator on which it is invoked.
+`Comparator.reversed` is a [default](java-8-default-method-in-interface-explained.md) method on the Comparator interface. It returns a Comparator that sorts in the reverse order of the Comparator on which it is invoked.
 
 ```java
 List<Book> books = new ArrayList<>();

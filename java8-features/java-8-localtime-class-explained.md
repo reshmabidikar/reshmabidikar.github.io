@@ -10,13 +10,13 @@ tags:
 
 ## What is LocalTime class?
 
-The Java 8 LocalTime class represents a time. It has the hour, minute, second and nanoseconds components. So for example, you can use it to represent a time like 7:30. It does not have a date, year or month component.
+The [Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) `LocalTime` class represents a time. It has the hour, minute, second and nanoseconds components. So for example, you can use it to represent a time like 7:30. It does not have a date, year or month component.
 
 ## LocalTime Creation
 
 There are several static methods on this class that can be used to create a LocalTime object. The following code demonstrates this:
 
-```
+```java
 LocalTime time1 = LocalTime.now();
 System.out.println("Current time is "+time1);
 
@@ -37,7 +37,7 @@ In addition to these methods, there are several other methods in the**LocalTime*
 
 The LocalTime class allows you to easily perform time arithmetic as can be seen by the following code:
 
-```
+```java
 LocalTime time1 = LocalTime.parse("10:30");
 System.out.println("Time is "+time1);
 
@@ -60,7 +60,7 @@ System.out.println("With hours set to 8 is "+time2);
 
 The LocalTime class allows you to easily extract information from the Time object. The following code demonstrates this:
 
-```
+```java
 LocalTime time = LocalTime.parse("11:45:15");
 System.out.println("Time is "+time);
 
@@ -78,7 +78,7 @@ System.out.println("second="+second);
 
 The LocalTime class allows you to easily perform time comparison as can be seen by the following code:
 
-```
+```java
 LocalTime time1 = LocalTime.parse("10:30:45");
 LocalTime time2 = LocalTime.parse("11:15");
 boolean isAfter = time1.isAfter(time2);

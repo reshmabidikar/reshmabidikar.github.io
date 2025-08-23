@@ -10,7 +10,7 @@ tags:
   - "java8"
 ---
 
-Java 8 introduced the concept of functional interfaces. In this blog post, I will be explaining what a Java 8 functional interface is.
+[Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) introduced the concept of functional interfaces. In this blog post, I will be explaining what a Java 8 functional interface is.
 
 #### What is a functional interface?
 
@@ -103,7 +103,7 @@ Java already has some functional interfaces.[java.lang.Runnable](https://docs.or
 
 #### java.util.Function
 
-Java 8 introduced a new package called [java.util.Function](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html). It has a number of useful functional interfaces. For example, it provides the [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html) interface. It has a single method called `test`. This accepts an argument of any type and returns a boolean result. 
+Java 8 introduced a new package called [java.util.Function](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html). It has a number of useful functional interfaces. For example, it provides the [Predicate](../java8-examples/java-8-predicate-example.md) interface. It has a single method called `test`. This accepts an argument of any type and returns a boolean result. 
 
 Consider the following sample code:
 
@@ -127,8 +127,8 @@ So here, the `Predicate.test` method checks if the input integer is **greater th
 12 is greater than 8 = true
 ````
 
-Just like [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html), there are a number of useful interfaces in the [java.util.Function](https://reshmabidikar.github.io/2019/04/java-8-functional-interface-example.html). It is not possible to explain all these interfaces here but you can take a look at the [API documentation.](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
+Just like [Predicate](../java8-examples/java-8-predicate-example.md), there are a number of useful interfaces in the [java.util.Function](../java8-examples/java-8-function-interface-example.md). It is not possible to explain all these interfaces here but you can take a look at the [API documentation.](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
 
 #### Conclusion
 
-So, this article explains what a Java 8 functional interface is. It also explains how you can implement a functional interface via a [lambda expression](https://reshmabidikar.github.io/2019/05/java-8-lambda-expressions-explained.html). Finally, it covers some on the in-built functional interfaces.
+So, this article explains what a Java 8 functional interface is. It also explains how you can implement a functional interface via a [lambda expression](java-8-lambda-expressions-explained.md). Finally, it covers some on the in-built functional interfaces.

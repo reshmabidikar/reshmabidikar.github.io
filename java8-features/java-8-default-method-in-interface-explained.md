@@ -11,7 +11,7 @@ tags:
   - "java8"
 ---
 
-One of the new features provided by **Java 8** is the support for default methods in interfaces. In this blog post, I will be explaining Java 8 default interface methods in detail. I will be covering what default methods are, how they work and why they were added.
+One of the new features provided by [Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) is the support for default methods in interfaces. In this blog post, I will be explaining Java 8 default interface methods in detail. I will be covering what default methods are, how they work and why they were added.
 
 #### What are default interface methods?
 
@@ -30,8 +30,6 @@ public interface MyInterface {
     } 
 }
 ````
-
-
 
 This code causes a compilation error. This is because **methodB** has a method body. However, if you are using Java 8, you can change the code as follows:
 
@@ -98,7 +96,7 @@ Consider the scenario where you have an interface with some methods. Suppose the
 
 ##### To add forEach support in Collections without code changes to Collection classes
 
-Java 8 has added the forEach method to all the Collections via the [Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) interface. So there is a new method called [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) added to the[Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) interface. All the Collection classes implement the [Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) interface. The [forEach](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html#forEach-java.util.function.Consumer-) method is given a default implementation within the Iterable interface. So the Collection classes work as they are without any code changes. If default interfaces methods were not supported, then all the Collection classes would need to be modified to add code for the forEach method.
+Java 8 has added the [forEach](java-8-foreach.md) method to all the Collections via the [Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) interface. So there is a new method called [forEach](java-8-foreach.md) added to the[Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) interface. All the Collection classes implement the [Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) interface. The [forEach](java-8-foreach.md) method is given a default implementation within the Iterable interface. So the Collection classes work as they are without any code changes. If default interfaces methods were not supported, then all the Collection classes would need to be modified to add code for the forEach method.
 
 #### Java 8 Abstract classes VS interfaces
 

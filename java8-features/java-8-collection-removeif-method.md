@@ -10,11 +10,11 @@ tags:
 coverImage: "collection-removeIf-scaled.jpg"
 ---
 
-Java 8 has added a new method called removeIf to the Collection interface. You can use this to remove an element from a Collection in Java. In this article, I will be explaining how this method works.
+[Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) has added a new method called `removeIf` to the `Collection` interface. You can use this to remove an element from a Collection in Java. In this article, I will be explaining how this method works.
 
 ## What does RemoveIf do?
 
-This method removes an element from the Collection that matches a particular condition. It returns a boolean value which indicates whether some values were removed or not. The condition to be checked is specified via a [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html) instance. Predicate is an in-built [functional interface](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) that accepts an argument of any data type and returns a boolean. You can implement it via a [lambda expression](https://reshmabidikar.github.io/2019/05/java-8-lambda-expressions-explained.html).
+This method removes an element from the Collection that matches a particular condition. It returns a boolean value which indicates whether some values were removed or not. The condition to be checked is specified via a [Predicate](../java8-examples/java-8-predicate-example.md) instance. Predicate is an in-built [functional interface](java-8-functional-interface.md) that accepts an argument of any data type and returns a boolean. You can implement it via a [lambda expression](java-8-lambda-expressions-explained.md).
 
 ## RemoveIf Integer Code Sample
 
@@ -44,7 +44,7 @@ public class RemoveIfDemo {
 }
 ```
 
-This code creates an Integer List **input** with some values. It then invokes the **removeIf** method on **input** with a lambda expression that checks if a number is even. So the code applies this lambda expression to each element in the list and the removes the even numbers. So when you execute this code, it prints the following output to the console:
+This code creates an Integer List `input` with some values. It then invokes the `removeIf` method on `input` with a lambda expression that checks if a number is even. So the code applies this lambda expression to each element in the list and the removes the even numbers. So when you execute this code, it prints the following output to the console:
 
 ```
 Elements were removed
@@ -79,7 +79,7 @@ public class RemoveIfStringDemo {
 }
 ```
 
-This code creates a String list input with some String values. It then invokes the **removeIf** method on **input** with a lambda expression that checks if a String ends with **"day"**. Since there are no strings in the input list that match this condition, no values are removed from input and the removeIf method returns a false. So when you execute this code, it prints the following output:
+This code creates a String list input with some String values. It then invokes the `removeIf` method on `input` with a lambda expression that checks if a String ends with **"day"**. Since there are no strings in the input list that match this condition, no values are removed from input and the removeIf method returns a false. So when you execute this code, it prints the following output:
 
 ```
 Elements were not removed

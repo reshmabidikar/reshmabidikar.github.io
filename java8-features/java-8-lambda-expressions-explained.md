@@ -6,11 +6,11 @@ categories:
   - "java-interview-questions"
 ---
 
-You Java 8 introduced a new feature called lambda expressions. In this blog post, I will be explaining lambda expressions in detail.
+[Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) introduced a new feature called lambda expressions. In this blog post, I will be explaining lambda expressions in detail.
 
 ## What are lambda expressions
 
-Lambda expressions are used to define anonymous functions, that is a function without a name. Lambda expressions and functional interfaces together help in writing clean code. A functional interface is nothing but an interface with a single method. In order to understand more about functional interfaces, you can refer to [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post. Lambda expressions can be used to implement functional interfaces.
+Lambda expressions are used to define anonymous functions, that is a function without a name. Lambda expressions and functional interfaces together help in writing clean code. A functional interface is nothing but an interface with a single method. In order to understand more about functional interfaces, you can refer to [this](java-8-functional-interface.md) blog post. Lambda expressions can be used to implement functional interfaces.
 
 ## Lambda expression syntax
 
@@ -34,11 +34,10 @@ You need to follow the lambda operator with the body of the lambda expression. Y
 
 Lambda expressions are used to implement functional interfaces. Consider the following code snippet:
 
-````
-
+````java
 @FunctionalInterface public interface DemoInterface {
 
-public void aMethod();
+    public void aMethod();
 
 }
 
@@ -46,11 +45,10 @@ public void aMethod();
 
 You can implement his interface using a Lambda expression as follows:
 
-````
-
+````java
 public class DemoClass {
 
-public static void main(String args\[\]){
+public static void main(String args[]){
 
 DemoInterface demoInterface = () -> System.out.println("Demo Interface"); demoInterface.aMethod();
 
@@ -72,7 +70,7 @@ Demo Interface
 
 Lambda expressions help to keep the code concise. Prior to Java 8, we would need to write code similar to the following in order to implement a functional interface:
 
-````
+````java
 
 public class DemoClass implements DemoInterface {
 
@@ -95,11 +93,10 @@ So basically, we need to create a class that implements the interface, provide a
 
 Lambda expressions are anonymous functions. They allow you to pass code as method arguments. So consider the following code snippet:
 
-````
-
+````java
 public interface Shape {
 
-public void draw();
+    public void draw();
 
 }
 

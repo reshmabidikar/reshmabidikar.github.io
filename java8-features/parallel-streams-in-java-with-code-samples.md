@@ -6,7 +6,7 @@ categories:
 coverImage: "java_parallel_streams-scaled.jpg"
 ---
 
-In my [earlier](https://reshmabidikar.github.io/2019/05/java-8-stream-api.html) article, I had covered the Stream API in depth. In this article, we will be taking a look at parallel streams. Simply speaking, a parallel stream is a stream that operates on its elements in parallel.
+In my [earlier](java-8-stream-api.md) article, I had covered the Stream API in depth. In this article, we will be taking a look at parallel streams. Simply speaking, a parallel stream is a stream that operates on its elements in parallel.
 
 ## How to obtain a parallel stream
 
@@ -14,7 +14,7 @@ Just like the `stream` method, all the Collection interfaces have a `parallelStr
 
 Consider the following code:
 
-```
+```java
 List<String> food = Arrays.asList("Pizza","Sandwich","Burger","Rice");
 Stream<String> foodStr = food.parallelStream();
 ```
@@ -25,7 +25,7 @@ In addition, the Stream interface also has a method `parallel`. If the stream on
 
 Consider the following code:
 
-```
+```java
 Stream<String> foodStream = Stream.of("Pizza","Sandwich","Burger","Rice");
 Stream<String> parallelFoodStream = foodStream.parallel();
 
@@ -39,13 +39,13 @@ A parallel stream operates on the elements of the underlying stream in parallel 
 
 Consider the following code:
 
-```
+```java
 List<Integer> marks = Arrays.asList(81,76,69,92,84,75,88,96,54,91);
 List<Integer> marks2 = marks.parallelStream().filter(m -> m > 80).collect(Collectors.toList());
 System.out.println(marks2);
 ```
 
-This code first creates an Integer List `marks` using some values. It then obtains a parallel stream on `marks` and invokes the [filter](https://reshmabidikar.github.io/2019/06/stream-api-filter-example.html) method on the stream. The `parallelStream` method creates multiple smaller streams. The `filter` operation is performed on each stream by a separate thread. Finally, the result of performing the filter operation are combined before performing the `collect` operation.
+This code first creates an Integer List `marks` using some values. It then obtains a parallel stream on `marks` and invokes the [filter](stream-api-filter-example.md) method on the stream. The `parallelStream` method creates multiple smaller streams. The `filter` operation is performed on each stream by a separate thread. Finally, the result of performing the filter operation are combined before performing the `collect` operation.
 
 This code produces the following output:
 

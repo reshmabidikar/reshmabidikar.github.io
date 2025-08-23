@@ -10,7 +10,7 @@ tags:
   - "java8foreachremaining"
 ---
 
-[Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) has added a method called `forEachRemaning` to the Iterator interface. This helps in using an Iterator to internally iterate over a Collection, without an explicit loop. In this article, I will be covering this method with a code sample.
+[Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) has added a method called `forEachRemaning` to the `Iterator` interface. This helps in using an Iterator to internally iterate over a Collection, without an explicit loop. In this article, I will be covering this method with a code sample.
 
 ## Pre Java 8 code
 

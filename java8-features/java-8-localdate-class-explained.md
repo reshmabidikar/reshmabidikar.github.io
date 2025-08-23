@@ -9,17 +9,17 @@ tags:
   - "java8localdate"
 ---
 
-Another new feature by Java 8 is the DateTime API. Some of the important classes in the DateTime API are the LocalDate, [LocalTime](https://reshmabidikar.github.io/2019/08/java-8-localtime-class-explained.html) and [LocalDateTime](https://reshmabidikar.github.io/2019/08/java-8-localtime-class-explained.html). In this article, I will be explaining the Java 8 LocalDate class in detail.
+Another new feature by [Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) is the DateTime API. Some of the important classes in the DateTime API are the LocalDate, [LocalTime](java-8-localtime-class-explained.md) and [LocalDateTime](java-8-localtime-class-explained.md). In this article, I will be explaining the `LocalDate` class in detail.
 
 ## Introduction
 
-The LocalDate class represents a date. It is present in the java.time package. It has several methods that allow you to perform date manipulation easily.
+The LocalDate class represents a date. It is present in the `java.time` package. It has several methods that allow you to perform date manipulation easily.
 
 ## Creating LocalDate
 
 There are several static methods on the LocalDate class that allow you to obtain a LocalDate instance. The following code demonstrates this:
 
-```
+```java
 public class LocalDateDemo {
 
   public static void main(String[] args) {
@@ -60,7 +60,7 @@ In addition to these methods, there are several other methods in the **LocalDate
 
 The **LocalDate** allows you to easily perform date arithmetic. The following code demonstrates this:
 
-```
+```java
 LocalDate date = LocalDate.parse("2019-07-15");
   
 LocalDate date2 = date.plusDays(5);//add 5 days
@@ -96,7 +96,7 @@ In addition to these methods, there are several methods that allow you to perfor
 
 The **LocalDate** class allows you to easily extract information from the Date object. The following code demonstrates this:
 
-```
+```java
 LocalDate date = LocalDate.parse("2019-07-15");
 
 int day = date.getDayOfYear();
@@ -132,7 +132,7 @@ In addition to these methods, there are several methods that allow you to easily
 
 The **LocalDate** class allows you to easily perform Date comparison. The following code demonstrates this:
 
-```
+```java
 LocalDate date1 = LocalDate.parse("2017-05-17");
 
 LocalDate date2 = LocalDate.parse("2014-09-14");
@@ -165,7 +165,7 @@ In addition to these methods, there are several methods that allow you to perfor
 
 The **LocalDate** class allows you to easily calculate the duration between dates. The following code demonstrates this:
 
-```
+```java
 LocalDate date1 = LocalDate.parse("2017-05-17");
   LocalDate date2 = LocalDate.parse("2017-08-17");
   Period period = date1.until(date2);

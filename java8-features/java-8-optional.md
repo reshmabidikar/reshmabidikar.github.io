@@ -16,7 +16,7 @@ An optional can be used to represent a value that can either be present or absen
 
 Consider the following code:
 
-```
+```java
 Person person = new Person();
 if(person != null){ // Null Check
   String name = person.getName();
@@ -29,7 +29,7 @@ The above code needs to have an explicit null check for Person object. Only if t
 
 Java 8 Optionals help to avoid explicit null checks like this. So you can re-write the above code using an Optional as follows:
 
-```
+```java
 Optional<Person> person = Optional.of(new Person()); 
 person.ifPresent(person -> System.out.println(person.getName()));
 ```
@@ -44,7 +44,7 @@ There are three static methods on the Optional class which can be used to create
 
 The **Optional.empty** can be used to create an empty Optional, that is an Optional without a value. The following code demonstrates this:
 
-```
+```java
 Optional<String> opStr = Optional.empty();
 ```
 
@@ -54,7 +54,7 @@ So this code creates an empty String Optional.
 
 You can use the **Optional.of** method to create an Optional with a non-null value. The following code demonstrates this:
 
-```
+```java
 Optional<Integer> opNum = Optional.of(10);
 ```
 
@@ -66,7 +66,7 @@ You can use the Optional.ofNullable method to create an Optional that can hold b
 
 Consider the following code snippet:
 
-```
+```java
 Optional<Integer> opNum = Optional.ofNullable(10);
 ```
 
@@ -74,7 +74,7 @@ So this code creates an Optional of type **Integer** with the value **10**.
 
 However, when you invoke the **ofNullable** method with a null, it returns as empty Optional. The following code demonstrates this:
 
-```
+```java
 Optional<Integer> opNum = Optional.ofNullable(null);
 ```
 
@@ -90,7 +90,7 @@ The Optional.isPresent method determines if a value is present within an Optiona
 
 Consider the following code snippet:
 
-```
+```java
 Optional<Integer> opNum = Optional.ofNullable(10);
 System.out.println("Value is present:"+opNum.isPresent());
 ```
@@ -101,7 +101,7 @@ Since the Optional **opNum** has the value **10**, this code will print **true**
 
 The **Optional.ifPresent** method performs an action on the value in the Optional if present. If there is no value in the Optional it does not do anything. It accepts as parameter a **Consumer** instance which specifies the action to be performed on the Optional. The following code demonstrates this:
 
-```
+```java
 Optional<Integer> opNum= Optional.ofNullable(10);
 opStr.ifPresent(num-> System.out.println(num+5));
 ```
@@ -110,7 +110,7 @@ Here, an Optional String **opNum** is created with the value **10**. A lambda ex
 
 If an empty Optional is used with the **ifPresent** method it does nothing as demonstrated below:
 
-```
+```java
 Optional<String> opStr = Optional.ofNullable(null);
 opStr.ifPresent(str-> System.out.println(str));
 ```
@@ -123,7 +123,7 @@ The **Optional.get** method returns the value in the Optional. If there is no va
 
 Consider the following code snippet:
 
-```
+```java
 Optional<Integer> opNum = Optional.of(10);
 int value = opNum.get();
 System.out.println(value);
@@ -133,7 +133,7 @@ This code uses the **get** method to retrieve the value in the Optional **opNum*
 
 If the **get** method is used with an empty Optional it throws an Exception. The following code demonstrates this:
 
-```
+```java
 Optional<Integer> opNum = Optional.ofNullable(null);
 Integer num = opNum.get();
 System.out.println(num);
@@ -141,7 +141,7 @@ System.out.println(num);
 
 This code prints the following output:
 
-```
+```java
 Exception in thread "main" java.util.NoSuchElementException: No value present
 ```
 

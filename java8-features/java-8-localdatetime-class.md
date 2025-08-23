@@ -8,7 +8,7 @@ tags:
   - "localdatetime"
 ---
 
-Just like the [LocalDate](https://reshmabidikar.github.io/2019/06/java-8-localdate-class-explained.html) and [LocalTime](https://reshmabidikar.github.io/2019/08/java-8-localtime-class-explained.html) classes, Java 8 has also introduced the LocalDateTime class. In this article, I will be covering this class.
+Just like the [LocalDate](java-8-localdate-class-explained.md) and [LocalTime](java-8-localtime-class-explained.md) classes, [Java 8](https://reshmabidikar.github.io/blog.html#java-8-new-features) has also introduced the LocalDateTime class. In this article, I will be covering this class.
 
 ## What is LocalDateTime class?
 
@@ -18,7 +18,7 @@ The Java 8 LocalDateTime class represents a date with a time component. It has t
 
 There are several static methods on the LocalDateTime class that can be used to create a LocalDateTime. The following code demonstrates this:
 
-```
+```java
 LocalDateTime dateTime1 = LocalDateTime.now();
 System.out.println("Today's date is "+dateTime1);
 
@@ -47,7 +47,7 @@ In addition to these methods, there are several other methods in the**LocalDateT
 
 The LocalDateTime class allows you to easily perform time arithmetic as can be seen by the following code:
 
-```
+```java
 LocalDateTime dateTime = LocalDateTime.of(2017,05,17,5,25);
 
 
@@ -84,7 +84,7 @@ In addition to these methods, there are several more methods on the LocalDateTim
 
 The LocalDateTime class allows you to easily extract information from the LocalDateTime object. The following code demonstrates this:
 
-```
+```java
 LocalDateTime dateTime1 = LocalDateTime.of(2017,05,17,5,25);
 
 int day = dateTime1.getDayOfYear();
@@ -120,7 +120,7 @@ In addition to these methods, there are many other methods in the LocalDateTime 
 
 The LocalDateTime class allows you to easily perform comparison as can be seen by the following code:
 
-```
+```java
 LocalDateTime dateTime1 = LocalDateTime.of(2017,05,17,5,25);
 LocalDateTime dateTime2 = LocalDateTime.of(2014,06,12,8,40);
 LocalDateTime dateTime3 = LocalDateTime.of(2017,05,17,5,25);
@@ -130,7 +130,6 @@ System.out.println("Is after:"+isAfter);
 
 boolean isEqual = dateTime1.isEqual(dateTime3);
 System.out.println("Is Equal:"+isEqual);
-
 ```
 
 - The isAfter method returns true if the datetime object on which the method is invoked is **after** the datetime object passed in
@@ -141,8 +140,6 @@ So this code prints the following output:
 ```
 Is after:true
 Is Equal:true
-
-
 ```
 
 ## Conclusion

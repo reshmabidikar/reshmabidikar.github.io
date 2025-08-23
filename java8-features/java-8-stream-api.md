@@ -13,12 +13,11 @@ Java 8 introduced the Stream API. The Stream API along with lambda expressions c
 
 ## How do Streams work?
 
-A new method called stream has been added to all the Collection interfaces, this returns a[java.util.Stream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html) interface. There are various methods on this stream interface that perform the corresponding operation on the Stream instance.
+A new method called `stream` has been added to all the Collection interfaces, this returns a[java.util.Stream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html) interface. There are various methods on this stream interface that perform the corresponding operation on the Stream instance.
 
 Suppose you have an integer array. Suppose you want to find all the elements that are greater than the value 9. Before Streams and Java 8, you would need to write code like the following:
 
-````
-
+````java
 public class FilterStreamDemo {
 
     public static void main(String[] args) { 
@@ -38,8 +37,7 @@ So this code iterates through the input list. It checks if each number is greate
 
 Using Streams, we can re-write the above code as follows:
 
-````
-
+````java
 public class FilterStreamDemo {
 
     public static void main(String[] args) { 
@@ -49,13 +47,13 @@ public class FilterStreamDemo {
 }
 ````
 
-The code first invokes the `input.stream` method which returns a `Stream` instance. There is a [filter](https://reshmabidikar.github.io/2019/06/stream-api-filter-example.html) method present on the [Stream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html) interface. This accepts a [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html) instance. Here, we are passing a lambda expression for the [Predicate](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html). So the lambda expression matches any element which is greater than 9. Thus, the [filter](https://reshmabidikar.github.io/2019/06/stream-api-filter-example.html) method runs this Predidate on every element in the input Stream and creates a new Stream with the output. So the result is a Stream that only has elements greater than 9. Compared to the earlier code, this code is much cleaner and easy to read.
+The code first invokes the `input.stream` method which returns a `Stream` instance. There is a [filter](../java8-examples/stream-api-filter-example.md) method present on the [Stream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html) interface. This accepts a [Predicate](../java8-examples/java-8-predicate-example.md) instance. Here, we are passing a lambda expression for the [Predicate](../java8-examples/java-8-predicate-example.md). So the lambda expression matches any element which is greater than 9. Thus, the [filter](../java8-examples/stream-api-filter-example.md) method runs this Predicate on every element in the input Stream and creates a new Stream with the output. So the result is a Stream that only has elements greater than 9. Compared to the earlier code, this code is much cleaner and easy to read.
 
 ## Iterating Through a Stream
 
 Just like Java 8 provides the forEach method for iterating through a Collection, it also provides this method on the Stream interface. So using this forEach, you can iterate through a Stream. Consider the following code snippet:
 
-````
+````java
 public class FilterStreamDemo {
 
     public static void main(String[] args) { 
@@ -78,7 +76,7 @@ So when you execute this code, it will print the following output:
 
 The real power of Streams is that it allows you to chain a number of operations. For example, consider the following code:
 
-````
+````java
 public class StreamChainingOperationsDemo {
 
     public static void main(String[] args) { 
@@ -89,7 +87,7 @@ public class StreamChainingOperationsDemo {
 } 
 ````
 
-Here, the code first invokes the filter method. This is followed by the distinct method which returns a Stream with unique elements. So basically, the distinct method eliminates duplicates in the input Stream. Finally, the code invokes the count method. This returns the number of elements in the input Stream. So when you execute this code, it will print the following output:
+Here, the code first invokes the [filter](../java8-examples/stream-api-filter-example.md) method. This is followed by the [distinct](../java8-examples/java-8-stream-api-distinct-example.md) method which returns a Stream with unique elements. So basically, the distinct method eliminates duplicates in the input Stream. Finally, the code invokes the `count` method. This returns the number of elements in the input Stream. So when you execute this code, it will print the following output:
 
 ````
 count =3
@@ -99,7 +97,7 @@ count =3
 
 You can convert the results of chaining several Streams back to a Collection. There is a method called collect on the Stream interface for this. So consider the following code snippet:
 
-````
+````java
 public class CollectStreamDemo {
 
     public static void main(String[] args) { 
@@ -109,7 +107,7 @@ public class CollectStreamDemo {
 } 
 ````
 
-Here, the code invokes the distinct method to obtain the unique elements in the input. Then the code invokes the collect method.This accepts a Collector instance. There is a Collectors class. It has a method called toList which returns a Collector that converts the Stream to a List. So when you execute this code, it prints the following output:
+Here, the code invokes the [distinct](../java8-examples/java-8-stream-api-distinct-example.md) method to obtain the unique elements in the input. Then the code invokes the `collect` method.This accepts a `Collector` instance. There is a `Collectors` class. It has a method called `toList` which returns a Collector that converts the Stream to a List. So when you execute this code, it prints the following output:
 
 ````
 5 3 11 15 9 2

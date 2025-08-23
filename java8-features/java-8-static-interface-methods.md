@@ -10,11 +10,11 @@ tags:
   - "static"
 ---
 
-Just like [default methods](https://reshmabidikar.github.io/2019/04/java-8-default-method-in-interface-explained.html), Java 8 also supports static methods in interfaces. In this blog post, I will be explaining Java 8 static interface methods in detail. I will be covering what static methods are, how they work and why they were added.
+Just like [default methods](java-8-default-method-in-interface-explained.md), Java 8 also supports **static** methods in interfaces. In this blog post, I will be explaining Java 8 static interface methods in detail. I will be covering what static methods are, how they work and why they were added.
 
 #### What are static interface methods?
 
-Static interface methods are methods with the static keyword are with a method body.
+Static interface methods are methods with the **static** keyword are with a method body.
 
 #### How do static interface methods work?
 
@@ -29,7 +29,7 @@ public interface MyInterface {
 } 
 ````
 
-So in the code above, the staticMethod is a static interface method. So we have defined a method with a method body within the interface. It has the static keyword specified. Prior to Java 8, the above code would have caused an error due to two reasons:
+So in the code above, `staticMethod` is a static interface method. So we have defined a method with a method body within the interface. It has the static keyword specified. Prior to Java 8, the above code would have caused an error due to two reasons:
 
 1. There is a method with a method body within the interface
 2. There is a static method with in the interface

@@ -6,7 +6,7 @@ categories:
   - "java-interview-questions"
 ---
 
-Java 8 introduced an operator represented by a double colon(::), known as the "Method Reference" operator. In this blog post, I will be explaining this operator. A basic understanding of [lambda expessions](https://reshmabidikar.github.io/2019/05/java-8-lambda-expressions-explained.html) is required in order to understand method references.
+Java 8 introduced an operator represented by a double colon(::), known as the "Method Reference" operator. In this blog post, I will be explaining this operator. A basic understanding of [lambda expessions](java-8-lambda-expressions-explained.md) is required in order to understand method references.
 
 # What is the Method Reference operator?
 
