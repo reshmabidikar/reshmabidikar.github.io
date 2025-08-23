@@ -9,7 +9,7 @@ tags:
   - "predicate"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface Predicate works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface Predicate works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
 The `Predicate` interface provides a method called test. This method accepts a parameter of any data type and returns a boolean.
 

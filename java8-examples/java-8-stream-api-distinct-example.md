@@ -8,7 +8,7 @@ categories:
 
 In this article, I will be demonstrating the distinct method provided by Java 8 Stream API.
 
-In order to understand the Stream API in detail, refer to [this](https://reshmabidikar.github.io/2019/05/java-8-stream-api.html) blog post.
+In order to understand the Stream API in detail, refer to [this](../java8-features/java-8-stream-api.md) blog post.
 
 ## Introduction
 

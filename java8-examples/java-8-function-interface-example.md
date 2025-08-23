@@ -9,7 +9,7 @@ tags:
   - "java8"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface Function works. To know more about functional interfaces, you can refer[this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface Function works. To know more about functional interfaces, you can refer[this](../java8-features/java-8-functional-interface.md) blog post.
 
 The [Function](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html) interface provides a method called apply. It accepts a single parameter of any data type and returns a result of any data type. So it basically applies the logic in the apply method to the input parameter and returns the result.
 

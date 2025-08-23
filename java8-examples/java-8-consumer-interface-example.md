@@ -9,7 +9,7 @@ tags:
   - "java8"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface Consumer works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface Consumer works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
 The `Consumer` interface provides a method called `accept`. It accepts a single parameter of any data type. It does not return anything, it returns a void. So it operates via side effects i.e. it modifies the parameter passed in.
 
