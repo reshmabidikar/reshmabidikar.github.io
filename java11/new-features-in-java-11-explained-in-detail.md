@@ -13,15 +13,15 @@ Java 11, is the latest long-term support (LTS) version of the Java programming l
 
 One of the most important features in Java 11 is the ability to use the `var` keyword for lambda parameters. This allows for more concise and readable code when working with lambda expressions.
 
-Java 10 introduced the [Local Variable Type Inference feature](https://learnjava.co.in/java-10-type-inference/). However, the `var` keyword could not be used with lambda expressions. So, you would need to write a lambda expression as follows:
+Java 10 introduced the [Local Variable Type Inference feature](../java10/java-10-type-inference.md). However, the `var` keyword could not be used with lambda expressions. So, you would need to write a lambda expression as follows:
 
-```
+```java
 (int a, int b) -> a + b
 ```
 
 This code can be rewritten in Java 11 as follows:
 
-```
+```java
 (var a, var b) -> a + b
 ```
 

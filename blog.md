@@ -1,8 +1,8 @@
 # Java Blog
 
 ## Core Java
-* [Java 17 Features](2024/08/java-17-features.md)
-* [Java 11 Features](2023/05/new-features-in-java-11-explained-in-detail.md)
+* [Java 17 Features](java16-17/java-17-features.md)
+* [Java 11 Features](java11/new-features-in-java-11-explained-in-detail.md)
 * [Record Class in Java](java16-17/record-class-in-java.md)
 * [How to add days to a Date in Java](2021/12/how-to-add-days-to-a-date-in-java-with-code-samples.md)
 * [How to read a file on the Classpath in Java](2021/07/how-to-read-a-file-on-the-classpath-in-java.md)
@@ -239,7 +239,7 @@
 
 ## Maven, Tomcat and Eclipse
 * [How to setup Tomcat in Eclipse](2019/05/how-to-setup-tomcat-in-eclipse.md)
-* [Maven Clean Install Command Explained](2023/09/maven-clean-install-command-explained.md)
+* [Maven Clean Install Command Explained](maven-tomcat-and-eclipse/maven-clean-install-command-explained.md)
 * [How to create a Maven Wen Project using Archetype Selection](2022/02/how-to-create-a-maven-web-project-using-archetype-selection.md)
 * [Maven Wrapper](2022/01/maven-wrapper-need-installation-and-benefits.md)
 * [Tomcat Maven Plugin](2021/06/tomcat-maven-plugin-with-code-sample.md)
