@@ -10,9 +10,9 @@ tags:
   - "java8functionalinterfaces"
 ---
 
-In this blog post, I will be explaining how the DoubleSupplier Java 8 functional interface works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the DoubleSupplier Java 8 functional interface works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
-The `DoubleSupplier` interface provides a method called getAsDouble This method does not accept any arguments. It returns a Double data type. The DoubleSupplier interface is a specialization of the Supplier interface that returns a double value. To see an example of the Supplier interface, refer to [this](https://reshmabidikar.github.io/2018/08/java-8-supplier-interface-example.html) blog post.
+The `DoubleSupplier` interface provides a method called getAsDouble This method does not accept any arguments. It returns a Double data type. The DoubleSupplier interface is a specialization of the Supplier interface that returns a double value. To see an example of the Supplier interface, refer to [this](java-8-supplier-interface-example.md) blog post.
 
 #### DoubleSupplier example
 

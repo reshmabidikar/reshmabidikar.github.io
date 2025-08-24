@@ -9,9 +9,9 @@ tags:
   - "java8"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface BiPredicate works. To know more about functional interfaces, you can refer to [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface BiPredicate works. To know more about functional interfaces, you can refer to [this](../java8-features/java-8-functional-interface.md) blog post.
 
-The `BiPredicate` interface provides a method called `test`. This method accepts two parameters of any data type and returns a boolean. The `BiPredicate` interface is a specialization of the `Predicate` interface. While the `Predicate` interface accepts a single argument of any data type, the `BiPredicate` interface accepts two parameters of any data type. To see an example of the Predicate interface, refer to [this](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html) blog post.
+The `BiPredicate` interface provides a method called `test`. This method accepts two parameters of any data type and returns a boolean. The `BiPredicate` interface is a specialization of the `Predicate` interface. While the `Predicate` interface accepts a single argument of any data type, the `BiPredicate` interface accepts two parameters of any data type. To see an example of the Predicate interface, refer to [this](java-8-predicate-example.md) blog post.
 
 #### BiPredicate method with Two Integer arguments
 
@@ -56,4 +56,4 @@ Hello World has length greater than 5 = true
 Hello World has length greater than 12 = false
 ```
 
-You can get the source code for this example along with the code for other Java 8 examples at the Github repository [here](https://github.com/reshmabidikar/Java8Demo).
+You can get the source code for this example along with the code for other Java 8 examples at the GitHub repository [here](https://github.com/reshmabidikar/Java8Demo).

@@ -5,9 +5,9 @@ categories:
   - "java-8-examples"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface LongPredicate works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface LongPredicate works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
-The LongPredicate interface provides a method called test. This method accepts a parameter of Long data type and returns a boolean. The LongPredicate interface is a specialization of the Predicate interface. While the [Predicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html) interface accepts any data type, the LongPredicate interface accepts an Long value. To see an example of the Predicate interface, refer to[this](https://learnjava.co.in/java-8-predicate-example/)blog post.
+The LongPredicate interface provides a method called test. This method accepts a parameter of Long data type and returns a boolean. The LongPredicate interface is a specialization of the Predicate interface. While the [Predicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html) interface accepts any data type, the `LongPredicate` interface accepts a Long value. To see an example of the Predicate interface, refer to [this](java-8-predicate-example.md) blog post.
 
 #### LongPredicate Example
 

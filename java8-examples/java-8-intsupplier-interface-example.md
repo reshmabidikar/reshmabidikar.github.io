@@ -5,9 +5,9 @@ categories:
   - "java-8-examples"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface IntSupplier works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface IntSupplier works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
-The IntSupplier interface provides a method called getAsInt This method does not accept any arguments. It returns an Int data type. The IntSupplier interface is a specialization of the Supplier interface that returns an int. To see an example of the Supplier interface, refer to [this](https://learnjava.co.in/java-8-supplier-interface-example/) blog post.
+The IntSupplier interface provides a method called getAsInt This method does not accept any arguments. It returns an Int data type. The IntSupplier interface is a specialization of the Supplier interface that returns an int. To see an example of the Supplier interface, refer to [this](java-8-supplier-interface-example.md) blog post.
 
 #### IntSupplier example
 

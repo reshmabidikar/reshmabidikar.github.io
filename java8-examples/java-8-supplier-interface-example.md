@@ -10,9 +10,9 @@ tags:
   - "supplier"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface Supplier works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface Supplier works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
-The `Supplier` interface provides a method called get. This method does not accept any arguments. It can return any data type.
+The `Supplier` interface provides a method called `get`. This method does not accept any arguments. It can return any data type.
 
 #### Supplier example with Integer return type.
 

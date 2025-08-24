@@ -9,9 +9,9 @@ tags:
   - "java8"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface BooleanSupplier works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface BooleanSupplier works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
-The BooleanSupplier interface provides a method called `getAsBoolean`. This method does not accept any arguments. It returns a boolean value. The BooleanSupplier interface is a specialization of the `Supplier` interface that returns a boolean. To see an example of the [Supplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html)interface, refer to [this](https://reshmabidikar.github.io/2018/08/java-8-supplier-interface-example.html) blog post.
+The `BooleanSupplier` interface provides a method called `getAsBoolean`. This method does not accept any arguments. It returns a boolean value. The `BooleanSupplier` interface is a specialization of the [Supplier](java-8-supplier-interface-example.md)  interface that returns a boolean. 
 
 #### BooleanSupplier example
 

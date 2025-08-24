@@ -9,9 +9,9 @@ tags:
   - "java8"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface BiFunction works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface BiFunction works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
-The [BiFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html) is a specialization of the [Function](https://reshmabidikar.github.io/2019/04/java-8-function-interface-example.html) interface that accepts 2 arguments. Just like [Function](https://reshmabidikar.github.io/2019/04/java-8-function-interface-example.html) it provides a method called apply. This method accepts 2 arguments of any data type and returns a result. So it basically applies the logic in the apply method to the input parameters and returns the result.
+The [BiFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html) is a specialization of the [Function](java-8-function-interface-example.md) interface that accepts 2 arguments. Just like [Function](java-8-function-interface-example.md) it provides a method called apply. This method accepts 2 arguments of any data type and returns a result. So it basically applies the logic in the apply method to the input parameters and returns the result.
 
 #### BiFunction Interface Example with two integer inputs and Integer output
 

@@ -5,9 +5,9 @@ categories:
   - "java-8-examples"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface `IntPredicate` works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface `IntPredicate` works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
-The `IntPredicate` interface provides a method called `test`. This method accepts a parameter of Integer data type and returns a boolean. The IntPredicate interface is a specialization of the Predicate interface. While the Predicate interface accepts any data type, the IntPredicate interface accepts an Integer value. To see an example of the Predicate interface, refer to [this](https://reshmabidikar.github.io/2018/10/java-8-predicate-example.html) blog post.
+The `IntPredicate` interface provides a method called `test`. This method accepts a parameter of Integer data type and returns a boolean. The `IntPredicate` interface is a specialization of the [Predicate](java-8-predicate-example.md) interface. While the [Predicate](java-8-predicate-example.md) interface accepts any data type, the `IntPredicate` interface accepts an Integer value. 
 
 #### IntPredicate Example
 
