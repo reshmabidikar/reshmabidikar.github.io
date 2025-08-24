@@ -9,11 +9,11 @@ tags:
   - "java-8-functional-interfaces"
 ---
 
-In this blog post, I will be explaining how the Java 8 BinaryOperator functional interface works. To know more about functional interfaces, you can refer to [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 BinaryOperator functional interface works. To know more about functional interfaces, you can refer to [this](../java8-features/java-8-functional-interface.md) blog post.
 
 # What is BinaryOperator
 
-The [BinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html) is a specialization of the [BiFunction](https://reshmabidikar.github.io/2019/06/java-8-bifunction-example.html) interface that accepts 2 arguments. However, unlike the [BiFunction](https://reshmabidikar.github.io/2019/06/java-8-bifunction-example.html) it accepts 2 arguments of the same data type and returns a result of the same data type. The [BinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html) internally uses the [BiFunction.apply](https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html#apply-T-U-) method.
+The [BinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html) is a specialization of the [BiFunction](java-8-bifunction-example.md) interface that accepts 2 arguments. However, unlike the [BiFunction](java-8-bifunction-example.md) it accepts 2 arguments of the same data type and returns a result of the same data type. The [BinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html) internally uses the [BiFunction.apply](https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html#apply-T-U-) method.
 
 #### BinaryOperator Interface Example with Integer data type
 

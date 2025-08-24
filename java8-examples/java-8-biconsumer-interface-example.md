@@ -5,9 +5,9 @@ categories:
   - "java-8-examples"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface BiConsumer works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface BiConsumer works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
-The `BiConsumer` interface provides a method called `accept`. It accepts 2 parameters of any data type. It does not return anything, it returns a void. So it operates via side effects i.e. it modifies the parameters passed in. The BiConsumer interface is a specialization of the Consumer interface. To see an example of the `Consumer` interface, refer to [this](https://reshmabidikar.github.io/2019/03/java-8-consumer-interface-example.html) blog post.
+The `BiConsumer` interface provides a method called `accept`. It accepts 2 parameters of any data type. It does not return anything, it returns a void. So it operates via side effects i.e. it modifies the parameters passed in. The `BiConsumer` interface is a specialization of the [Consumer](java-8-consumer-interface-example.md) interface. 
 
 #### BiConsumer example with Two Integer parameter
 

@@ -5,13 +5,13 @@ categories:
   - "java-8-examples"
 ---
 
-In this blog post, I will be explaining how the Java 8 [DoubleBinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html) functional interface works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 [DoubleBinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html) functional interface works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
 # What is DoubleBinaryOperator
 
-The [DoubleBinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html) is a specialization of the [BinaryOperator](https://reshmabidikar.github.io/2019/10/java-8-binaryoperator-example.html) interface. To see an example of the [BinaryOperator](https://reshmabidikar.github.io/2019/10/java-8-binaryoperator-example.html) interface, refer to [this](https://reshmabidikar.github.io/2019/10/java-8-binaryoperator-example.html) blog post.
+The [DoubleBinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html) is a specialization of the [BinaryOperator](java-8-binaryoperator-example.md) interface. To see an example of the [BinaryOperator](java-8-binaryoperator-example.md) interface, refer to [this](java-8-binaryoperator-example.md) blog post.
 
-While the [BinaryOperator](https://reshmabidikar.github.io/2019/10/java-8-binaryoperator-example.html) interface accepts any data type, the [DoubleBinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html) interface accepts arguments of double data type.
+While the [BinaryOperator](java-8-binaryoperator-example.md) interface accepts any data type, the [DoubleBinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html) interface accepts arguments of double data type.
 
 The [DoubleBinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html) interface provides a method [applyAsDouble](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html#applyAsDouble-double-double-). It accepts two arguments of double data type. It returns a result double data type. So it basically applies the logic in the applyAsDouble method to the input parameters and returns a double result.
 

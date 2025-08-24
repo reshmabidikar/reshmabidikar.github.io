@@ -9,9 +9,9 @@ tags:
   - "java8"
 ---
 
-In this blog post, I will be explaining how the Java 8 functional interface UnaryOperator works. To know more about functional interfaces, you can refer [this](https://reshmabidikar.github.io/2019/03/java-8-functional-interface.html) blog post.
+In this blog post, I will be explaining how the Java 8 functional interface UnaryOperator works. To know more about functional interfaces, you can refer [this](../java8-features/java-8-functional-interface.md) blog post.
 
-The `UnaryOperator` interface extends the [Function](https://reshmabidikar.github.io/2019/04/java-8-function-interface-example.html) interface. It inherits the [apply](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html#apply-T-) method in the [Function](https://reshmabidikar.github.io/2019/04/java-8-function-interface-example.html) interface. The lambda expression passed to the `UnaryOperator` is used to provide an implementation for the apply method in the [Function](https://reshmabidikar.github.io/2019/04/java-8-function-interface-example.html) interface.
+The `UnaryOperator` interface extends the [Function](java-8-function-interface-example.md) interface. It inherits the [apply](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html#apply-T-) method in the [Function](https://reshmabidikar.github.io/2019/04/java-8-function-interface-example.html) interface. The lambda expression passed to the `UnaryOperator` is used to provide an implementation for the apply method in the [Function](java-8-function-interface-example.md) interface.
 
 #### UnaryOperator example with Integer data type.
 
