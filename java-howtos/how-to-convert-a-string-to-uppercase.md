@@ -11,8 +11,7 @@ tags:
 
 In this blog post, I will be explaining how you can convert a String to uppercase. Consider the following code snippet:
 
-````
-
+````java
 package learnjava.strings;
 
 public class StringUpperCaseDemo {

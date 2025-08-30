@@ -12,7 +12,7 @@ tags:
 
 In this blog post, I will be demonstrating how you can convert a String to a Date object. Consider the following code snippet:
 
-````
+````java
 public class StringToDate {
 
 public static void main(String[] args) { 

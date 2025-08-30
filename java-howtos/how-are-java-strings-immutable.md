@@ -15,7 +15,7 @@ So yes, **Java Strings** are indeed **immutable**. So what does **immutable** me
 
 Now consider the following code:
 
-````
+````java
 String str= "abc";
 str= "xyz";
 ````
@@ -29,4 +29,4 @@ The object "_abc_" remains as it is and a new object "_xyz_" is created. The obj
 The following diagram depicts this scenario. In **Figure 1**, the variable "_str_" points to the String "_abc_" whereas in **Figure 2** the variable "_str_" points to the String "_xyz_" but the String "_abc_" still exists in memory.
 
 
-![](images/str-1-300x111.png) ![](images/str2-1-300x220.png)
+![](images/strings-immutable/str-1-300x111.png) ![](images/strings-immutable/str2-1-300x220.png)
