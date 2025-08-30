@@ -11,7 +11,7 @@ tags:
 In this blog post, I will be explaining how you can reverse a Set or List via Java. Consider the following code snippet:
 
 
-````
+````java
 
 package learnjava.collections;
 
@@ -22,32 +22,32 @@ import java.util.List;
 public class ReverseDemo {
 
 public static void main(String[] args) { 
-List<Integer>inputList = new ArrayList<Integer>(); 
-inputList.add(5); 
-inputList.add(15); 
-inputList.add(20); 
-inputList.add(25);
+    List<Integer>inputList = new ArrayList<Integer>(); 
+    inputList.add(5); 
+    inputList.add(15); 
+    inputList.add(20); 
+    inputList.add(25);
 
-List<Integer>reverserdList1 = reverseList1(inputList); 
-List<Integer>reverserdList2 = reverseList2(inputList);
+    List<Integer>reverserdList1 = reverseList1(inputList); 
+    List<Integer>reverserdList2 = reverseList2(inputList);
 
-System.out.println("Input List is "+inputList); 
-System.out.println("reverserdList using method1 "+reverserdList1); 
-System.out.println("reverserdList using method2 "+reverserdList2); }
+    System.out.println("Input List is "+inputList); 
+    System.out.println("reverserdList using method1 "+reverserdList1); 
+    System.out.println("reverserdList using method2 "+reverserdList2); }
 
-private static List<Integer> reverseList2(List<Integer>inputList ){ 
-List<Integer> reverserdList = new ArrayList<Integer>();
+    private static List<Integer> reverseList2(List<Integer>inputList ){ 
+        List<Integer> reverserdList = new ArrayList<Integer>();
 
-for(int i =inputList.size()-1;i >=0;i--){ 
-reverserdList.add(inputList.get(i)); 
-} 
-return reverserdList; 
-}
+        for(int i =inputList.size()-1;i >=0;i--){ 
+            reverserdList.add(inputList.get(i)); 
+        } 
+    return reverserdList; 
+    }
 
-private static List<Integer> reverseList1(List<Integer>inputList ){ 
-Collections.reverse(inputList); 
-return inputList; 
-}
+    private static List<Integer> reverseList1(List<Integer>inputList ){ 
+        Collections.reverse(inputList); 
+        return inputList; 
+    }
 
 } 
 

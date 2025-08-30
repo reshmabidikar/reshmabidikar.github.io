@@ -9,7 +9,7 @@ tags:
 
 In this blog post, I will be explaining how you can calculate the sum of numbers in an array. Consider the following code snippet:
 
-````
+````java
 package demo;
 
 public class SumDemo {

@@ -8,8 +8,7 @@ categories:
 
 In this blog post, I will be explaining how you can check if 2 lists are exactly the same. Consider the following code snippet:
 
-````
-
+````java
 public class CompareLists {
 
     public static void main(String[] args) { 

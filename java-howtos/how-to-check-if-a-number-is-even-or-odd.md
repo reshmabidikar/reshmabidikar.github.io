@@ -11,7 +11,7 @@ This blog post demonstrates how you can check if a number is even or odd via Jav
 
 Consider the following code snippet:
 
-````
+````java
 
 public class EvenOddDemo {
 

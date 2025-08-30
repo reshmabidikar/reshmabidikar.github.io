@@ -8,7 +8,7 @@ categories:
 
 In this blog post, I will be explaining how you can easily create a List of elements with some data. Consider the following code snippet:
 
-````
+````java
 public static void main(String[] args) { 
     List<Integer> input = new ArrayList<Integer>(); 
     input.add(3); 

@@ -9,30 +9,31 @@ tags:
   - "java-collections-framework-en"
 ---
 
-In this blog post, I will be explaining how you can convert a Java list to an array. To see how to convert an Array to a List, click [here](https://learnjava.co.in/how-to-convert-an-array-to-a-list/).
+In this blog post, I will be explaining how you can convert a Java list to an array. To see how to convert an Array to a List, click [here](how-to-convert-an-array-to-a-list.md).
 
 There are a couple of ways to do this. Consider the following code snippet:
 
-````
+````java
 
 public class ListToArrayDemo {
 
-public static void main(String[] args) { 
-//Method 1 
-List<Integer> list = Arrays.asList(5,3,11,15,9); 
-Object[] objects = list.toArray();
+    public static void main(String[] args) { 
+    //Method 1 
+    List<Integer> list = Arrays.asList(5,3,11,15,9); 
+    Object[] objects = list.toArray();
 
-//Method 2 
-Integer[] integers = new Integer[list.size()]; 
-integers = list.toArray(integers);
+    //Method 2 
+    Integer[] integers = new Integer[list.size()]; 
+    integers = list.toArray(integers);
 
-//Method 3 
-Integer[] integers2 = new Integer[list.size()]; 
-for(int i = 0; i < list.size();i++){ 
-integers2[0] = list.get(0); 
+    //Method 3 
+    Integer[] integers2 = new Integer[list.size()]; 
+    for(int i = 0; i < list.size();i++){ 
+        integers2[0] = list.get(0); 
+    }
+
+} 
 }
-
-} }
 
 ````
 

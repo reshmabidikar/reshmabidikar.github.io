@@ -12,7 +12,7 @@ In this blog post, I will be demonstrating how you can reverse a sentence via Ja
 
 Consider the following code snippet:
 
-````
+````java
 
 package learnjava.strings;
 

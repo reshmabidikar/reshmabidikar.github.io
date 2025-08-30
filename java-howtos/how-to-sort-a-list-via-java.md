@@ -8,9 +8,9 @@ tags:
   - "java-collections-framework-en"
 ---
 
-In this blog post, I will be explaining how you can sort a list via Java.  Consider the following code snippet:
+In this blog post, I will be explaining how you can sort a list via Java. Consider the following code snippet:
 
-````
+````java
 
 package learnjava.collections;
 

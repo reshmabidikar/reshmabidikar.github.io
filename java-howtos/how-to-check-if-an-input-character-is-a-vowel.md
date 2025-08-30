@@ -12,8 +12,7 @@ In this blog post, I will be demonstrating how you can check if an input charact
 
 Consider the following code snippet:
 
-````
-
+````java
 public enum Vowels { a,e,i,o,u; }
 
 public class CheckIfVowel {
@@ -52,7 +51,7 @@ a
 Input a is a vowel
 ```
 
-Also, if you run this code with the input value as Z,  the following will be printed:
+Also, if you run this code with the input value as Z, the following will be printed:
 
 ```
 Enter a character:
