@@ -10,13 +10,13 @@ Very often, when programmers perform date manipulation, they are required to add
 
 ## Using LocalDate
 
-The [LocalDate](https://learnjava.co.in/java-8-localdate-class-explained/) class makes it very easy to add days to a Date. Let us take a look at a few examples.
+The [LocalDate](../java8-features/java-8-localdate-class-explained.md) class makes it very easy to add days to a Date. Let us take a look at a few examples.
 
 ### Adding days to a LocalDate
 
 The following code sample demonstrates adding days to a LocalDate:
 
-```
+```java
 LocalDate date1 = LocalDate.of(2018, 05, 10);
 System.out.println("Before adding days:"+date1);
 LocalDate date2 = date1.plusDays(6);
@@ -34,7 +34,7 @@ After adding days:2018-05-16
 
 Similarly, the LocalDate class has a `minusDays` method, that subtracts the specified number of days from a LocalDate object. The following code demonstrates this method:
 
-```
+```java
 LocalDate date1 = LocalDate.of(2018, 05, 10);
 System.out.println("Before adding days:"+date1);
 LocalDate date2 = date1.minusDays(6);
@@ -50,9 +50,9 @@ After adding days:2018-05-04
 
 ### Adding/Subtracting other components
 
-Similarly, the [LocalDate](https://learnjava.co.in/java-8-localdate-class-explained/) class has other methods that can be used to add/subtract months, years, weeks from a LocalDate. The following code demonstrates some of these methods:
+Similarly, the [LocalDate](../java8-features/java-8-localdate-class-explained.md) class has other methods that can be used to add/subtract months, years, weeks from a LocalDate. The following code demonstrates some of these methods:
 
-```
+```java
 LocalDate date1 = LocalDate.of(2018, 05, 10);
 System.out.println("Before adding months:"+date1);
 System.out.println("After adding 5 months:"+date1.plusMonths(5));
@@ -83,7 +83,7 @@ LocalDate is a new class added by Java 8. However, if you have legacy code, ther
 
 The following code demonstrates adding days to a Date represented as a Calendar instance:
 
-```
+```java
 String strDate = "2018-05-10";
 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 Calendar cal = Calendar.getInstance();
@@ -106,7 +106,7 @@ After adding 6 days: Wed May 16 00:00:00 IST 2018
 
 In order to add a number of days to a `java.util.Date` instance, you need to convert it to Calendar and use the same code as above. The following code demonstrates this:
 
-```
+```java
 String strDate = "2018-05-10";
 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 Date date = sdf.parse(strDate);

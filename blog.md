@@ -1,11 +1,7 @@
 # Java Blog
 
 ## Core Java
-* [Java 17 Features](java16-17/java-17-features.md)
-* [Java 11 Features](java11/new-features-in-java-11-explained-in-detail.md)
-* [Record Class in Java](java16-17/record-class-in-java.md)
-* [How to add days to a Date in Java](2021/12/how-to-add-days-to-a-date-in-java-with-code-samples.md)
-* [How to read a file on the Classpath in Java](2021/07/how-to-read-a-file-on-the-classpath-in-java.md)
+
 * [Java Inheritance Interview Questions](java-inheritance-interview-questions-with-examples.md)
 * [Difference between local, instance and static variables in Java](2021/03/what-is-the-difference-between-a-local-instance-and-static-variable-in-java.md)
 * [Difference between Comparator and Comparable](2020/09/difference-between-comparator-and-comparable.md)
@@ -116,7 +112,12 @@
 * [Write to a file in Java](2018/08/write-to-a-file-using-java.md)
 * [Jackson ObjectMapper with Examples](jackson/jackson-object-mapper.md)
 
-## Java 11 New Features
+## Java 16 and 17
+* [Java 17 Features](java16-17/java-17-features.md)
+* [Record Class in Java](java16-17/record-class-in-java.md)
+
+## Java 11 
+* [Java 11 Features](java11/new-features-in-java-11-explained-in-detail.md)
 * [Java 11 String Enhancements](java11/java-11-string-enhancements-with-examples.md)
 
 ## Java 10
@@ -195,6 +196,14 @@
 * [Stream API filter example](java8-examples/stream-api-filter-example.md)
 * [Java 8 Stream API anyMatch Example](java8-examples/stream-api-anymatch-example.md)
 * [Java 8 Map Compute Method Examples](java8-features/java-8-map-compute-map-computeifpresent-map-computeifabsent-method-examples.md)
+
+## Java How-tos
+* [How to add days to a Date in Java](java-howtos/how-to-add-days-to-a-date-in-java-with-code-samples.md)
+* [How to read a file on the Classpath in Java](java-howtos/how-to-read-a-file-on-the-classpath-in-java.md)
+
+## Java Interview Questions
+
+## Java Language Features
 
 
 ## Spring and Spring Boot

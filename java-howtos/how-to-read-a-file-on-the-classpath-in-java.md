@@ -6,13 +6,13 @@ categories:
 coverImage: "classpath-3-scaled.jpg"
 ---
 
-There are often programming situations when you need to read a file on the [classpath](https://learnjava.co.in/java-path-and-classpath-explained/) via Java. In this article, I will show you how to write code for this.
+There are often programming situations when you need to read a file on the [classpath](2018/11/java-path-and-classpath-explained.md) via Java. In this article, I will show you how to write code for this.
 
 ## Reading a file on the classpath
 
 Let us first take a look at the code that you need to write to read a file on the classpath.
 
-```
+```java
 public class ReadFileFromClassPathDemo {
 
   public static void main(String[] args) throws IOException {
@@ -36,31 +36,31 @@ In case you need to test the code above from an IDE like Eclipse, you need to do
 
 Step 1 - Right-click on the class name and click **Run As > Run Configurations**:
 
-[![](images/1-run-as-300x248.png)](images/1-run-as.png)
+[![](images/read-file-on-classpath/1-run-as-300x248.png)](images/read-file-on-classpath/1-run-as.png)
 
 Step 2 - Click on the **Dependencies** Tab:
 
-[![](images/2-dependencies-300x270.png)](images/2-dependencies.png)
+[![](images/read-file-on-classpath/2-dependencies-300x270.png)](images/read-file-on-classpath/2-dependencies.png)
 
 Step 3 - Click on **Classpath entries**. Click on **Advanced > Add External Folder**:
 
-[![](images/3-advanced-300x271.png)](images/3-advanced.png)
+[![](images/read-file-on-classpath/3-advanced-300x271.png)](images/read-file-on-classpath/3-advanced.png)
 
 Step 4 - Navigate to the file system and select the folder which contains the file to be read (**D:/Data/Temp** in my case):
 
-[![](images/4-filesection-300x228.png)](images/4-filesection.png)
+[![](images/read-file-on-classpath/4-filesection-300x228.png)](images/read-file-on-classpath/4-filesection.png)
 
 Step 5 - Verify that the folder is added to the classpath. Click on **Apply** and **Run**:
 
-[![](images/5-apply-300x270.png)](images/5-apply.png)
+[![](images/read-file-on-classpath/5-apply-300x270.png)](images/read-file-on-classpath/5-apply.png)
 
 Step 6 - Verify that the file is read and its contents are displayed on the console:
 
-[![](images/6-output-1-300x69.png)](images/6-output-1.png)
+[![](images/read-file-on-classpath/6-output-1-300x69.png)](images/read-file-on-classpath/6-output-1.png)
 
 ## Maven project
 
-In the case of a Maven project, anything placed within the src/main/resources folder of the Maven project is automatically available on the classpath. So, if you place your input file in the src/main/resources folder, the code above will be able to read it.
+In the case of a Maven project, anything placed within the `src/main/resources` folder of the Maven project is automatically available on the classpath. So, if you place your input file in the `src/main/resources` folder, the code above will be able to read it.
 
 ## Further Reading
 
