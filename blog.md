@@ -190,10 +190,10 @@
 * [Java 8 DoubleBinaryOperator Example](java8-examples/java-8-doublebinaryoperator-example.md)
 
 * [Java 8 Stream API Distinct Example](java8-examples/java-8-stream-api-distinct-example.md)
-* [Java 8 Stream API allMatch Example](2019/08/stream-api-allmatch-example.md)
-* [Java 8 Stream API Map Operation Example](2019/07/stream-api-map-operation-example.md)
+* [Java 8 Stream API allMatch Example](java8-examples/stream-api-allmatch-example.md)
+* [Java 8 Stream API Map Operation Example](java8-examples/stream-api-map-operation-example.md)
 * [Stream API filter example](java8-examples/stream-api-filter-example.md)
-* [Java 8 Stream API anyMatch Example](2019/05/stream-api-anymatch-example.md)
+* [Java 8 Stream API anyMatch Example](java8-examples/stream-api-anymatch-example.md)
 * [Java 8 Map Compute Method Examples](java8-features/java-8-map-compute-map-computeifpresent-map-computeifabsent-method-examples.md)
 
 

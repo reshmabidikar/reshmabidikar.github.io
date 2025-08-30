@@ -9,13 +9,13 @@ tags:
   - "stream-api"
 ---
 
-In this blog post, I will be demonstrating the Java 8 Stream API map method. In order to understand the Stream API in detail, refer to [this](https://reshmabidikar.github.io/2019/05/java-8-stream-api.html) blog post.
+In this blog post, I will be demonstrating the Java 8 Stream API map method. In order to understand the Stream API in detail, refer to [this](../java8-features/java-8-stream-api.md) blog post.
 
 ## Introduction
 
 The **map** method in the Stream API can be applied on an existing Stream. It applies some logic to each element in the input stream and produces an output stream. For example, if there is an integer stream, you can you the map operation to multiply each element by 5. Or if you have a Stream of String values, you can use the map operation to convert each element in the Stream to uppercase.
 
-The map operation accepts a `Function` instance which is an in-built functional interface. Refer [this](https://learnjava.co.in/java-8-function-interface-example/) blog post for a detailed Function example.
+The map operation accepts a `Function` instance which is an in-built functional interface. Refer [this](java-8-function-interface-example.md) blog post for a detailed Function example.
 
 ## Code Sample with Integer
 
