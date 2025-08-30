@@ -9,13 +9,13 @@ tags:
   - "javasortlist"
 ---
 
-In this article, I will be demonstrating how you can sort a List in descending order. In order to see how to sort a List, you can refer to [this](https://learnjava.co.in/how-to-sort-a-list-via-java/) blog post.
+In this article, I will be demonstrating how you can sort a List in descending order. In order to see how to sort a List, you can refer to [this](how-to-sort-a-list-via-java.md) blog post.
 
 # Approach 1 - Using Collections.reverse
 
 The Collections class has a utility method called reverse. You can use this to sort a List in descending order. The following code demonstrates this:
 
-```
+```java
 private static void usingCollectionsReverse() {
   List<Integer> input = Arrays.asList(15,12,34,11,93,21,64);
   System.out.println("Before sorting:"+input);
@@ -38,7 +38,7 @@ After sorting:[93, 64, 34, 21, 15, 12, 11]
 
 There is an overloaded version of the `Collections.sort`method. This accepts a Comparator instance in addition to the Collection that needs to be sort. Also, the Collections class has a static method called `Collections.reverseOrder()`. This returns a Comparator that imposes the reverse of the natural ordering. So you can use both these methods to sort a List in descending order. The following code demonstrates this:
 
-```
+```java
 private static void usingCollectionsReverseOrder() {
   List<Integer> input = Arrays.asList(15,12,34,11,93,21,64);
   System.out.println("Before sorting:"+input);
@@ -58,7 +58,7 @@ After sorting:[93, 64, 34, 21, 15, 12, 11]
 
 Java 8 has added a sort method to the List interface. You can use this to sort a List. The `List.sort` method accepts as parameter a Comparator instance. You can use the `Collections.reverseOrder()` seen earlier to obtain a Comparator that imposes the reverse of the natural ordering and pass this Comparator to the List.sort method. The following code demonstrates this:
 
-```
+```java
 private static void usingListSortComparatorReverseOrder() {
   List<Integer> input = Arrays.asList(15,12,34,11,93,21,64);
   System.out.println("Before sorting:"+input);
@@ -84,4 +84,4 @@ This will also produce the same output as before.
 
 # Conclusion
 
-So in this article, we saw three different ways in which you can sort a List in descending order. We saw how you can use the Collections.sort method to sort the List. We also saw how the Collections.reversed and Collections.reverseOrder methods work. Finally, we took a look at how you can also use the Java 8 List.sort method.
+So in this article, we saw three different ways in which you can sort a List in descending order. We saw how you can use the `Collections.sort` method to sort the List. We also saw how the `Collections.reversed` and `Collections.reverseOrder` methods work. Finally, we took a look at how you can also use the Java 8 `List.sort` method.

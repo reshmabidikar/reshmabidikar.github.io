@@ -11,7 +11,7 @@ Very often, you will come across programming scenarios where you will need to re
 
 The String class has a method trim. You can use this to remove leading and trailing white spaces from a String. The following code demonstrates this:
 
-```
+```java
 String str1 = "   Hello World  ";
 System.out.println(str1);
 System.out.println(str1.trim());
@@ -28,7 +28,7 @@ Hello World
 
 Note that the trim method removes only the leading and trailing white spaces. It does not remove white spaces that are in between the String. There is a replace method on the String class that replaces the specified character with some other character. You can use this method to remove the spaces in a String. The following code demonstrates this:
 
-```
+```java
 String str1 = "   Hello World  ";
 String str2 = str1.replace(" ", "");
 System.out.println(str2);
@@ -44,7 +44,7 @@ HelloWorld
 
 In addition to the replace method, there is also a replaceAll method on the String class. It accepts as parameters a regular expression and a replacement value. It replaces each substring that matches the regular expression with the replacement value. The following code demonstrates this:
 
-```
+```java
 String str1 = "   Hello World  ";
 String str2 = str1.replaceAll("\\s", "");
 System.out.println(str2);

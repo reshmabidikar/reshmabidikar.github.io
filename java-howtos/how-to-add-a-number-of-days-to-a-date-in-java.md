@@ -12,7 +12,7 @@ In this article, I will be demonstrating how to add a number of days to a Date i
 
 Prior to Java 8, the Date and Calendar classes were available for Date manipulation. They make operations like adding a number of days to a Date very difficult. The following code demonstrates adding days to a date using the Calendar class:
 
-```
+```java
 String stringDate="2019-07-15";  
 Date date1=new SimpleDateFormat("yyyy-MM-dd").parse(stringDate);  
 Calendar cal = Calendar.getInstance();
@@ -31,7 +31,7 @@ So the above code first uses SimpleDateFormat.parse to convert a String date to 
 
 Java 8 introduced the LocalDate class which makes date manipulations like adding/subtracting days/months very easy. The following code demonstrates this:
 
-```
+```java
 LocalDate date = LocalDate.parse("2019-07-15");
     
 //add 5 days
@@ -44,4 +44,3 @@ So this code first creates a LocalDate object corresponding to the String date. 
 
 Not only days, the LocalDate class the several methods that allow you to add/subtract months, years from the LocalDate object.
 
-# Conclusion

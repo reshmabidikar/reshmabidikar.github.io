@@ -11,7 +11,7 @@ In this article, I will be demonstrating how you can create a new file on the fi
 
 The File class has a method `createNewFile`. You can use this to create a new file on the fie system. The following code demonstrates this:
 
-```
+```java
 private static void createNewFile(String filePath) {
     File file = new File(filepath);
     try {
@@ -29,7 +29,7 @@ This code creates a file at the specified filePath. The file path should include
 
 The `java.io.FileWriter` has a write method that you can use to write to a file. If the underlying file does not exist, this method automatically creates the file. So you can use this approach when you want to create a file and write some data to it. The following code demonstrates this:
 
-```
+```java
 private static void createNewFileUsingFileWriter(String filePath) {
      FileWriter fileWriter;
     try {
@@ -51,7 +51,7 @@ The code first creates a `FileWriter` object corresponding to `filePath`. It the
 
 Just like `java.io.FileWriter`, there is a `java.io.FileOutputStream` class that you can use to write to a file. So, it has a `write` method as well. However, the `FileOutputStream` can only write bytes. So you can use this approach when you want to create a file and write some data to it. The following code demonstrates this:
 
-```
+```java
 private static void createNewFileUsingFileOutputStream(String filePath) {
      FileOutputStream fos;
     try {

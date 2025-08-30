@@ -20,7 +20,7 @@ The `java.util.Date`class has methods `before()`and `after()`. You can use these
 
 The following code demonstrates this:
 
-```
+```java
 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
 Date date1 = simpleDateFormat.parse("2014-08-08");
@@ -50,7 +50,7 @@ The `java.util.Date`class has a method `compareTo`. You can also use this to com
 
 The following code demonstrates this:
 
-```
+```java
 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
 Date date1 = simpleDateFormat.parse("2014-08-08");
@@ -79,7 +79,7 @@ The `java.util.Calendar`also has methods `before()`and `after()`. You can use th
 
 The following code demonstrates this:
 
-```
+```java
 Calendar cal1 = new GregorianCalendar(2018, Calendar.AUGUST, 8);
 Calendar cal2 = new GregorianCalendar(2014, Calendar.DECEMBER, 21); 
 
@@ -101,14 +101,14 @@ Just like `java.util.Date`, there is a `compareTo` method on the **Calendar** cl
 
 # Using LocalDate
 
-[java.util.LocalDate](https://learnjava.co.in/java-8-localdate-class-explained/) is a new class added by Java 8. It makes Date manipulation/Date arithmetic very easy. It also has methods `isBefore`and `isAfter`. These methods work as follows:
+[java.util.LocalDate](../java8-features/java-8-localdate-class-explained.md) is a new class added by Java 8. It makes Date manipulation/Date arithmetic very easy. It also has methods `isBefore`and `isAfter`. These methods work as follows:
 
 - The `isBefore`method returns true if the date on which is it invoked is before the specified date, otherwise it returns false.
 - The `isAfter`method returns true if the date on which is it invoked is after the specified date, otherwise it returns false.
 
 You can use these methods to compare two dates. The following code demonstrates this:
 
-```
+```java
 LocalDate date1 = LocalDate.of(2018,Month.AUGUST,8);
 LocalDate date2 = LocalDate.of(2014,Month.DECEMBER,21);
 

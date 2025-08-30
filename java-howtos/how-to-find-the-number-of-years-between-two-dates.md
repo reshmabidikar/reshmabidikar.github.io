@@ -15,7 +15,7 @@ Prior to Java 8, you had to write complex logic to find the number of years betw
 
 The following code demonstrates this:
 
-```
+```java
 public static void main(String[] args) {
   LocalDate date1 = LocalDate.parse("1997-04-28");
   LocalDate date2 = LocalDate.parse("2015-11-25");

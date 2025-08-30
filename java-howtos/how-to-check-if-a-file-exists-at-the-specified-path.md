@@ -11,8 +11,7 @@ tags:
 
 In this blog post, I will be explaining how you can check if a file exists at a specified path. Consider the following code snippet:
 
-````
-
+````java
 public class FileExists {
 
 public static void main(String args[]){ 
