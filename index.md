@@ -25,7 +25,7 @@ I’m passionate about:
 - [📝 Blog](blog.md)
 - [💼 Services](services.md)
 - [⭐ Testimonials](testimonials.md)
-- [📩 Contact Me](mailto:reshma@example.com)
+- [📩 Contact Me](mailto:reshmabidikar@outlook.com)
 
 ---
 
