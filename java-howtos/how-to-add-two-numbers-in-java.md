@@ -32,8 +32,6 @@ Here, we are using the method add to add two numbers. It accepts 2 integer value
 
 If you run the code, the following output will get printed to the console:
 
- 
-
 ```
 Result is 30
 ```

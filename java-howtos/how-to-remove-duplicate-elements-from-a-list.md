@@ -13,7 +13,6 @@ In this blog post, I will demonstrate how to remove the duplicates from a List.
 
 There are several ways to do this.
 
- 
 
 #### Looping throw the List and creating new List
 
