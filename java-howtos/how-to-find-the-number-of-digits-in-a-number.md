@@ -9,22 +9,19 @@ This blog post demonstrates how to count the number of digits in a String.
 
 **Method 1 - Using division**
 
-````
-
+````java
 private static int countDigits(int input){ int count = 1;
 
 if(input > 10){ int quotient = 0; do{ count ++; quotient = input/10; input = quotient;
 
-}while(quotient > 9); } return count; }
-
+} while(quotient > 9); } return count; }
 ````
 
 The code checks if the number is greater than 10. If so, it divides the number by 10 and checks the quotient. It continues doing this as long as the quotient is greater than 9.
 
 Method 2 - Using Strings
 
-````
-
+````java
 private static int countDigits(int input){ 
   String str = String.valueOf(input); 
   return str.length();

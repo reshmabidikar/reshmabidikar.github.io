@@ -13,7 +13,7 @@ In this blog post, I will be demonstrating a Java program that counts the number
 
 Consider the following code sample:
 
-```
+```java
 public class CountVowelsAndConsonantsDemo {
   
   private static List<Character> vowels = Arrays.asList('a','e','i','o','u','A','E','I','O','U');

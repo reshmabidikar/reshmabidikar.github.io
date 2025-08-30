@@ -16,7 +16,7 @@ In this blog post, I will be explaining how you can sort a List of objects in Ja
 
 Suppose, there is a Person class as follows:
 
-````
+````java
 public class Person {
   private String firstName; 
   private String lastName; 
@@ -39,7 +39,7 @@ public class Person {
 
 And you have a list of Person objects as follows:
 
-````
+````java
 Person person1 = new Person("Mickey", "Mouse",34); 
 Person person2 = new Person("Donald", "Duck",45); 
 Person person3 = new Person("Peppa", "Pig",12); 
@@ -53,7 +53,7 @@ people.add(person3);
 
 And suppose you want to sort them in the increasing order of age. You can use a Comparator as follows:
 
-````
+````java
 Collections.sort(people, new Comparator<Person>() { 
   public int compare(Person person1,Person person2){ 
     return person1.getAge() - person2.getAge();
@@ -69,7 +69,7 @@ This comparator is then passed to the Collections.sort method. So the Collection
 
 Here is the complete code:
 
-````
+````java
 
 public class SortObjectsDemo {
 
@@ -110,7 +110,7 @@ After sorting
 
 If you want to sort in the decreasing order of age, you can change the Comparator as follows:
 
-````
+````java
 Collections.sort(people, new Comparator<Person>() { 
   public int compare(Person person1,Person person2){ 
     return person2.getAge() - person1.getAge();
@@ -131,7 +131,7 @@ After sorting
 
 Also, if you want to sort based on the first name, you can change the comparator as follows:
 
-````
+````java
 Collections.sort(people, new Comparator<Person>() { 
   public int compare(Person person1,Person person2) { 
     return person2.getFirstName().compareTo(person1.getFirstName));
@@ -150,9 +150,9 @@ After sorting
 
 #### Implementing Comparator using a lambda expression
 
-You can also implement a Comparator using a Java 8 lambda expression. So you can write the following code:
+You can also implement a Comparator using a [Java 8 lambda](../java8-features/java-8-lambda-expressions-explained.md) expression. So you can write the following code:
 
-````
+````java
 
 Collections.sort(people,(p1,p2) -> { return p1.getFirstName().compareTo(p2.getFirstName()); });
 
