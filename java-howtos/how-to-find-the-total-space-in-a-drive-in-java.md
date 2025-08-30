@@ -11,7 +11,7 @@ tags:
 
 In this blog post, I will be explaining how you can find the total space available in a drive via Java. Consider the following code snippet:
 
-````
+````java
 
 package learnjava.io;
 

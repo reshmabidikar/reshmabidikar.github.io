@@ -11,8 +11,7 @@ tags:
 
 In this blog post, I will be demonstrating how you can create a new empty file via Java. Consider the following code snippet:
 
-````
-
+````java
 package learnjava.io;
 
 import java.io.File; import java.io.IOException;

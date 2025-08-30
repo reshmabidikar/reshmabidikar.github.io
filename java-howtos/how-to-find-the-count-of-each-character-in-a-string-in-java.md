@@ -10,7 +10,7 @@ tags:
 
 In this blog post, I will be demonstrating how you can determine the number of occurrences of each character in a String. Consider the following code snippet:
 
-````
+````java
 
 package learnjava.strings;
 

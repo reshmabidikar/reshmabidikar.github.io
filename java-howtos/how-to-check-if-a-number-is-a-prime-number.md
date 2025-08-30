@@ -11,8 +11,7 @@ tags:
 
 In this blog post, I will be demonstrating how you can check if a number is a prime number. Consider the following code snippet:
 
-````
-
+````java
 public static void main(String[] args) { 
     Scanner scanner= new Scanner(System.in); 
     System.out.println("Input the number to be checked:");

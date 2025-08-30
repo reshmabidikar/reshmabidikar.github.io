@@ -11,7 +11,7 @@ tags:
 
 In this blog post, I will be explaining how you can check if a String is a substring of another String. Consider the following code snippet:
 
-````
+````java
 package learnjava.strings;
 
 public class CheckSubstringDemo {
@@ -59,7 +59,7 @@ HELLO is NOT present in Hello World
 
 If you want to perform a case insensitive search, you need to convert both the input String as well as the String to check to either lowercase or uppercase and then perform the check like this:
 
-````
+````java
 if(strToCheck.toLowerCase().contains(valueToCheck.toLowerCase())) 
     System.out.println(valueToCheck+" is present in "+strToCheck); 
 else 

@@ -11,8 +11,7 @@ tags:
 
 In this blog post, I will be demonstrating how you can delete a file in Java. Consider the following code snippet:
 
-````
-
+````java
 package learnjava.io;
 
 import java.io.File;

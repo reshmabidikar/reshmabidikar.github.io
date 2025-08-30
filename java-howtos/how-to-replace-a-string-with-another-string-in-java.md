@@ -8,7 +8,7 @@ categories:
 
 In this blog post, I will be demonstrating how you can replace a String with another String via Java. Consider the following code snippet:
 
-````
+````java
 
 package learnjava.strings;
 

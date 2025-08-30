@@ -12,7 +12,7 @@ tags:
 
 In this blog post, I will be explaining how you can check if a String has digits. There are several ways to do this. Consider the following code snippet:
 
-````
+````java
 
 package learnjava.strings;
 

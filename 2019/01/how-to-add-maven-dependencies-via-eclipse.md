@@ -16,7 +16,7 @@ Maven as you might probably know is a dependency management tool. It automatical
 
 #### Adding Maven Dependencies Via Eclipse
 
-**Step 1 - Create your Maven project via Eclipse (Refer [this](https://learnjava.co.in/how-to-create-a-maven-project-in-eclipse/) post)**
+**Step 1 - Create your Maven project via Eclipse (Refer [this](../../2018/10/how-to-create-a-maven-project-in-eclipse.md) post)**
 
 **Step 2 - Right click on pom.xml. Click on Maven --> Add Depenency**
 

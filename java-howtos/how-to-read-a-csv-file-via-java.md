@@ -15,11 +15,11 @@ In this blog post, I will be covering how you can read a CSV file via Java.
 
 CSV stands for Comma Separated Values. The fields in a CSV file are separated by commas. So for example, a CSV file will be seen in Notepad as follows:
 
-![](images/notepad-300x168.png)
+![](images/read-csv/notepad-300x168.png)
 
 However, if you open the same CSV file in Excel and will be seen as follows:
 
-![](images/excel-300x186.png)
+![](images/read-csv/excel-300x186.png)
 
 A CSV file is used to store tabular data. You can open a CSV file in Microsoft Excel.
 
@@ -27,7 +27,7 @@ A CSV file is used to store tabular data. You can open a CSV file in Microsoft E
 
 Consider the following code sample:
 
-````
+````java
 
 package learnjava.io;
 

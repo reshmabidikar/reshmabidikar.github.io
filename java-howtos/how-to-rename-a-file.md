@@ -11,7 +11,7 @@ tags:
 
 In this blog post ,I will be showing you how you can rename a file. Consider the following code snippet:
 
-````
+````java
 
 package learnjava.io;
 
