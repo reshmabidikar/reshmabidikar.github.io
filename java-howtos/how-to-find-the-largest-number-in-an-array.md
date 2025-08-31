@@ -1,36 +1,40 @@
 ---
 title: "How to find the largest number in an array"
-date: "2019-04-17"
+date: "2018-08-20"
 categories: 
   - "java-examples"
 tags: 
-  - "javaarray"
-  - "largestelementinarray"
+  - "core-java"
+  - "java-arrays"
+  - "java-if-else-en"
+  - "java-loops-en"
 ---
 
-In this blog post, I will be demonstrating how you can find the largest number in an array or list. Consider the following code snippet:
+The following code demonstrates how to find the largest number in an array:
 
 ````java
+
 package demo;
 
-public class FindLargestNumberDemo {
+public class LargestNumberDemo {
 
-    public static void main(String[] args) {
-        int[] myArray = {2, 4, 6, 8, 10, 45, 9, 18, 90, 12};
-
-        int largest = 0;
-        for (int num : myArray) {
-            if (num < largest) {
-                largest = num;
-            }
-            System.out.println("Largest number is " + largest);
-
-        }
+public static void main(String[] args) { 
+    Integer[] intArr = {45,21,88,210,550,1,34}; 
+    int max = 0; 
+    for(int num:intArr) { 
+        if(num > max) max = num; 
+    } 
+    System.out.println("Biggest number is "+max);
     }
 }
-
 ````
 
+So the for loop iterates through the array. Initially, the variable max is set to 0. Each number is compared with 'max' and if it is greater than max, then it is assigned to 'max'. This process is repeated till all the elements in the array are exhausted.
 
+This will print the following output:
 
-Here, we are declaring an array with a list of values. We are then iterating through the elements in the array. We are also declaring a variable called largest and setting its value to 0. Each element in the array is compared to the variable largest. If it is greater than largest, the variable largest is assigned the current element. This is continued for all the elements in the input array. So when this code is executed, it will print the following output:
+```
+Biggest number is 550
+```
+
+You can use this code to find the largest number from any Collection type like Set or List.

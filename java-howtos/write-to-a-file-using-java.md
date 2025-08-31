@@ -12,9 +12,7 @@ tags:
 
 In Java, you can use the BufferedReader class as follows in order to read a file:
 
- 
-
-\[java\]
+````java
 
 package demo;
 
@@ -22,8 +20,18 @@ import java.io.BufferedReader; import java.io.File; import java.io.FileNotFoundE
 
 public class MyTextFileReader {
 
-public static void main(String args\[\]){ try { BufferedReader br = new BufferedReader(new FileReader(new File("F:/test.txt"))); String line = null; while ((line = br.readLine()) != null) { System.out.println(line); } } catch ( IOException e) { // TODO Auto-generated catch block e.printStackTrace(); } }
+public static void main(String args[]){ 
+    try { 
+        BufferedReader br = new BufferedReader(new FileReader(new File("F:/test.txt"))); 
+        String line = null; 
+        while ((line = br.readLine()) != null) { 
+            System.out.println(line); 
+        } 
+    } catch ( IOException e) {  
+        e.printStackTrace(); 
+    } 
+ }
 
 }
 
-\[/java\]
+````
