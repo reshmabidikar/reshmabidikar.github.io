@@ -11,9 +11,7 @@ tags:
 
 In order to find the number of words in a sentence, you can use the String.split method. The following code demonstrates this:
 
- 
-
-\[java\]
+````java
 
 package demo;
 
@@ -23,7 +21,7 @@ public static void main(String\[\] args) { String str = "My first Java program";
 
 } }
 
-\[/java\]
+````
 
 So the split method splits the given String on the basis of the space character. It returns a String array with all the words in the input String. You can use any other character to split the String as well.
 

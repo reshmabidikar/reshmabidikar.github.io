@@ -11,26 +11,23 @@ tags:
 
 There is a replace method provided by the String class that can be used to replace a character in a String with another character. The following code snippet demonstrates this:
 
- 
-
-\[java\]
+````java
 
 package demo;
 
 public class StringDemo {
 
-public static void main(String\[\] args) { String str = "Hello World"; String modifiedStr = str.replace('o', 'i'); System.out.println("Modified String is "+modifiedStr);
+public static void main(String[] args) { 
+    String str = "Hello World"; 
+    String modifiedStr = str.replace('o', 'i'); 
+    System.out.println("Modified String is "+modifiedStr);
+  } 
+}
 
-} }
+````
 
-\[/java\]
-
- 
-
- 
-
-So the above code will replace all occurrences of the letter 'o' in the String "Hello World"  an 'i' and will print the following:
+So the above code will replace all occurrences of the letter 'o' in the String "Hello World" an 'i' and will print the following:
 
 ```
-Helli Wirld
+Helli World
 ```
