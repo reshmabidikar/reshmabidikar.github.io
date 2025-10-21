@@ -169,9 +169,9 @@
 * [Object Oriented Principles n Java](java-interview-questions/object-oriented-principles-in-java.md)
 
 ## Java Language Features
-* [Java Queue Interface Explained](2020/06/java-queue-interface-explained.md)
-* [Constructors in inheritance](2020/05/constructors-in-inheritance.md)
-* [Java Method Overloading Explained](2020/02/java-method-overloading-explained.md)
+* [Java Queue Interface Explained](java-language-features/java-queue-interface-explained.md)
+* [Constructors in inheritance](java-language-features/constructors-in-inheritance.md)
+* [Java Method Overloading Explained](java-language-features/java-method-overloading-explained.md)
 * [Java varargs explained](2020/01/java-varargs-explained.md)
 * [Java Try With Explained](2019/12/java-try-with-explained.md)
 * [Java Callable Explained](2019/12/java-callable-explained.md)

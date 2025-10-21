@@ -21,7 +21,7 @@ The `add`method supports adding an element to the Queue. if for some reason the 
 
 **Sample Code (Without Exception)**
 
-```
+```java
 Queue<String> daysOfTheWeek = new LinkedList<String>();
 daysOfTheWeek.add("Monday");
 daysOfTheWeek.add("Tuesday");
@@ -46,8 +46,8 @@ System.out.println(daysOfTheWeek);
 
 As mentniod earlier, if the `add` method is unable to add the element, it throws an **Exception.** This behaviour is not evident when you use the **LinkedList** implementation of a Queue. However it is evident for the **ArrayBlockingQueue** implementation which has a capacity restriction.
 
-```
-	        Queue<String> daysOfTheWeek = new ArrayBlockingQueue<String>(1); 
+```java
+        Queue<String> daysOfTheWeek = new ArrayBlockingQueue<String>(1); 
 		boolean added = daysOfTheWeek.add("Monday"); 
 		System.out.println(added);
 		added = daysOfTheWeek.add("Tuesday"); 
@@ -75,7 +75,7 @@ The `offer` method is similar to `add`. So it adds an element at the head of the
 
 **Sample Code**
 
-```
+```java
 Queue<String> daysOfTheWeek = new ArrayBlockingQueue<String>(1); 
 boolean added = daysOfTheWeek.offer("Monday"); 
 System.out.println("Added Monday:"+added);
@@ -101,7 +101,7 @@ The `remove`methods helps removing a value from a Queue. It removes the element 
 
 **Sample Code (Non-empty Queue)**
 
-```
+```java
 Queue<String> daysOfTheWeek = new LinkedList<String>();
 daysOfTheWeek.add("Monday");
 daysOfTheWeek.add("Tuesday");
@@ -126,7 +126,7 @@ Monday
 
 As mentioned earlier, when you invoke `remove`on an empty queue, it throws a **NoSuchElementException**
 
-```
+```java
 Queue<String> daysOfTheWeek = new LinkedList<String>(); 
 String day = daysOfTheWeek.remove(); 
 System.out.println(day);
@@ -151,7 +151,7 @@ The `poll`method is similar to `remove`. So it removes the element at the head o
 
 **Sample Code:**
 
-```
+```java
 Queue<String> daysOfTheWeek = new LinkedList<String>();
 daysOfTheWeek.add("Monday");
 
@@ -180,7 +180,7 @@ The `element`method returns the head of the queue but does not remove it from th
 
 **Sample Code:**
 
-```
+```java
 		Queue<String> daysOfTheWeek = new LinkedList<String>(); 
 		daysOfTheWeek.add("Monday"); 
 		String day = daysOfTheWeek.element(); 
@@ -219,7 +219,7 @@ The `peek`method is similar to `element`. So it returns the element at the head 
 
 **Sample Code:**
 
-```
+```java
 Queue<String> daysOfTheWeek = new LinkedList<String>();
 daysOfTheWeek.add("Monday");
 

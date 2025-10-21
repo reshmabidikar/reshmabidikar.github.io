@@ -17,18 +17,18 @@ There are different scenarios in which the invocation differs slightly. Let's ex
 
 When the base-class has a constructor, creating an object of the sub-class results in automatic invocation of the base class constructor.Consider the following code snippet:
 
-```
-public class Animal{
+```java
+public class Animal {
 
 public Animal() {
-System.out.println("In Animal constructor");
+    System.out.println("In Animal constructor");
 }
 }
 
 public class Cat extends Animal{
 
 public Cat() {
-System.out.println("In Cat constructor");
+    System.out.println("In Cat constructor");
 }
 }
 ```
@@ -37,7 +37,7 @@ Here, The `Animal`class has a constructor. `Cat` is a sub-class of `Animal` and 
 
 Now consider the following code:
 
-```
+```java
 Cat cat = new Cat();
 ```
 
@@ -52,14 +52,14 @@ In Cat constructor
 
 If there is no constructor in the base class, Java provides a default no arguments constructor in the base class and inserts a call to this constructor from the sub-class constructor. So consider the following code snippet:
 
-```
+```java
 public class Animal{
 }
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
-Cat(){
-System.out.println("In cat constructor");
+Cat() {
+    System.out.println("In cat constructor");
 }
 
 }
@@ -69,7 +69,7 @@ Here, The `Animal` class does not have a constructor. `Cat` is a sub-class of `A
 
 Now consider the following code:
 
-```
+```java
 Cat cat = new Cat();
 ```
 
@@ -83,8 +83,8 @@ In cat constructor
 
 When there is a constructor with arguments in the base-class, Java is not able to add a default constructor in the base-class. So a compilation error occurs. Consider the following code:
 
-```
-public class Animal{
+```java
+public class Animal {
 
 String name;
 
@@ -98,7 +98,7 @@ public class Cat extends Animal{
 
 
 
-Cat(){ //this causes compilation error
+Cat() { //this causes a compilation error
 
 }
 
@@ -109,4 +109,4 @@ Here, the `Animal` class has a constructor that accepts an argument. The `Cat` c
 
 ## Conclusion
 
-So in this article, we saw how constructors are used in inheritance in Java. We understood the various scenarios for Java constructor inheritance. In summary, when you create an object of a sub-class, Java implicitly invokes the base class constructor. If there is no constructor in the base class, Java supplies a default no arguments constructor in the base class and inserts a call to this constructor.
+So in this article, we saw how constructors are used in inheritance in Java. We understood the various scenarios for Java constructor inheritance. In summary, when you create an object of a subclass, Java implicitly invokes the base class constructor. If there is no constructor in the base class, Java supplies a default no arguments constructor in the base class and inserts a call to this constructor.

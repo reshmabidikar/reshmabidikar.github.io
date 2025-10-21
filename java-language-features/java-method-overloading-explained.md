@@ -7,13 +7,13 @@ tags:
   - "method-overloading"
 ---
 
-Java method overloading allows defining two or more methods within the same class that share the same name. Method overloading makes the code clean and increases the readability of the code. [Method overloading](https://learnjava.co.in/object-oriented-principles-in-java/) helps to achieve polymorphism which is one of the object oriented principles. In this article, I will be covering method overloading in detail.
+Java method overloading allows defining two or more methods within the same class that share the same name. Method overloading makes the code clean and increases the readability of the code. [Method overloading](../java-interview-questions/object-oriented-principles-in-java.html) helps to achieve polymorphism which is one of the object-oriented principles. In this article, I will be covering method overloading in detail.
 
 ## Introduction
 
 When methods are overloaded, their parameter declarations need to be different. The following code demonstrates this:
 
-```
+```java
 public class AdditionService {
 
 int add() { // no parameters
@@ -47,7 +47,7 @@ This class has 4 methods with the name **add**. All four add methods differ in t
 
 The following code invokes these methods:
 
-```
+```java
 public static void main(String[] args) {
 
 AdditionService as = new AdditionService();
@@ -83,7 +83,7 @@ Sum4 is 11.2
 
 Overloaded methods must differ in the type and/or number of their parameters. So if the type/number of arguments is the same but return types are different, then the methods are not overloaded and the code will cause a compilation error. The following code demonstrates this:
 
-```
+```java
 public class AdditionService {
 
 //this code causes a compilation error
@@ -99,7 +99,7 @@ int add(int i,int j) {
 }
 ```
 
-Here, both the add methods accept two integer arguments. However the first method returns an integer while the second methods returns a double value.  This code causes a **compilation error** because there are two **add** methods accept 2 **integer**
+Here, both the add methods accept two integer arguments. However, the first method returns an integer while the second methods returns a double value. This code causes a **compilation error** because there are two **add** methods accept 2 **integer**
 
 ## How method overloading works
 
