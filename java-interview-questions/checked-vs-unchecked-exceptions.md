@@ -21,7 +21,7 @@ In this blog post, I will be explaining the difference between checked and unche
 
 Consider the following diagram:
 
-[![](images/Exception_Hierarchy-1-300x120.png)](images/Exception_Hierarchy-1.png) 
+[![](images/checked-vs-unchecked/Exception_Hierarchy-1-300x120.png)](images/checked-vs-unchecked/Exception_Hierarchy-1.png) 
 
 The boxes in **blue** represent **unchecked exceptions**, while the ones in **pink** represent the **checked exceptions**.
 

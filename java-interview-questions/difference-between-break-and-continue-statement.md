@@ -11,7 +11,7 @@ tags:
   - "java-jump-statements"
 ---
 
-Both the break and continue statements are used to change the fliw of executionin Java loops. However they differ in the way they work.
+Both the break and continue statements are used to change the flow of execution in Java loops. However, they differ in the way they work.
 
 #### What is a break statement?
 
@@ -56,10 +56,13 @@ Consider the following code snippet:
 
 ```java
 
-for(int i = 0; i < 10;i++){ if(i % 2 == 0) continue; System.out.println("i="+i);
+for(int i = 0; i < 10;i++) { 
+    if(i % 2 == 0) 
+        continue; 
+    System.out.println("i="+i);
 
-} System.out.println("Outside loop");
-
+} 
+System.out.println("Outside loop");
 ```
 
 This code snippet prints only the odd numbers from 1 to 10. So it will print the following output:

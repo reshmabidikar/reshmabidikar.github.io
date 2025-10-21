@@ -10,7 +10,7 @@ tags:
   - "interfaces"
 ---
 
-Another commonly asked [interview question](https://learnjava.co.in/java-interview-questions/) is to explain the difference between an abstract class and an interface. So in this blog post, I will give you a detailed explanation.
+Another commonly asked interview question is to explain the difference between an abstract class and an interface. So in this blog post, I will give you a detailed explanation.
 
 #### What is an Abstract Class?
 
@@ -18,7 +18,7 @@ An abstract class is a class that has one or more abstract method. An abstract m
 
 #### So why is an abstract class useful?
 
-Sometimes, you will want to create a super class that defines a method that all its sub classes must implement, but it leaves the exact implementation to the sub class. For ex. suppose you have a class called Shape, you can define an abstract method called draw. You can then have sub-classes for various shapes like Rectangle, Triangle, etc which provide implementations for the draw method. So while the "draw" method makes no sense for the Shape class, it makes sense for the Rectangle and Triangle classes and so it makes sense to have the code for the draw me
+Sometimes, you will want to create a super class that defines a method that all its sub classes must implement, but it leaves the exact implementation to the sub class. For ex. suppose you have a class called Shape, you can define an abstract method called draw. You can then have subclasses for various shapes like Rectangle, Triangle, etc which provide implementations for the draw method. So while the "draw" method makes no sense for the Shape class, it makes sense for the Rectangle and Triangle classes and so it makes sense to have the code for the draw me
 
 #### What is an Interface?
 

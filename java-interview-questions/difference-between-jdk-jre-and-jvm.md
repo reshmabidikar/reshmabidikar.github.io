@@ -23,4 +23,4 @@ JRE stands for **Java Runtime Environment**. JVM executes the bytecode from the 
 
 #### JDK
 
-It stands for **Java Development Kit**.  The JRE provides the environment to only execute your Java code. However, if you want to write Java code, you need the JDK So when you write Java code, you will need tools to compile the Java program, you will need an archiver to generate the JAR file, etc. So JDK consists of all these tools required for Java development as well we the JRE. JDK is only used by Java developers.
+It stands for **Java Development Kit**. The JRE provides the environment to only execute your Java code. However, if you want to write Java code, you need the JDK So when you write Java code, you will need tools to compile the Java program, you will need an archiver to generate the JAR file, etc. So JDK consists of all these tools required for Java development as well we the JRE. JDK is only used by Java developers.

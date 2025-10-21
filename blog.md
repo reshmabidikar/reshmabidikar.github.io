@@ -145,6 +145,7 @@
 * [How to replace the character in a string with another character](java-howtos/how-to-replace-a-character-in-a-string-with-another-character.md)
 * [How to reverse a String in Java](java-howtos/how-to-reverse-a-string-in-java.md)
 * [Write to a file in Java](java-howtos/write-to-a-file-using-java.md)
+* [How are Java Strings Immutable](java-howtos/how-are-java-strings-immutable.md)
 
 ## Java Interview Questions
 
@@ -157,16 +158,15 @@
 * [Java Treeset v/s Hashset](java-interview-questions/java-treeset-v-s-hashset.md)
 * [Compile-time Polymorphism v/s Runtime Polymorphism](java-interview-questions/compile-time-polymorphism-vs-runtime-polymorphism.md)
 * [Why is Java Platform-independent](java-interview-questions/why-is-java-platform-independent.md)
-* [ArrayList v/s LinkedList](2019/02/arraylist-vs-linkedlist.md)
-* [Checked vs Unchecked Exceptions](2018/12/checked-vs-unchecked-exceptions.md)
-* [How are Java Strings Immutable](java-howtos/how-are-java-strings-immutable.md)
-* [String vs StringBuffer vs StringBuilder](2018/12/string-vs-stringbuffer-vs-stringbuilder.md)
-* [Difference between break and continue](2018/09/difference-between-break-and-continue-statement.md)
-* [Difference between JDK, JRE, and JVM](2018/09/difference-between-jdk-jre-and-jvm.md)
-* [Method Overloading vs Method Overridding](2018/09/method-overloading-vs-method-overridding.md)
-* [Difference between abstract class and interface](2018/09/what-is-the-difference-between-an-abstract-class-and-interface.md)
-* [Difference between set and list in Java](2018/08/difference-between-a-set-and-list.md)
-* [Object Oriented Principles n Java](2018/08/object-oriented-principles-in-java.md)
+* [ArrayList v/s LinkedList](java-interview-questions/arraylist-vs-linkedlist.md)
+* [Checked vs Unchecked Exceptions](java-interview-questions/checked-vs-unchecked-exceptions.md)
+* [String vs StringBuffer vs StringBuilder](java-interview-questions/string-vs-stringbuffer-vs-stringbuilder.md)
+* [Difference between break and continue](java-interview-questions/difference-between-break-and-continue-statement.md)
+* [Difference between JDK, JRE, and JVM](java-interview-questions/difference-between-jdk-jre-and-jvm.md)
+* [Method Overloading vs Method Overridding](java-interview-questions/method-overloading-vs-method-overridding.md)
+* [Difference between abstract class and interface](java-interview-questions/what-is-the-difference-between-an-abstract-class-and-interface.md)
+* [Difference between set and list in Java](java-interview-questions/difference-between-a-set-and-list.md)
+* [Object Oriented Principles n Java](java-interview-questions/object-oriented-principles-in-java.md)
 
 ## Java Language Features
 * [Java Queue Interface Explained](2020/06/java-queue-interface-explained.md)

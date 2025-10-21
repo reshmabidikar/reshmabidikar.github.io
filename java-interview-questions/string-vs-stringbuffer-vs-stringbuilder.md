@@ -15,7 +15,7 @@ A very common interview question is to ask the difference between **String, Stri
 
 A [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) is a Java class. It is designed to hold a set of characters like alphabets, numbers, special characters, etc. **String** objects are constants, their values **cannot** be **changed** after they are created. So, **String** objects are also called **immutable** objects. For example, consider the following code snippet:
 
-````
+````java
 String str = "abc"; //line 1
 str = str+"xyz"; //line 2
 ````
@@ -26,7 +26,7 @@ When the line 2 is executed, The object "_abc_" remains as it is and a new objec
 
 [StringBuffer](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html) is a peer class of String that provides much of the functionality of strings. While a String is immutable, a **StringBuffer** is **mutable**. For example, consider the following code snippet:
 
-````
+````java
 StringBuffer buf = new StringBuffer("abc"); //line 1 
 buf = buf.append("xyz"); //line 2
 ````
