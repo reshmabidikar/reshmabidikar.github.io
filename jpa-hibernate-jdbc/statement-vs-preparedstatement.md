@@ -17,7 +17,7 @@ A Statement object directly executes the SQL statement. In contrast, a [Prepared
 
 Consider the following code snippet (**Code Listing 1**)
 
-````
+````java
 
 Class.forName("com.mysql.jdbc.Driver");
 
@@ -34,7 +34,7 @@ Each time the code is executed, the SQL statement will be parsed and compiled be
 
 Now, consider the following code snippet: **(Code Listing 2)**
 
-```` 
+```` java
 // Register JDBC driver 
 Class.forName("com.mysql.jdbc.Driver");
 
@@ -74,7 +74,7 @@ In contrast, using a [PreparedStatement](https://docs.oracle.com/javase/7/docs/a
 
 #### Summary
 
-In addition to the above, there are several other differences between a [Statement](https://docs.oracle.com/javase/7/docs/api/java/sql/Statement.html) and [PreparedStatement](https://docs.oracle.com/javase/7/docs/api/java/sql/PreparedStatement.html). The following table summarizes the differences
+In addition to the above, there are several other differences between a [Statement](https://docs.oracle.com/javase/7/docs/api/java/sql/Statement.html) and [PreparedStatement](https://docs.oracle.com/javase/7/docs/api/java/sql/PreparedStatement.html). The following table summarizes the differences:
 
 
 |Statement  |PreparedStatement  |

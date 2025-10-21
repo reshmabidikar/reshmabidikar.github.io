@@ -290,10 +290,10 @@
 * [Hibernate Save v/s saveorUpdate](jpa-hibernate-jdbc/hibernate-save-vs-saveorupdate.md)
 * [How to query a table via JDBC](jpa-hibernate-jdbc/how-to-query-a-database-table-via-jdbc.md)
 * [JPA vs Hibernate](jpa-hibernate-jdbc/jpa-vs-hibernate.md)
-* [Statement vs PreparedStatement](2019/02/statement-vs-preparedstatement.md)
-* [What is Hibernate Criteria API](2019/02/what-is-hibernate-criteria-api.md)
+* [Statement vs PreparedStatement](jpa-hibernate-jdbc/statement-vs-preparedstatement.md)
+* [What is Hibernate Criteria API](jpa-hibernate-jdbc/what-is-hibernate-criteria-api.md)
 * [Difference Between save and persist in Hibernate](2019/01/difference-between-save-and-persist-in-hibernate.md)
-* [JDBC vs Hibernate](2019/01/jdbc-versus-hibernate.md)
+* [JDBC vs Hibernate](jpa-hibernate-jdbc/jdbc-versus-hibernate.md)
 * [Update vs Merge in Hibiernate](jpa-hibernate-jdbc/update-vs-merge-in-hibernate.md)
 * [Difference between Get and Load in Hibernate](jpa-hibernate-jdbc/difference-between-get-and-load-in-hibernate.md)
 
