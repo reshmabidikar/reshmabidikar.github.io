@@ -16,23 +16,23 @@ In order to create a Maven web project in Eclipse, you need to follow the steps 
 
 Step 1 - Click on **File > New > Other**. Click on **Maven Project**. Click **Next**:
 
-[![](images/2-300x197.png)](images/2.png)
+[![](images/tomcat-maven-plugin/2-300x197.png)](images/2.png)
 
 Step 2 - The following screen is displayed. Click **Next**:
 
-[![](images/3-300x265.png)](images/3.png)
+[![](images/tomcat-maven-plugin/3-300x265.png)](images/3.png)
 
 Step 3 - In the Filter text box, type **"maven-archetype-webapp"**.  Select "**org.apache.maven.archetypes**". Click **Next**:
 
-[![](images/5-300x160.png)](images/5.png)
+[![](images/tomcat-maven-plugin/5-300x160.png)](images/5.png)
 
 Step 4 - Enter **Group Id** and **Artifact Id**. Click **Finish**:
 
-[![](images/6-300x160.png)](images/6.png)
+[![](images/tomcat-maven-plugin/6-300x160.png)](images/6.png)
 
 This creates a web project with the required directory structure. It also has a basic hello world page:
 
-[![](images/7-1-300x267.png)](images/7-1.png)
+[![](images/tomcat-maven-plugin/7-1-300x267.png)](images/tomcat-maven-plugin/7-1.png)
 
 ## Adding the Tomcat plugin
 
