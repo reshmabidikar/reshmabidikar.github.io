@@ -19,7 +19,7 @@ Java TreeSet and HashSet are implementations of the Set interface. Often you may
 
 Since both HashSet and TreeSet implement the Set interface, they do not allow duplicates. So consider the following code:
 
-```
+```java
 Set<String> hashSet = new HashSet<String>();
     hashSet.add("Mango");
     hashSet.add("Mango");
@@ -47,7 +47,7 @@ Both HashSet and TreeSet are not synchronized and are not thread-safe. So you ne
 
 So you will need to write code similar to the following:
 
-```
+```java
 Set<String> synHashSet = Collections.synchronizedSet(hashSet);
 
 Set<String> synTreeSet = Collections.synchronizedSet(treeSet);
@@ -61,7 +61,7 @@ A TreeSet is sorted, whereas a HashSet is not sorted. When you insert elements i
 
 **HashSet example**
 
-```
+```java
 Set<String> hashSet = new HashSet<String>();
 hashSet.add("Mango");
 hashSet.add("Banana");
@@ -86,7 +86,7 @@ So you can see that the Strings in the HashSet are not sorted.
 
 **TreeSet example**
 
-```
+```java
 Set<String> treeSet = new TreeSet<String>();
 treeSet.add("Mango");
 treeSet.add("Banana");
@@ -111,7 +111,7 @@ So you can see that the Strings in the TreeSet are sorted alphabetically.
 
 A HashSet allows null objects, a TreeSet does not allow null objects. So you can insert a null value in a HashSet, but you cannot do this in a TreeSet. The following code demonstrates this:
 
-```
+```java
 hashSet.add("Mango"); 
 hashSet.add("Banana"); 
 hashSet.add(null); 
@@ -128,7 +128,7 @@ Banana
 
 However, consider the following code:
 
-```
+```java
 treeSet.add("Mango"); 
 treeSet.add("Banana"); 
 treeSet.add(null);
@@ -137,7 +137,7 @@ treeSet.add(null);
 
 When you run this code, a NullPointerException will occur as follows:
 
-```
+```java
 Exception in thread "main" java.lang.NullPointerException
 at java.util.TreeMap.put(Unknown Source)
 at java.util.TreeSet.add(Unknown Source)

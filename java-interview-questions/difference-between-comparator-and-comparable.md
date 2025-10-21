@@ -16,7 +16,7 @@ The main difference between the Comparator and Comparable interface is that you 
 
 Consider the following **Person** class:
 
-```
+```java
 public class Person {
   
   private String name;
@@ -34,9 +34,9 @@ Suppose you want to sort **Person** objects on the basis of the age fields. Let 
 
 ### Sorting Using Comparator
 
-In order to sort using Comparator, you will first need to create a class that implements the Comparator interface.  The following code demonstrates this:
+In order to sort using Comparator, you will first need to create a class that implements the Comparator interface. The following code demonstrates this:
 
-```
+```java
 public class PersonComparator implements Comparator<Person> {
 
   @Override
@@ -49,7 +49,7 @@ public class PersonComparator implements Comparator<Person> {
 
 So **PersonComparator** simply implements the Comparator interface and overrides the **compare** method. You can now use this to sort Person objects as follows:
 
-```
+```java
 Person person1 = new Person("Mickey",56);
 Person person2 = new Person("Donald",45);
     
@@ -64,7 +64,7 @@ This code creates two **Person** objects. It then uses the **PersonComparator** 
 
 In order to sort using Comparable, you need to make the Person class implement the Comparable interface. The following code demonstrates this:
 
-```
+```java
 public class Person implements Comparable<Person>{
   
   private String name;
@@ -82,11 +82,9 @@ public class Person implements Comparable<Person>{
 }
 ```
 
- 
-
 So Person class implements the Comparable interface and overrides the **compareTo** method. You can use it to sort Person objects as follows:
 
-```
+```java
 Person person1 = new Person("Mickey",56);
 Person person2 = new Person("Donald",45);
     
@@ -99,8 +97,8 @@ This code creates two **Person** objects. It then invokes the **compareTo** meth
 
 In addition to the main difference demonstrated above, there are several differences between Comparator and Comparable. These are as follows:
 
-- Starting with Java 8, Comparator has been designated as a functional interface, so you can use a [lambda expression](http://localhost/learnjava/java-8-lambda-expressions-explained/) to implement it. On the other hand, Comparable is not a functional interface.
-- Starting with Java 8, a lot of [static](http://localhost/learnjava/java-8-static-interface-methods/) and [default](http://localhost/learnjava/java-8-default-method-in-interface-explained/) methods have been added to the Comparator interface that support various functionalities. Comparable on the other hand, does not have any static/default methods
+- Starting with Java 8, Comparator has been designated as a functional interface, so you can use a [lambda expression](../java8-features/java-8-lambda-expressions-explained.html) to implement it. On the other hand, Comparable is not a functional interface.
+- Starting with Java 8, a lot of [static](../java8-features/java-8-static-interface-methods.html) and [default](../java8-features/java-8-default-method-in-interface-explained.html) methods have been added to the Comparator interface that support various functionalities. Comparable on the other hand, does not have any static/default methods
 - Comparator uses the **compare** method for performing the comparison, Comparable on the other hand uses the **compareTo** method
 - Comparator is part of the **java.util** package, Comparable is part of the **java.lang** package
 - While using Comparable, you need to modify the class that needs sorting. On the other hand, you can use Comparable to sort any class without having the sorting logic within the class. So, Comparable is useful when the class that needs sorting is aware of the sorting logic.

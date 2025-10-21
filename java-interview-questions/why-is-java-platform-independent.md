@@ -14,7 +14,7 @@ A very common interview question is to ask a candidate to explain how Java is pl
 
 Consider the following simple Java code:
 
-````
+````java
 
 public class HelloWorldDemo {
 

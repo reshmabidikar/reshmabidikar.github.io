@@ -16,7 +16,7 @@ Both Iterator and Enumeration are interfaces defined in the Java Collection fram
 
 Iterator is an interface defined in the Java Collection framework. You can use it to loop through the elements of a collection. The following code demonstrates this:
 
-```
+```java
 List<Integer> numbers = Arrays.asList(2,4,6,8,10);
   Iterator<Integer> itr = numbers.iterator();
   while (itr.hasNext()) {
@@ -34,7 +34,7 @@ This code uses an Iterator to loop through the elements in a List and print them
 
 Enumeration is also an interface in the java.util.package. Just like Iterator, you can use it to loop through values. However, Enumeration is a legacy interface you can only use it for legacy classes like Vector and HashTable, The following code demonstrates this:
 
-```
+```java
 Vector vector = new Vector();
 vector.add(2);
 vector.add(4);
@@ -67,7 +67,7 @@ You can use an Iterator to navigate in forward as well as backwards direction. I
 
 The following code demonstrates this:
 
-```
+```java
 List<Integer> numbers = Arrays.asList(2,4,6,8,10);
 ListIterator<Integer> itr = numbers.listIterator();
 System.out.println("Navigating forward............");
@@ -89,7 +89,7 @@ However, you can only use an Enumeration to navigate in the forward direction.
 
 Iterator can modify the Collection on which it operates. It has a `remove`method which removes an element from the Collection. The following code demonstrates this:
 
-```
+```java
 List<Integer> numbers = new ArrayList<Integer>();
 numbers.add(2);
 numbers.add(4);
@@ -112,9 +112,6 @@ So this code checks if the input list has the element 6 and if so, uses the `ite
 ```
 List with element removed:
 2 6
-
-
-
 ```
 
 Enumeration on the other hand cannot modify the input collection, so you cannot remove an element from the Collection using Enumeration.

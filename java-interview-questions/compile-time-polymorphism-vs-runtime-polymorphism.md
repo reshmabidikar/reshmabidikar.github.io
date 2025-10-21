@@ -18,18 +18,25 @@ Java supports compile-time polymorphism via method overloading.Method overloadin
 
 Consider the following code snippet:
 
-````
+````java
 
 public class AdditionService {
 
-int add() { return 3+5; }
+    int add() { 
+        return 3+5; 
+    }
 
-int add(int i) { return i+i; }
+    int add(int i) { 
+        return i+i; 
+    }
 
-int add(int i,int j) { return i+j; }
+    int add(int i,int j) { 
+        return i+j; 
+    }
 
-double add(double i,double j) { return i+j; }
-
+    double add(double i,double j) { 
+        return i+j; 
+    }
 }
 
 ````
@@ -44,26 +51,24 @@ Java achieves Runtime polymorphism via method overriding. In a class hierarchy, 
 
 Consider the following code:
 
-````
-
+````java
 public class Vehicle { 
-public void printVehicleType() { 
-System.out.println("This is a vehicle"); 
-} 
+    public void printVehicleType() { 
+        System.out.println("This is a vehicle"); 
+    } 
 }
 
 public class Car extends Vehicle { 
-public void printVehicleType() { 
-System.out.println("This is a car"); 
-} 
+    public void printVehicleType() {
+        System.out.println("This is a car"); 
+    } 
 }
 
 public class Bicycle extends Vehicle {
 
-public void printVehicleType() { 
-System.out.println("This is a bicyle"); 
-}
-
+    public void printVehicleType() { 
+        System.out.println("This is a bicyle"); 
+    }
 } 
 ````
 
@@ -71,22 +76,20 @@ Car and Bicycle are both sub classes of Vehicle. Both have a method called print
 
 Now consider the following code:
 
-````
-
+````java
 public class VehiclesDemo {
 
 public static void main(String[] args) {
 
-Vehicle vehicle = new Vehicle(); 
-Car car = new Car(); vehicle = car; 
-System.out.println("Invoking method with car object:"); 
-vehicle.printVehicleType();
+    Vehicle vehicle = new Vehicle(); 
+    Car car = new Car(); vehicle = car; 
+    System.out.println("Invoking method with car object:"); 
+    vehicle.printVehicleType();
 
-Bicycle bike = new Bicycle(); 
-vehicle=bike; 
-System.out.println("Invoking method with bicycle object:"); 
-vehicle.printVehicleType();
-
+    Bicycle bike = new Bicycle(); 
+    vehicle=bike; 
+    System.out.println("Invoking method with bicycle object:"); 
+    vehicle.printVehicleType();
 }
 
 } 
