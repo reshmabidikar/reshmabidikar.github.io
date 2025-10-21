@@ -15,7 +15,7 @@ Answer:
 Inheritance has the following benefits:
 
 1. It permits code reuse. So, if there is some common code that can be used across a set of subclasses it can be specified in the base class and reused by all the subclasses.
-2. It facilitates polymorphism via method overriding. Method overriding allows a subclass to specify a method with the same type signature as a method in the superclass.  To know more about method overriding refer to [this](https://learnjava.co.in/method-overloading-vs-method-overridding/) blog post.
+2. It facilitates polymorphism via method overriding. Method overriding allows a subclass to specify a method with the same type signature as a method in the superclass. To know more about method overriding refer to [this](method-overloading-vs-method-overridding.md) blog post.
 3. It makes the code extendable. So, if there is already some code, developers can use the code by creating a subclass and they need not write it again
 
 ## What are the different types of inheritance?
@@ -36,8 +36,8 @@ You can use the **extends** keyword to create a subclass. It needs to be specifi
 
 Consider the following code:
 
-```
-class Shape{
+```java
+class Shape {
 
 }
 ```
@@ -46,8 +46,8 @@ This code specifies a `Shape` class.
 
 And consider the following code:
 
-```
-class Square extends Shape{
+```java
+class Square extends Shape {
 
 }
 ```
@@ -62,7 +62,7 @@ Inheritance helps to achieve runtime polymorphism. Java allows assigning a subcl
 
 Consider the following code:
 
-```
+```java
 public class Animal {
   
   void speak() {
@@ -75,8 +75,8 @@ This code specifies an `Animal` class. It has a `speak` method.
 
 And consider the following `Animal` subclasses:
 
-```
-public class Cat extends Animal{
+```java
+public class Cat extends Animal {
 
   void speak() {
     System.out.println("meow");
@@ -95,7 +95,7 @@ This code specifies a `Cat` class and a `Dog` class. Both are subclasses of `Ani
 
 Now consider the following code:
 
-```
+```java
 public class AnimalDemo {
 
   public static void main(String[] args) {
@@ -110,7 +110,7 @@ public class AnimalDemo {
 }
 ```
 
-This code specifies an `AnimalDem`o class. The `main` method first defines a variable `animal` of type `Animal` but assigns it a new `Cat` object. It then invokes the `speak` method on `animal`. Since `animal` is assigned a `Cat` object, this results in the `Cat` class method being invoked. It then assigns a new `Dog` object to the `animal` variable and again invokes the `speak` method on `animal`. Since `animal` is assigned a `Dog` object, this results in the `Dog` class method being invoked.  So, the same method call (`animal.speak`) results in different methods getting executed. Thus, this helps to achieve polymorphism. Since the call to the overridden method is resolved at runtime, this is known as runtime polymorphism.
+This code specifies an `AnimalDem`o class. The `main` method first defines a variable `animal` of type `Animal` but assigns it a new `Cat` object. It then invokes the `speak` method on `animal`. Since `animal` is assigned a `Cat` object, this results in the `Cat` class method being invoked. It then assigns a new `Dog` object to the `animal` variable and again invokes the `speak` method on `animal`. Since `animal` is assigned a `Dog` object, this results in the `Dog` class method being invoked. So, the same method call (`animal.speak`) results in different methods getting executed. Thus, this helps to achieve polymorphism. Since the call to the overridden method is resolved at runtime, this is known as runtime polymorphism.
 
 This code produces the following output:
 
@@ -118,8 +118,6 @@ This code produces the following output:
 meow
 woof woof
 ```
-
- 
 
 ## What is the use of the super keyword?
 
@@ -132,8 +130,7 @@ You can use the **super** keyword as follows:
 
 To know more about the super keyword, you can read [this](https://learnjava.co.in/java-super-keyword-explained/) article.
 
-\[table id=29 /\]
 
 ## Conclusion
 
-So, in this article, we took a look at some Java Inheritance Interview Questions. You can take a look at more interview questions related to other topics [here](https://learnjava.co.in/java-interview-questions/).
+So, in this article, we took a look at some Java Inheritance Interview Questions.
