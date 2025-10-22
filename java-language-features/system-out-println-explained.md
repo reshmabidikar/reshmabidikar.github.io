@@ -12,7 +12,7 @@ In this blog post, I will be explaining the System.out.println statement which i
 
 #### System
 
-[System](https://docs.oracle.com/javase/9/docs/api/java/lang/System.html) is a final class in the java.lang package. It has several useful classes and methods. In addition to supporting standard input and output, it has methods to access external properties, method for initiating garbage collection, etc.  It supports input/output by providing static variables corresponding to the input/output streams.
+[System](https://docs.oracle.com/javase/9/docs/api/java/lang/System.html) is a final class in the java.lang package. It has several useful classes and methods. In addition to supporting standard input and output, it has methods to access external properties, method for initiating garbage collection, etc. It supports input/output by providing static variables corresponding to the input/output streams.
 
 #### Out
 

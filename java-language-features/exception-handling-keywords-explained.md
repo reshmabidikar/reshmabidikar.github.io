@@ -31,4 +31,4 @@ The **throw** keyword is used to explicitly throw an exception. Most of the time
 
 #### Throws
 
-The throws clause is used in a method's declaration and specifies the exceptions that a method might throw. The throws method needs to be specified only for checked exceptions. So if a method throws a checked exception that it does not handle, then the checked exception needs to be specified in the method's declaration via the **throws** keyword.
+The throws clause is used in a method's declaration and specifies the exceptions that a method might throw. The throws method needs to be specified only for checked exceptions. So if a method throws a checked exception that it does not handle, then the checked exception needs to be specified in the method's declaration via the **throws** keyword.

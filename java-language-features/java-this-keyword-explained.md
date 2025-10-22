@@ -17,12 +17,8 @@ Consider the following code snippet:
 
 private int radius;
 
-public Circle(int radius)
-
-{
-
-this.radius = radius;
-
+public Circle(int radius) {
+    this.radius = radius;
 }
 
 ````
