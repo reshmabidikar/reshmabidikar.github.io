@@ -17,7 +17,7 @@ blog post, I will be explaining what a nested class is in Java.
 
 As the word suggests, a nested Java class is a class which lies within another Java class. Consider the following code snippet:
 
-````
+````java
 class OuterClass {
 
     class NestedClass{
@@ -40,8 +40,7 @@ The following are some reasons where you will need Nested classes:
 
 A nested class can be a **static or non-static** class. As you probably know, a static variable is the same for all objects of a class. Static nested classes also belong to the class and not to any one instance of the class. They belong to the class that encloses them and not its objects.
 
-````
-
+````java
 public class OuterClass {
 
     private int outerField; 
@@ -75,7 +74,7 @@ OuterClass.StaticNestedClass object = new OuterClass.StaticNestedClass();
 
 Non-static nested classes are called **Inner classes**. Consider the following code snippet:
 
-````
+````java
 public class OuterClass {
 
     private int outerField; 
@@ -117,7 +116,7 @@ Local classes are declared within a block of code and are visible only within th
 
 Consider the following code snippet:
 
-````
+````java
 public class OuterClass {
 
     public void OuterMethod() {
@@ -137,7 +136,7 @@ Some important points to note about local classes:
 
 An anonymous class is a local class without a name. So you can declare a local class within the body of a method without naming it.Anonymous inner class always extend a class or implement an interface. Consider the following code snippet:
 
-````
+````java
 public abstract class Animal {
 
     abstract void speak();
@@ -155,7 +154,6 @@ public class AnimalDemo {
  }
 
 }
-
 ````
 
 So here we have an abstract class called Animal. It has an abstract method called speak. We have another class called AnimalDemo. In the main method we are creating a new Animal object called Dog and providing the implementation for the speak method there itself. So, instead of creating a separate class called Dog that extends the Animal class, we are creating an Anonymous inner class for Dog. Similarly, Anonymous inner classes can be created by implementing an interface too.

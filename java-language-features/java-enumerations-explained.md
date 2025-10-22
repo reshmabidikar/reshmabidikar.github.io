@@ -16,7 +16,7 @@ An enumerated type is a type whose values consist of a fixed set of constants. C
 
 In Java, you can define an enumerated type by using the **enum** keyword. The syntax is as follows:
 
-````
+````java
 enum NameOfEnum {value1,value2,value3.......,valuen}
 ````
 
@@ -37,7 +37,7 @@ The values of an **enum** are static values and you can retrieve them using the 
 
 An **enum** is a datatype. So the way you require an int variable to store an int value, you require an **enum** of type Days to store a value of **Enum** days. So for example, to retrieve and store the value "Saturday" from the **enum** Days, you need to declare a variable of type Days as:
 
-````
+````java
 Days today = Days.Saturday;
 ````
 

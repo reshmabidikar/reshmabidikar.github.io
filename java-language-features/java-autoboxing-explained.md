@@ -17,14 +17,12 @@ Java provides class equivalents for all the primitive datatypes. So for example,
 
 Consider the following code snippet:
 
-````
-
+````java
 public static void main(String[] args) { 
   int i = 5; 
   Integer integer = i; 
   System.out.println("The value of integer is "+integer); 
 }
-
 ````
 
 Here, we have defined an **int** variable called **"i"** and assigned it the value 5. After that we have defined an **Integer** variable called **integer** and assigned it the value **"i"**. So note that this does not cause any compilation error. Java **automatically** converts the int value to the Integer type.

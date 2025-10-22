@@ -23,7 +23,7 @@ A [NullPointerException](https://docs.oracle.com/javase/8/docs/api/java/lang/Nul
 
 The most common scenarios where a [NullPointerException](https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html) occurs is when you invoke a method on an object that has a null value. Consider the following code snippet:
 
-````
+````java
 String str = "Hello World"; 
 System.out.println("Length of the String is "+str.length()); 
 str = null; 
@@ -46,17 +46,14 @@ This error occurs since the [str.length](https://docs.oracle.com/javase/8/docs/a
 
 A [NullPointerException](https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html)  can also occur when you invoke the fields of an object with **null** value. Consider the following code snippet:
 
-````
-
+````java
 public class Rectangle {
 
     int length; 
     int width;
-
 }
 
 public class RectangleDemo {
-
     public static void main(String[] args) { 
     Rectangle r = null; 
     int length = r.length; 
@@ -76,8 +73,7 @@ at learnjava.exceptions.nullpointerdemo.RectangleDemo.main(RectangleDemo.java:7)
 
 A [NullPointerException](https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html) can also occur when you access the fields of an **array** that has a **null** value. Consider the following code snippet:
 
-````
-
+````java
 public static void main(String[] args) { 
     int[] arr = null; 
     System.out.println(arr[2]);
@@ -96,7 +92,7 @@ at learnjava.exceptions.nullpointerdemo.NullPointerArrayDemo.main(NullPointerArr
 
 So in Scenario 1 above, the error can be avoided using the following code snippet:
 
-````
+````java
 String str = "Hello World"; 
 if(str != null) 
     System.out.println("Length of the String is "+str.length()); 

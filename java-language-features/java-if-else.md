@@ -15,7 +15,7 @@ The if-else statement is used to check for a condition. If the condition specifi
 
 # **Syntax**
 
-````
+````java
 
 if(condition){
 
@@ -35,26 +35,16 @@ else{ // this part is optional
 
 Consider the following code snippet:
 
-````
+````java
 
 int a = 20;
-
 int b = 15;
 
-if(a > b)
-
-{
-
-System.out.println("a is greater than b");
-
+if(a > b) {
+    System.out.println("a is greater than b");
+} else {
+    System.out.println("a is less than b");
 }
-
-else{
-
-System.out.println("a is less than b");
-
-}
-
 ````
 
 - Variables called **a** and **b** are declared and initialized to 20 and 15 respectively
@@ -80,20 +70,14 @@ The **else** statement is optional. If you skip it and if the condition within t
 
 So consider the following code snippet:
 
-````
-
+````java
 int a = 10;
-
 int b = 25;
 
-if(a > b){
-
-System.out.println("a is greater than b");
-
+if(a > b) {
+    System.out.println("a is greater than b");
 }
-
 System.out.println("Outside if");
-
 ````
 
 So when this code is executed, it will print the following output:

@@ -16,7 +16,7 @@ An interface is a java construct that is used to specify a behavior that classes
 
 For example, consider the following code snippet:
 
-````
+````java
 public interface Animal {
 
     public void speak();
@@ -29,8 +29,8 @@ This interface keyword specifies that this is an interface. Instead of the class
 
 Consider the following code snippet:
 
-````
-public class Dog implements Animal{
+````java
+public class Dog implements Animal {
 
     public void speak(){
         System.out.println("Woof Woof!");
@@ -40,4 +40,4 @@ public class Dog implements Animal{
 
 Here, the class declaration is followed by this implements keyword and the interface name. This specifies that the Dog class implements the Animal interface.
 
-Once an interface is defined, any number of classes can implement the **interface**. So I can create another class called Cat and provide its own speak implementation. So the advantage of specifying the speak method in the interface is that it provides a contract, any class that implement the Animal interface, must provide implementation for the speak method. Also each class is free to provide its own implementation of the speak method, this makes sense since each shape Animal will have a different way speaking. Also, one class can implement any number of interfaces as long as it provides implementations for all the methods in all the interfaces.
+Once an interface is defined, any number of classes can implement the **interface**. So I can create another class called Cat and provide its own speak implementation. So the advantage of specifying the speak method in the interface is that it provides a contract, any class that implement the Animal interface, must provide implementation for the speak method. Also, each class is free to provide its own implementation of the speak method, this makes sense since each shape Animal will have a different way speaking. Also, one class can implement any number of interfaces as long as it provides implementations for all the methods in all the interfaces.
