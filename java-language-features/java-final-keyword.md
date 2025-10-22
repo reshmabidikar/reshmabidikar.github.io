@@ -13,36 +13,21 @@ You can use the final keyword with a method or instance field. When you use it w
 
 ## Final Method
 
-```
+```java
 public class Base {
 
-
-
-
-public final void show() {
-
-System.out.println("In show”);
-
-}
-
-
-
-
+    public final void show() {
+        System.out.println("In show”);
+   }
 }
 
 public class Sub extends Base {
 
-
-
-
-
-
-
 // This method causes a compilation error
 
-public void show() {
+    public void show() {
 
-}
+    }
 
 }
 
@@ -60,7 +45,7 @@ Declaring a variable as final prevents its contents from being modified. This me
 
 The following code demonstrates a final field:
 
-```
+```java
 public void aMethod() {
 
 final int d = 10;

@@ -14,7 +14,7 @@ In this article, I will be explaining the Callable interface in Java. I will be 
 
 Right from the start, the Runnable interface has been associated with multi-threaded programming. The Runnable interface provides a run method that executes code in a separate thread. The following code demonstrates this:
 
-```
+```java
 public class RunnableDemo {
 
   public static void main(String[] args) {
@@ -37,7 +37,7 @@ The downside of this approach is that you have no way of knowing when the Thread
 
 Java 5 introduced a new interface called Callable to overcome the limitations of the Runnable interface. This interface is similar to Runnable and you can use it to spawn a new Thread. It has a method called "call". In addition to executing code in a new Thread, you can also use this interface to return a value. The following code demonstrates this:
 
-```
+```java
 public class CallableDemo {
 
   public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -72,7 +72,7 @@ Completed main
 
 The Callable interface is mostly used with the Executor framework and uses a Future to obtain a result. The Executor framework is part of the Concurrency API added in Java 5. The following code demonstrates this:
 
-```
+```java
 public class CallableWithExecutorDemo {
 
   public static void main(String[] args) throws InterruptedException, ExecutionException {

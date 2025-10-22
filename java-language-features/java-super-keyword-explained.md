@@ -15,7 +15,7 @@ Super keyword is used to access members of the superclass from the subclass. It 
 
 Consider the following code:
 
-```
+```java
 public class Base {
   
   int a;
@@ -56,6 +56,6 @@ In sub class method
 
 ## Points to Remember
 
-- The **super** keyword is a bit redundant for instance fields and methods since as long as the instance fields and method of the superclass and not private, they can be accessed directly in the sub-class.
+- The **super** keyword is a bit redundant for instance fields and methods since as long as the instance fields and method of the superclass and not private, they can be accessed directly in the subclass.
 - The **super** keyword is useful for accessing class members only when the base class has a member with the same name.
 - A subclass constructor can invoke a superclass constructor using the super keyword.

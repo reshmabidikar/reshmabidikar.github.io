@@ -15,7 +15,7 @@ JDK 5 added the varargs feature, which allow creating a method that accepts a va
 
 A variable number of arguments is specified using an argument name and three dots. The following code demonstrates this:
 
-```
+```java
 void method myMethod(String ...str){
 //method body
 }
@@ -23,7 +23,7 @@ void method myMethod(String ...str){
 
 This specifies a String argument str which is a vararg. So you can invoke this method as follows:
 
-```
+```java
 myMethod("a");  //with 1 parameter
 
 myMethod("a","b"); //with 2 parameters
@@ -35,7 +35,7 @@ myMethod("a", "b", "c"); //with 3 parameters
 
 The following code demonstrates a code sample that uses varargs:
 
-```
+```java
 public class VarargDemo {
 
   public static int calculate(int... num) {

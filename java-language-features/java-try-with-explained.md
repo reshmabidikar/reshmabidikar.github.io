@@ -13,7 +13,7 @@ The Java try with statement allows you to declare some resources with the try st
 
 Consider the following code that does not use try-with:
 
-```
+```java
 public static void saveFile(String fileName, String content) {
    try {
      BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName));
@@ -31,7 +31,7 @@ This code uses BufferedWriter to write to a file. Once the code finishes writing
 
 You can re-write the above code using a try-with statement as follows:
 
-```
+```java
 public static void saveFile2(String fileName, String content) {
    try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName))){
      bufferedWriter.write(content);
@@ -47,7 +47,7 @@ The try statement includes the resources that need to be closed automatically. I
 
 You can also specify more than one resource with the try/with statement. Java closes each of the specified resources. The following code demonstrates this:
 
-```
+```java
 public static void readAndWriteToFile(String inputFile, String outputFile) {
    try (BufferedReader bufferedReader = new BufferedReader(new FileReader(inputFile));BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFile))){
    	 String line = bufferedReader.readLine();

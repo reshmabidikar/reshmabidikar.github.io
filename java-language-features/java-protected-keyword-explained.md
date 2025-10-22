@@ -18,26 +18,24 @@ Just like private and public, **protected** is an access specifier. When the pro
 
 The following code snippet demonstrates how you can access a protected field in a sub-class:
 
-```
+```java
 package demo;
 
-public class Base {
+    public class Base {
 
-private int a;
+    private int a;
+    protected int b;
 
-protected int b;
+    }
 
-}
+    public class Sub extends Base {
 
-public class Sub extends Base {
+        public void subMethod() {
 
-public void subMethod() {
+        super.a=4; //this causes compilation error
 
-super.a=4; //this causes compilation error
-
-super.b=9;
-
-}
+        super.b=9;
+    }
 
 }
 ```
@@ -53,20 +51,18 @@ super.b=9;
 
 The following code snippet demonstrates how you can access a protected field from another class in the same package:
 
-```
+```java
 package demo;
 
 public class AnotherClass {
 
-public void myMethod() {
+    public void myMethod() {
 
-Base base = new Base();
+        Base base = new Base();
+        base.b=6;
+        System.out.println("In another class in the same package, the value of the protected field is "+base.b);
 
-base.b=6;
-
-System.out.println("In another class in the same package, the value of the protected field is "+base.b);
-
-}
+    }
 
 }
 ```
@@ -81,20 +77,19 @@ System.out.println("In another class in the same package, the value of the prote
 
 The following code snippet demonstrates how you can access a protected field from a different package:
 
-```
+```java
 package demo2;
 
 import demo.Base;
 
 public class AnotherClass2 {
 
-public void myMethod() {
+    public void myMethod() {
 
-Base base = new Base();
+        Base base = new Base();
+        base.b=7; //will cause compilation error
 
-base.b=7; //will cause compilation error
-
-}
+    }
 
 }
 ```
@@ -107,21 +102,19 @@ base.b=7; //will cause compilation error
 
 The following code snippet demonstrates how you can access a protected field from a sub-class from a different package:
 
- 
 
-```
+
+```java
 package demo2;
 
 import demo.Base;
 
-public class AnotherClass3 extends Base{
+public class AnotherClass3 extends Base {
 
 
-public void myMethod() {
-
-super.b=8;
-
-}
+    public void myMethod() {
+        super.b=8;
+    }
 
 }
 ```
