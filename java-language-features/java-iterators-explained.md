@@ -15,7 +15,7 @@ Java provides an interface called [Iterator](https://docs.oracle.com/javase/8/do
 
 Consider the following code snippet:
 
-````
+````java
 public static void main(String[] args) { 
     List<Integer> list = new ArrayList<Integer>(); 
     for(int i = 0; i < 10; i ++) { 

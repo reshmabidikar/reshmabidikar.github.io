@@ -20,11 +20,11 @@ The PATH environment variable is used to specify where the JDK binaries like "ja
 
 1) Navigate to the `JDK_HOME/bin` and type the `javac` or `java` command along with the full path of your Java file:
 
-[![](images/Path1-300x29.png)](images/Path1.png)
+[![](images/path-classpath/Path1-300x29.png)](images/path-classpath/Path1.png)
 
 2) Stay in the directory where your Java files exist but specify the full path of the `JDK_HOME/bin` folder with the java ir javac command.
 
-[![](images/Path2-300x43.png)](images/Path2.png)
+[![](images/path-classpath/Path2-300x43.png)](images/path-classpath/Path2.png)
 
 Both these methods are cumbersome and so the easier alternative is to set the PATH variable. In the PATH variable, you need to specify the Path of the `JDK_HOME/bin` folder. So, now the operating system knows where to look for the binaries when you type in the java/javac command on the command prompt.
 
@@ -34,7 +34,7 @@ Right-click on My Computer --> This PC icon on desktop --> Click Properties --> 
 
 If there is no PATH set, click on new and type the following (I have specified the path of my JDK/bin folder, you need to specify the appropriate path on your computer):
 
-![](images/Path3-300x286.png)
+![](images/path-classpath/Path3-300x286.png)
 
 If there is already a PATH variable defined, just append your path to the existing path.
 
@@ -46,11 +46,11 @@ When you try to run the program, you need to do one of the following:
 
 1) Navigate to the directory where the .class file is present and then type the java command:
 
-[![](images/cp1-1-300x21.png)](images/cp1-1.png)
+[![](images/path-classpath/cp1-1-300x21.png)](images/path-classpath/cp1-1.png)
 
 2) Specify the full path of the .class file along with the Java command
 
-[![](images/cp2-300x33.png)](images/cp2.png)
+[![](images/path-classpath/cp2-300x33.png)](images/path-classpath/cp2.png)
 
 Both these methods are cumbersome and so the earlier alternative is to set the CLASSPATH variable. So the CLASSPATH variable specifies the location of your .class files. Once set, the system knows the path to look for your class files when you try to run the code.
 
@@ -60,7 +60,7 @@ Right click on My Computer --> This PC icon on desktop --> Click Properties --> 
 
 If there is no PATH set, click on new and type the following (I have specified the path the folder where my .class files are present, you need to specify the appropriate path on your computer):
 
-[![](images/cp3-286x300.png)](images/cp3.png)
+[![](images/path-classpath/cp3-286x300.png)](images/path-classpath/cp3.png)
 
 ## Conclusion
 

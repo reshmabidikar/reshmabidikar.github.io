@@ -13,8 +13,7 @@ tags:
 
 In this blog post, I will be explaining the distinction between classes and objects. The most important thing to understand about a class is that it defines a new data type. Once defined, this new type can be used to create objects of that type.
 
-````
-
+````java
 public class Book {
 
     String bookName;
@@ -24,7 +23,7 @@ public class Book {
 
 This is a very simple class called Book. This class keyword is used to declare a class.You can see here that I’ve declared some variables in the class. These variables are called **instance variables** or **fields**. This Book class acts as a template and we can create many books using this class. Now consider the following code snippet:
 
-````
+````java
 public class Demo {
 
     public static void main(String args[]) {
