@@ -198,7 +198,7 @@ Start Postman. Click on "GET" request. Create a new Request.
 3. Click on "Send".
 4. This will show the "JSON" response sent by the server in the body below as follows
 
-[![](../2019/06/images/p3-300x156.png)](../2019/06/images/p3.png)
+[![](../maven-tomcat-and-eclipse/images/maven-web-project-in-eclipse/p3-300x156.png)](../maven-tomcat-and-eclipse/images/maven-web-project-in-eclipse/p3.png)
 You can download the source code for this project via the Github repository [here](https://github.com/learnjavawithreshma/SpringRestDemo).
 
 ## Further Learning

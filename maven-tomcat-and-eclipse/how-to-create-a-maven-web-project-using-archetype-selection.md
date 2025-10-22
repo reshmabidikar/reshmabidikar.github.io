@@ -5,31 +5,31 @@ categories:
   - "eclipse_and_maven"
 ---
 
-In my [earlier](https://learnjava.co.in/how-to-create-a-maven-web-project-in-eclipse/) article, we learned how to create a Java web project in Eclipse and how to add Maven support to it. In this article, we will learn how to create a Maven web project using archetype selection.
+In my [earlier](how-to-create-a-maven-web-project-in-eclipse.md) article, we learned how to create a Java web project in Eclipse and how to add Maven support to it. In this article, we will learn how to create a Maven web project using archetype selection.
 
 ## Create Maven Web Project In Eclipse
 
 Step 1 - In Eclipse, Click on **File** > **New** > **Other**. Click on **Maven Project**. Click **Next**:
 
-[![](images/2-300x197.png)](images/2.png)
+[![](images/maven-web-project-with-archetype/2-300x197.png)](images/maven-web-project-with-archetype/2.png)
 
 Step 2 - The following screen is displayed. Click **Next**:
 
-[![](images/3-300x265.png)](images/3.png)
+[![](images/maven-web-project-with-archetype/3-300x265.png)](images/maven-web-project-with-archetype/3.png)
 
 Step 3 - In the Filter text box, type "**maven-archetype-webapp**". Select "**org.apache.maven.archetypes**". Click **Next**:
 
-[![](images/5-300x160.png)](images/5.png)
+[![](images/maven-web-project-with-archetype/5-300x160.png)](images/maven-web-project-with-archetype/5.png)
 
 Step 4 - Enter **Group Id** and **Artifact Id**. Click **Finish**:
 
-[![](images/6-1024x548.png)](images/6.png)
+[![](images/maven-web-project-with-archetype/6-1024x548.png)](images/maven-web-project-with-archetype/6.png)
 
 This creates a web project with the required directory structure:
 
-[![](images/7-300x267.png)](images/7.png)
+[![](images/maven-web-project-with-archetype/7-300x267.png)](images/maven-web-project-with-archetype/7.png)
 
-Now you can add the necessary dependencies to your pom file as explained in [this](https://learnjava.co.in/how-to-add-maven-dependencies-via-eclipse/) post. So for example, if you are creating a Spring application, you can add Spring dependencies. You can also use this as a template to create any web application with Maven support.
+Now you can add the necessary dependencies to your pom file as explained in [this](how-to-add-maven-dependencies-via-eclipse.md) post. So for example, if you are creating a Spring application, you can add Spring dependencies. You can also use this as a template to create any web application with Maven support.
 
 ## Further Learning
 

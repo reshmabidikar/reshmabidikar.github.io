@@ -5,7 +5,7 @@ categories:
   - "javascript"
 ---
 
-Javascript is a lightweight programming language. It has been around a long time. In this article, I will be giving giving a high level overview of Javascript, how it evolved and you can use it to build real world systems.
+Javascript is a lightweight programming language. It has been around a long time. In this article, I will be giving a high level overview of Javascript, how it evolved and you can use it to build real world systems.
 
 # History Of Javascript
 

@@ -13,31 +13,31 @@ In this blog post, I will be explaining how to create a Maven project in Eclipse
 
 1. **Step 1 - Open Eclipse**
 
-[![](images/Eclipse1.png)
+[![](images/basic-java-proj-in-eclipse/Eclipse1.png)
 
 **2\. Click on File --> New --> Other**
 
-[![](images/MavenEclipse1-300x169.png)](images/MavenEclipse1.png)
+[![](images/maven-project-in-eclipse/MavenEclipse1-300x169.png)](images/maven-project-in-eclipse/MavenEclipse1.png)
 
 **3\. Click on Maven Project under Maven:**
 
-[![](images/MavenEclipse2-300x169.png)](images/MavenEclipse2.png)
+[![](images/maven-project-in-eclipse/MavenEclipse2-300x169.png)](images/maven-project-in-eclipse/MavenEclipse2.png)
 
 **4\. Click Next:**
 
-[![](images/MavenEclipse3-300x169.png)](images/MavenEclipse3.png)
+[![](images/maven-project-in-eclipse/MavenEclipse3-300x169.png)](images/maven-project-in-eclipse/MavenEclipse3.png)
 
 **5\. Click on Create a simple project (Skip archtype selection). Click on Next:**
 
-[![](images/MavenEclipse4-300x169.png)](images/MavenEclipse4.png)
+[![](images/maven-project-in-eclipse/MavenEclipse4-300x169.png)](images/maven-project-in-eclipse/MavenEclipse4.png)
 
 **6\. Enter group Id and artifact Id in the screen:**
 
-[![](images/MavenEclipse5-300x169.png)](images/MavenEclipse5.png)
+[![](images/maven-project-in-eclipse/MavenEclipse5-300x169.png)](images/maven-project-in-eclipse/MavenEclipse5.png)
 
 **7. Click Finish. Your Maven project is ready. You can start adding dependencies in your pom file and start writing Java code in src/main/java folder:**
 
-[![](images/MavenEclipse6-300x169.png)](images/MavenEclipse6.png)
+[![](images/maven-project-in-eclipse/MavenEclipse6-300x169.png)](images/maven-project-in-eclipse/MavenEclipse6.png)
 
 **Further Reading**
 

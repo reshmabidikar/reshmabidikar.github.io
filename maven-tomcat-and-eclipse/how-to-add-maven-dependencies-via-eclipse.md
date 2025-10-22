@@ -16,11 +16,11 @@ Maven as you might probably know is a dependency management tool. It automatical
 
 #### Adding Maven Dependencies Via Eclipse
 
-**Step 1 - Create your Maven project via Eclipse (Refer [this](../../2018/10/how-to-create-a-maven-project-in-eclipse.md) post)**
+**Step 1 - Create your Maven project via Eclipse (Refer [this](how-to-create-a-maven-project-in-eclipse.md) post)**
 
 **Step 2 - Right click on pom.xml. Click on Maven --> Add Depenency**
 
-[![](images/mavrn_dep1-300x164.png)](images/mavrn_dep1.png)
+[![](images/maven-dependencies-via-eclipse/mavrn_dep1-300x164.png)](images/maven-dependencies-via-eclipse/mavrn_dep1.png)
 
 **Step 3 - Enter group id, artifact id and version for the Dependency that you wish to add.** Suppose, you need to add the dependency for hibernate. You can enter the following:
 
@@ -30,13 +30,13 @@ Maven as you might probably know is a dependency management tool. It automatical
 
 In order to determine the group id and artifact id for a particular dependency, you can visit [https://mvnrepository.com](https://mvnrepository.com). You can search for the dependency that you wish to add. By specifying the group id, artifact id and version, we are telling Maven the exact name and version of the Jar file that we need
 
-[![](images/mavrn_dep2-300x164.png)](images/mavrn_dep2.png)
+[![](images/maven-dependencies-via-eclipse/mavrn_dep2-300x164.png)](images/maven-dependencies-via-eclipse/mavrn_dep2.png)
 
 **Step 4 - Click OK. This will automatically download the hibernate related Jar files and add them to the classpath.**
 
 **Step 5(Optional) - You can verify the JAR files under the Maven dependencies:**
 
-[![](images/mavrn_dep3-102x300.png)](images/mavrn_dep3.png)
+[![](images/maven-dependencies-via-eclipse/mavrn_dep3-102x300.png)](images/maven-dependencies-via-eclipse/mavrn_dep3.png)
 
 **Step 6 - That is all!! So you can now write code that uses Hibernate without any issues!**
 

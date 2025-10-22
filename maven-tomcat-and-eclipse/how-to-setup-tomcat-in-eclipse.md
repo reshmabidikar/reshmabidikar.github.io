@@ -14,39 +14,39 @@ In this blog post, I will demonstrate how to set up Tomcat in Eclipse.
 
 Go to the Tomcat site - http://tomcat.apache.org/. Click on Tomcat 9 in the left pane as shown below:
 
-[![](images/Tomcat0b-300x162.png)](images/Tomcat0b.png)
+[![](images/tomcat-in-eclipse/Tomcat0b-300x162.png)](images/tomcat-in-eclipse/Tomcat0b.png)
 
 **Step 2 - Download the appropriate version**
 
 I will be downloading the 64-bit windows version
 
-[![](images/Tomcat0c-300x169.png)](images/Tomcat0c.png)
+[![](images/tomcat-in-eclipse/Tomcat0c-300x169.png)](images/tomcat-in-eclipse/Tomcat0c.png)
 
 **Step 3 - Extract the contents of the zip file to an appropriate folder**
 
 The zip file will contain a folder with the name as "apache-tomcat-9.0.19". Copy this to an appropriate folder
 
-[![](images/Tomcat0d-251x300.png)](images/Tomcat0d.png)
+[![](images/tomcat-in-eclipse/Tomcat0d-251x300.png)](images/tomcat-in-eclipse/Tomcat0d.png)
 
 **Step 4 - Open Eclipse. Go to servers tab**
 
-[![](images/Tomcat0e-251x300.png)](images/Tomcat0e.png)
+[![](images/tomcat-in-eclipse/Tomcat0e-251x300.png)](images/tomcat-in-eclipse/Tomcat0e.png)
 
 **Step 7 - Right click --> New --> Server**
 
-[![](images/Tomcat0f-300x229.png)](images/Tomcat0f.png)
+[![](images/tomcat-in-eclipse/Tomcat0f-300x229.png)](images/tomcat-in-eclipse/Tomcat0f.png)
 
 **Step 8 - Select Tomcat 9.0 Server**
 
-[![](images/Tomcat1-300x229.png)](images/Tomcat1.png)
+[![](images/tomcat-in-eclipse/Tomcat1-300x229.png)](images/tomcat-in-eclipse/Tomcat1.png)
 
 **Step 9 - Click Next. Select Tomcat installation directory and JRE 1.8.**
 
-[![](images/tomcat2-257x300.png)](images/tomcat2.png)
+[![](images/tomcat-in-eclipse/tomcat2-257x300.png)](images/tomcat-in-eclipse/tomcat2.png)
 
 **Step 10 - Click Finish**
 
-![](images/Tomcat3-273x300.png)
+![](images/tomcat-in-eclipse/Tomcat3-273x300.png)
 
 **Further Reading**
 

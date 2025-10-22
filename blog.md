@@ -246,16 +246,16 @@
 * [How to create a JAX-RS Jersey Client](jaxrs-and-rest/how-to-create-a-jax-rs-jersey-client-application-for-consuming-a-rest-service.md)
 
 ## Maven, Tomcat and Eclipse
-* [How to setup Tomcat in Eclipse](2019/05/how-to-setup-tomcat-in-eclipse.md)
+* [How to setup Tomcat in Eclipse](maven-tomcat-and-eclipse/how-to-setup-tomcat-in-eclipse.md)
 * [Maven Clean Install Command Explained](maven-tomcat-and-eclipse/maven-clean-install-command-explained.md)
-* [How to create a Maven Wen Project using Archetype Selection](2022/02/how-to-create-a-maven-web-project-using-archetype-selection.md)
+* [How to create a Maven Wen Project using Archetype Selection](maven-tomcat-and-eclipse/how-to-create-a-maven-web-project-using-archetype-selection.md)
 * [Maven Wrapper](maven-tomcat-and-eclipse/maven-wrapper-need-installation-and-benefits.md)
 * [Tomcat Maven Plugin](maven-tomcat-and-eclipse/tomcat-maven-plugin-with-code-sample.md)
-* [How to Deploy an Application in Tomcat in Eclipse](2019/07/how-to-deploy-an-application-on-tomcat-server-in-eclipse.md)
-* [How to create a Maven web project in Eclipse](2019/06/how-to-create-a-maven-web-project-in-eclipse.md)
-* [How to add Maven Dependencies via Eclipse](2019/01/how-to-add-maven-dependencies-via-eclipse.md)
-* [How to create a basic Java Project in Eclipse](2018/10/creating-a-basic-java-project-in-eclipse.md)
-* [How to create a Maven Project in Eclipse](2018/10/how-to-create-a-maven-project-in-eclipse.md)
+* [How to Deploy an Application in Tomcat in Eclipse](maven-tomcat-and-eclipse/how-to-deploy-an-application-on-tomcat-server-in-eclipse.md)
+* [How to create a Maven web project in Eclipse](maven-tomcat-and-eclipse/how-to-create-a-maven-web-project-in-eclipse.md)
+* [How to add Maven Dependencies via Eclipse](maven-tomcat-and-eclipse/how-to-add-maven-dependencies-via-eclipse.md)
+* [How to create a basic Java Project in Eclipse](maven-tomcat-and-eclipse/creating-a-basic-java-project-in-eclipse.md)
+* [How to create a Maven Project in Eclipse](maven-tomcat-and-eclipse/how-to-create-a-maven-project-in-eclipse.md)
 
 
 ## Docker
@@ -319,5 +319,5 @@
 * [Python numeric and String Variables](python/python-numeric-and-string-variables.md)
 
 ## Javascript
-* [Javascript Under the Hood](2020/04/javascript-under-the-hood.md)
+* [Javascript Under the Hood](javascript/javascript-under-the-hood.md)
 
