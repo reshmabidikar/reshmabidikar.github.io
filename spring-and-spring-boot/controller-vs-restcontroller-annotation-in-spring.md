@@ -14,11 +14,11 @@ Before diving into the Controller and RestController annotations, it is importan
 
 ## Controller Annotation
 
-You can use the [Controller](https://learnjava.co.in/important-spring-mvc-annotations/#Controller) annotation to designate a Controller class in an MVC application. Normally in such scenarios, the code maps each method in the controller to a URL specified via the `RequestMapping`annotation. When the UI requests a particular URL, the code invokes the appropriate method. This executes the business logic and then redirects the user to the appropriate JSP page.
+You can use the [Controller](important-spring-mvc-annotations.md#Controller) annotation to designate a Controller class in an MVC application. Normally in such scenarios, the code maps each method in the controller to a URL specified via the `RequestMapping`annotation. When the UI requests a particular URL, the code invokes the appropriate method. This executes the business logic and then redirects the user to the appropriate JSP page.
 
 Consider the following code:
 
-```
+```java
 @Controller
 public class HelloWorldController {
 
@@ -42,7 +42,7 @@ You can also use the Controller annotation to create a REST service. As you prob
 
 Consider the following code snippet:
 
-```
+```java
 @Controller
 @ResponseBody
 public class HelloWorldController {
@@ -60,11 +60,11 @@ Instead of using the `ResponseBody`annotation on the Controller class, you can a
 
 ## RESTController annotation
 
-As seen above, you can use the `Controller`and `ResponseBody` annotations to create a REST service. Instead of using two annotations, Spring 4.0 introduced the [RestController](https://learnjava.co.in/important-spring-mvc-annotations/#RestController) annotation. So the `RestController`annotation is a convenience controller which combines the behavior of the `Controller`and `ResponseBody`annotations.
+As seen above, you can use the `Controller`and `ResponseBody` annotations to create a REST service. Instead of using two annotations, Spring 4.0 introduced the [RestController](important-spring-mvc-annotations.md#RestController) annotation. So the `RestController`annotation is a convenience controller which combines the behavior of the `Controller`and `ResponseBody`annotations.
 
 So the above code can be re-written as follows:
 
-```
+```java
 @RestController
 public class HelloWorldController {
 
